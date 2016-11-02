@@ -242,4 +242,24 @@ public class Part15 extends AppCompatActivity {
         builder.setMessage(this.getString(R.string.article300A)).create();
         builder.show();
     }
+
+
+
+    public void article268A(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(this.getString(R.string.article268A)).create();
+        builder.show();
+    }
+    public void article270(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(this.getString(R.string.article270)).create();
+        builder.show();
+    }
+    public void article291(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(this.getString(R.string.article291)).create();
+        builder.show();
+    }
+
+
 }

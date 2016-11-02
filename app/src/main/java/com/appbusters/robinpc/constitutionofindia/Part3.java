@@ -200,4 +200,14 @@ public class Part3 extends AppCompatActivity {
     }
 
 
+
+    public void article21A(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(this.getString(R.string.article21A)).create();
+        builder.show();
+    }
+
+
+
+
 }

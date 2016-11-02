@@ -643,4 +643,30 @@ public class Part6 extends AppCompatActivity {
         builder.show();
     }
 
+
+
+
+    public void article134A(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(this.getString(R.string.article134A)).create();
+        builder.show();
+    }
+    public void article124A(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(this.getString(R.string.article124A)).create();
+        builder.show();
+    }
+    public void article124B(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(this.getString(R.string.article124B)).create();
+        builder.show();
+    }
+    public void article124C(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(this.getString(R.string.article124C)).create();
+        builder.show();
+    }
+
+
+
 }
