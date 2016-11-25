@@ -9,8 +9,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
 public class ScrollingActivity extends AppCompatActivity {
+
+    private Boolean isFabClosed=true;
+    private Animation rotate_forward, rotate_backward, fab_open, fab_close;
+    private FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,18 +25,18 @@ public class ScrollingActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab = (FloatingActionButton) findViewById(R.id.fab);
+        rotate_backward= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_backward);
+        rotate_forward= AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate_forward);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                animateFab();
                 Snackbar.make(view, "Jai Hind!", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
     }
-
-
-
 
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -80,4 +86,15 @@ public class ScrollingActivity extends AppCompatActivity {
         Intent i=new Intent(this,schedules.class);
         startActivity(i);
     }
+
+    private void animateFab() {
+        if(isFabClosed==true){
+            fab.startAnimation(rotate_backward);
+            isFabClosed=false;
+        }
+        else{
+            fab.startAnimation(rotate_forward);
+        }
+    }
+
 }
