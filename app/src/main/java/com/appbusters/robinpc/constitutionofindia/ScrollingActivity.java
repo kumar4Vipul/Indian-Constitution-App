@@ -15,7 +15,7 @@ import android.view.animation.AnimationUtils;
 public class ScrollingActivity extends AppCompatActivity {
 
     private Boolean isFabClosed=true;
-    private Animation rotate_forward, rotate_backward, fab_open, fab_close;
+    private Animation rotate_forward, rotate_backward, fab_open, fab_close, rotate_initial;
     private FloatingActionButton fab;
 
     @Override
@@ -28,6 +28,8 @@ public class ScrollingActivity extends AppCompatActivity {
         fab = (FloatingActionButton) findViewById(R.id.fab);
         rotate_backward= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_backward);
         rotate_forward= AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate_forward);
+        rotate_initial= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_initial);
+        fab.startAnimation(rotate_initial);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -89,11 +91,11 @@ public class ScrollingActivity extends AppCompatActivity {
 
     private void animateFab() {
         if(isFabClosed==true){
-            fab.startAnimation(rotate_backward);
+            fab.startAnimation(rotate_forward);
             isFabClosed=false;
         }
         else{
-            fab.startAnimation(rotate_forward);
+            fab.startAnimation(rotate_backward);
             isFabClosed=true;
         }
     }
