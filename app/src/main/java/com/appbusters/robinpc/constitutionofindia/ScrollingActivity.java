@@ -94,6 +94,7 @@ public class ScrollingActivity extends AppCompatActivity {
         }
         else{
             fab.startAnimation(rotate_forward);
+            isFabClosed=true;
         }
     }
 
