@@ -16,7 +16,7 @@ public class ScrollingActivity extends AppCompatActivity {
 
     private Boolean isFabClosed=true;
     private Animation rotate_forward, rotate_backward, fab_open, fab_close, rotate_initial;
-    private FloatingActionButton fab;
+    private FloatingActionButton fab, fab1, fab2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,10 @@ public class ScrollingActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab1= (FloatingActionButton) findViewById(R.id.fab1);
+        fab2= (FloatingActionButton) findViewById(R.id.fab2);
+        fab_open= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fab_open);
+        fab_close= AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fab_close);
         rotate_backward= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_backward);
         rotate_forward= AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate_forward);
         rotate_initial= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_initial);
@@ -92,10 +96,13 @@ public class ScrollingActivity extends AppCompatActivity {
     private void animateFab() {
         if(isFabClosed==true){
             fab.startAnimation(rotate_forward);
+            fab1.startAnimation(fab_open);
+            fab1.setVisibility(View.VISIBLE);
             isFabClosed=false;
         }
         else{
             fab.startAnimation(rotate_backward);
+            fab1.setAnimation(fab_close);
             isFabClosed=true;
         }
     }

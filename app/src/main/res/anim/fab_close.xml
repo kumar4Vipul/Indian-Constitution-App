@@ -6,6 +6,12 @@
         android:toXScale="0"
         android:toYScale="0"
         android:interpolator="@android:anim/linear_interpolator"/>
+    <translate android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:toXDelta="0"
+        android:toYDelta="0"
+        android:duration="1000"
+        android:interpolator="@android:anim/linear_interpolator"/>
     <alpha android:fromAlpha="1.0"
         android:toAlpha="0.0"
         android:duration="300"
