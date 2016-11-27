@@ -94,10 +94,11 @@ public class ScrollingActivity extends AppCompatActivity {
     }
 
     private void animateFab() {
-        if(isFabClosed==true){
+        if(isFabClosed){
             fab.startAnimation(rotate_forward);
             fab1.startAnimation(fab_open);
             fab1.setVisibility(View.VISIBLE);
+            fab1.setClickable(true);
             isFabClosed=false;
         }
         else{
