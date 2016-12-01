@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.appbusters.robinpc.constitutionofindia.Part19"
+    tools:context="com.appbusters.robinpc.constitutionofindia.ui.all_parts.Part19"
     tools:showIn="@layout/activity_part19">
 
     <LinearLayout
