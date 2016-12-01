@@ -15,9 +15,9 @@ import com.appbusters.robinpc.constitutionofindia.R;
 
 public class ScrollingActivity extends AppCompatActivity {
 
-    private Boolean isFabClosed=true;
+    private Boolean FabClosed=true;
     private Animation rotate_forward, rotate_backward, fab_open, fab_close;
-    private FloatingActionButton fab, fab1, fab2;
+    private FloatingActionButton fab, fabL, fabR;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,15 +26,29 @@ public class ScrollingActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab1= (FloatingActionButton) findViewById(R.id.fab1);
-        fab2= (FloatingActionButton) findViewById(R.id.fab2);
+        fab= (FloatingActionButton) findViewById(R.id.fab);
+        fabL= (FloatingActionButton) findViewById(R.id.fabL);
+        fabR= (FloatingActionButton) findViewById(R.id.fabR);
+
         fab_open= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fab_open);
         fab_close= AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fab_close);
         rotate_backward= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_backward);
         rotate_forward= AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate_forward);
         Animation rotate_initial= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_initial);
-        fab.startAnimation(rotate_initial);
+        Animation alpha_initial= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.alpha_initial);
+        Animation fab_close_initial= AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fab_close_initial);
+
+        fab.setAnimation(alpha_initial);
+        fabL.setAnimation(fab_close_initial);
+        fabR.setAnimation(fab_close_initial);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                animatefab();
+            }
+        });
+
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -86,5 +100,20 @@ public class ScrollingActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    private void animatefab() {
+
+        if(FabClosed){
+            fab.startAnimation(rotate_forward);
+            fabL.startAnimation(fab_open);
+            fabR.startAnimation(fab_open);
+            FabClosed=false;
+        }
+        else{
+            fab.startAnimation(rotate_backward);
+            fabL.startAnimation(fab_close);
+            fabR.startAnimation(fab_close);
+            FabClosed=true;
+        }
+    }
 
 }
