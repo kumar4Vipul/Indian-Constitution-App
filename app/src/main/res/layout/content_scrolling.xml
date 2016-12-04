@@ -24,9 +24,20 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 app:fabSize="mini"
+                app:srcCompat="@android:drawable/star_big_on"
+                android:id="@+id/fabL2"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:fabSize="mini"
                 app:srcCompat="@android:drawable/ic_menu_search"
                 android:id="@+id/fabL"
-                android:layout_margin="2dp" />
+                android:layout_margin="2dp"
+                android:layout_marginRight="5dp" />
 
 
             <android.support.design.widget.FloatingActionButton
@@ -46,7 +57,18 @@
                 app:fabSize="mini"
                 app:srcCompat="@android:drawable/ic_menu_share"
                 android:id="@+id/fabR"
-                android:layout_margin="2dp" />
+                android:layout_margin="2dp"
+                android:layout_marginLeft="5dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_add"
+                android:id="@+id/fabR2"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp" />
         </LinearLayout>
 
         <android.support.v7.widget.CardView

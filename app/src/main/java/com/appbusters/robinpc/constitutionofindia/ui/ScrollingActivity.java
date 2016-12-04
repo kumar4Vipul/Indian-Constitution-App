@@ -17,7 +17,7 @@ public class ScrollingActivity extends AppCompatActivity {
 
     private Boolean FabClosed=true;
     private Animation rotate_forward, rotate_backward, fab_open, fab_close;
-    private FloatingActionButton fab, fabL, fabR;
+    private FloatingActionButton fab, fabL, fabR, fabL2, fabR2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,8 @@ public class ScrollingActivity extends AppCompatActivity {
         fab= (FloatingActionButton) findViewById(R.id.fab);
         fabL= (FloatingActionButton) findViewById(R.id.fabL);
         fabR= (FloatingActionButton) findViewById(R.id.fabR);
+        fabL2= (FloatingActionButton) findViewById(R.id.fabL2);
+        fabR2= (FloatingActionButton) findViewById(R.id.fabR2);
 
         fab_open= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fab_open);
         fab_close= AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fab_close);
@@ -41,6 +43,8 @@ public class ScrollingActivity extends AppCompatActivity {
         fab.setAnimation(alpha_initial);
         fabL.setAnimation(fab_close_initial);
         fabR.setAnimation(fab_close_initial);
+        fabL2.setAnimation(fab_close_initial);
+        fabR2.setAnimation(fab_close_initial);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,12 +110,16 @@ public class ScrollingActivity extends AppCompatActivity {
             fab.startAnimation(rotate_forward);
             fabL.startAnimation(fab_open);
             fabR.startAnimation(fab_open);
+            fabL2.setAnimation(fab_open);
+            fabR2.setAnimation(fab_open);
             FabClosed=false;
         }
         else{
             fab.startAnimation(rotate_backward);
             fabL.startAnimation(fab_close);
             fabR.startAnimation(fab_close);
+            fabL2.setAnimation(fab_close);
+            fabR2.setAnimation(fab_close);
             FabClosed=true;
         }
     }
