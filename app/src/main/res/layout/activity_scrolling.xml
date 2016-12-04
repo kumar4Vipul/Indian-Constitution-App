@@ -34,39 +34,4 @@
 
     <include layout="@layout/content_scrolling" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:fabSize="mini"
-        app:srcCompat="@android:drawable/ic_input_add"
-        android:id="@+id/fab"
-        app:layout_anchor="@+id/app_bar"
-        app:layout_anchorGravity="bottom|center_horizontal"
-        android:layout_gravity="center_vertical|center_horizontal" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:fabSize="mini"
-        app:srcCompat="@android:drawable/ic_menu_search"
-        android:id="@+id/fabL"
-        app:layout_anchor="@+id/app_bar"
-        app:layout_anchorGravity="bottom|left"
-        android:layout_gravity="center_vertical|right"
-        android:layout_margin="10dp" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:fabSize="mini"
-        app:srcCompat="@android:drawable/ic_menu_share"
-        android:id="@+id/fabR"
-        app:layout_anchor="@+id/app_bar"
-        app:layout_anchorGravity="bottom|right"
-        android:layout_gravity="center_vertical|left"
-        android:layout_margin="10dp" />
-
 </android.support.design.widget.CoordinatorLayout>
