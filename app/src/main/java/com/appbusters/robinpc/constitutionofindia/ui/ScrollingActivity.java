@@ -36,7 +36,6 @@ public class ScrollingActivity extends AppCompatActivity {
         fab_close= AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fab_close);
         rotate_backward= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_backward);
         rotate_forward= AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate_forward);
-        Animation rotate_initial= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_initial);
         Animation alpha_initial= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.alpha_initial);
         Animation fab_close_initial= AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fab_close_initial);
 
