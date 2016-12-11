@@ -91,7 +91,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Schedule 1"
-                    android:onClick="Schedule1"
+                    android:onClick="onClick"
                     android:background="?android:attr/selectableItemBackground"/>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -105,7 +105,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Schedule 2"
-                    android:onClick="Schedule2"
+                    android:onClick="onClick"
                     android:background="?android:attr/selectableItemBackground"/>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -119,7 +119,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Schedule 3"
-                    android:onClick="Schedule3"
+                    android:onClick="onClick"
                     android:background="?android:attr/selectableItemBackground"/>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -133,7 +133,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Schedule 4"
-                    android:onClick="Schedule4"
+                    android:onClick="onClick"
                     android:background="?android:attr/selectableItemBackground"/>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -147,7 +147,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Schedule 5"
-                    android:onClick="Schedule5"
+                    android:onClick="onClick"
                     android:background="?android:attr/selectableItemBackground"/>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -161,7 +161,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Schedule 6"
-                    android:onClick="Schedule6"
+                    android:onClick="onClick"
                     android:background="?android:attr/selectableItemBackground"/>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -175,7 +175,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Schedule 7"
-                    android:onClick="Schedule7"
+                    android:onClick="onClick"
                     android:background="?android:attr/selectableItemBackground"/>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -189,7 +189,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Schedule 8"
-                    android:onClick="Schedule8"
+                    android:onClick="onClick"
                     android:background="?android:attr/selectableItemBackground"/>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -203,7 +203,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Schedule 9"
-                    android:onClick="Schedule9"
+                    android:onClick="onClick"
                     android:background="?android:attr/selectableItemBackground"/>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -217,7 +217,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Schedule 10"
-                    android:onClick="Schedule10"
+                    android:onClick="onClick"
                     android:background="?android:attr/selectableItemBackground"/>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -231,7 +231,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Schedule 11"
-                    android:onClick="Schedule11"
+                    android:onClick="onClick"
                     android:background="?android:attr/selectableItemBackground"/>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -245,7 +245,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Schedule 12"
-                    android:onClick="Schedule12"
+                    android:onClick="onClick"
                     android:background="?android:attr/selectableItemBackground"/>
             </android.support.v7.widget.CardView>
         </LinearLayout>
