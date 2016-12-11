@@ -123,4 +123,27 @@ public class ScrollingActivity extends AppCompatActivity {
         }
     }
 
+    public void buttonOnClick(View v){
+        switch (v.getId())
+        {
+            case R.id.fabL2:
+            {
+                break;
+            }
+            case R.id.fabL:
+            {
+                break;
+            }
+            case R.id.fabR:
+            {
+                break;
+            }
+            case R.id.fabR2:
+            {
+                break;
+            }
+        }
+    }
+
+
 }
