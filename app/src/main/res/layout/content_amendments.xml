@@ -942,7 +942,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 51"
-                    android:onClick="Amendment51"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -958,7 +959,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 52"
-                    android:onClick="Amendment52"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -974,7 +976,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 53"
-                    android:onClick="Amendment53"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -990,7 +993,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 54"
-                    android:onClick="Amendment54"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1006,7 +1010,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 55"
-                    android:onClick="Amendment55"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1022,7 +1027,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 56"
-                    android:onClick="Amendment56"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1038,7 +1044,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 57"
-                    android:onClick="Amendment57"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1054,7 +1061,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 58"
-                    android:onClick="Amendment58"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1070,7 +1078,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 59"
-                    android:onClick="Amendment59"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1086,7 +1095,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 60"
-                    android:onClick="Amendment60"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1102,7 +1112,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 61"
-                    android:onClick="Amendment61"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1118,7 +1129,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 62"
-                    android:onClick="Amendment62"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1134,7 +1146,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 63"
-                    android:onClick="Amendment63"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1150,7 +1163,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 64"
-                    android:onClick="Amendment64"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1166,7 +1180,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 65"
-                    android:onClick="Amendment65"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1182,7 +1197,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 66"
-                    android:onClick="Amendment66"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1198,7 +1214,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 67"
-                    android:onClick="Amendment67"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1214,7 +1231,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 68"
-                    android:onClick="Amendment68"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1230,7 +1248,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 69"
-                    android:onClick="Amendment69"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1246,7 +1265,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 70"
-                    android:onClick="Amendment70"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1263,7 +1283,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 71"
-                    android:onClick="Amendment71"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1279,7 +1300,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 72"
-                    android:onClick="Amendment72"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1295,7 +1317,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 73"
-                    android:onClick="Amendment73"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1311,7 +1334,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 74"
-                    android:onClick="Amendment74"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
@@ -1327,7 +1351,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Amendment 75"
-                    android:onClick="Amendment75"
+                    android:onClick="onClick"
+                    android:id="@+id/a1"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="7dp" />
             </android.support.v7.widget.CardView>
