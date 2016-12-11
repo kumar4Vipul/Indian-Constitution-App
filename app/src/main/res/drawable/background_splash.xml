@@ -6,8 +6,11 @@
 
     <item>
         <bitmap
+            xmlns:android="http://schemas.android.com/apk/res/android"
             android:gravity="center"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@mipmap/ic_launcher"
+            android:scaleHeight="10"
+            android:scaleWidth="10"/>
     </item>
 
 </layer-list>
