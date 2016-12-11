@@ -150,4 +150,78 @@ public class schedules extends AppCompatActivity {
         }
     }
 
+    public void onClick(View v){
+
+        AlertDialog.Builder alert= new AlertDialog.Builder(this);
+        String[] array={getString(R.string.firstschedule),getString(R.string.secondschedule),
+                getString(R.string.thirdschedule),getString(R.string.fourthschedule),
+                getString(R.string.fifthschedule),getString(R.string.sixthschedule),
+                getString(R.string.seventhschedule),getString(R.string.eighthschedule),
+                getString(R.string.ninthschedule),getString(R.string.tenthschedule),
+                getString(R.string.eleventhschedule),getString(R.string.twelvethschedule)};
+
+        switch (v.getId()){
+            case R.id.s1:
+            {
+                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.s2:
+            {
+                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.s3:
+            {
+                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.s4:
+            {
+                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.s5:
+            {
+                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.s6:
+            {
+                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.s7:
+            {
+                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.s8:
+            {
+                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.s9:
+            {
+                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.s10:
+            {
+                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.s11:
+            {
+                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.s12:
+            {
+                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+        }
+    }
+
 }
