@@ -555,5 +555,19 @@ public class amendments extends AppCompatActivity {
             }
         }
     }
+
+    public void onClick(View v){
+
+        AlertDialog.Builder alert= new AlertDialog.Builder(this);
+        String[] array= {getString(R.string.firstamendment)};
+
+        switch (v.getId()){
+            case R.id.a1:
+            {
+                alert.setMessage(array[0]).setTitle("First Amendment").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+        }
+    }
 }
 
