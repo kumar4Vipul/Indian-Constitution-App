@@ -82,9 +82,6 @@ public class parts extends AppCompatActivity {
 
     public void onClick(View v){
 
-        AlertDialog.Builder alert= new AlertDialog.Builder(this);
-        String[] array={getString(R.string.part1)};
-
         switch (v.getId())
         {
             case R.id.p1:
