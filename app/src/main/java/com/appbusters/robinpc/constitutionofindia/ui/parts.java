@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -48,137 +49,6 @@ public class parts extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    public void Part1(View view)
-    {
-        Intent i=new Intent(this,Part1.class);
-        startActivity(i);
-    }
-    public void Part2(View view)
-    {
-        Intent i=new Intent(this,Part2.class);
-        startActivity(i);
-    }
-    public void Part3(View view)
-    {
-        Intent i=new Intent(this,Part3.class);
-        startActivity(i);
-    }
-    public void Part4(View view)
-    {
-        Intent i=new Intent(this,Part4.class);
-        startActivity(i);
-    }
-    public void Part4A(View view)
-    {
-        Intent i=new Intent(this,Part5.class);
-        startActivity(i);
-    }
-    public void Part5(View view)
-    {
-        Intent i=new Intent(this,Part6.class);
-        startActivity(i);
-    }
-    public void Part6(View view)
-    {
-        Intent i=new Intent(this,Part7.class);
-        startActivity(i);
-    }
-    public void Part7(View view)
-    {
-        Intent i=new Intent(this,Part8.class);
-        startActivity(i);
-    }
-    public void Part8(View view)
-    {
-        Intent i=new Intent(this,Part9.class);
-        startActivity(i);
-    }
-    public void Part9(View view)
-    {
-        Intent i=new Intent(this,Part10.class);
-        startActivity(i);
-    }
-    public void Part9A(View view)
-    {
-        Intent i=new Intent(this,Part11.class);
-        startActivity(i);
-    }
-    public void Part9B(View view)
-    {
-        Intent i=new Intent(this,Part12.class);
-        startActivity(i);
-    }
-    public void Part10(View view)
-    {
-        Intent i=new Intent(this,Part13.class);
-        startActivity(i);
-    }
-    public void Part11(View view)
-    {
-        Intent i=new Intent(this,Part14.class);
-        startActivity(i);
-    }
-    public void Part12(View view)
-    {
-        Intent i=new Intent(this,Part15.class);
-        startActivity(i);
-    }
-    public void Part13(View view)
-    {
-        Intent i=new Intent(this,Part16.class);
-        startActivity(i);
-    }
-    public void Part14(View view)
-    {
-        Intent i=new Intent(this,Part17.class);
-        startActivity(i);
-    }
-    public void Part14A(View view)
-    {
-        Intent i=new Intent(this,Part18.class);
-        startActivity(i);
-    }
-    public void Part15(View view)
-    {
-        Intent i=new Intent(this,Part19.class);
-        startActivity(i);
-    }
-    public void Part16(View view)
-    {
-        Intent i=new Intent(this,Part20.class);
-        startActivity(i);
-    }
-    public void Part17(View view)
-    {
-        Intent i=new Intent(this,Part21.class);
-        startActivity(i);
-    }
-    public void Part18(View view)
-    {
-        Intent i=new Intent(this,Part22.class);
-        startActivity(i);
-    }
-    public void Part19(View view)
-    {
-        Intent i=new Intent(this,Part23.class);
-        startActivity(i);
-    }
-    public void Part20(View view)
-    {
-        Intent i=new Intent(this,Part24.class);
-        startActivity(i);
-    }
-    public void Part21(View view)
-    {
-        Intent i=new Intent(this,Part25.class);
-        startActivity(i);
-    }
-    public void Part22(View view)
-    {
-        Intent i=new Intent(this,Part26.class);
-        startActivity(i);
-    }
-
     public void buttonOnClick(View v){
 
         Context context=getApplicationContext();
@@ -212,8 +82,167 @@ public class parts extends AppCompatActivity {
 
     public void onClick(View v){
 
-        switch (v.getId()){
+        AlertDialog.Builder alert= new AlertDialog.Builder(this);
+        String[] array={getString(R.string.part1)};
 
+        switch (v.getId())
+        {
+            case R.id.p1:
+            {
+                Intent i= new Intent(this, Part1.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p2:
+            {
+                Intent i= new Intent(this, Part2.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p3:
+            {
+                Intent i= new Intent(this, Part3.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p4:
+            {
+                Intent i= new Intent(this, Part4.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p4A:
+            {
+                Intent i= new Intent(this, Part5.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p5:
+            {
+                Intent i= new Intent(this, Part6.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p6:
+            {
+                Intent i= new Intent(this, Part7.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p7:
+            {
+                Intent i= new Intent(this, Part8.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p8:
+            {
+                Intent i= new Intent(this, Part9.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p9:
+            {
+                Intent i= new Intent(this, Part10.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p9A:
+            {
+                Intent i= new Intent(this, Part11.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p9B:
+            {
+                Intent i= new Intent(this, Part12.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p10:
+            {
+                Intent i= new Intent(this, Part13.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p11:
+            {
+                Intent i= new Intent(this, Part14.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p12:
+            {
+                Intent i= new Intent(this, Part15.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p13:
+            {
+                Intent i= new Intent(this, Part16.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p14:
+            {
+                Intent i= new Intent(this, Part17.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p14A:
+            {
+                Intent i= new Intent(this, Part18.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p15:
+            {
+                Intent i= new Intent(this, Part19.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p16:
+            {
+                Intent i= new Intent(this, Part20.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p17:
+            {
+                Intent i= new Intent(this, Part21.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p18:
+            {
+                Intent i= new Intent(this, Part22.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p19:
+            {
+                Intent i= new Intent(this, Part23.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p20:
+            {
+                Intent i= new Intent(this, Part24.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p21:
+            {
+                Intent i= new Intent(this, Part25.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.p22:
+            {
+                Intent i= new Intent(this, Part26.class);
+                startActivity(i);
+                break;
+            }
         }
     }
 
