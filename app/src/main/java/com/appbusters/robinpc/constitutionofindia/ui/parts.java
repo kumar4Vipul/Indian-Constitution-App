@@ -210,5 +210,11 @@ public class parts extends AppCompatActivity {
         }
     }
 
+    public void onClick(View v){
+
+        switch (v.getId()){
+
+        }
+    }
 
 }
