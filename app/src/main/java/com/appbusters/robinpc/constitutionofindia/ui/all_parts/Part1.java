@@ -1,6 +1,6 @@
 package com.appbusters.robinpc.constitutionofindia.ui.all_parts;
 
-import android.app.AlertDialog;
+import android.support.v7.app.AlertDialog;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -58,5 +58,19 @@ public class Part1 extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage(this.getString(R.string.article4)).create();
         builder.show();
+    }
+
+    public void onClick(View v){
+
+        AlertDialog.Builder alert= new AlertDialog.Builder(this);
+        String array[]={getString(R.string.part1)};
+
+        switch (v.getId()){
+            case R.id.p1:
+            {
+                alert.setMessage(array[0]).setTitle("Part 1").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+        }
     }
 }
