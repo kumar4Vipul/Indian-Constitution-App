@@ -1,6 +1,5 @@
 package com.appbusters.robinpc.constitutionofindia.ui.all_parts;
 
-import android.app.AlertDialog;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -29,46 +28,49 @@ public class Part2 extends AppCompatActivity {
         });
     }
 
-    public void article5(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article5)).create();
-        builder.show();
+    public void onClick(View v){
+
+        android.support.v7.app.AlertDialog.Builder alert= new android.support.v7.app.AlertDialog.Builder(this);
+        String array[]={getString(R.string.article5),getString(R.string.article6),getString(R.string.article7),
+                getString(R.string.article8),getString(R.string.article9),getString(R.string.article10),getString(R.string.article11)};
+
+        switch (v.getId()){
+            case R.id.two5:
+            {
+                alert.setMessage(array[0]).setTitle("Part 1").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.two6:
+            {
+                alert.setMessage(array[1]).setTitle("Part 2").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.two7:
+            {
+                alert.setMessage(array[2]).setTitle("Part 2A").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.two8:
+            {
+                alert.setMessage(array[3]).setTitle("Part 3").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.two9:
+            {
+                alert.setMessage(array[4]).setTitle("Part 4").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.two10:
+            {
+                alert.setMessage(array[5]).setTitle("Part 5").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.two11:
+            {
+                alert.setMessage(array[6]).setTitle("Part 6").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+        }
     }
-    public void article6(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article6)).create();
-        builder.show();
-    }
-    public void article7(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article7)).create();
-        builder.show();
-    }
-    public void article8(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article8)).create();
-        builder.show();
-    }
-    public void article9(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article9)).create();
-        builder.show();
-    }
-    public void article10(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article10)).create();
-        builder.show();
-    }
-    public void article11(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article11)).create();
-        builder.show();
-    }
+
 }

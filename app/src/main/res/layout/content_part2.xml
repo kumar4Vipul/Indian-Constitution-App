@@ -22,10 +22,11 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article5"
+                android:onClick="onClick"
+                android:id="@+id/two5"
                 android:text="Article 5"
                 android:background="?android:attr/selectableItemBackground"
-                android:padding="10dp"/>
+                android:padding="10dp" />
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -37,7 +38,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article6"
+                android:onClick="onClick"
+                android:id="@+id/two6"
                 android:text="Article 6"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -52,7 +54,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article7"
+                android:onClick="onClick"
+                android:id="@+id/two7"
                 android:text="Article 7"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -67,7 +70,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article8"
+                android:onClick="onClick"
+                android:id="@+id/two8"
                 android:text="Article 8"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -82,7 +86,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article9"
+                android:onClick="onClick"
+                android:id="@+id/two9"
                 android:text="Article 9"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -97,7 +102,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article10"
+                android:onClick="onClick"
+                android:id="@+id/two10"
                 android:text="Article 10"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -112,7 +118,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article11"
+                android:onClick="onClick"
+                android:id="@+id/two11"
                 android:text="Article 11"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>

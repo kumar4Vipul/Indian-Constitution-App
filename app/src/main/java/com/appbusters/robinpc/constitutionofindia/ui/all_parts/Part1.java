@@ -38,27 +38,27 @@ public class Part1 extends AppCompatActivity {
         switch (v.getId()){
             case R.id.one1:
             {
-                alert.setMessage(array[0]).setTitle("Part 1").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[0]).setTitle("Article 1").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.one2:
             {
-                alert.setMessage(array[1]).setTitle("Part 2").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[1]).setTitle("Article 2").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.one2A:
             {
-                alert.setMessage(array[2]).setTitle("Part 2A").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[2]).setTitle("Article 2A").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.one3:
             {
-                alert.setMessage(array[3]).setTitle("Part 3").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[3]).setTitle("Article 3").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.one4:
             {
-                alert.setMessage(array[4]).setTitle("Part 4").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[4]).setTitle("Article 4").setIcon(R.drawable.dialog).create().show();
                 break;
             }
         }
