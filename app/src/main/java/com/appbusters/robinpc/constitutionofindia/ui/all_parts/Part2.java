@@ -37,37 +37,37 @@ public class Part2 extends AppCompatActivity {
         switch (v.getId()){
             case R.id.two5:
             {
-                alert.setMessage(array[0]).setTitle("Part 1").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[0]).setTitle("Article 5").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.two6:
             {
-                alert.setMessage(array[1]).setTitle("Part 2").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[1]).setTitle("Article 6").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.two7:
             {
-                alert.setMessage(array[2]).setTitle("Part 2A").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[2]).setTitle("Article 7").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.two8:
             {
-                alert.setMessage(array[3]).setTitle("Part 3").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[3]).setTitle("Article 8").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.two9:
             {
-                alert.setMessage(array[4]).setTitle("Part 4").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[4]).setTitle("Article 9").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.two10:
             {
-                alert.setMessage(array[5]).setTitle("Part 5").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[5]).setTitle("Article 10").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.two11:
             {
-                alert.setMessage(array[6]).setTitle("Part 6").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[6]).setTitle("Article 11").setIcon(R.drawable.dialog).create().show();
                 break;
             }
         }
