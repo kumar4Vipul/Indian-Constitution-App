@@ -29,46 +29,36 @@ public class Part1 extends AppCompatActivity {
         });
     }
 
-    public void article1(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article1)).create();
-        builder.show();
-    }
-    public void article2(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article2)).create();
-        builder.show();
-    }
-    public void article2A(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article2A)).create();
-        builder.show();
-    }
-    public void article3(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article3)).create();
-        builder.show();
-    }
-    public void article4(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article4)).create();
-        builder.show();
-    }
-
     public void onClick(View v){
 
         AlertDialog.Builder alert= new AlertDialog.Builder(this);
-        String array[]={getString(R.string.part1)};
+        String array[]={getString(R.string.article1),getString(R.string.article2),getString(R.string.article2A),
+                getString(R.string.article3),getString(R.string.article4)};
 
         switch (v.getId()){
-            case R.id.p1:
+            case R.id.one1:
             {
                 alert.setMessage(array[0]).setTitle("Part 1").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.one2:
+            {
+                alert.setMessage(array[1]).setTitle("Part 2").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.one2A:
+            {
+                alert.setMessage(array[2]).setTitle("Part 2A").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.one3:
+            {
+                alert.setMessage(array[3]).setTitle("Part 3").setIcon(R.drawable.dialog).create().show();
+                break;
+            }
+            case R.id.one4:
+            {
+                alert.setMessage(array[4]).setTitle("Part 4").setIcon(R.drawable.dialog).create().show();
                 break;
             }
         }
