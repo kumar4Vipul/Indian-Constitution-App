@@ -32,7 +32,8 @@ public class Part2 extends AppCompatActivity {
 
         android.support.v7.app.AlertDialog.Builder alert= new android.support.v7.app.AlertDialog.Builder(this);
         String array[]={getString(R.string.article5),getString(R.string.article6),getString(R.string.article7),
-                getString(R.string.article8),getString(R.string.article9),getString(R.string.article10),getString(R.string.article11)};
+                getString(R.string.article8),getString(R.string.article9),getString(R.string.article10),
+                getString(R.string.article11)};
 
         switch (v.getId()){
             case R.id.two5:
