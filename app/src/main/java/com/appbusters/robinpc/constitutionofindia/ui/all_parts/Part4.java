@@ -142,14 +142,107 @@ public class Part4 extends AppCompatActivity {
         builder.show();
     }
 
-
-
     public void article43B(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage(this.getString(R.string.article43B)).create();
         builder.show();
     }
 
+
+    public void onClick(View v){
+
+        android.support.v7.app.AlertDialog.Builder alert= new android.support.v7.app.AlertDialog.Builder(this);
+        String[] array={getString(R.string.article12),getString(R.string.article13),
+                getString(R.string.article14),getString(R.string.article15)};
+
+        switch (v.getId()){
+            case R.id.four36:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 12").create().show();
+                break;
+            }
+            case R.id.four36:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 12").create().show();
+                break;
+            }
+            case R.id.four36:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 12").create().show();
+                break;
+            }
+            case R.id.four36:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 12").create().show();
+                break;
+            }
+            case R.id.four36:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 12").create().show();
+                break;
+            }
+            case R.id.four36:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 12").create().show();
+                break;
+            }
+            case R.id.four36:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 12").create().show();
+                break;
+            }
+            case R.id.four36:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 12").create().show();
+                break;
+            }
+            case R.id.four36:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 12").create().show();
+                break;
+            }
+            case R.id.four36:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 12").create().show();
+                break;
+            }
+            case R.id.four36:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 12").create().show();
+                break;
+            }
+            case R.id.four36:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 12").create().show();
+                break;
+            }
+            case R.id.four36:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 12").create().show();
+                break;
+            }
+            case R.id.four36:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 12").create().show();
+                break;
+            }
+            case R.id.four36:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 12").create().show();
+                break;
+            }
+            case R.id.four36:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 12").create().show();
+                break;
+            }
+            case R.id.four36:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 12").create().show();
+                break;
+            }
+        }
+    }
 
 
 }
