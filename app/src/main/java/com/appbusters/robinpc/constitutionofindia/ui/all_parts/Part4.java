@@ -51,97 +51,97 @@ public class Part4 extends AppCompatActivity {
             }
             case R.id.four37:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 37").create().show();
+                alert.setMessage(array[1]).setIcon(R.drawable.dialog).setTitle("Article 37").create().show();
                 break;
             }
             case R.id.four38:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 38").create().show();
+                alert.setMessage(array[2]).setIcon(R.drawable.dialog).setTitle("Article 38").create().show();
                 break;
             }
             case R.id.four39:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 39").create().show();
+                alert.setMessage(array[3]).setIcon(R.drawable.dialog).setTitle("Article 39").create().show();
                 break;
             }
             case R.id.four39A:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 39A").create().show();
+                alert.setMessage(array[4]).setIcon(R.drawable.dialog).setTitle("Article 39A").create().show();
                 break;
             }
             case R.id.four40:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 40").create().show();
+                alert.setMessage(array[5]).setIcon(R.drawable.dialog).setTitle("Article 40").create().show();
                 break;
             }
             case R.id.four41:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 41").create().show();
+                alert.setMessage(array[6]).setIcon(R.drawable.dialog).setTitle("Article 41").create().show();
                 break;
             }
             case R.id.four42:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 42").create().show();
+                alert.setMessage(array[7]).setIcon(R.drawable.dialog).setTitle("Article 42").create().show();
                 break;
             }
             case R.id.four43:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 43").create().show();
+                alert.setMessage(array[8]).setIcon(R.drawable.dialog).setTitle("Article 43").create().show();
                 break;
             }
             case R.id.four43A:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 43A").create().show();
+                alert.setMessage(array[9]).setIcon(R.drawable.dialog).setTitle("Article 43A").create().show();
                 break;
             }
             case R.id.four43B:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 43B").create().show();
+                alert.setMessage(array[10]).setIcon(R.drawable.dialog).setTitle("Article 43B").create().show();
                 break;
             }
             case R.id.four44:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 44").create().show();
+                alert.setMessage(array[11]).setIcon(R.drawable.dialog).setTitle("Article 44").create().show();
                 break;
             }
             case R.id.four45:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 45").create().show();
+                alert.setMessage(array[12]).setIcon(R.drawable.dialog).setTitle("Article 45").create().show();
                 break;
             }
             case R.id.four46:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 46").create().show();
+                alert.setMessage(array[13]).setIcon(R.drawable.dialog).setTitle("Article 46").create().show();
                 break;
             }
             case R.id.four47:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 47").create().show();
+                alert.setMessage(array[14]).setIcon(R.drawable.dialog).setTitle("Article 47").create().show();
                 break;
             }
             case R.id.four48:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 48").create().show();
+                alert.setMessage(array[15]).setIcon(R.drawable.dialog).setTitle("Article 48").create().show();
                 break;
             }
             case R.id.four48A:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 48A").create().show();
+                alert.setMessage(array[16]).setIcon(R.drawable.dialog).setTitle("Article 48A").create().show();
                 break;
             }
             case R.id.four49:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 49").create().show();
+                alert.setMessage(array[17]).setIcon(R.drawable.dialog).setTitle("Article 49").create().show();
                 break;
             }
             case R.id.four50:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 50").create().show();
+                alert.setMessage(array[18]).setIcon(R.drawable.dialog).setTitle("Article 50").create().show();
                 break;
             }
             case R.id.four51:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 51").create().show();
+                alert.setMessage(array[19]).setIcon(R.drawable.dialog).setTitle("Article 51").create().show();
                 break;
             }
         }
