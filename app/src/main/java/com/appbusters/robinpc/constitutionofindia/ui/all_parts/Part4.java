@@ -32,8 +32,16 @@ public class Part4 extends AppCompatActivity {
     public void onClick(View v){
 
         android.support.v7.app.AlertDialog.Builder alert= new android.support.v7.app.AlertDialog.Builder(this);
-        String[] array={getString(R.string.article12),getString(R.string.article13),
-                getString(R.string.article14),getString(R.string.article15)};
+        String[] array={getString(R.string.article36),getString(R.string.article37),
+                getString(R.string.article38),getString(R.string.article39),
+                getString(R.string.article40),getString(R.string.article41),
+                getString(R.string.article42),getString(R.string.article43),
+                getString(R.string.article43A),getString(R.string.article43B),
+                getString(R.string.article44),getString(R.string.article45),
+                getString(R.string.article46),getString(R.string.article47),
+                getString(R.string.article48),getString(R.string.article48A),
+                getString(R.string.article49),getString(R.string.article50),
+                getString(R.string.article51)};
 
         switch (v.getId()){
             case R.id.four36:
