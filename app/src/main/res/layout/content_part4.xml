@@ -22,7 +22,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article36"
+                android:onClick="onClick"
+                android:id="@+id/four36"
                 android:text="Article 36"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -37,7 +38,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article37"
+                android:onClick="onClick"
+                android:id="@+id/four37"
                 android:text="Article 37"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -52,7 +54,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article38"
+                android:onClick="onClick"
+                android:id="@+id/four38"
                 android:text="Article 38"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -67,7 +70,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article39"
+                android:onClick="onClick"
+                android:id="@+id/four39"
                 android:text="Article 39"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -82,7 +86,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article39A"
+                android:onClick="onClick"
+                android:id="@+id/four39A"
                 android:text="Article 39A"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -97,7 +102,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article40"
+                android:onClick="onClick"
+                android:id="@+id/four40"
                 android:text="Article 40"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -112,7 +118,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article41"
+                android:onClick="onClick"
+                android:id="@+id/four41"
                 android:text="Article 41"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -127,7 +134,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article42"
+                android:onClick="onClick"
+                android:id="@+id/four42"
                 android:text="Article 42"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -142,7 +150,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article43"
+                android:onClick="onClick"
+                android:id="@+id/four43"
                 android:text="Article 43"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -157,7 +166,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article43B"
+                android:onClick="onClick"
+                android:id="@+id/four43B"
                 android:text="Article 43B"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -172,7 +182,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article44"
+                android:onClick="onClick"
+                android:id="@+id/four44"
                 android:text="Article 44"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -187,7 +198,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article45"
+                android:onClick="onClick"
+                android:id="@+id/four45"
                 android:text="Article 45"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -202,7 +214,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article46"
+                android:onClick="onClick"
+                android:id="@+id/four46"
                 android:text="Article 46"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -217,7 +230,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article47"
+                android:onClick="onClick"
+                android:id="@+id/four47"
                 android:text="Article 47"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -232,7 +246,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article48"
+                android:onClick="onClick"
+                android:id="@+id/four48"
                 android:text="Article 48"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -247,7 +262,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article48A"
+                android:onClick="onClick"
+                android:id="@+id/four48A"
                 android:text="Article 48A"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -262,7 +278,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article49"
+                android:onClick="onClick"
+                android:id="@+id/four49"
                 android:text="Article 49"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -277,7 +294,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article50"
+                android:onClick="onClick"
+                android:id="@+id/four50"
                 android:text="Article 50"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -292,7 +310,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article51"
+                android:onClick="onClick"
+                android:id="@+id/four51"
                 android:text="Article 51"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
