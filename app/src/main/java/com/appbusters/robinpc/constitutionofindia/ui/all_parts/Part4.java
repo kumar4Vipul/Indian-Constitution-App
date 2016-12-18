@@ -28,126 +28,6 @@ public class Part4 extends AppCompatActivity {
             }
         });
     }
-    public void article36(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article36)).create();
-        builder.show();
-    }
-    public void article37(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article37)).create();
-        builder.show();
-    }
-    public void article38(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article38)).create();
-        builder.show();
-    }
-    public void article39(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article39)).create();
-        builder.show();
-    } public void article39A(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article39A)).create();
-        builder.show();
-    }
-    public void article40(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article40)).create();
-        builder.show();
-    }
-    public void article41(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article41)).create();
-        builder.show();
-    }
-    public void article42(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article42)).create();
-        builder.show();
-    }
-    public void article43(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article43)).create();
-        builder.show();
-    }
-    public void article43A(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article43A)).create();
-        builder.show();
-    }
-    public void article44(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article44)).create();
-        builder.show();
-    }
-    public void article45(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article45)).create();
-        builder.show();
-    }
-    public void article46(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article46)).create();
-        builder.show();
-    }
-    public void article47(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article47)).create();
-        builder.show();
-    }
-    public void article48(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article48)).create();
-        builder.show();
-    }
-    public void article48A(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article48A)).create();
-        builder.show();
-    }
-    public void article49(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article49)).create();
-        builder.show();
-    }
-    public void article50(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article50)).create();
-        builder.show();
-    }
-    public void article51(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article51)).create();
-        builder.show();
-    }
-
-    public void article43B(View view) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article43B)).create();
-        builder.show();
-    }
-
 
     public void onClick(View v){
 
@@ -158,7 +38,102 @@ public class Part4 extends AppCompatActivity {
         switch (v.getId()){
             case R.id.four36:
             {
-                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 12").create().show();
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 36").create().show();
+                break;
+            }
+            case R.id.four37:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 37").create().show();
+                break;
+            }
+            case R.id.four38:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 38").create().show();
+                break;
+            }
+            case R.id.four39:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 39").create().show();
+                break;
+            }
+            case R.id.four39A:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 39A").create().show();
+                break;
+            }
+            case R.id.four40:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 40").create().show();
+                break;
+            }
+            case R.id.four41:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 41").create().show();
+                break;
+            }
+            case R.id.four42:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 42").create().show();
+                break;
+            }
+            case R.id.four43:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 43").create().show();
+                break;
+            }
+            case R.id.four43A:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 43A").create().show();
+                break;
+            }
+            case R.id.four43B:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 43B").create().show();
+                break;
+            }
+            case R.id.four44:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 44").create().show();
+                break;
+            }
+            case R.id.four45:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 45").create().show();
+                break;
+            }
+            case R.id.four46:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 46").create().show();
+                break;
+            }
+            case R.id.four47:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 47").create().show();
+                break;
+            }
+            case R.id.four48:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 48").create().show();
+                break;
+            }
+            case R.id.four48A:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 48A").create().show();
+                break;
+            }
+            case R.id.four49:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 49").create().show();
+                break;
+            }
+            case R.id.four50:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 50").create().show();
+                break;
+            }
+            case R.id.four51:
+            {
+                alert.setMessage(array[0]).setIcon(R.drawable.dialog).setTitle("Article 51").create().show();
                 break;
             }
         }
