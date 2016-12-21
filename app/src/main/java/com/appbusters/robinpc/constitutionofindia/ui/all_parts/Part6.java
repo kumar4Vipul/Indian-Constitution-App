@@ -28,7 +28,7 @@ public class Part6 extends AppCompatActivity {
             }
         });
     }
-    public void articl52(View view)
+    public void article52(View view)
     {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage(this.getString(R.string.article52)).create();
@@ -670,5 +670,19 @@ public class Part6 extends AppCompatActivity {
     }
 
 
+    public void onClick(View v){
+
+        switch(v.getId()){
+
+            case R.id.a52:
+            {
+
+            }
+            case R.id.a53:
+            {
+
+            }
+        }
+    }
 
 }

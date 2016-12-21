@@ -21,7 +21,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article52"
+                android:onClick="onClick"
+                android:id="@+id/a52"
                 android:text="Article 52"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
@@ -36,7 +37,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="article53"
+                android:onClick="onClick"
+                android:id="@+id/a53"
                 android:text="Article 53"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="10dp"/>
