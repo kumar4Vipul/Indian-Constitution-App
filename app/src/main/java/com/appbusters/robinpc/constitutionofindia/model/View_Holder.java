@@ -27,11 +27,5 @@ public class View_Holder extends RecyclerView.ViewHolder{
 
         context = itemView.getContext();
         itemView.setTag(itemView);
-        /*itemView.setOnCreateContextMenuListener(this);*/
-    }
-
-    @Override
-    public String toString() {
-        return super.toString();
     }
 }

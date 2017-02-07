@@ -2,27 +2,40 @@ package com.appbusters.robinpc.constitutionofindia.model;
 
 public class Data {
 
-    public String heading;
-    public String description;
+    public String Title;
+    public String subTitle;
+    public String Desc;
 
-    public Data(String heading, String description) {
-        this.heading = heading;
-        this.description = description;
+    public Data(String Title, String subTitle, String Desc){
+        this.Title = Title;
+        this.subTitle = subTitle;
+        this.Desc = Desc;
     }
 
-    public String getHeading() {
-        return heading;
+
+    //getters and setters
+
+    public String getTitle() {
+        return Title;
     }
 
-    public void setHeading(String heading) {
-        this.heading = heading;
+    public void setTitle(String title) {
+        Title = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getSubTitle() {
+        return subTitle;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setSubTitle(String subTitle) {
+        this.subTitle = subTitle;
+    }
+
+    public String getDesc() {
+        return Desc;
+    }
+
+    public void setDesc(String Desc) {
+        this.Desc = Desc;
     }
 }
