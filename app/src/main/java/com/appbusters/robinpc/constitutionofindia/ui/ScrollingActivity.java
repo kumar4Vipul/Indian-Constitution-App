@@ -17,42 +17,12 @@ import com.appbusters.robinpc.constitutionofindia.R;
 
 public class ScrollingActivity extends AppCompatActivity {
 
-    private Boolean FabClosed=true;
-    private Animation rotate_forward, rotate_backward, fab_open, fab_close;
-    private FloatingActionButton fab, fabL, fabR, fabL2, fabR2;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        fab= (FloatingActionButton) findViewById(R.id.fab);
-        fabL= (FloatingActionButton) findViewById(R.id.fabL);
-        fabR= (FloatingActionButton) findViewById(R.id.fabR);
-        fabL2= (FloatingActionButton) findViewById(R.id.fabL2);
-        fabR2= (FloatingActionButton) findViewById(R.id.fabR2);
-
-        fab_open= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fab_open);
-        fab_close= AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fab_close);
-        rotate_backward= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_backward);
-        rotate_forward= AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate_forward);
-        Animation alpha_initial= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.alpha_initial);
-        Animation fab_close_initial= AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fab_close_initial);
-
-        fab.setAnimation(alpha_initial);
-        fabL.setAnimation(fab_close_initial);
-        fabR.setAnimation(fab_close_initial);
-        fabL2.setAnimation(fab_close_initial);
-        fabR2.setAnimation(fab_close_initial);
-
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                animatefab();
-            }
-        });
 
     }
 
@@ -79,9 +49,6 @@ public class ScrollingActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-
-
     public void preamble(View view)
     {
         Intent i=new Intent(this,preamble.class);
@@ -103,57 +70,6 @@ public class ScrollingActivity extends AppCompatActivity {
     {
         Intent i=new Intent(this,schedules.class);
         startActivity(i);
-    }
-
-    private void animatefab() {
-
-        if(FabClosed){
-            fab.startAnimation(rotate_forward);
-            fabL.startAnimation(fab_open);
-            fabR.startAnimation(fab_open);
-            fabL2.setAnimation(fab_open);
-            fabR2.setAnimation(fab_open);
-            FabClosed=false;
-        }
-        else{
-            fab.startAnimation(rotate_backward);
-            fabL.startAnimation(fab_close);
-            fabR.startAnimation(fab_close);
-            fabL2.setAnimation(fab_close);
-            fabR2.setAnimation(fab_close);
-            FabClosed=true;
-        }
-    }
-
-    public void buttonOnClick(View v){
-
-        Context context=getApplicationContext();
-        CharSequence[] text={ "BETA Config. : Favourites","BETA Config. : Search","BETA Config. : Share",
-                "BETA Config. : Notes"};
-
-        switch (v.getId())
-        {
-            case R.id.fabL2:
-            {
-                Toast.makeText(context,text[0],Toast.LENGTH_SHORT).show();
-                break;
-            }
-            case R.id.fabL:
-            {
-                Toast.makeText(context,text[1],Toast.LENGTH_SHORT).show();
-                break;
-            }
-            case R.id.fabR:
-            {
-                Toast.makeText(context,text[2],Toast.LENGTH_SHORT).show();
-                break;
-            }
-            case R.id.fabR2:
-            {
-                Toast.makeText(context,text[3],Toast.LENGTH_SHORT).show();
-                break;
-            }
-        }
     }
 
 }

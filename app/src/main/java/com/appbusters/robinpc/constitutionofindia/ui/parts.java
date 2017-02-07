@@ -49,37 +49,6 @@ public class parts extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    public void buttonOnClick(View v){
-
-        Context context=getApplicationContext();
-        CharSequence[] text={ "BETA Config. : Favourites","BETA Config. : Search","BETA Config. : Share",
-                "BETA Config. : Notes"};
-
-        switch (v.getId())
-        {
-            case R.id.fabL2:
-            {
-                Toast.makeText(context,text[0],Toast.LENGTH_SHORT).show();
-                break;
-            }
-            case R.id.fabL:
-            {
-                Toast.makeText(context,text[1],Toast.LENGTH_SHORT).show();
-                break;
-            }
-            case R.id.fabR:
-            {
-                Toast.makeText(context,text[2],Toast.LENGTH_SHORT).show();
-                break;
-            }
-            case R.id.fabR2:
-            {
-                Toast.makeText(context,text[3],Toast.LENGTH_SHORT).show();
-                break;
-            }
-        }
-    }
-
     public void onClick(View v){
 
         switch (v.getId())

@@ -22,37 +22,6 @@ public class schedules extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    public void buttonOnClick(View v){
-
-        Context context=getApplicationContext();
-        CharSequence[] text={ "BETA Config. : Favourites","BETA Config. : Search","BETA Config. : Share",
-                "BETA Config. : Notes"};
-
-        switch (v.getId())
-        {
-            case R.id.fabL2:
-            {
-                Toast.makeText(context,text[0],Toast.LENGTH_SHORT).show();
-                break;
-            }
-            case R.id.fabL:
-            {
-                Toast.makeText(context,text[1],Toast.LENGTH_SHORT).show();
-                break;
-            }
-            case R.id.fabR:
-            {
-                Toast.makeText(context,text[2],Toast.LENGTH_SHORT).show();
-                break;
-            }
-            case R.id.fabR2:
-            {
-                Toast.makeText(context,text[3],Toast.LENGTH_SHORT).show();
-                break;
-            }
-        }
-    }
-
     public void onClick(View v){
 
         AlertDialog.Builder alert= new AlertDialog.Builder(this);
@@ -71,57 +40,57 @@ public class schedules extends AppCompatActivity {
             }
             case R.id.s2:
             {
-                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[1]).setTitle("Schedule 2").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.s3:
             {
-                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[2]).setTitle("Schedule 3").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.s4:
             {
-                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[3]).setTitle("Schedule 4").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.s5:
             {
-                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[4]).setTitle("Schedule 5").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.s6:
             {
-                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[5]).setTitle("Schedule 6").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.s7:
             {
-                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[6]).setTitle("Schedule 7").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.s8:
             {
-                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[7]).setTitle("Schedule 8").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.s9:
             {
-                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[8]).setTitle("Schedule 9").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.s10:
             {
-                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[9]).setTitle("Schedule 10").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.s11:
             {
-                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[10]).setTitle("Schedule 11").setIcon(R.drawable.dialog).create().show();
                 break;
             }
             case R.id.s12:
             {
-                alert.setMessage(array[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
+                alert.setMessage(array[11]).setTitle("Schedule 12").setIcon(R.drawable.dialog).create().show();
                 break;
             }
         }
