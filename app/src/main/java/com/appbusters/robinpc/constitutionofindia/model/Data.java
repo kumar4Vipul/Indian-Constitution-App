@@ -1,9 +1,5 @@
 package com.appbusters.robinpc.constitutionofindia.model;
 
-/**
- * Created by robinkamboj on 07/02/17.
- */
-
 public class Data {
 
     public String heading;
