@@ -606,8 +606,9 @@
 </string>
 
 
-    <string name="firstschedule">
-    <b>First schedule</b>
+
+    <string-array name="all_schedules">
+        <item> <b>First schedule</b>
     [Articles 1 and 4]\n\n
     I. THE STATES\n\n
     1.Andhra Pradesh:-\n\n
@@ -787,12 +788,12 @@
     The territories specified in section 4 of the Punjab
     Reorganisation Act, 1966.\n\n
     * * * * *
-    * * * * *</string>
+    * * * * *</item>
 
 
 
-<string name="secondschedule">
-<b>SECOND SCHEDULE</b>\n\n
+
+        <item><b>SECOND SCHEDULE</b>\n\n
     [Articles 59(3), 65(3), 75(6), 97, 125, 148(3), 158(3),
     164(5), 186 and 221]\n\n
 <b>PART A</b>
@@ -943,9 +944,12 @@ AUDITOR-GENERAL OF INDIA</b>\n\n
     the Comptroller and Auditor-General of India shall be governed or shall continue to be governed,
     as the case may be, by the provisions which were applicable to the Auditor-General of India
     immediately before the commencement of this Constitution and all references in those provisions
-    to the Governor-General shall be construed as references to the President.\n\n</string>
-<string name="thirdschedule">
-<b>THIRD SCHEDULE</b>\n
+    to the Governor-General shall be construed as references to the President.\n\n</item>
+
+
+
+
+        <item><b>THIRD SCHEDULE</b>\n
     [Articles 75(4), 99, 124(6), 148(2), 164(3), 188 and 219](see also arts. 84(a) and 173 (a))\n\n
 <b>Forms of Oaths or Affirmations</b>\n\n
 <b>I</b>\n\n
@@ -1027,9 +1031,13 @@ AUDITOR-GENERAL OF INDIA</b>\n\n
     the Constitution of India as by law established, that I will uphold the sovereignty and integrity of
     India, that I will duly and faithfully and to the best of my ability, knowledge and judgment
     perform the duties of my office without fear or favour, affection or ill-will and that I will uphold
-    the Constitution and the laws."\n\n</string>
-<string name="fourthschedule">
-    <b>FOURTH SCHEDULE</b>\n\n
+    the Constitution and the laws."\n\n</item>
+
+
+
+
+
+        <item> <b>FOURTH SCHEDULE</b>\n\n
     [Articles 4(1) and 80(2)]\n\n
     Allocation of seats in the Council of States\n\n
     To each State or Union territory specified in the first column of the following table, there shall
@@ -1067,9 +1075,12 @@ AUDITOR-GENERAL OF INDIA</b>\n\n
     29. Delhi………………………………………………………………… 3\n
     30. Pondicherry………………………………………………………… 1\n\n
 <b>TOTAL</b>……………………………………………… 233\n
-    \n</string>
-<string name="fifthschedule">
-<b>FIFTH SCHEDULE</b>\n\n
+    \n</item>
+
+
+
+
+        <item><b>FIFTH SCHEDULE</b>\n\n
     [Article 244(1)]\n\n
     Provisions as to the Administration and Control of Scheduled Areas and Scheduled
     Tribes\n\n
@@ -1151,10 +1162,11 @@ AUDITOR-GENERAL OF INDIA</b>\n\n
     amended, any reference to this Schedule in this Constitution shall be construed as a reference to
     such Schedule as so amended.\n\n
     (2) No such law as is mentioned in sub-paragraph (1) of this paragraph shall be deemed to be an
-    amendment of this Constitution for the purposes of article 368.\n\n</string>
+    amendment of this Constitution for the purposes of article 368.\n\n</item>
 
-<string name="sixthschedule">
-<b>SIXTH SCHEDULE</b>\n
+
+
+        <item><b>SIXTH SCHEDULE</b>\n
     [Articles 244(2) and 275(1)]\n\n
     Provisions as to the Administration of Tribal Areas in the States of Assam,
     Meghalaya, Tripura and Mizoram\n\n
@@ -1869,9 +1881,12 @@ and transitory provisions consequent thereto.—</b>\n\n
     amended, any reference to this Schedule in this Constitution shall be construed as a reference to
     such Schedule as so amended.\n\n
     (2) No such law as is mentioned in sub-paragraph (1) of this paragraph shall be deemed to be an
-    amendment of this Constitution for the purposes of article 368.\n\n</string>
-<string name="seventhschedule">
-<b>SEVENTH SCHEDULE</b>\n
+    amendment of this Constitution for the purposes of article 368.\n\n</item>
+
+
+
+
+        <item><b>SEVENTH SCHEDULE</b>\n
     (Article 246)\n\n
     List I—Union List\n
     1. Defence of India and every part thereof including preparation for defence and all such acts as
@@ -2240,9 +2255,11 @@ and transitory provisions consequent thereto.—</b>\n\n
     46. Jurisdiction and powers of all courts, except the Supreme Court, with respect to any of the
     matters in this List. \n\n
     47. Fees in respect of any of the matters in this List, but not including fees taken in any court. \n\n
-    </string>
-<string name="eighthschedule">
-<b>EIGHTH SCHEDULE</b>\n
+</item>
+
+
+
+        <item><b>EIGHTH SCHEDULE</b>\n
     [Articles 344 (1) and 351]\n\n
 <b>Languages</b>\n\n
     1. Assamese.\n
@@ -2266,10 +2283,11 @@ and transitory provisions consequent thereto.—</b>\n\n
     19. Sindhi.\n
     20. Tamil.\n
     21. Telugu.\n
-    22. Urdu.\n\n
-    </string>
-    <string name="ninthschedule">
-<b>NINTH SCHEDULE</b>\n
+    22. Urdu.\n\n</item>
+
+
+
+        <item><b>NINTH SCHEDULE</b>\n
     (Article 31B)\n\n
     1. The Bihar Land Reforms Act, 1950 (Bihar Act XXX of 1950)./n/n
     2. The Bombay Tenancy and Agricultural Lands Act, 1948 (Bombay Act LXVII of 1948).\n\n
@@ -2722,11 +2740,12 @@ and transitory provisions consequent thereto.—</b>\n\n
     284. The West Bengal Land Reforms Tribunal Act, 1991 (West Bengal Act 12 of 1991). \n\n
     Explanation.—Any acquisition made under the Rajasthan Tenancy Act, 1955 (Rajasthan Act III
     of 1955), in contravention of the second proviso to clause (1) of article 31A shall, to the extent of
-    the contravention, be void. \n\n
-    </string>
+    the contravention, be void. \n\n</item>
 
-<string name="tenthschedule">
-<b>TENTH SCHEDULE</b>\n
+
+
+
+        <item><b>TENTH SCHEDULE</b>\n
     [Articles 102(2) and 191(2)]\n\n
     Provisions as to disqualification on ground of defection\n\n
     1. Interpretation.—In this Schedule, unless the context otherwise requires,— \n\n
@@ -2853,12 +2872,11 @@ and transitory provisions consequent thereto.—</b>\n\n
     (3) The Chairman or the Speaker of a House may, without prejudice to the provisions of article
     105 or, as the case may be, article 194, and to any other power which he may have under this
     Constitution direct that any wilful contravention by any person of the rules made under this
-    paragraph may be dealt with in the same manner as a breach of privilege of the House. \n\n
-    </string>
+    paragraph may be dealt with in the same manner as a breach of privilege of the House. \n\n</item>
 
 
-<string name="eleventhschedule">
-<b>ELEVENTH SCHEDULE</b>\n
+
+        <item><b>ELEVENTH SCHEDULE</b>\n
     (Article 243G)\n\n
     1. Agriculture, including agricultural extension. \n\n
     2. Land improvement, implementation of land reforms, land consolidation and soil
@@ -2890,11 +2908,11 @@ and transitory provisions consequent thereto.—</b>\n\n
     27. Welfare of the weaker sections, and in particular, of the Scheduled Castes and the
     Scheduled Tribes. \n\n
     28. Public distribution system. \n\n
-    29. Maintenance of community assets. \n\n
-    </string>
+    29. Maintenance of community assets. \n\n</item>
 
-<string name="twelvethschedule">
-<b>TWELVETH SCHEDULE</b>\n
+
+
+        <item><b>TWELVETH SCHEDULE</b>\n
     (Article 243W)\n\n
     1. Urban planning including town planning. \n\n
     2. Regulation of land-use and construction of buildings. \n\n
@@ -2915,8 +2933,9 @@ and transitory provisions consequent thereto.—</b>\n\n
     16. Vital statistics including registration of births and deaths. \n\n
     17. Public amenities including street lighting, parking lots, bus stops and public
     conveniences. \n\n
-    18. Regulation of slaughter houses and tanneries.\n\n
-    </string>
+    18. Regulation of slaughter houses and tanneries.\n\n</item>
+
+    </string-array>
 
 
     <string name="article1">
@@ -2929,10 +2948,12 @@ and transitory provisions consequent thereto.—</b>\n\n
     (a) the territories of the States;
     (b) the Union territories specified in the First Schedule; and
     (c) such other territories as may be acquired.
-</string>                                                                              <string name="article2">  <b> Admission or establishment of new States </b> \n\n Parliament may by law admit
+</string>
+    <string name="article2">  <b> Admission or establishment of new States </b> \n\n Parliament may by law admit
     into the Union, or establish, new States on such terms and conditions as it thinks
     fit.
-    </string>                                                                             <string name="article2A">   [Sikkim to be associated with the Union.] Rep. by the Constitution (Thirty-
+    </string>
+    <string name="article2A">   [Sikkim to be associated with the Union.] Rep. by the Constitution (Thirty-
     sixth Amendment) Act, 1975, s. 5 (w.e.f. 26-4-1975).
     </string>
 <string name="article3">  <b>Formation of new States and alteration of areas, boundaries or names of
@@ -3047,7 +3068,8 @@ citizens </b> \n\n
     includes the Government and Parliament of India and the Government and the
     Legislature of each of the States and all local or other authorities within the
     territory of India or under the control of the Government of India.
-    </string>                                                                              <string name="article13">  <b> </b> \n\n Laws inconsistent with or in derogation of the fundamental rights (1)
+    </string>
+    <string name="article13">  <b> </b> \n\n Laws inconsistent with or in derogation of the fundamental rights (1)
     All laws in force in the territory of India immediately before the commencement
     of this Constitution, in so far as they are inconsistent with the provisions of this
     Part, shall, to the extent of such inconsistency, be void.
@@ -3064,9 +3086,11 @@ citizens </b> \n\n
     (4) Nothing in this article shall apply to any amendment of this Constitution
     made under article 368.
     Right to Equality
-    </string>                                                                              <string name="article14">  <b>Equality before law </b> \n\n The State shall not deny to any person equality
+    </string>
+    <string name="article14">  <b>Equality before law </b> \n\n The State shall not deny to any person equality
     before the law or the equal protection of the laws within the territory of India.
-    </string>                                                                              <string name="article15">  <b>Prohibition of discrimination on grounds of religion, race, caste, sex or
+    </string>
+    <string name="article15">  <b>Prohibition of discrimination on grounds of religion, race, caste, sex or
 place of birth </b> \n\n (1) The State shall not discriminate against any citizen on
     grounds only of religion, race, caste, sex, place of birth or any of them.
     (2) No citizen shall, on grounds only of religion, race, caste, sex, place of birth
@@ -3083,7 +3107,8 @@ place of birth </b> \n\n (1) The State shall not discriminate against any citize
     from making any special provision for the advancement of any socially and
     educationally backward classes of citizens or for the Scheduled Castes and the
     Scheduled Tribes.
-    </string>                                                                              <string name="article16">  <b>Equality of opportunity in matters of public employment </b> \n\n (1) There
+    </string>
+    <string name="article16">  <b>Equality of opportunity in matters of public employment </b> \n\n (1) There
     shall be equality of opportunity for all citizens in matters relating to employment
     or appointment to any office under the State.
     (2) No citizen shall, on grounds only of religion, race, caste, sex, descent, place
@@ -3115,10 +3140,12 @@ place of birth </b> \n\n (1) The State shall not discriminate against any citize
     denominational institution or any member of the governing body thereof shall be
     a person professing a particular religion or belonging to a particular
     denomination.
-    </string>                                                                              <string name="article17">  <b>Abolition of Untouchability </b> \n\n "Untouchability’’ is abolished and its
+    </string>
+    <string name="article17">  <b>Abolition of Untouchability </b> \n\n "Untouchability’’ is abolished and its
     practice in any form is forbidden. The enforcement of any disability arising out
     of "Untouchability’’ shall be an offence punishable in accordance with law.
-    </string>                                                                              <string name="article18"> <b>Abolition of titles </b> \n\n (1) No title, not being a military or academic
+    </string>
+    <string name="article18"> <b>Abolition of titles </b> \n\n (1) No title, not being a military or academic
     distinction, shall be conferred by the State.
     (2) No citizen of India shall accept any title from any foreign State.
     (3) No person who is not a citizen of India shall, while he holds any office of
@@ -3128,7 +3155,8 @@ place of birth </b> \n\n (1) The State shall not discriminate against any citize
     the consent of the President, accept any present, emolument, or office of any kind
     from or under any foreign State.
     Right to Freedom
-    </string>                                                                              <string name="article19"> <b>Protection of certain rights regarding freedom of speech, etc </b> \n\n (1) All
+    </string>
+    <string name="article19"> <b>Protection of certain rights regarding freedom of speech, etc </b> \n\n (1) All
     citizens shall have the right—
     (a) to freedom of speech and expression;
     (b) to assemble peaceably and without arms;
@@ -3171,7 +3199,8 @@ place of birth </b> \n\n (1) The State shall not discriminate against any citize
     (ii) the carrying on by the State, or by a corporation owned or controlled by
     the State, of any trade, business, industry or service, whether to the exclusion,
     complete or partial, of citizens or otherwise.
-    </string>                                                                              <string name="article20"> <b>Protection in respect of conviction for offences </b> \n\n (1) No person shall be
+    </string>
+    <string name="article20"> <b>Protection in respect of conviction for offences </b> \n\n (1) No person shall be
     convicted of any offence except for violation of a law in force at the time of the
     commission of the Act charged as an offence, nor be subjected to a penalty
     greater than that which might have been inflicted under the law in force at the
@@ -3180,9 +3209,11 @@ place of birth </b> \n\n (1) The State shall not discriminate against any citize
     once.
     (3) No person accused of any offence shall be compelled to be a witness against
     himself.
-    </string>                                                                              <string name="article21"> <b>Protection of life and personal liberty </b> \n\n No person shall be deprived of
+    </string>
+    <string name="article21"> <b>Protection of life and personal liberty </b> \n\n No person shall be deprived of
     his life or personal liberty except according to procedure established by law.
-    </string>                                                                              <string name="article22"> <b>Protection against arrest and detention in certain cases </b> \n\n
+    </string>
+    <string name="article22"> <b>Protection against arrest and detention in certain cases </b> \n\n
     (1) No person who is arrested shall be detained in custody without being informed, as
     soon as may be, of the grounds for such arrest nor shall he be denied the right to
     consult, and to be defended by, a legal practitioner of his choice.
@@ -3225,7 +3256,8 @@ place of birth </b> \n\n (1) The State shall not discriminate against any citize
     (c) the procedure to be followed by an Advisory Board in an inquiry under
     sub-clause (a) of clause (4).
 
-    </string>                                                                              <string name="article23"> <b>Prohibition of traffic in human beings and forced labour  </b> \n\n (1) Traffic in
+    </string>
+    <string name="article23"> <b>Prohibition of traffic in human beings and forced labour  </b> \n\n (1) Traffic in
     human beings and begar and other similar forms of forced labour are prohibited
     and any contravention of this provision shall be an offence punishable in
     accordance with law.
@@ -3233,11 +3265,13 @@ place of birth </b> \n\n (1) The State shall not discriminate against any citize
     service for public purposes, and in imposing such service the State shall not
     make any discrimination on grounds only of religion, race, caste or class or any
     of them.
-    </string>                                                                              <string name="article24"> <b>Prohibition of employment of children in factories, etc </b> \n\n
+    </string>
+    <string name="article24"> <b>Prohibition of employment of children in factories, etc </b> \n\n
     No child below the age of fourteen years shall be employed to work in any factory or mine
     or engaged in any other hazardous employment.
     Right to Freedom of Religion
-    </string>                                                                              <string name="article25"> <b>Freedom of conscience and free profession, practice and propagation of
+    </string>
+    <string name="article25"> <b>Freedom of conscience and free profession, practice and propagation of
 religion </b> \n\n (1) Subject to public order, morality and health and to the other
     provisions of this Part, all persons are equally entitled to freedom of conscience
     and the right freely to profess, practise and propagate religion.
@@ -3253,7 +3287,8 @@ religion </b> \n\n (1) Subject to public order, morality and health and to the o
     be construed as including a reference to persons professing the Sikh, Jaina or
     Buddhist religion, and the reference to Hindu religious institutions shall be
     construed accordingly.
-    </string>                                                                              <string name="article26"> <b>Freedom to manage religious affairs </b> \n\n Subject to public order, morality
+    </string>
+    <string name="article26"> <b>Freedom to manage religious affairs </b> \n\n Subject to public order, morality
     and health, every religious denomination or any section thereof shall have the
     right—
     (a) to establish and maintain institutions for religious and charitable
@@ -3261,12 +3296,14 @@ religion </b> \n\n (1) Subject to public order, morality and health and to the o
     (b) to manage its own affairs in matters of religion;
     (c) to own and acquire movable and immovable property; and
     (d) to administer such property in accordance with law.
-    </string>                                                                              <string name="article27"> <b>Freedom as to payment of taxes for promotion of any particular
+    </string>
+    <string name="article27"> <b>Freedom as to payment of taxes for promotion of any particular
 religion </b> \n\n
     No person shall be compelled to pay any taxes, the proceeds of which
     are specifically appropriated in payment of expenses for the promotion or
     maintenance of any particular religion or religious denomination.
-    </string>                                                                              <string name="article28"> <b>Freedom as to attendance at religious instruction or religious worship
+    </string>
+    <string name="article28"> <b>Freedom as to attendance at religious instruction or religious worship
 in certain educational institutions  </b> \n\n (1) No religious instruction shall be
     provided in any educational institution wholly maintained out of State funds.
     (2) Nothing in clause (1) shall apply to an educational institution which is
@@ -3279,13 +3316,15 @@ in certain educational institutions  </b> \n\n (1) No religious instruction shal
     thereto unless such person or, if such person is a minor, his guardian has given
     his consent thereto.
 
-    </string>                                                                              <string name="article29"> <b>Protection of interests of minorities </b> \n\n (1) Any section of the citizens
+    </string>
+    <string name="article29"> <b>Protection of interests of minorities </b> \n\n (1) Any section of the citizens
     residing in the territory of India or any part thereof having a distinct language,
     script or culture of its own shall have the right to conserve the same.
     (2) No citizen shall be denied admission into any educational institution
     maintained by the State or receiving aid out of State funds on grounds only of
     religion, race, caste, language or any of them.
-    </string>                                                                              <string name="article30"> <b>Right of minorities to establish and administer educational institutions </b> \n\n (1) All minorities, whether based on religion or language, shall have the right
+    </string>
+    <string name="article30"> <b>Right of minorities to establish and administer educational institutions </b> \n\n (1) All minorities, whether based on religion or language, shall have the right
     to establish and administer educational institutions of their choice.
     (1A) In making any law providing for the compulsory acquisition of any
     property of an educational institution established and administered by a minority,
@@ -3296,10 +3335,12 @@ in certain educational institutions  </b> \n\n (1) No religious instruction shal
     against any educational institution on the ground that it is under the management
     of a minority, whether based on religion or language.
     * * *
-    </string>                                                                              <string name="article31"> <b>Rep. </b> \n\n [Compulsory acquisition of property.] Rep. by the Constitution (Fortyfourth
+    </string>
+    <string name="article31"> <b>Rep. </b> \n\n [Compulsory acquisition of property.] Rep. by the Constitution (Fortyfourth
     Amendment) Act, 1978, s. 6 (w.e.f. 20-6-1979).
     Saving of Certain Laws
-    </string>                                                                              <string name="article31A"> <b>Saving of laws providing for acquisition of estates, etc  </b> \n\n
+    </string>
+    <string name="article31A"> <b>Saving of laws providing for acquisition of estates, etc  </b> \n\n
     (1) Notwithstanding anything contained in article 13, no law providing for—
     (a) the acquisition by the State of any estate or of any rights therein or the
     extinguishment or modification of any such rights, or
