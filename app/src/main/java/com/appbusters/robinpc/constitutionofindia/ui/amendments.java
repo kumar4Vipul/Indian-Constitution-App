@@ -52,7 +52,11 @@ public class amendments extends AppCompatActivity {
                 getString(R.string.seventyninthamendment),getString(R.string.eightiethamendment),getString(R.string.eightyfirstamendment),
                 getString(R.string.eightysecondamendment),getString(R.string.eightythirdamendment),getString(R.string.eightyfourthamendment),
                 getString(R.string.eightyfifthamendment),getString(R.string.eightysixthamendment),getString(R.string.eightyseventhamendment),
-                getString(R.string.eightyeighthamendment),getString(R.string.eightyninthamendment),getString(R.string.hundredthamendment)};
+                getString(R.string.eightyeighthamendment),getString(R.string.eightyninthamendment),getString(R.string.ninetiethamendment),
+                getString(R.string.ninetyonethamendment),getString(R.string.ninetysecondamendment),getString(R.string.ninetythirdamendment),
+                getString(R.string.ninetyfourthamendment),getString(R.string.ninetyfifthamendment),getString(R.string.ninetysixthamendment),
+                getString(R.string.ninetyseventhamendment),getString(R.string.ninetyeighthamendment),getString(R.string.ninetyninthamendment),
+                getString(R.string.hundredthamendment)};
 
         switch (v.getId()){
             case R.id.a1:
