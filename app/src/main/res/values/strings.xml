@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Indian Constitution</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_preamble">Preamble</string>
-    <string name="title_activity_parts">Parts</string>
-    <string name="title_activity_schedules">Schedules</string>
-    <string name="title_activity_amendments">Amendments</string>
-    <string name="title_activity_scrolling">Indian Constitution</string>
+    <string name="title_activity_preamble">PREAMBLE</string>
+    <string name="title_activity_parts">PARTS</string>
+    <string name="title_activity_schedules">SCHEDULES</string>
+    <string name="title_activity_amendments">AMENDMENTS</string>
+    <string name="title_activity_scrolling">CONSTITUTION</string>
 
 
     <string name="Preamble">

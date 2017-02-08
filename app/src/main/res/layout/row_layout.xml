@@ -10,7 +10,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         app:cardElevation="2sp"
         app:cardCornerRadius="5sp"
-        app:cardBackgroundColor="@color/colorPrimaryDark3"
+        app:cardBackgroundColor="@color/colorBlackShade"
         android:id="@+id/cardView">
 
         <LinearLayout
@@ -38,7 +38,7 @@
                     android:layout_marginTop="4sp"
                     android:layout_marginLeft="4sp"
                     android:id="@+id/Title"
-                    android:textColor="#000"
+                    android:textColor="#FFF"
                     android:fontFamily="sans-serif-smallcaps"/>
 
                 <TextView
@@ -48,7 +48,7 @@
                     android:textSize="22sp"
                     android:layout_margin="4sp"
                     android:id="@+id/subTitle"
-                    android:textColor="#000"
+                    android:textColor="#FFF"
                     android:fontFamily="sans-serif-smallcaps"/>
 
             </LinearLayout>
