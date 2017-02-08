@@ -36,7 +36,7 @@
         <activity
             android:name=".ui.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".ui.all_parts.Part1"
             android:label="@string/title_activity_part1"
@@ -144,7 +144,8 @@
         <activity
             android:name=".ui.ABOUT"
             android:label="@string/title_activity_about"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".view.DetailSchedules"></activity>
     </application>
 
 </manifest>

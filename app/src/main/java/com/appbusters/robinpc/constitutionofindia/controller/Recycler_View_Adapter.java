@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.appbusters.robinpc.constitutionofindia.R;
 import com.appbusters.robinpc.constitutionofindia.model.Data;
@@ -20,6 +21,8 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
     Context p_context;
     List<Data> list= Collections.emptyList();
     private int position_;
+    String Title, subTitle, Desc;
+    View_Holder holder_;
 
     public Recycler_View_Adapter( List<Data> list, Context context) {
         this.context = context;
@@ -39,6 +42,27 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
         position_ = position;
         holder.Title.setText(list.get(position_).Title);
         holder.subTitle.setText(list.get(position_).subTitle);
+        holder_ = holder;
+        holder.setClickListener(new ItemClickListener() {
+            @Override
+            public void onClick(View view, int position, boolean isLongClick) {
+                if(isLongClick){
+
+                    Title = list.get(position).Title;
+                    subTitle = list.get(position).subTitle;
+                    Desc = list.get(position).Desc;
+                    holder_.intent(Title, subTitle, Desc);
+                    Toast.makeText(context, "#" + (position+1) + " - " + list.get(position).subTitle + " (Long click)", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    Title = list.get(position).Title;
+                    subTitle = list.get(position).subTitle;
+                    Desc = list.get(position).Desc;
+                    holder_.intent(Title, subTitle, Desc);
+                    Toast.makeText(context, "#" + (position+1) + " - " + list.get(position).subTitle, Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 
     @Override
