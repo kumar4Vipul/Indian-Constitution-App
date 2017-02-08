@@ -51,11 +51,11 @@ public class View_Holder extends RecyclerView.ViewHolder implements View.OnClick
         return true;
     }
 
-    public void intent(String Title, String subTitle, String TT){
+    public void intent(String Title, String subTitle, String Desc){
         Intent i = new Intent(context, DetailSchedules.class);
         i.putExtra("Title", Title);
         i.putExtra("subTitle", subTitle);
-        i.putExtra("TT", TT);
+        i.putExtra("Desc", Desc);
         context.startActivity(i);
     }
 

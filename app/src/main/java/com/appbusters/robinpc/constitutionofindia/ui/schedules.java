@@ -27,8 +27,6 @@ public class schedules extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedules);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         context = getApplicationContext();
         all_schedules = getResources().getStringArray(R.array.all_schedules);

@@ -20,19 +20,19 @@
         <activity
             android:name=".ui.parts"
             android:label="@string/title_activity_parts"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".ui.preamble"
             android:label="@string/title_activity_preamble"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".ui.schedules"
             android:label="@string/title_activity_schedules"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".ui.amendments"
             android:label="@string/title_activity_amendments"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".ui.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
