@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,6 +14,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.appbusters.robinpc.constitutionofindia.R;
+import com.appbusters.robinpc.constitutionofindia.controller.Recycler_View_Adapter;
 import com.appbusters.robinpc.constitutionofindia.model.Data;
 
 import java.util.ArrayList;
@@ -21,6 +24,7 @@ public class amendments extends AppCompatActivity {
 
     List<Data> data;
     String[] all_amendments;
+    RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +67,13 @@ public class amendments extends AppCompatActivity {
                 getString(R.string.hundredthamendment)};
 
         data = fillWithData();
+
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+        Recycler_View_Adapter adapter = new Recycler_View_Adapter(data, getApplicationContext());
+        recyclerView.setAdapter(adapter);
+
     }
 
 
@@ -98,6 +109,8 @@ public class amendments extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 
 
     /*

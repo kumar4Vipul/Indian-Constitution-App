@@ -51,14 +51,12 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
                     subTitle = list.get(position).subTitle;
                     Desc = list.get(position).Desc;
                     holder_.intent(Title, subTitle, Desc);
-                    Toast.makeText(context, "#" + (position+1) + " - " + list.get(position).subTitle + " (Long click)", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     Title = list.get(position).Title;
                     subTitle = list.get(position).subTitle;
                     Desc = list.get(position).Desc;
                     holder_.intent(Title, subTitle, Desc);
-                    Toast.makeText(context, "#" + (position+1) + " - " + list.get(position).subTitle, Toast.LENGTH_SHORT).show();
                 }
             }
         });
