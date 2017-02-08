@@ -45,7 +45,7 @@ public class schedules extends AppCompatActivity {
         List<Data> data = new ArrayList<>();
 
         for(int i = 1; i <= 12; i++){
-            data.add(new Data(" ", "SCHEDULE " + i , all_schedules[i-1]));
+            data.add(new Data(" ", "Schedule " + i , all_schedules[i-1]));
         }
 
         return data;

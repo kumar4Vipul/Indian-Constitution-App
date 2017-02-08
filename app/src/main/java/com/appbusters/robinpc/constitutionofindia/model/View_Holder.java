@@ -25,8 +25,6 @@ public class View_Holder extends RecyclerView.ViewHolder implements View.OnClick
 
     public View_Holder(View itemView) {
         super(itemView);
-        cardView= (CardView) itemView.findViewById(R.id.cardView);
-        Title= (TextView) itemView.findViewById(R.id.Title);
         subTitle= (TextView) itemView.findViewById(R.id.subTitle);
 
         context = itemView.getContext();

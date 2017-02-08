@@ -40,7 +40,6 @@ public class Recycler_View_Adapter extends RecyclerView.Adapter<View_Holder>{
     @Override
     public void onBindViewHolder(View_Holder holder, int position) {
         position_ = position;
-        holder.Title.setText(list.get(position_).Title);
         holder.subTitle.setText(list.get(position_).subTitle);
         holder_ = holder;
         holder.setClickListener(new ItemClickListener() {
