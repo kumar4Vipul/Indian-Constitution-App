@@ -2,9 +2,9 @@
 <resources>
     <color name="colorPrimary">#FFB300</color>
     <color name="colorPrimaryDark">#FF8F00</color>
-    <color name="colorPrimaryDark2">#AEEA00</color>
-    <color name="colorPrimaryDark3">#64DD17</color>
-    <color name="colorHighlightCard">#AEEA00</color>
+    <color name="colorPrimaryDark2">#c4fe8b</color>
+    <color name="colorPrimaryDark3">#c4fe8b</color>
+    <color name="colorHighlightCard">#c4fe8b</color>
     <color name="colorPrimaryDifferent">#01579B</color>
     <color name="colorAccent">#D84315</color>
     <color name="colorPrimaryLight">#FFCA28</color>
