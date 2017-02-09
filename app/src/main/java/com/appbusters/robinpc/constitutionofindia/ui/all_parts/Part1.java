@@ -80,39 +80,4 @@ public class Part1 extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /*
-    public void onClick(View v){
-
-        AlertDialog.Builder alert= new AlertDialog.Builder(this);
-        String array[]={getString(R.string.article1),getString(R.string.article2),getString(R.string.article2A),
-                getString(R.string.article3),getString(R.string.article4)};
-
-        switch (v.getId()){
-            case R.id.one1:
-            {
-                alert.setMessage(array[0]).setTitle("Article 1").setIcon(R.drawable.dialog).create().show();
-                break;
-            }
-            case R.id.one2:
-            {
-                alert.setMessage(array[1]).setTitle("Article 2").setIcon(R.drawable.dialog).create().show();
-                break;
-            }
-            case R.id.one2A:
-            {
-                alert.setMessage(array[2]).setTitle("Article 2A").setIcon(R.drawable.dialog).create().show();
-                break;
-            }
-            case R.id.one3:
-            {
-                alert.setMessage(array[3]).setTitle("Article 3").setIcon(R.drawable.dialog).create().show();
-                break;
-            }
-            case R.id.one4:
-            {
-                alert.setMessage(array[4]).setTitle("Article 4").setIcon(R.drawable.dialog).create().show();
-                break;
-            }
-        }
-    }*/
 }
