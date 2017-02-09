@@ -6,24 +6,58 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.appbusters.robinpc.constitutionofindia.R;
+import com.appbusters.robinpc.constitutionofindia.model.Data;
 import com.appbusters.robinpc.constitutionofindia.ui.ABOUT;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Part3 extends AppCompatActivity {
+
+    String[] headers, desc;
+    RecyclerView recyclerView;
+    List<Data> data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_part3);
 
+        headers = getResources().getStringArray(R.array.part_3);
+        desc = new String[]{getString(R.string.article12),getString(R.string.article13),
+                getString(R.string.article14),getString(R.string.article15),
+                getString(R.string.article16),getString(R.string.article17),
+                getString(R.string.article18),getString(R.string.article19),
+                getString(R.string.article20),getString(R.string.article21),
+                getString(R.string.article21A),getString(R.string.article22),
+                getString(R.string.article23),getString(R.string.article24),
+                getString(R.string.article25),getString(R.string.article26),
+                getString(R.string.article27),getString(R.string.article28),
+                getString(R.string.article29),getString(R.string.article30),
+                getString(R.string.article31),getString(R.string.article31A),
+                getString(R.string.article31B),getString(R.string.article31C),
+                getString(R.string.article31D),getString(R.string.article32),
+                getString(R.string.article32A),getString(R.string.article33),
+                getString(R.string.article34),getString(R.string.article35)};
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+
+        data = fillWithData();
     }
 
-
+    private List<Data> fillWithData(){
+        List<Data> data = new ArrayList<>();
+        for(int i = 1; i<headers.length; i++){
+            data.add(new Data(" ", headers[i-1], desc[i-1]));
+        }
+        return data;
+    }
 
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -48,8 +82,7 @@ public class Part3 extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-
+    /*
     public void onClick(View v){
 
         AlertDialog.Builder alert= new AlertDialog.Builder(this);
@@ -221,6 +254,6 @@ public class Part3 extends AppCompatActivity {
                 break;
             }
         }
-    }
+    }*/
 
 }
