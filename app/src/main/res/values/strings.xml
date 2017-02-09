@@ -15,6 +15,127 @@
         <item>Article 4</item>
     </string-array>
 
+    <string-array name="part_2">
+        <item>Article 5</item>
+        <item>Article 6</item>
+        <item>Article 7</item>
+        <item>Article 8</item>
+        <item>Article 9</item>
+        <item>Article 10</item>
+        <item>Article 11</item>
+    </string-array>
+
+    <string-array name="part_3">
+        <item>Article 12</item>
+        <item>Article 13</item>
+        <item>Article 14</item>
+        <item>Article 15</item>
+        <item>Article 16</item>
+        <item>Article 17</item>
+        <item>Article 18</item>
+        <item>Article 19</item>
+        <item>Article 20</item>
+        <item>Article 21</item>
+        <item>Article 21A</item>
+        <item>Article 22</item>
+        <item>Article 23</item>
+        <item>Article 24</item>
+        <item>Article 25</item>
+        <item>Article 26</item>
+        <item>Article 27</item>
+        <item>Article 28</item>
+        <item>Article 29</item>
+        <item>Article 30</item>
+        <item>Article 31</item>
+        <item>Article 31A</item>
+        <item>Article 31B</item>
+        <item>Article 31C</item>
+        <item>Article 31D</item>
+        <item>Article 32</item>
+        <item>Article 32A</item>
+        <item>Article 33</item>
+        <item>Article 34</item>
+        <item>Article 35</item>
+    </string-array>
+
+    <string-array name="part_4">
+        <item>Article 36</item>
+        <item>Article 37</item>
+        <item>Article 38</item>
+        <item>Article 39</item>
+        <item>Article 39A</item>
+        <item>Article 40</item>
+        <item>Article 41</item>
+        <item>Article 42</item>
+        <item>Article 43</item>
+        <item>Article 43A</item>
+        <item>Article 43B</item>
+        <item>Article 44</item>
+        <item>Article 45</item>
+        <item>Article 46</item>
+        <item>Article 47</item>
+        <item>Article 48</item>
+        <item>Article 48A</item>
+        <item>Article 49</item>
+        <item>Article 50</item>
+        <item>Article 51</item>
+        <item>Article 31</item>
+        <item>Article 31A</item>
+        <item>Article 31B</item>
+        <item>Article 31C</item>
+        <item>Article 31D</item>
+        <item>Article 32</item>
+        <item>Article 32A</item>
+        <item>Article 33</item>
+        <item>Article 34</item>
+        <item>Article 35</item>
+    </string-array>
+
+    <string-array name="part_4A">
+        <item>Article 51A</item>
+    </string-array>
+
+
+    <!-- AMIT / ANUBHAV  PART_4A TO PART_19-->
+
+    <string-array name="part_20">
+        <item>Article 368</item>
+    </string-array>
+
+    <string-array name="part_21">
+        <item>Article 369</item>
+        <item>Article 370</item>
+        <item>Article 371</item>
+        <item>Article 371A</item>
+        <item>Article 371B</item>
+        <item>Article 371C</item>
+        <item>Article 371D</item>
+        <item>Article 371E</item>
+        <item>Article 371F</item>
+        <item>Article 371G</item>
+        <item>Article 371H</item>
+        <item>Article 371I</item>
+        <item>Article 371J</item>
+        <item>Article 372</item>
+        <item>Article 372A</item>
+        <item>Article 373</item>
+        <item>Article 374</item>
+        <item>Article 375</item>
+        <item>Article 376</item>
+        <item>Article 377</item>
+        <item>Article 378</item>
+        <item>Article 378A</item>
+        <item>Article 379 - 391</item>
+        <item>Article 392</item>
+    </string-array>
+
+    <string-array name="part_22">
+        <item>Article 393</item>
+        <item>Article 394</item>
+        <item>Article 394A</item>
+        <item>Article 395</item>
+    </string-array>
+
     <string name="Preamble">
         <b>WE, THE PEOPLE OF INDIA,</b> having solemnly resolved to constitute India into a <b>SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC</b>[1] and to secure to all its citizens:\n\n
         <b>JUSTICE,</b> social, economic and political;\n\n
