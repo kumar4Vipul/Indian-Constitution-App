@@ -7,6 +7,13 @@
     <string name="title_activity_amendments">AMENDMENTS</string>
     <string name="title_activity_scrolling">CONSTITUTION</string>
 
+    <string-array name="part_1">
+        <item>Article 1</item>
+        <item>Article 2</item>
+        <item>Article 2A</item>
+        <item>Article 3</item>
+        <item>Article 4</item>
+    </string-array>
 
     <string name="Preamble">
         <b>WE, THE PEOPLE OF INDIA,</b> having solemnly resolved to constitute India into a <b>SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC</b>[1] and to secure to all its citizens:\n\n
