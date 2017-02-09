@@ -27,7 +27,6 @@ public class Part21 extends AppCompatActivity {
     RecyclerView recyclerView;
     List<Data> data;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

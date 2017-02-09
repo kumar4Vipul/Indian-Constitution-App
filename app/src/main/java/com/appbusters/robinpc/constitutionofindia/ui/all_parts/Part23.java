@@ -6,26 +6,51 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.appbusters.robinpc.constitutionofindia.R;
+import com.appbusters.robinpc.constitutionofindia.controller.Recycler_View_Adapter;
+import com.appbusters.robinpc.constitutionofindia.model.Data;
 import com.appbusters.robinpc.constitutionofindia.ui.ABOUT;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Part23 extends AppCompatActivity {
 
     String[] headers, desc;
+    RecyclerView recyclerView;
+    List<Data> data;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_part23);
 
+        headers = getResources().getStringArray(R.array.part_19);
+        desc = new String[]{};
+
+        data = fillWithData();
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+        Recycler_View_Adapter adapter = new Recycler_View_Adapter(data, getApplicationContext());
+        recyclerView.setAdapter(adapter);
     }
 
-
+    private List<Data> fillWithData(){
+        List<Data> data = new ArrayList<>();
+        for(int i = 1; i<=headers.length; i++){
+            data.add(new Data(" ", headers[i-1], desc[i-1]));
+        }
+        return data;
+    }
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate( R.menu.menu_scrolling, menu);
