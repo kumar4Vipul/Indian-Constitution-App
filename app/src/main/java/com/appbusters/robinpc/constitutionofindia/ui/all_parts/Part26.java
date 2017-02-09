@@ -33,7 +33,9 @@ public class Part26 extends AppCompatActivity {
         setContentView(R.layout.activity_part26);
 
         headers = getResources().getStringArray(R.array.part_22);
-        desc = new String[]{};
+        desc = new String[]{
+                getString(R.string.article393),getString(R.string.article394),getString(R.string.article394a),
+                getString(R.string.article395)};
 
         data = fillWithData();
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
@@ -74,29 +76,4 @@ public class Part26 extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-    public void article393(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article393)).create();
-        builder.show();
-    }
-    public void article394(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article394)).create();
-        builder.show();
-    }
-    public void article394A(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article394a)).create();
-        builder.show();
-    }
-    public void article395(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article395)).create();
-        builder.show();
-    }
 }

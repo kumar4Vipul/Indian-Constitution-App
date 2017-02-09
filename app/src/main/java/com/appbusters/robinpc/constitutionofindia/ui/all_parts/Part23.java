@@ -34,7 +34,11 @@ public class Part23 extends AppCompatActivity {
         setContentView(R.layout.activity_part23);
 
         headers = getResources().getStringArray(R.array.part_19);
-        desc = new String[]{};
+        desc = new String[]{
+                getString(R.string.article361),getString(R.string.article361a),getString(R.string.article361b),
+                getString(R.string.article362),getString(R.string.article363),getString(R.string.article363a),
+                getString(R.string.article364),getString(R.string.article365),getString(R.string.article366),
+                getString(R.string.article367)};
 
         data = fillWithData();
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);

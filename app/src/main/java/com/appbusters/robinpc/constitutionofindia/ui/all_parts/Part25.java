@@ -35,7 +35,15 @@ public class Part25 extends AppCompatActivity {
         setContentView(R.layout.activity_part25);
 
         headers = getResources().getStringArray(R.array.part_21);
-        desc = new String[]{};
+        desc = new String[]{
+                getString(R.string.article369),getString(R.string.article370),getString(R.string.article371),
+                getString(R.string.article371a),getString(R.string.article371b),getString(R.string.article371c),
+                getString(R.string.article371d),getString(R.string.article371e),getString(R.string.article371f),
+                getString(R.string.article371g),getString(R.string.article371h),getString(R.string.article371i),
+                getString(R.string.article372),getString(R.string.article372a),getString(R.string.article373),
+                getString(R.string.article374),getString(R.string.article375),getString(R.string.article376),
+                getString(R.string.article377),getString(R.string.article378),getString(R.string.article378a),
+                getString(R.string.article379),getString(R.string.article392)};
 
         data = fillWithData();
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
