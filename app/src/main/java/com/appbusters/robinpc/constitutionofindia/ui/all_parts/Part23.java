@@ -16,6 +16,8 @@ import com.appbusters.robinpc.constitutionofindia.ui.ABOUT;
 
 public class Part23 extends AppCompatActivity {
 
+    String[] headers, desc;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
