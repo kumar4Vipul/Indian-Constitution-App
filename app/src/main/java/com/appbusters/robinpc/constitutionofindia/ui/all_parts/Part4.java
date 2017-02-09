@@ -34,7 +34,7 @@ public class Part4 extends AppCompatActivity {
 
         headers = getResources().getStringArray(R.array.part_4);
         desc = new String[]{getString(R.string.article36),getString(R.string.article37),
-                getString(R.string.article38),getString(R.string.article39),
+                getString(R.string.article38),getString(R.string.article39),getString(R.string.article39A),
                 getString(R.string.article40),getString(R.string.article41),
                 getString(R.string.article42),getString(R.string.article43),
                 getString(R.string.article43A),getString(R.string.article43B),
