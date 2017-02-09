@@ -40,6 +40,7 @@ public class Part25 extends AppCompatActivity {
                 getString(R.string.article371a),getString(R.string.article371b),getString(R.string.article371c),
                 getString(R.string.article371d),getString(R.string.article371e),getString(R.string.article371f),
                 getString(R.string.article371g),getString(R.string.article371h),getString(R.string.article371i),
+                /*getString(R.string.article371j), */                                                //ERROR
                 getString(R.string.article372),getString(R.string.article372a),getString(R.string.article373),
                 getString(R.string.article374),getString(R.string.article375),getString(R.string.article376),
                 getString(R.string.article377),getString(R.string.article378),getString(R.string.article378a),
