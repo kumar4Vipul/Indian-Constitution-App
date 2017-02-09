@@ -6,23 +6,55 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.appbusters.robinpc.constitutionofindia.R;
+import com.appbusters.robinpc.constitutionofindia.controller.Recycler_View_Adapter;
+import com.appbusters.robinpc.constitutionofindia.model.Data;
 import com.appbusters.robinpc.constitutionofindia.ui.ABOUT;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Part10 extends AppCompatActivity {
+
+    String[] headers, desc;
+    RecyclerView recyclerView;
+    List<Data> data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_part10);
 
+        headers = getResources().getStringArray(R.array.part_9);
+        desc = new String[]{getString(R.string.article243),getString(R.string.article243A),getString(R.string.article243B),
+                getString(R.string.article243C),getString(R.string.article243D),getString(R.string.article243E),
+                getString(R.string.article243F),getString(R.string.article243G),getString(R.string.article243H),
+                getString(R.string.article243I),getString(R.string.article243J),getString(R.string.article243K),
+                getString(R.string.article243L),getString(R.string.article243M),getString(R.string.article243N),
+                getString(R.string.article243O)};
+
+        data = fillWithData();
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+        Recycler_View_Adapter adapter = new Recycler_View_Adapter(data, getApplicationContext());
+        recyclerView.setAdapter(adapter);
     }
 
+    private List<Data> fillWithData(){
+        List<Data> data = new ArrayList<>();
+        for(int i = 1; i<=headers.length; i++){
+            data.add(new Data(" ", headers[i-1], desc[i-1]));
+        }
+        return data;
+    }
 
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -47,102 +79,4 @@ public class Part10 extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-
-    public void article243(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article243)).create();
-        builder.show();
-    }
-    public void article243A(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article243A)).create();
-        builder.show();
-    }
-    public void article243B(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article243B)).create();
-        builder.show();
-    }
-    public void article243C(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article243C)).create();
-        builder.show();
-    }
-    public void article243D(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article243D)).create();
-        builder.show();
-    }
-    public void article243E(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article243E)).create();
-        builder.show();
-    }
-    public void article243F(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article243F)).create();
-        builder.show();
-    }
-    public void article243G(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article243G)).create();
-        builder.show();
-    }
-    public void article243H(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article243H)).create();
-        builder.show();
-    }
-    public void article243I(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article243I)).create();
-        builder.show();
-    }
-    public void article243J(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article243J)).create();
-        builder.show();
-    }
-    public void article243K(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article243K)).create();
-        builder.show();
-    }
-    public void article243L(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article243L)).create();
-        builder.show();
-    }
-    public void article243M(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article243M)).create();
-        builder.show();
-    }
-    public void article243N(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article243N)).create();
-        builder.show();
-    }
-    public void article243O(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article243O)).create();
-        builder.show();
-    }
 }
