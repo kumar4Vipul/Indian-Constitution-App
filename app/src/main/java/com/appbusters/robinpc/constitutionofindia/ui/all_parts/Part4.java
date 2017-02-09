@@ -6,24 +6,59 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.appbusters.robinpc.constitutionofindia.R;
+import com.appbusters.robinpc.constitutionofindia.controller.Recycler_View_Adapter;
+import com.appbusters.robinpc.constitutionofindia.model.Data;
 import com.appbusters.robinpc.constitutionofindia.ui.ABOUT;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Part4 extends AppCompatActivity {
+
+    String[] headers, desc;
+    List<Data> data;
+    RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_part4);
 
+        headers = getResources().getStringArray(R.array.part_4);
+        desc = new String[]{getString(R.string.article36),getString(R.string.article37),
+                getString(R.string.article38),getString(R.string.article39),
+                getString(R.string.article40),getString(R.string.article41),
+                getString(R.string.article42),getString(R.string.article43),
+                getString(R.string.article43A),getString(R.string.article43B),
+                getString(R.string.article44),getString(R.string.article45),
+                getString(R.string.article46),getString(R.string.article47),
+                getString(R.string.article48),getString(R.string.article48A),
+                getString(R.string.article49),getString(R.string.article50),
+                getString(R.string.article51)};
+
+        data = fillWithData();
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+        Recycler_View_Adapter adapter = new Recycler_View_Adapter(data, getApplicationContext());
+        recyclerView.setAdapter(adapter);
     }
 
-
+    private List<Data> fillWithData(){
+        List<Data> data = new ArrayList<>();
+        for(int i = 1; i<=headers.length; i++){
+            data.add(new Data(" ", headers[i-1], desc[i-1]));
+        }
+        return data;
+    }
 
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -49,6 +84,7 @@ public class Part4 extends AppCompatActivity {
     }
 
 
+    /*
     public void onClick(View v){
 
         android.support.v7.app.AlertDialog.Builder alert= new android.support.v7.app.AlertDialog.Builder(this);
@@ -165,7 +201,7 @@ public class Part4 extends AppCompatActivity {
                 break;
             }
         }
-    }
+    }*/
 
 
 }
