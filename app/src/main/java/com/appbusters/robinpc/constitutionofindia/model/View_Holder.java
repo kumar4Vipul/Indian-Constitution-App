@@ -11,10 +11,6 @@ import com.appbusters.robinpc.constitutionofindia.R;
 import com.appbusters.robinpc.constitutionofindia.controller.ItemClickListener;
 import com.appbusters.robinpc.constitutionofindia.view.DetailSchedules;
 
-/**
- * Created by robinkamboj on 07/02/17.
- */
-
 public class View_Holder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener{
 
     public CardView cardView;
@@ -31,7 +27,6 @@ public class View_Holder extends RecyclerView.ViewHolder implements View.OnClick
         itemView.setTag(itemView);
         itemView.setOnClickListener(this);
         itemView.setOnLongClickListener(this);
-        /*itemView.setOnCreateContextMenuListener(this);*/
     }
 
     public void setClickListener(ItemClickListener itemClickListener){

@@ -2,6 +2,7 @@ package com.appbusters.robinpc.constitutionofindia.ui;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -46,7 +47,7 @@ public class schedules extends AppCompatActivity {
 
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate( R.menu.menu_scrolling, menu);
+        getMenuInflater().inflate( R.menu.menu_main, menu);
         return true;
     }
 
@@ -57,12 +58,25 @@ public class schedules extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id ==  R.id.aboutt)
-        {
-            Intent i=new Intent(this,ABOUT.class);
-            startActivity(i);
-            return true;
+        switch (id){
+            case R.id.aboutt:{
+                Intent i = new Intent(this, ABOUT.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.action_rate:{
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.appbusters.robinpc.constitutionofindia"));
+                startActivity(i);
+                break;
+            }
+            case R.id.action_share:{
+                Intent i = new Intent();
+                i.setAction(Intent.ACTION_SEND);
+                i.putExtra(Intent.EXTRA_TEXT, "Hey, Check out this exciting App at: https://play.google.com/store/apps/details?id=com.appbusters.robinpc.constitutionofindia");
+                i.setType("text/plain");
+                startActivity(i);
+                break;
+            }
         }
         return super.onOptionsItemSelected(item);
     }
@@ -76,75 +90,5 @@ public class schedules extends AppCompatActivity {
 
         return data;
     }
-
-    /*
-    public void onClick(View v){
-
-        AlertDialog.Builder alert= new AlertDialog.Builder(this);
-
-        switch (v.getId()){
-            case R.id.s1:
-            {
-                alert.setMessage(all_schedules[0]).setTitle("Schedule 1").setIcon(R.drawable.dialog).create().show();
-                break;
-            }
-            case R.id.s2:
-            {
-                alert.setMessage(all_schedules[1]).setTitle("Schedule 2").setIcon(R.drawable.dialog).create().show();
-                break;
-            }
-            case R.id.s3:
-            {
-                alert.setMessage(all_schedules[2]).setTitle("Schedule 3").setIcon(R.drawable.dialog).create().show();
-                break;
-            }
-            case R.id.s4:
-            {
-                alert.setMessage(all_schedules[3]).setTitle("Schedule 4").setIcon(R.drawable.dialog).create().show();
-                break;
-            }
-            case R.id.s5:
-            {
-                alert.setMessage(all_schedules[4]).setTitle("Schedule 5").setIcon(R.drawable.dialog).create().show();
-                break;
-            }
-            case R.id.s6:
-            {
-                alert.setMessage(all_schedules[5]).setTitle("Schedule 6").setIcon(R.drawable.dialog).create().show();
-                break;
-            }
-            case R.id.s7:
-            {
-                alert.setMessage(all_schedules[6]).setTitle("Schedule 7").setIcon(R.drawable.dialog).create().show();
-                break;
-            }
-            case R.id.s8:
-            {
-                alert.setMessage(all_schedules[7]).setTitle("Schedule 8").setIcon(R.drawable.dialog).create().show();
-                break;
-            }
-            case R.id.s9:
-            {
-                alert.setMessage(all_schedules[8]).setTitle("Schedule 9").setIcon(R.drawable.dialog).create().show();
-                break;
-            }
-            case R.id.s10:
-            {
-                alert.setMessage(all_schedules[9]).setTitle("Schedule 10").setIcon(R.drawable.dialog).create().show();
-                break;
-            }
-            case R.id.s11:
-            {
-                alert.setMessage(all_schedules[10]).setTitle("Schedule 11").setIcon(R.drawable.dialog).create().show();
-                break;
-            }
-            case R.id.s12:
-            {
-                alert.setMessage(all_schedules[11]).setTitle("Schedule 12").setIcon(R.drawable.dialog).create().show();
-                break;
-            }
-        }
-    }
-    */
 
 }

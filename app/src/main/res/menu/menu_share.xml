@@ -1,7 +1,5 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.appbusters.robinpc.constitutionofindia.MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/aboutt"
         android:orderInCategory="100"
@@ -16,5 +14,10 @@
         android:id="@+id/action_share"
         android:orderInCategory="103"
         android:title="Share App"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_share_current"
+        android:orderInCategory="103"
+        android:title="Share Current Selection"
         app:showAsAction="never" />
 </menu>

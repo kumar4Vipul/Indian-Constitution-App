@@ -12,7 +12,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/subTitle"
             android:gravity="center"
-            android:textColor="#000"
+            android:textColor="@color/colorPrimaryDifferent"
             android:textSize="20sp"
             android:padding="13sp"
             android:fontFamily="sans-serif-smallcaps"

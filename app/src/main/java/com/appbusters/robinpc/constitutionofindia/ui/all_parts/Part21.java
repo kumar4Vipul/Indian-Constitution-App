@@ -2,6 +2,7 @@ package com.appbusters.robinpc.constitutionofindia.ui.all_parts;
 
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -58,7 +59,7 @@ public class Part21 extends AppCompatActivity {
 
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate( R.menu.menu_scrolling, menu);
+        getMenuInflater().inflate( R.menu.menu_main, menu);
         return true;
     }
 
@@ -69,82 +70,27 @@ public class Part21 extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id ==  R.id.aboutt)
-        {
-            Intent i=new Intent(this,ABOUT.class);
-            startActivity(i);
-            return true;
+        switch (id){
+            case R.id.aboutt:{
+                Intent i = new Intent(this, ABOUT.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.action_rate:{
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.appbusters.robinpc.constitutionofindia"));
+                startActivity(i);
+                break;
+            }
+            case R.id.action_share:{
+                Intent i = new Intent();
+                i.setAction(Intent.ACTION_SEND);
+                i.putExtra(Intent.EXTRA_TEXT, "Hey, Check out this exciting App at: https://play.google.com/store/apps/details?id=com.appbusters.robinpc.constitutionofindia");
+                i.setType("text/plain");
+                startActivity(i);
+                break;
+            }
         }
         return super.onOptionsItemSelected(item);
     }
 
-
-
-    public void article343(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article343)).create();
-        builder.show();
-    }
-    public void article344(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article344)).create();
-        builder.show();
-    }
-    public void article345(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article345)).create();
-        builder.show();
-    }
-    public void article346(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article346)).create();
-        builder.show();
-    }
-    public void article347(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article347)).create();
-        builder.show();
-    }
-    public void article348(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article348)).create();
-        builder.show();
-    }
-    public void article349(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article349)).create();
-        builder.show();
-    }
-    public void article350(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article350)).create();
-        builder.show();
-    }
-    public void article350A(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article350a)).create();
-        builder.show();
-    }
-    public void article350B(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article350b)).create();
-        builder.show();
-    }
-    public void article351(View view)
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(this.getString(R.string.article351)).create();
-        builder.show();
-    }
 }
