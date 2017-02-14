@@ -6,6 +6,7 @@
     <string name="title_activity_schedules">SCHEDULES</string>
     <string name="title_activity_amendments">AMENDMENTS</string>
     <string name="title_activity_scrolling">CONSTITUTION</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8103354595257586~5947609958</string>
 
     <string-array name="part_1">
         <item>Article 1</item>

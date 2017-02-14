@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "390617751796",
-    "firebase_url": "https://constitution-of-india-f4860.firebaseio.com",
-    "project_id": "constitution-of-india-f4860",
-    "storage_bucket": "constitution-of-india-f4860.appspot.com"
+    "project_number": "92956384125",
+    "firebase_url": "https://indianconstitution-5f27c.firebaseio.com",
+    "project_id": "indianconstitution-5f27c",
+    "storage_bucket": "indianconstitution-5f27c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:390617751796:android:81713a9a71541d09",
+        "mobilesdk_app_id": "1:92956384125:android:81713a9a71541d09",
         "android_client_info": {
           "package_name": "com.appbusters.robinpc.constitutionofindia"
         }
       },
       "oauth_client": [
         {
-          "client_id": "390617751796-76khe42scdec921uoaubdhadgull1dqt.apps.googleusercontent.com",
+          "client_id": "92956384125-0474c0fugegqa7hgdov8gc9qftutsm3q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appbusters.robinpc.constitutionofindia",
+            "certificate_hash": "15D5588294C59D0ABB2CABE1954CE6AABA4FAD0A"
+          }
+        },
+        {
+          "client_id": "92956384125-8iav460ksoosiq4b4avbbih7ne5gi10f.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAJccMLX6Dg1mvA5JeIDBIGe2CtWdowgK4"
+          "current_key": "AIzaSyDhOe_AUr0kCMyUYYkTSelATahXdgRhi3U"
         }
       ],
       "services": {

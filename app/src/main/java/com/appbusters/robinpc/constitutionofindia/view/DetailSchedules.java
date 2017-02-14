@@ -17,6 +17,9 @@ import android.widget.Toast;
 
 import com.appbusters.robinpc.constitutionofindia.R;
 import com.appbusters.robinpc.constitutionofindia.ui.ABOUT;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 public class DetailSchedules extends AppCompatActivity implements TextToSpeech.OnInitListener{
 
@@ -30,12 +33,18 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_schedules);
 
+        MobileAds.initialize(getApplicationContext(), "ca-app-pub-8103354595257586~5947609958");
+
         header = (TextView) findViewById(R.id.header);
         desc = (TextView) findViewById(R.id.desc);
 
         Intent i = getIntent();
         schedule_header = i.getStringExtra("subTitle");
         schedule_detail = i.getStringExtra("Desc");
+
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         header.setText(schedule_header);
         desc.setText(schedule_detail);
