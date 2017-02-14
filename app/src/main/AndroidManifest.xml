@@ -20,127 +20,157 @@
         <activity
             android:name=".ui.parts"
             android:label="@string/title_activity_parts"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.ScrollingActivity"/>
         <activity
             android:name=".ui.preamble"
             android:label="@string/title_activity_preamble"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.ScrollingActivity"/>
         <activity
             android:name=".ui.schedules"
             android:label="@string/title_activity_schedules"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.ScrollingActivity"/>
         <activity
             android:name=".ui.amendments"
             android:label="@string/title_activity_amendments"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.ScrollingActivity"/>
         <activity
             android:name=".ui.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".ui.all_parts.Part1"
             android:label="@string/title_activity_part1"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part2"
             android:label="@string/title_activity_part2"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part3"
             android:label="@string/title_activity_part3"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part4"
             android:label="@string/title_activity_part4"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part5"
             android:label="@string/title_activity_part5"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part6"
             android:label="@string/title_activity_part6"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part7"
             android:label="@string/title_activity_part7"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part8"
             android:label="@string/title_activity_part8"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part9"
             android:label="@string/title_activity_part9"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part10"
             android:label="@string/title_activity_part10"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part11"
             android:label="@string/title_activity_part11"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part12"
             android:label="@string/title_activity_part12"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part13"
             android:label="@string/title_activity_part13"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part14"
             android:label="@string/title_activity_part14"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part15"
             android:label="@string/title_activity_part15"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part16"
             android:label="@string/title_activity_part16"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part17"
             android:label="@string/title_activity_part17"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part18"
             android:label="@string/title_activity_part18"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part19"
             android:label="@string/title_activity_part19"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part20"
             android:label="@string/title_activity_part20"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part21"
             android:label="@string/title_activity_part21"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part22"
             android:label="@string/title_activity_part22"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part23"
             android:label="@string/title_activity_part23"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part24"
             android:label="@string/title_activity_part24"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part25"
             android:label="@string/title_activity_part25"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.all_parts.Part26"
             android:label="@string/title_activity_part26"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".ui.parts"/>
         <activity
             android:name=".ui.ABOUT"
             android:label="@string/title_activity_about"

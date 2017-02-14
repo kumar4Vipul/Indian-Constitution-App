@@ -8,8 +8,8 @@ android {
         applicationId "com.appbusters.robinpc.constitutionofindia"
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 5
-        versionName "3.1"
+        versionCode 6
+        versionName "3.4"
     }
     buildTypes {
         release {

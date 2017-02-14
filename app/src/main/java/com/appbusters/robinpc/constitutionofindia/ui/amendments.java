@@ -32,6 +32,9 @@ public class amendments extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_amendments);
 
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         all_amendments = new String[]{getString(R.string.firstamendment),getString(R.string.secondamendment),getString(R.string.thirdamendment),
                 getString(R.string.fourthamendment),getString(R.string.fifthamendment),getString(R.string.sixthamendment),
                 getString(R.string.seventhamendment),getString(R.string.eighthamendment),getString(R.string.ninthamendment),

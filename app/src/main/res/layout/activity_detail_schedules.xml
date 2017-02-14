@@ -44,7 +44,8 @@
                     android:textSize="15sp"
                     android:textColor="#000"
                     android:id="@+id/desc"
-                    android:fontFamily="serif-monospace"/>
+                    android:fontFamily="serif-monospace"
+                    android:textIsSelectable="true" />
 
             </ScrollView>
 
