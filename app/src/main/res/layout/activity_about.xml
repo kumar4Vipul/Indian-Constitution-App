@@ -14,6 +14,104 @@
                 app:layout_collapseMode="pin"
                 app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-    <include layout="@layout/content_about" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                app:cardElevation="2sp"
+                app:cardCornerRadius="3sp">
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical" android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="About The App:"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/about"
+                        android:textSize="13sp"
+                        android:fontFamily="casual"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_margin="15dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Developer :"
+                            android:textAlignment="center"
+                            android:gravity="center_vertical"
+                            android:textColor="#000" />
+                    </FrameLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250sp"
+                        android:background="#FFF"
+                        android:id="@+id/imageView2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Robin Kamboj" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_margin="15dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Contributors (And My Best Buds) :"
+                            android:textAlignment="center"
+                            android:gravity="center_vertical"
+                            android:textColor="#000" />
+                    </FrameLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="350sp"
+                        android:background="#FFF"
+                        android:id="@+id/imageView1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Anubhav Nirwal         Amit Kumar Singh" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
 
 </android.support.design.widget.CoordinatorLayout>
