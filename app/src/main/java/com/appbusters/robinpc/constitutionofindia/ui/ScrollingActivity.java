@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,11 +19,52 @@ import com.appbusters.robinpc.constitutionofindia.R;
 
 public class ScrollingActivity extends AppCompatActivity {
 
+    CardView cardView1, cardView2, cardView3, cardView4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling);
+
+        cardView1 = (CardView) findViewById(R.id.card_view1);
+        cardView2 = (CardView) findViewById(R.id.card_view2);
+        cardView3 = (CardView) findViewById(R.id.card_view3);
+        cardView4 = (CardView) findViewById(R.id.card_view4);
+
+        cardView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(ScrollingActivity.this, preamble.class);
+                startActivity(i);
+            }
+        });
+
+        cardView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(ScrollingActivity.this, amendments.class);
+                startActivity(i);
+            }
+        });
+
+        cardView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(ScrollingActivity.this, schedules.class);
+                startActivity(i);
+            }
+        });
+
+        cardView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(ScrollingActivity.this, parts.class);
+                startActivity(i);
+            }
+        });
     }
+
+
 
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -58,29 +100,6 @@ public class ScrollingActivity extends AppCompatActivity {
             }
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    public void preamble(View view)
-    {
-        Intent i=new Intent(this,preamble.class);
-        startActivity(i);
-    }
-
-    public void amendments(View view)
-    {
-        Intent i=new Intent(this,amendments.class);
-        startActivity(i);
-    }
-
-    public void parts(View view)
-    {
-        Intent i=new Intent(this,parts.class);
-        startActivity(i);
-    }
-    public void schedules(View view)
-    {
-        Intent i=new Intent(this,schedules.class);
-        startActivity(i);
     }
 
 }

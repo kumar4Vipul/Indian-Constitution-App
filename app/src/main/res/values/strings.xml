@@ -8,6 +8,11 @@
     <string name="title_activity_scrolling">CONSTITUTION</string>
     <string name="banner_ad_unit_id">ca-app-pub-8103354595257586/4331275952</string>
 
+    <string name="preamble">The Constitution of India begins with a Preamble which describes the nature of the Indian State and the objectives it is committed to secure. K.M. Munshi describes the Preamble as the political horoscope of the constitution. Thakur Dass Bhargawa says Preamble is the most precious part and the soul of the constitution.</string>
+    <string name="amendments">Amending the Constitution of India is the process of making changes to the nation\'s fundamental law or supreme law. The procedure of amendment in the constitution is laid down in Part XX (Article 368) of the Constitution of India. This procedure ensures the sanctity of the Constitution of India and keeps a check on arbitrary power of the Parliament of India.</string>
+    <string name="schedules">Indian Constitution originally had eight schedules. Four more schedules were added by different amendments, now making a total tally of twelve. Schedules are basically tables which contains additional details not mentioned in the articles. </string>
+    <string name="parts">Originally the constitution contained 395 articles divided in 22 parts and 8 schedules. The numbering still remains the same but as and when the constitution is amended, new articles are added below original articles with suffix A, B, C etc.</string>
+
     <string-array name="part_1">
         <item>Article 1</item>
         <item>Article 2</item>
