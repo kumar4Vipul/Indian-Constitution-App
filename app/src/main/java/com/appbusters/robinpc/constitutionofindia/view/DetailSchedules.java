@@ -9,9 +9,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,14 +29,16 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
     TextView header, desc;
     private TextToSpeech tts;
     FloatingActionButton fab;
+    private SeekBar seekBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_schedules);
 
-        MobileAds.initialize(getApplicationContext(), "ca-app-pub-8103354595257586~5947609958");
+        MobileAds.initialize(getApplicationContext(), "ca-app-pub-8103354595257586/4331275952");
 
+        seekBar = (SeekBar) findViewById(R.id.seekbar);
         header = (TextView) findViewById(R.id.header);
         desc = (TextView) findViewById(R.id.desc);
 
@@ -50,6 +54,26 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
         desc.setText(schedule_detail);
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
+
+        seekBar.setProgress((int) desc.getTextSize());
+        seekBar.setMax(35);
+
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                    desc.setTextSize(TypedValue.COMPLEX_UNIT_SP, progress);
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {

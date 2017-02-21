@@ -10,10 +10,13 @@
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         app:cardElevation="5sp"
         app:cardCornerRadius="4sp"
-        android:layout_margin="7sp">
+        android:layout_marginTop="7sp"
+        android:layout_marginLeft="7sp"
+        android:layout_marginRight="7sp"
+        android:layout_marginBottom="3sp">
 
 
         <LinearLayout
@@ -32,6 +35,11 @@
                 android:fontFamily="sans-serif-smallcaps"
                 android:gravity="center"/>
 
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:id="@+id/seekbar"/>
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -41,29 +49,32 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="5sp"
+                    android:textStyle="bold"
                     android:gravity="center"
                     android:textSize="15sp"
                     android:textColor="#000"
                     android:id="@+id/desc"
+                    android:layout_marginBottom="15sp"
                     android:fontFamily="serif-monospace"
                     android:textIsSelectable="true" />
 
             </ScrollView>
 
-            <com.google.android.gms.ads.AdView
-                android:id="@+id/adView"
-                android:layout_gravity="bottom"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentBottom="true"
-                ads:adSize="BANNER"
-                ads:adUnitId="@string/banner_ad_unit_id">
-            </com.google.android.gms.ads.AdView>
-
         </LinearLayout>
 
     </android.support.v7.widget.CardView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        android:background="@color/colorHighlightCard"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
