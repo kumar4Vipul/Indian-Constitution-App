@@ -55,8 +55,8 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
 
-        seekBar.setProgress((int) desc.getTextSize());
         seekBar.setMax(35);
+        seekBar.setProgress((int) desc.getTextSize());
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
