@@ -13,25 +13,26 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.appbusters.robinpc.constitutionofindia.R;
 
 public class ScrollingActivity extends AppCompatActivity {
 
-    CardView cardView1, cardView2, cardView3, cardView4;
+    LinearLayout linearLayout1, linearLayout2, linearLayout3, linearLayout4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling);
 
-        cardView1 = (CardView) findViewById(R.id.card_view1);
-        cardView2 = (CardView) findViewById(R.id.card_view2);
-        cardView3 = (CardView) findViewById(R.id.card_view3);
-        cardView4 = (CardView) findViewById(R.id.card_view4);
+        linearLayout1 = (LinearLayout) findViewById(R.id.ll1);
+        linearLayout2 = (LinearLayout) findViewById(R.id.ll2);
+        linearLayout3 = (LinearLayout) findViewById(R.id.ll3);
+        linearLayout4 = (LinearLayout) findViewById(R.id.ll4);
 
-        cardView1.setOnClickListener(new View.OnClickListener() {
+        linearLayout1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(ScrollingActivity.this, preamble.class);
@@ -39,7 +40,7 @@ public class ScrollingActivity extends AppCompatActivity {
             }
         });
 
-        cardView2.setOnClickListener(new View.OnClickListener() {
+        linearLayout2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(ScrollingActivity.this, amendments.class);
@@ -47,7 +48,7 @@ public class ScrollingActivity extends AppCompatActivity {
             }
         });
 
-        cardView3.setOnClickListener(new View.OnClickListener() {
+        linearLayout3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(ScrollingActivity.this, schedules.class);
@@ -55,7 +56,7 @@ public class ScrollingActivity extends AppCompatActivity {
             }
         });
 
-        cardView4.setOnClickListener(new View.OnClickListener() {
+        linearLayout4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(ScrollingActivity.this, parts.class);
