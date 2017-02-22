@@ -19,9 +19,9 @@ import android.widget.Toast;
 
 import com.appbusters.robinpc.constitutionofindia.R;
 import com.appbusters.robinpc.constitutionofindia.ui.ABOUT;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
+//import com.google.android.gms.ads.AdRequest;
+//import com.google.android.gms.ads.AdView;
+//import com.google.android.gms.ads.MobileAds;
 
 public class DetailSchedules extends AppCompatActivity implements TextToSpeech.OnInitListener{
 
