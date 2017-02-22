@@ -6,7 +6,7 @@
     <color name="colorPrimaryDark3">#c4fe8b</color>
     <color name="colorHighlightCard">#c4fe8b</color>
     <color name="colorPrimaryDifferent">#01579B</color>
-    <color name="colorPrimaryDifferentLight">#90CAF9</color>
+    <color name="colorPrimaryDifferentLight">#E3F2FD</color>
     <color name="colorAccent">#00E676</color>
     <color name="colorPrimaryLight">#FFCA28</color>
     <color name="colorPrimaryLightLight">#FFE082</color>
@@ -18,4 +18,5 @@
     <color name="colorGradientOne">#E65100</color>
     <color name="colorGradientTwo">#FFB74D</color>
 </resources>
+
 

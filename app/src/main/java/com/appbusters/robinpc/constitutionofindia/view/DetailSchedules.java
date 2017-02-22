@@ -35,8 +35,8 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_schedules);
-
-        MobileAds.initialize(getApplicationContext(), "ca-app-pub-8103354595257586/4331275952");
+//
+//        MobileAds.initialize(getApplicationContext(), "ca-app-pub-8103354595257586/4331275952");
 
         seekBar = (SeekBar) findViewById(R.id.seekbar);
         header = (TextView) findViewById(R.id.header);
@@ -46,9 +46,9 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
         schedule_header = i.getStringExtra("subTitle");
         schedule_detail = i.getStringExtra("Desc");
 
-        AdView mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+//        AdView mAdView = (AdView) findViewById(R.id.adView);
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        mAdView.loadAd(adRequest);
 
         header.setText(schedule_header);
         desc.setText(schedule_detail);
