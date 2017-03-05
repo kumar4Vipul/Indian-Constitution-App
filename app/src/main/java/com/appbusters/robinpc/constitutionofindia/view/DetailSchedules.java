@@ -17,10 +17,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
+import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.appbusters.robinpc.constitutionofindia.R;
+import com.appbusters.robinpc.constitutionofindia.controller.MyDBHelper;
 import com.appbusters.robinpc.constitutionofindia.ui.ABOUT;
 
 
@@ -32,6 +34,7 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
     FloatingActionButton fab;
     private SeekBar seekBar;
     private ImageButton save_button;
+    private MyDBHelper myDBHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +44,7 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
         seekBar = (SeekBar) findViewById(R.id.seekbar);
         header = (TextView) findViewById(R.id.header);
         desc = (TextView) findViewById(R.id.desc);
+        myDBHelper = new MyDBHelper(this);
 
         Intent i = getIntent();
         schedule_header = i.getStringExtra("subTitle");
@@ -60,6 +64,8 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
                         startActivity(i);
                     }
                 }).show();
+
+                myDBHelper.insertItem(schedule_header, schedule_detail);
             }
         });
 

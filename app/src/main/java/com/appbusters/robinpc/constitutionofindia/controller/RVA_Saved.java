@@ -53,6 +53,6 @@ public class RVA_Saved extends RecyclerView.Adapter<VH_Saved>{
 
     @Override
     public int getItemCount() {
-        return 0;
+        return list.size();
     }
 }

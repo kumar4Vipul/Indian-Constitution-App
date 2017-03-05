@@ -4,27 +4,61 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.appbusters.robinpc.constitutionofindia.R;
+import com.appbusters.robinpc.constitutionofindia.controller.MyDBHelper;
+import com.appbusters.robinpc.constitutionofindia.controller.RVA_Saved;
+import com.appbusters.robinpc.constitutionofindia.model.Data;
 import com.appbusters.robinpc.constitutionofindia.ui.ABOUT;
+
+import java.util.List;
 
 public class SavedActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
+    private MyDBHelper myDBHelper;
+    List<Data> data;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saved);
 
+        myDBHelper = new MyDBHelper(this);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
+        data = myDBHelper.getAllItems();
 
+        LinearLayoutManager myLayoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(myLayoutManager);
+        RVA_Saved adapter = new RVA_Saved(data, getApplicationContext());
 
+        if(adapter.getItemCount()!=0){
+            recyclerView.setVisibility(View.VISIBLE);
+//            layout_alternate.setVisibility(View.GONE);
+            recyclerView.setAdapter(adapter);
+        }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
