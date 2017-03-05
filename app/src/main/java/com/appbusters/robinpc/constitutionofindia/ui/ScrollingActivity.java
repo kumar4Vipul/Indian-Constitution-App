@@ -32,6 +32,7 @@ public class ScrollingActivity extends AppCompatActivity {
         linearLayout2 = (LinearLayout) findViewById(R.id.ll2);
         linearLayout3 = (LinearLayout) findViewById(R.id.ll3);
         linearLayout4 = (LinearLayout) findViewById(R.id.ll4);
+        linearLayout5 = (LinearLayout) findViewById(R.id.ll5);
 
 
         linearLayout1.setOnClickListener(new View.OnClickListener() {
