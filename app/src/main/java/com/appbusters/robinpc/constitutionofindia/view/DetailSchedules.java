@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.speech.tts.TextToSpeech;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -13,15 +14,15 @@ import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.appbusters.robinpc.constitutionofindia.R;
 import com.appbusters.robinpc.constitutionofindia.ui.ABOUT;
-//import com.google.android.gms.ads.AdRequest;
-//import com.google.android.gms.ads.AdView;
-//import com.google.android.gms.ads.MobileAds;
+
 
 public class DetailSchedules extends AppCompatActivity implements TextToSpeech.OnInitListener{
 
@@ -30,13 +31,12 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
     private TextToSpeech tts;
     FloatingActionButton fab;
     private SeekBar seekBar;
+    private ImageButton save_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_schedules);
-//
-//        MobileAds.initialize(getApplicationContext(), "ca-app-pub-8103354595257586/4331275952");
 
         seekBar = (SeekBar) findViewById(R.id.seekbar);
         header = (TextView) findViewById(R.id.header);
@@ -46,9 +46,22 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
         schedule_header = i.getStringExtra("subTitle");
         schedule_detail = i.getStringExtra("Desc");
 
-//        AdView mAdView = (AdView) findViewById(R.id.adView);
-//        AdRequest adRequest = new AdRequest.Builder().build();
-//        mAdView.loadAd(adRequest);
+        save_button = (ImageButton) findViewById(R.id.save_button);
+
+        save_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                save_button.setImageDrawable(getResources().getDrawable(android.R.drawable.star_big_on));
+                Snackbar.make(view, "Item Saved!", 3000).setAction("View", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent i = new Intent(DetailSchedules.this, SavedActivity.class);
+                        startActivity(i);
+                    }
+                }).show();
+            }
+        });
 
         header.setText(schedule_header);
         desc.setText(schedule_detail);

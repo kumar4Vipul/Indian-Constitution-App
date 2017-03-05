@@ -13,7 +13,6 @@ import com.appbusters.robinpc.constitutionofindia.view.DetailSchedules;
 
 public class View_Holder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener{
 
-    public CardView cardView;
     public TextView Title;
     public TextView subTitle;
     private ItemClickListener clickListener;
