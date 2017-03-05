@@ -38,7 +38,7 @@ public class RVA_Saved extends RecyclerView.Adapter<VH_Saved>{
     @Override
     public void onBindViewHolder(VH_Saved holder, final int position) {
         position_ = position;
-        holder = holder_;
+        holder_ = holder;
         holder.name.setText(list.get(position_).subTitle);
         holder.description.setText(list.get(position_).Desc);
         holder.unsave_button.setOnClickListener(new View.OnClickListener() {
@@ -46,9 +46,15 @@ public class RVA_Saved extends RecyclerView.Adapter<VH_Saved>{
             public void onClick(View view) {
                 myDBHelper = new MyDBHelper(p_context);
                 myDBHelper.deleteItem(list.get(position_).subTitle);
+                remove(list.get(position_));
             }
         });
 
+    }
+
+    public void remove(Data data){
+        list.remove(position_);
+        notifyItemRemoved(position_);
     }
 
     @Override
