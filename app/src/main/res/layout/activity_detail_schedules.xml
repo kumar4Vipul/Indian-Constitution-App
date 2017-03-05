@@ -23,16 +23,33 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="9sp"
-                android:textSize="19sp"
-                android:textColor="#FFF"
-                android:background="@color/colorPrimaryDifferent"
-                android:id="@+id/header"
-                android:fontFamily="sans-serif-smallcaps"
-                android:gravity="center"/>
+                android:background="@color/colorPrimaryDifferent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="9sp"
+                    android:textSize="19sp"
+                    android:textColor="#FFF"
+                    android:id="@+id/header"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:padding="3sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@android:drawable/star_big_off" />
+
+            </RelativeLayout>
 
             <SeekBar
                 android:layout_width="match_parent"
