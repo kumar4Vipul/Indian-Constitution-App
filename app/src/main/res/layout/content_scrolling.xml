@@ -296,6 +296,77 @@
 
         </android.support.v7.widget.CardView>
 
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="5sp"
+            android:layout_margin="5sp"
+            card_view:cardCornerRadius="7sp"
+            android:layout_below="@+id/card_view3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/card_background2"
+                android:clickable="true"
+                android:id="@+id/ll5">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:background="#fcd787">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/preamble"
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="6sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Saved Items"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="4sp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="List of Items That You Have Marked As Saved Items From This Application."
+                        android:padding="6sp"
+                        android:textStyle="bold" />
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="See Saved Items"
+                    android:textSize="18sp"
+                    android:background="#c4fe8b"
+                    android:fontFamily="sans-serif-smallcaps"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
     </LinearLayout>
 
 </ScrollView>

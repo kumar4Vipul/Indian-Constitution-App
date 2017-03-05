@@ -17,10 +17,11 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.appbusters.robinpc.constitutionofindia.R;
+import com.appbusters.robinpc.constitutionofindia.view.SavedActivity;
 
 public class ScrollingActivity extends AppCompatActivity {
 
-    LinearLayout linearLayout1, linearLayout2, linearLayout3, linearLayout4;
+    LinearLayout linearLayout1, linearLayout2, linearLayout3, linearLayout4, linearLayout5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class ScrollingActivity extends AppCompatActivity {
         linearLayout2 = (LinearLayout) findViewById(R.id.ll2);
         linearLayout3 = (LinearLayout) findViewById(R.id.ll3);
         linearLayout4 = (LinearLayout) findViewById(R.id.ll4);
+
 
         linearLayout1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +62,14 @@ public class ScrollingActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(ScrollingActivity.this, parts.class);
+                startActivity(i);
+            }
+        });
+
+        linearLayout5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(ScrollingActivity.this, SavedActivity.class);
                 startActivity(i);
             }
         });
