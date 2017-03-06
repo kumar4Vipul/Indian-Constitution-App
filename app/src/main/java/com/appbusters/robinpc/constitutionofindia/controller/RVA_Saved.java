@@ -2,9 +2,11 @@ package com.appbusters.robinpc.constitutionofindia.controller;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.SeekBar;
 import android.widget.Toast;
 
 import com.appbusters.robinpc.constitutionofindia.R;
@@ -37,7 +39,7 @@ public class RVA_Saved extends RecyclerView.Adapter<VH_Saved>{
     }
 
     @Override
-    public void onBindViewHolder(VH_Saved holder, final int position) {
+    public void onBindViewHolder(final VH_Saved holder, final int position) {
         position_ = position;
         holder_ = holder;
         holder.name.setText(list.get(position_).subTitle);
@@ -60,7 +62,22 @@ public class RVA_Saved extends RecyclerView.Adapter<VH_Saved>{
                 }
             }
         });
+        holder.seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                holder.description.setTextSize(TypedValue.COMPLEX_UNIT_SP, progress);
+            }
 
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
     }
 
 //    public void remove(Data data){
