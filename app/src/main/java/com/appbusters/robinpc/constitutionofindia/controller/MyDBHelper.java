@@ -67,7 +67,7 @@ public class MyDBHelper extends SQLiteOpenHelper{
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         sqLiteDatabase.delete(TABLE_NAME,
                 COLUMN_NAME + "= ? ",
-                new String[] {"\'" + NAME + "\'"});
+                new String[] {NAME});
 //        sqLiteDatabase.rawQuery("DELETE FROM " + TABLE_NAME + " WHERE " + COLUMN_NAME + " = \'" + NAME + "\' ", null);
 
     }
@@ -94,11 +94,15 @@ public class MyDBHelper extends SQLiteOpenHelper{
 
         SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
         Cursor res =  sqLiteDatabase.rawQuery( "SELECT * FROM " + TABLE_NAME + " ", null );
-        res.moveToFirst();
+        if(res!=null){
 
-        while(!res.isAfterLast()){
-            data.add(new Data(res.getString(res.getColumnIndex(COLUMN_NAME)),res.getString(res.getColumnIndex(COLUMN_NAME)),res.getString(res.getColumnIndex(COLUMN_DESCRIPTION))));            //
-            res.moveToNext();
+            res.moveToFirst();
+
+            while(!res.isAfterLast()){
+                data.add(new Data(res.getString(res.getColumnIndex(COLUMN_NAME)),res.getString(res.getColumnIndex(COLUMN_NAME)),res.getString(res.getColumnIndex(COLUMN_DESCRIPTION))));        //
+                res.moveToNext();
+
+            }
         }
 
         return data;
