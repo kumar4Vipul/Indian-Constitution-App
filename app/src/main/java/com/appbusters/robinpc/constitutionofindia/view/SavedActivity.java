@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import com.appbusters.robinpc.constitutionofindia.R;
 import com.appbusters.robinpc.constitutionofindia.controller.MyDBHelper;
@@ -23,7 +24,7 @@ public class SavedActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private MyDBHelper myDBHelper;
     List<Data> data;
-
+    private LinearLayout layout_alternate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class SavedActivity extends AppCompatActivity {
         setContentView(R.layout.activity_saved);
 
         myDBHelper = new MyDBHelper(this);
+        layout_alternate = (LinearLayout) findViewById(R.id.layout_alternate);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
         data = myDBHelper.getAllItems();
@@ -41,7 +43,7 @@ public class SavedActivity extends AppCompatActivity {
 
         if(adapter.getItemCount()!=0){
             recyclerView.setVisibility(View.VISIBLE);
-//            layout_alternate.setVisibility(View.GONE);
+            layout_alternate.setVisibility(View.GONE);
             recyclerView.setAdapter(adapter);
         }
     }

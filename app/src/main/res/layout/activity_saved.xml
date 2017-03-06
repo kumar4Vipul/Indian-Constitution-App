@@ -1,11 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.appbusters.robinpc.constitutionofindia.view.SavedActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout_alternate">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="2"
+            android:src="@drawable/oops"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:text="Oops!"
+            android:fontFamily="casual"
+            android:textSize="30sp"
+            android:background="#FFF"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDifferent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:text="It Seems Like You Haven't Saved Any Items Yet."
+            android:fontFamily="casual"
+            android:gravity="center_horizontal"
+            android:background="#FFF"
+            android:padding="15sp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDifferent"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
@@ -14,4 +52,4 @@
 
     </android.support.v7.widget.RecyclerView>
 
-</LinearLayout>
+</FrameLayout>
