@@ -1,6 +1,7 @@
 package com.appbusters.robinpc.constitutionofindia.controller;
 
 import android.content.Context;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
@@ -55,6 +56,7 @@ public class RVA_Saved extends RecyclerView.Adapter<VH_Saved>{
                     Toast.makeText(p_context,
                             "Nothing to delete", Toast.LENGTH_SHORT).show();
                 } else {
+                    Snackbar.make(view, list.get(position).subTitle + " removed from saved items.", Snackbar.LENGTH_SHORT).show();
                     myDBHelper.deleteItem(list.get(position).getSubTitle());
                     list.remove(position);
                     notifyItemRemoved(position);
