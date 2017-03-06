@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.appbusters.robinpc.constitutionofindia.R;
 import com.appbusters.robinpc.constitutionofindia.model.Data;
@@ -45,9 +46,18 @@ public class RVA_Saved extends RecyclerView.Adapter<VH_Saved>{
             @Override
             public void onClick(View view) {
                 myDBHelper = new MyDBHelper(p_context);
-                myDBHelper.deleteItem(list.get(position_).subTitle);
-                list.remove(position_);
-                notifyItemRemoved(position_);
+//                list.remove(position_);
+//                notifyDataSetChanged();
+//                myDBHelper.deleteItem(list.get(position_).getSubTitle());
+                if (list.isEmpty()) {
+                    Toast.makeText(p_context,
+                            "Nothing to delete", Toast.LENGTH_SHORT).show();
+                } else {
+                    myDBHelper.deleteItem(list.get(position).getSubTitle());
+                    list.remove(position);
+                    notifyItemRemoved(position);
+                    notifyDataSetChanged();
+                }
             }
         });
 

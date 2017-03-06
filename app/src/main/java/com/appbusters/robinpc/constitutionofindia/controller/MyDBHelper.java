@@ -50,7 +50,7 @@ public class MyDBHelper extends SQLiteOpenHelper{
     public Cursor getItem(String NAME){
         SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
         Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME +
-                " WHERE " + COLUMN_NAME + "=" + NAME + " ", null);                            //
+                " WHERE " + COLUMN_NAME + "=" + NAME, null);                            //
         return cursor;
     }
 //    //UPDATE
@@ -71,6 +71,21 @@ public class MyDBHelper extends SQLiteOpenHelper{
 //        sqLiteDatabase.rawQuery("DELETE FROM " + TABLE_NAME + " WHERE " + COLUMN_NAME + " = \'" + NAME + "\' ", null);
 
     }
+
+
+
+    public boolean checkIfSaved(String NAME){
+        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME +
+                " WHERE " + COLUMN_NAME + "=\'" + NAME + "\'", null);
+        if(cursor == null){
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
 
     /*
     public ArrayList<String> getAllTwisters() {

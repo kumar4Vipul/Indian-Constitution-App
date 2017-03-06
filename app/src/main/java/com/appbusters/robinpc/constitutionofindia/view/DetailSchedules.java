@@ -56,16 +56,46 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
             @Override
             public void onClick(View view) {
 
-                save_button.setImageDrawable(getResources().getDrawable(android.R.drawable.star_big_on));
-                Snackbar.make(view, "Item Saved!", 3000).setAction("View", new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent i = new Intent(DetailSchedules.this, SavedActivity.class);
-                        startActivity(i);
-                    }
-                }).show();
+                if(myDBHelper.checkIfSaved(schedule_header)){
 
-                myDBHelper.insertItem(schedule_header, schedule_detail);
+                    save_button.setImageDrawable(getResources().getDrawable(android.R.drawable.star_big_on));
+                    Snackbar.make(view, "Item Saved!", 3000).setAction("View", new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Intent i = new Intent(DetailSchedules.this, SavedActivity.class);
+                            startActivity(i);
+                        }
+                    }).show();
+
+                    myDBHelper.insertItem(schedule_header, schedule_detail);
+
+                }
+                else {
+
+                    save_button.setImageDrawable(getResources().getDrawable(android.R.drawable.star_big_off));
+                    Snackbar.make(view, "Item Removed.!", 3000).setAction("Undo", new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+
+                            save_button.setImageDrawable(getResources().getDrawable(android.R.drawable.star_big_on));
+                            Snackbar.make(view, "Item Saved!", 3000).setAction("View", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    Intent i = new Intent(DetailSchedules.this, SavedActivity.class);
+                                    startActivity(i);
+                                }
+                            }).show();
+
+                            myDBHelper.insertItem(schedule_header, schedule_detail);
+
+                        }
+                    }).show();
+
+                    myDBHelper.deleteItem(schedule_header);
+
+                }
+
+
             }
         });
 
