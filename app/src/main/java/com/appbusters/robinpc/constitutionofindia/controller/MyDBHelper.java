@@ -63,11 +63,13 @@ public class MyDBHelper extends SQLiteOpenHelper{
 //        return true;
 //    }
     //DELETE
-    public Integer deleteItem(String NAME) {
+    public void deleteItem(String NAME) {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
-        return sqLiteDatabase.delete(TABLE_NAME,
-                COLUMN_NAME + "= ? ",                           //
-                new String[] { NAME });
+        sqLiteDatabase.delete(TABLE_NAME,
+                COLUMN_NAME + "= ? ",
+                new String[] {"\'" + NAME + "\'"});
+//        sqLiteDatabase.rawQuery("DELETE FROM " + TABLE_NAME + " WHERE " + COLUMN_NAME + " = \'" + NAME + "\' ", null);
+
     }
 
     /*
