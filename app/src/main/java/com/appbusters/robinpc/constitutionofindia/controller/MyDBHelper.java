@@ -15,11 +15,11 @@ import java.util.List;
 
 public class MyDBHelper extends SQLiteOpenHelper{
 
-    public static final int DATABASE_VERSION = 1;
-    public static final String DATABASE_NAME = "SavedItems.db";
-    public static final String TABLE_NAME = "SAVED_ITEMS";
-    public static final String COLUMN_NAME = "NAME";
-    public static final String COLUMN_DESCRIPTION = "DESCRIPTION";
+    private static final int DATABASE_VERSION = 1;
+    private static final String DATABASE_NAME = "SavedItems.db";
+    private static final String TABLE_NAME = "SAVED_ITEMS";
+    private static final String COLUMN_NAME = "NAME";
+    private static final String COLUMN_DESCRIPTION = "DESCRIPTION";
 
     public MyDBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -47,7 +47,7 @@ public class MyDBHelper extends SQLiteOpenHelper{
         return true;
     }
     //READ
-    public Cursor getItem(String NAME){
+    private Cursor getItem(String NAME){
         SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
         Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME +
                 " WHERE " + COLUMN_NAME + "=\'" + NAME + "\'", null);                            //
@@ -76,12 +76,7 @@ public class MyDBHelper extends SQLiteOpenHelper{
 
     public boolean checkIfSaved(String NAME){
         Cursor cursor = getItem(NAME);
-        if(cursor.getColumnIndex(NAME)!=-1){
-            return false;
-        }
-        else {
-            return true;
-        }
+        return cursor.getColumnIndex(NAME) == -1;
     }
 
 
