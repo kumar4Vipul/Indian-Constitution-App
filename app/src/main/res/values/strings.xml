@@ -13,6 +13,35 @@
     <string name="schedules">Indian Constitution originally had eight schedules. Four more schedules were added by different amendments, now making a total tally of twelve. Schedules are basically tables which contains additional details not mentioned in the articles. </string>
     <string name="parts">Originally the constitution contained 395 articles divided in 22 parts and 8 schedules. The numbering still remains the same but as and when the constitution is amended, new articles are added below original articles with suffix A, B, C etc.</string>
 
+    <string-array name="partsList">
+        <item>Part 1 (Art. 1 To 4) \nThe Union And The Territories</item>
+        <item>Part 2 (Art. 1 To 4) \nCitizenship(</item>
+        <item>Part 3 (Art. 1 To 4) \nFundamental Rights</item>
+        <item>Part 4 (Art. 1 To 4) \nDirective Principles Of State Policy</item>
+        <item>Part 4A (Art. 1 To 4) \nFundamental Duties</item>
+        <item>Part 5 (Art. 1 To 4) \nThe Union</item>
+        <item>Part 6 (Art. 1 To 4) \nThe States</item>
+        <item>Part 7 (Art. 1 To 4) \nThe States in Part B Of First Schedule</item>
+        <item>Part 8 (Art. 1 To 4) \nThe Union Territories</item>
+        <item>Part 9 (Art. 1 To 4) \nThe Panchayats</item>
+        <item>Part 9A (Art. 1 To 4) \nThe Municipalities</item>
+        <item>Part 9B (Art. 1 To 4) \nThe Cooperative Societies</item>
+        <item>Part 10 (Art. 1 To 4) \nThe Schedules And Tribal Areas</item>
+        <item>Part 11 (Art. 1 To 4) \nRelations Between The Union And The States</item>
+        <item>Part 12 (Art. 1 To 4) \nFinance, Property, Contracts and Suits</item>
+        <item>Part 13 (Art. 1 To 4) \nTrade, Commerce and Intercourse within The Territory Of India</item>
+        <item>Part 14 (Art. 1 To 4) \nServices Under The Union And The Status</item>
+        <item>Part 14A (Art. 1 To 4) \nTribunals</item>
+        <item>Part 15 (Art. 1 To 4) \nElections</item>
+        <item>Part 16 (Art. 1 To 4) \nSpecial Provisions Relating To Certain Classes</item>
+        <item>Part 17 (Art. 1 To 4) \nOfficial Language</item>
+        <item>Part 18 (Art. 1 To 4) \nEmergency Provisions</item>
+        <item>Part 19 (Art. 1 To 4) \nMiscellaneous</item>
+        <item>Part 20 (Art. 1 To 4) \nAmendment Of The Constitution</item>
+        <item>Part 21 (Art. 1 To 4) \nTemporary, Transitional and Special Provisions</item>
+        <item>Part 22 (Art. 1 To 4) \nShort Title, Commencement, Authoritative Text In Hindi And Repeals</item>
+    </string-array>
+
     <string-array name="part_1">
         <item>Article 1</item>
         <item>Article 2</item>
