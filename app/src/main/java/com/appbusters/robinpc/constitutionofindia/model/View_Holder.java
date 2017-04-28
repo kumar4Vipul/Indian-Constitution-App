@@ -15,12 +15,14 @@ public class View_Holder extends RecyclerView.ViewHolder implements View.OnClick
 
     public TextView Title;
     public TextView subTitle;
+    public CardView cardView;
     private ItemClickListener clickListener;
     Context context;
 
     public View_Holder(View itemView) {
         super(itemView);
         subTitle= (TextView) itemView.findViewById(R.id.subTitle);
+        cardView = (CardView) itemView.findViewById(R.id.cardView);
 
         context = itemView.getContext();
         itemView.setTag(itemView);
