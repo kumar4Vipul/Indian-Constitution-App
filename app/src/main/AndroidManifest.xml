@@ -181,7 +181,8 @@
         <activity
             android:name=".view.SavedActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ui.AllPartsActivity"></activity>
+        <activity android:name=".ui.AllPartsActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.respectiveSubpartsActivity"/>
     </application>
 
 </manifest>

@@ -62,7 +62,7 @@ public class ScrollingActivity extends AppCompatActivity {
         linearLayout4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(ScrollingActivity.this, parts.class);
+                Intent i = new Intent(ScrollingActivity.this, AllPartsActivity.class);
                 startActivity(i);
             }
         });
