@@ -33,6 +33,7 @@ public class SavedActivity extends AppCompatActivity {
         setContentView(R.layout.activity_saved);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         myDBHelper = new MyDBHelper(this);
         layout_alternate = (LinearLayout) findViewById(R.id.layout_alternate);
@@ -50,15 +51,6 @@ public class SavedActivity extends AppCompatActivity {
             recyclerView.setAdapter(adapter);
         }
     }
-
-
-
-
-
-
-
-
-
 
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

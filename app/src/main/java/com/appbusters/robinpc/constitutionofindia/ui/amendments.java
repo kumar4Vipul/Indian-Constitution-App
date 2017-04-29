@@ -32,7 +32,8 @@ public class amendments extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_amendments);
 
-
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         all_amendments = new String[]{getString(R.string.firstamendment),getString(R.string.secondamendment),getString(R.string.thirdamendment),

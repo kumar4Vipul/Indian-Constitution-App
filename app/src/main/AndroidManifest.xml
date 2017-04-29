@@ -28,17 +28,17 @@
             android:name=".ui.preamble"
             android:label="@string/title_activity_preamble"
             android:parentActivityName=".ui.ScrollingActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.schedules"
             android:label="@string/title_activity_schedules"
             android:parentActivityName=".ui.ScrollingActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.amendments"
             android:label="@string/title_activity_amendments"
             android:parentActivityName=".ui.ScrollingActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
@@ -180,9 +180,11 @@
         <activity android:name=".view.DetailSchedules" />
         <activity
             android:name=".view.SavedActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".ui.ScrollingActivity"/>
         <activity android:name=".ui.AllPartsActivity" android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".ui.respectiveSubpartsActivity"/>
+        <activity android:name=".ui.respectiveSubpartsActivity" android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".ui.AllPartsActivity"/>
     </application>
 
 </manifest>
