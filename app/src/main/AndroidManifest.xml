@@ -42,7 +42,9 @@
             android:name=".ui.ABOUT"
             android:label="@string/title_activity_about"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".view.DetailSchedules" />
+        <activity android:name=".view.DetailSchedules"
+            android:label="Details"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".view.SavedActivity"
             android:theme="@style/AppTheme.NoActionBar"
