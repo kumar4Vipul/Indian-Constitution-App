@@ -28,6 +28,9 @@ public class ScrollingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         linearLayout1 = (LinearLayout) findViewById(R.id.ll1);
         linearLayout2 = (LinearLayout) findViewById(R.id.ll2);
         linearLayout3 = (LinearLayout) findViewById(R.id.ll3);
