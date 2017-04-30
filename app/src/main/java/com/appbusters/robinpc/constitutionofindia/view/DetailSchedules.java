@@ -58,7 +58,7 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
 
                 if(myDBHelper.checkIfSaved(schedule_header)){
 
-                    save_button.setImageDrawable(getResources().getDrawable(android.R.drawable.star_big_on));
+                    save_button.setImageDrawable(getResources().getDrawable(R.drawable.ic_favorite_white_24dp));
                     Snackbar.make(view, "Item Saved!", 3000).setAction("View", new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -72,7 +72,7 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
                 }
                 else {
 
-                    save_button.setImageDrawable(getResources().getDrawable(android.R.drawable.star_big_off));
+                    save_button.setImageDrawable(getResources().getDrawable(R.drawable.ic_favorite_border_white_24dp));
                     Snackbar.make(view, "Item Removed.!", 3000).setAction("Undo", new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
