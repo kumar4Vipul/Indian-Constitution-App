@@ -61,5 +61,4 @@ public class View_Holder extends RecyclerView.ViewHolder implements View.OnClick
         i.putExtra("Desc", Desc);
         context.startActivity(i);
     }
-
 }

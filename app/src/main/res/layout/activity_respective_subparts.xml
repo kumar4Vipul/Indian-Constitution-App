@@ -24,7 +24,7 @@
                 android:background="@color/colorPrimary"
                 android:gravity="center"
                 android:padding="5sp"
-                android:text="Saved Items"
+                android:text="Subparts"
                 android:textColor="#FFF"
                 android:fontFamily="cursive"
                 android:textSize="20sp"
@@ -33,18 +33,13 @@
                 android:textStyle="normal|bold" />
         </android.support.v7.widget.Toolbar>
 
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView">
 
+        </android.support.v7.widget.RecyclerView>
 
     </LinearLayout>
-
-    <android.support.design.widget.FloatingActionButton
-        android:visibility="gone"
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
-        android:onClick="onClick"/>
 
 </android.support.design.widget.CoordinatorLayout>

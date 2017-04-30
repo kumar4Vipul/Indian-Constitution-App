@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:gravity="center"
-            android:text="Saved Items"
+            android:text="All Parts"
             android:textColor="#FFF"
             android:fontFamily="cursive"
             android:textSize="20sp"
