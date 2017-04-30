@@ -1,11 +1,15 @@
 package com.appbusters.robinpc.constitutionofindia.ui;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.appbusters.robinpc.constitutionofindia.R;
@@ -181,43 +185,141 @@ public class respectiveSubpartsActivity extends AppCompatActivity {
                     getString(R.string.article243O)};
         }
         else if(category.equals(subParts[10])){
-
+            headers = getResources().getStringArray(R.array.part_9A);
+            desc = new String[]{getString(R.string.article243P),getString(R.string.article243Q),getString(R.string.article243R),
+                    getString(R.string.article243S),getString(R.string.article243T),getString(R.string.article243U),
+                    getString(R.string.article243V),getString(R.string.article243W),getString(R.string.article243X),
+                    getString(R.string.article243Y),getString(R.string.article243Z),getString(R.string.article243ZA),
+                    getString(R.string.article243ZB),getString(R.string.article243ZC),getString(R.string.article243ZD),
+                    getString(R.string.article243ZE),getString(R.string.article243ZF),getString(R.string.article243ZG)};
         }
         else if(category.equals(subParts[11])){
-
+            headers = getResources().getStringArray(R.array.part_9B);
+            desc = new String[]{getString(R.string.article243H),getString(R.string.article243I),getString(R.string.article243J),
+                    getString(R.string.article243K),getString(R.string.article243L),getString(R.string.article243M),
+                    getString(R.string.article243N),getString(R.string.article243O),getString(R.string.article243P),
+                    getString(R.string.article243Q),getString(R.string.article243R),getString(R.string.article243S),
+                    getString(R.string.article243T)};
         }
         else if(category.equals(subParts[12])){
-
+            headers = getResources().getStringArray(R.array.part_10);
+            desc = new String[]{getString(R.string.article244), getString(R.string.article244A)};
         }
         else if(category.equals(subParts[13])){
-
+            headers = getResources().getStringArray(R.array.part_11);
+            desc = new String[]{getString(R.string.article245),getString(R.string.article246),getString(R.string.article247),
+                    getString(R.string.article248),getString(R.string.article249),getString(R.string.article250),
+                    getString(R.string.article251),getString(R.string.article252),getString(R.string.article253),
+                    getString(R.string.article254),getString(R.string.article255),getString(R.string.article256),
+                    getString(R.string.article257),getString(R.string.article257A),getString(R.string.article258),
+                    getString(R.string.article258A),getString(R.string.article259),getString(R.string.article260),
+                    getString(R.string.article261),getString(R.string.article262),getString(R.string.article263)
+            };
         }
         else if(category.equals(subParts[14])){
-
+            headers = getResources().getStringArray(R.array.part_12);
+            desc = new String[]{getString(R.string.article264),getString(R.string.article265),getString(R.string.article266),
+                    getString(R.string.article267),getString(R.string.article268),getString(R.string.article268A),
+                    getString(R.string.article269),getString(R.string.article270),getString(R.string.article271),
+                    getString(R.string.article272),getString(R.string.article273),getString(R.string.article274),
+                    getString(R.string.article275),getString(R.string.article276),getString(R.string.article277),
+                    getString(R.string.article278),getString(R.string.article279),getString(R.string.article280),
+                    getString(R.string.article281),getString(R.string.article282),getString(R.string.article283),
+                    getString(R.string.article284),getString(R.string.article285),getString(R.string.article286),
+                    getString(R.string.article287),getString(R.string.article288),getString(R.string.article289),
+                    getString(R.string.article290),getString(R.string.article290A),getString(R.string.article291),
+                    getString(R.string.article292),getString(R.string.article293),getString(R.string.article294),
+                    getString(R.string.article295),getString(R.string.article296),getString(R.string.article297),
+                    getString(R.string.article298),getString(R.string.article299),getString(R.string.article300),
+                    getString(R.string.article300)};
         }
         else if(category.equals(subParts[15])){
-
+            headers = getResources().getStringArray(R.array.part_13);
+            desc = new String[]{
+                    getString(R.string.article301),getString(R.string.article302),getString(R.string.article303),
+                    getString(R.string.article304),getString(R.string.article305),getString(R.string.article306),
+                    getString(R.string.article307)};
         }
         else if(category.equals(subParts[16])){
-
+            headers = getResources().getStringArray(R.array.part_14);
+            desc = new String[]{
+                    getString(R.string.article308),getString(R.string.article309),getString(R.string.article310),
+                    getString(R.string.article311),getString(R.string.article312),getString(R.string.article312A),
+                    getString(R.string.article313),getString(R.string.article314),getString(R.string.article315),
+                    getString(R.string.article316),getString(R.string.article317),getString(R.string.article318),
+                    getString(R.string.article319),getString(R.string.article320),getString(R.string.article321),
+                    getString(R.string.article322),getString(R.string.article323)};
         }
         else if(category.equals(subParts[17])){
-
+            headers = getResources().getStringArray(R.array.part_14A);
+            desc = new String[]{
+                    getString(R.string.article323a),getString(R.string.article323b)};
         }
         else if(category.equals(subParts[18])){
-
+            headers = getResources().getStringArray(R.array.part_15);
+            desc = new String[]{
+                    getString(R.string.article324),getString(R.string.article325),getString(R.string.article326),
+                    getString(R.string.article327),getString(R.string.article328),getString(R.string.article329),
+                    getString(R.string.article329a)};
         }
         else if(category.equals(subParts[19])){
-
+            headers = getResources().getStringArray(R.array.part_16);
+            desc = new String[]{
+                    getString(R.string.article330),getString(R.string.article331),getString(R.string.article332),
+                    getString(R.string.article333),getString(R.string.article334),getString(R.string.article335),
+                    getString(R.string.article336),getString(R.string.article337),getString(R.string.article338),
+                    getString(R.string.article338a),getString(R.string.article339),getString(R.string.article340),
+                    getString(R.string.article341),getString(R.string.article342)};
         }
         else if(category.equals(subParts[20])){
-
+            headers = getResources().getStringArray(R.array.part_17);
+            desc = new String[]{
+                    getString(R.string.article343),getString(R.string.article344),getString(R.string.article345),
+                    getString(R.string.article346),getString(R.string.article347),getString(R.string.article348),
+                    getString(R.string.article349),getString(R.string.article350),getString(R.string.article350a),
+                    getString(R.string.article350b),getString(R.string.article351)};
         }
         else if(category.equals(subParts[21])){
+            headers = getResources().getStringArray(R.array.part_18);
+            desc = new String[]{
+                    getString(R.string.article352),getString(R.string.article353),getString(R.string.article354),
+                    getString(R.string.article355),getString(R.string.article356),getString(R.string.article357),
+                    getString(R.string.article358),getString(R.string.article359),getString(R.string.article359a),
+                    getString(R.string.article360)};
 
         }
         else if(category.equals(subParts[22])){
+            headers = getResources().getStringArray(R.array.part_19);
+            desc = new String[]{
+                    getString(R.string.article361),getString(R.string.article361a),getString(R.string.article361b),
+                    getString(R.string.article362),getString(R.string.article363),getString(R.string.article363a),
+                    getString(R.string.article364),getString(R.string.article365),getString(R.string.article366),
+                    getString(R.string.article367)};
+        }
+        else if(category.equals(subParts[23])){
+            headers = getResources().getStringArray(R.array.part_20);
+            desc = new String[]{
+                    getString(R.string.article368)};
+        }
+        else if(category.equals(subParts[24])){
+            headers = getResources().getStringArray(R.array.part_21);
+            desc = new String[]{
+                    getString(R.string.article369),getString(R.string.article370),getString(R.string.article371),
+                    getString(R.string.article371a),getString(R.string.article371b),getString(R.string.article371c),
+                    getString(R.string.article371d),getString(R.string.article371e),getString(R.string.article371f),
+                    getString(R.string.article371g),getString(R.string.article371h),getString(R.string.article371i),
+                /*getString(R.string.article371j), */                                                //ERROR
+                    getString(R.string.article372),getString(R.string.article372a),getString(R.string.article373),
+                    getString(R.string.article374),getString(R.string.article375),getString(R.string.article376),
+                    getString(R.string.article377),getString(R.string.article378),getString(R.string.article378a),
+                    getString(R.string.article379),getString(R.string.article392)};
 
+        }
+        else if(category.equals(subParts[25])){
+            headers = getResources().getStringArray(R.array.part_22);
+            desc = new String[]{
+                    getString(R.string.article393),getString(R.string.article394),getString(R.string.article394a),
+                    getString(R.string.article395)};
         }
     }
 
@@ -227,5 +329,41 @@ public class respectiveSubpartsActivity extends AppCompatActivity {
             data.add(new Data(" ", headers[i-1] , desc[i-1]));
         }
         return data;
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate( R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        switch (id){
+            case R.id.aboutt:{
+                Intent i = new Intent(this, ABOUT.class);
+                startActivity(i);
+                break;
+            }
+            case R.id.action_rate:{
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.appbusters.robinpc.constitutionofindia"));
+                startActivity(i);
+                break;
+            }
+            case R.id.action_share:{
+                Intent i = new Intent();
+                i.setAction(Intent.ACTION_SEND);
+                i.putExtra(Intent.EXTRA_TEXT, "Hey, Check out this exciting App at: https://play.google.com/store/apps/details?id=com.appbusters.robinpc.constitutionofindia");
+                i.setType("text/plain");
+                startActivity(i);
+                break;
+            }
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
