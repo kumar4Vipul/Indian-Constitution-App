@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 
 import com.appbusters.robinpc.constitutionofindia.R;
 import com.appbusters.robinpc.constitutionofindia.controller.RVA_Subparts;
@@ -24,6 +25,9 @@ public class AllPartsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_parts);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         allParts = getResources().getStringArray(R.array.partsList);
         data = fillWithData();
