@@ -47,11 +47,10 @@ public class MyDBHelper extends SQLiteOpenHelper{
         return true;
     }
     //READ
-    private Cursor getItem(String NAME){
+    public Cursor getItem(String NAME){
         SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
-        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME +
-                " WHERE " + COLUMN_NAME + "=\'" + NAME + "\'", null);                            //
-        return cursor;
+        return sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME +
+                " WHERE " + COLUMN_NAME + "=\'" + NAME + "\'", null);
     }
 //    //UPDATE
 //    public boolean updateItem(Integer ID, String NAME, String DESCRIPTION) {
@@ -62,6 +61,7 @@ public class MyDBHelper extends SQLiteOpenHelper{
 //        sqLiteDatabase.update(TABLE_NAME, contentValues, COLUMN_NAME + " = ? ", new String[] { NAME } );        //
 //        return true;
 //    }
+
     //DELETE
     public void deleteItem(String NAME) {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
@@ -71,8 +71,6 @@ public class MyDBHelper extends SQLiteOpenHelper{
 //        sqLiteDatabase.rawQuery("DELETE FROM " + TABLE_NAME + " WHERE " + COLUMN_NAME + " = \'" + NAME + "\' ", null);
 
     }
-
-
 
     public boolean checkIfSaved(String NAME){
         Cursor cursor = getItem(NAME);
@@ -107,18 +105,19 @@ public class MyDBHelper extends SQLiteOpenHelper{
             res.moveToFirst();
 
             while(!res.isAfterLast()){
-                data.add(new Data(res.getString(res.getColumnIndex(COLUMN_NAME)),res.getString(res.getColumnIndex(COLUMN_NAME)),res.getString(res.getColumnIndex(COLUMN_DESCRIPTION))));        //
+                data.add(new Data(res.getString(res.getColumnIndex(COLUMN_NAME)),res.getString(res.getColumnIndex(COLUMN_NAME)),res.getString(res.getColumnIndex(COLUMN_DESCRIPTION))));
                 res.moveToNext();
 
             }
         }
-
+        if (res != null) {
+            res.close();
+        }
         return data;
     }
 
     public int numberOfRows(){
         SQLiteDatabase sqLiteDatabase = getReadableDatabase();
-        int numRows = (int) DatabaseUtils.queryNumEntries(sqLiteDatabase, TABLE_NAME);
-        return numRows;
+        return (int) DatabaseUtils.queryNumEntries(sqLiteDatabase, TABLE_NAME);
     };
 }
