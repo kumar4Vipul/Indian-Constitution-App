@@ -31,6 +31,11 @@ public class preamble extends AppCompatActivity {
 
         // Obtain the FirebaseAnalytics instance.
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+
+        Bundle bundle = new Bundle();
+        bundle.putString("preamble_activity", "opened");
+
+        mFirebaseAnalytics.logEvent("activity_preamble", bundle);
     }
 
 

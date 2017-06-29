@@ -36,6 +36,11 @@ public class ScrollingActivity extends AppCompatActivity {
         // Obtain the FirebaseAnalytics instance.
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
+        Bundle bundle = new Bundle();
+        bundle.putString("main_activity", "opened");
+
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.LOGIN, bundle);
+
         linearLayout1 = (LinearLayout) findViewById(R.id.ll1);
         linearLayout2 = (LinearLayout) findViewById(R.id.ll2);
         linearLayout3 = (LinearLayout) findViewById(R.id.ll3);

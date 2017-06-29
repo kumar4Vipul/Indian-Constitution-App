@@ -40,6 +40,11 @@ public class SavedActivity extends AppCompatActivity {
         // Obtain the FirebaseAnalytics instance.
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
+        Bundle bundle = new Bundle();
+        bundle.putString("save_activity", "opened");
+
+        mFirebaseAnalytics.logEvent("activity_saved", bundle);
+
         myDBHelper = new MyDBHelper(this);
         layout_alternate = (LinearLayout) findViewById(R.id.layout_alternate);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);

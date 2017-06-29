@@ -39,6 +39,11 @@ public class respectiveSubpartsActivity extends AppCompatActivity {
         // Obtain the FirebaseAnalytics instance.
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
+        Bundle bundle = new Bundle();
+        bundle.putString("subparts_activity", "opened");
+
+        mFirebaseAnalytics.logEvent("activity_subparts", bundle);
+
         subParts = getResources().getStringArray(R.array.partsList);
         TextView textView = (TextView) findViewById(R.id.textView);
         category = getIntent().getStringExtra("subTitle");

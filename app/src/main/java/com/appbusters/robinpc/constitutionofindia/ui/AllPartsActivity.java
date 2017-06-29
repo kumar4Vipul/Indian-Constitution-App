@@ -34,6 +34,11 @@ public class AllPartsActivity extends AppCompatActivity {
         // Obtain the FirebaseAnalytics instance.
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
+        Bundle bundle = new Bundle();
+        bundle.putString("parts_activity", "opened");
+
+        mFirebaseAnalytics.logEvent("activity_parts", bundle);
+
         allParts = getResources().getStringArray(R.array.partsList);
         data = fillWithData();
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);

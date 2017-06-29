@@ -42,9 +42,12 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
     private SeekBar seekBar;
     private ImageButton save_button;
     private MyDBHelper myDBHelper;
+    private Bundle params;
     private HashMap<String, String> map = new HashMap<>();
     private FABProgressCircle mFabProgressCircle;
     private FirebaseAnalytics mFirebaseAnalytics;
+    private int sizeCount = 0;
+    private int ttsCount = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +59,8 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
 
         // Obtain the FirebaseAnalytics instance.
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+        params = new Bundle();
+        params.putString("detail_screen", "arrived");
 
         mFabProgressCircle = (FABProgressCircle) findViewById(R.id.fabProgressCircle);
         seekBar = (SeekBar) findViewById(R.id.seekbar);
@@ -78,6 +83,8 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
         save_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                params.putString("save_button", "clicked");
 
                 if(myDBHelper.checkIfSaved(schedule_header)){
 
@@ -141,6 +148,8 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
                 SharedPrefs.setDetailTextSize(seekBar.getProgress());
+                sizeCount++;
+                params.putInt("size_count", sizeCount);
             }
         });
     }
@@ -196,6 +205,8 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
                 if(tts.isSpeaking()){
                     tts.stop();
                 }
+                ttsCount++;
+                params.putInt("tts_count", ttsCount);
                 autoSpeak( header.getText() + ". " + desc.getText());
                 break;
             }
@@ -219,9 +230,11 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
         if (tts.isSpeaking()) {
             tts.stop();
         }
-        super.onDestroy();
-
         tts.shutdown();
+
+        mFirebaseAnalytics.logEvent("detail_screen_details", params);
+
+        super.onDestroy();
     }
 
     @Override
@@ -269,7 +282,20 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
         if (tts.isSpeaking()) {
             tts.stop();
         }
+
+        mFirebaseAnalytics.logEvent("detail_screen_details", params);
+
         super.onStop();
+    }
+
+    @Override
+    protected void onPause() {
+        if (tts.isSpeaking()) {
+            tts.stop();
+        }
+
+        mFirebaseAnalytics.logEvent("detail_screen_details", params);
+        super.onPause();
     }
 
     @Override

@@ -41,6 +41,11 @@ public class schedules extends AppCompatActivity {
         // Obtain the FirebaseAnalytics instance.
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
+        Bundle bundle = new Bundle();
+        bundle.putString("schedules_activity", "opened");
+
+        mFirebaseAnalytics.logEvent("activity_schedules", bundle);
+
         context = getApplicationContext();
         all_schedules = getResources().getStringArray(R.array.all_schedules);
 

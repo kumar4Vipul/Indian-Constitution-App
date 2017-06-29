@@ -41,6 +41,11 @@ public class amendments extends AppCompatActivity {
         // Obtain the FirebaseAnalytics instance.
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
+        Bundle bundle = new Bundle();
+        bundle.putString("amendments_activity", "opened");
+
+        mFirebaseAnalytics.logEvent("activity_amendments", bundle);
+
         all_amendments = new String[]{getString(R.string.firstamendment),getString(R.string.secondamendment),getString(R.string.thirdamendment),
                 getString(R.string.fourthamendment),getString(R.string.fifthamendment),getString(R.string.sixthamendment),
                 getString(R.string.seventhamendment),getString(R.string.eighthamendment),getString(R.string.ninthamendment),
