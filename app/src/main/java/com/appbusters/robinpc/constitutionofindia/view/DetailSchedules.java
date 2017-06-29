@@ -25,6 +25,7 @@ import android.widget.Toast;
 import com.appbusters.robinpc.constitutionofindia.R;
 import com.appbusters.robinpc.constitutionofindia.controller.MyDBHelper;
 import com.appbusters.robinpc.constitutionofindia.ui.ABOUT;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 
 public class DetailSchedules extends AppCompatActivity implements TextToSpeech.OnInitListener{
@@ -36,6 +37,7 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
     private SeekBar seekBar;
     private ImageButton save_button;
     private MyDBHelper myDBHelper;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,9 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        // Obtain the FirebaseAnalytics instance.
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         seekBar = (SeekBar) findViewById(R.id.seekbar);
         header = (TextView) findViewById(R.id.header);

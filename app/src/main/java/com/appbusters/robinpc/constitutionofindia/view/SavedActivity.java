@@ -17,6 +17,7 @@ import com.appbusters.robinpc.constitutionofindia.controller.MyDBHelper;
 import com.appbusters.robinpc.constitutionofindia.controller.RVA_Saved;
 import com.appbusters.robinpc.constitutionofindia.model.Data;
 import com.appbusters.robinpc.constitutionofindia.ui.ABOUT;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.List;
 
@@ -26,6 +27,7 @@ public class SavedActivity extends AppCompatActivity {
     private MyDBHelper myDBHelper;
     List<Data> data;
     private LinearLayout layout_alternate;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,9 @@ public class SavedActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        // Obtain the FirebaseAnalytics instance.
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         myDBHelper = new MyDBHelper(this);
         layout_alternate = (LinearLayout) findViewById(R.id.layout_alternate);

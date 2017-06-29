@@ -17,6 +17,7 @@ import android.widget.Toast;
 import com.appbusters.robinpc.constitutionofindia.R;
 import com.appbusters.robinpc.constitutionofindia.controller.Recycler_View_Adapter;
 import com.appbusters.robinpc.constitutionofindia.model.Data;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +27,7 @@ public class amendments extends AppCompatActivity {
     List<Data> data;
     String[] all_amendments;
     RecyclerView recyclerView;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,9 @@ public class amendments extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        // Obtain the FirebaseAnalytics instance.
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         all_amendments = new String[]{getString(R.string.firstamendment),getString(R.string.secondamendment),getString(R.string.thirdamendment),
                 getString(R.string.fourthamendment),getString(R.string.fifthamendment),getString(R.string.sixthamendment),

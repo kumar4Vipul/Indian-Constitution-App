@@ -18,10 +18,12 @@ import android.widget.Toast;
 
 import com.appbusters.robinpc.constitutionofindia.R;
 import com.appbusters.robinpc.constitutionofindia.view.SavedActivity;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class ScrollingActivity extends AppCompatActivity {
 
     LinearLayout linearLayout1, linearLayout2, linearLayout3, linearLayout4, linearLayout5;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,9 @@ public class ScrollingActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        // Obtain the FirebaseAnalytics instance.
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         linearLayout1 = (LinearLayout) findViewById(R.id.ll1);
         linearLayout2 = (LinearLayout) findViewById(R.id.ll2);

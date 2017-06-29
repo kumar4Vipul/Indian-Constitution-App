@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.appbusters.robinpc.constitutionofindia.R;
 import com.appbusters.robinpc.constitutionofindia.controller.Recycler_View_Adapter;
 import com.appbusters.robinpc.constitutionofindia.model.Data;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +26,7 @@ public class respectiveSubpartsActivity extends AppCompatActivity {
     private List<Data> data;
     private String[] subParts, headers, desc;
     private RecyclerView recyclerView;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +35,9 @@ public class respectiveSubpartsActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        // Obtain the FirebaseAnalytics instance.
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         subParts = getResources().getStringArray(R.array.partsList);
         TextView textView = (TextView) findViewById(R.id.textView);

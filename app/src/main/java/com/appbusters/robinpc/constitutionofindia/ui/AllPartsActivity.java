@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import com.appbusters.robinpc.constitutionofindia.R;
 import com.appbusters.robinpc.constitutionofindia.controller.RVA_Subparts;
 import com.appbusters.robinpc.constitutionofindia.model.Data;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +21,7 @@ public class AllPartsActivity extends AppCompatActivity {
     private LinearLayoutManager mLinearLayoutManager;
     private RVA_Subparts mRVA_Subparts;
     private List<Data> data;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,9 @@ public class AllPartsActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        // Obtain the FirebaseAnalytics instance.
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         allParts = getResources().getStringArray(R.array.partsList);
         data = fillWithData();
