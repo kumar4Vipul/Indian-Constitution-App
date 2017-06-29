@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.speech.tts.TextToSpeech;
+import android.speech.tts.UtteranceProgressListener;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -25,7 +26,11 @@ import android.widget.Toast;
 import com.appbusters.robinpc.constitutionofindia.R;
 import com.appbusters.robinpc.constitutionofindia.controller.MyDBHelper;
 import com.appbusters.robinpc.constitutionofindia.ui.ABOUT;
+import com.appbusters.robinpc.constitutionofindia.utils.SharedPrefs;
+import com.github.jorgecastilloprz.FABProgressCircle;
 import com.google.firebase.analytics.FirebaseAnalytics;
+
+import java.util.HashMap;
 
 
 public class DetailSchedules extends AppCompatActivity implements TextToSpeech.OnInitListener{
@@ -37,6 +42,8 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
     private SeekBar seekBar;
     private ImageButton save_button;
     private MyDBHelper myDBHelper;
+    private HashMap<String, String> map = new HashMap<>();
+    private FABProgressCircle mFabProgressCircle;
     private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
@@ -50,10 +57,17 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
         // Obtain the FirebaseAnalytics instance.
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
+        mFabProgressCircle = (FABProgressCircle) findViewById(R.id.fabProgressCircle);
         seekBar = (SeekBar) findViewById(R.id.seekbar);
         header = (TextView) findViewById(R.id.header);
         desc = (TextView) findViewById(R.id.desc);
         myDBHelper = new MyDBHelper(this);
+
+        map.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "uttered");
+
+        seekBar.setMax(80);
+        desc.setTextSize(TypedValue.COMPLEX_UNIT_SP, SharedPrefs.getDetailTextSize());
+        seekBar.setProgress(SharedPrefs.getDetailTextSize());
 
         Intent i = getIntent();
         schedule_header = i.getStringExtra("subTitle");
@@ -113,12 +127,10 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
 
-        seekBar.setProgress((int) desc.getTextSize());
-
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                    desc.setTextSize(TypedValue.COMPLEX_UNIT_SP, progress);
+                desc.setTextSize(TypedValue.COMPLEX_UNIT_SP, progress);
             }
 
             @Override
@@ -128,7 +140,7 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-
+                SharedPrefs.setDetailTextSize(seekBar.getProgress());
             }
         });
     }
@@ -190,14 +202,15 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
         }
     }
 
+    @SuppressWarnings("deprecation")
     private void autoSpeak(String text) {
         if (TextUtils.isEmpty(text) || tts == null) {
             return;
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            tts.speak(text, TextToSpeech.QUEUE_ADD, null, "SpeakText");
+            tts.speak(text, TextToSpeech.QUEUE_ADD, map);
         } else {
-            tts.speak(text, TextToSpeech.QUEUE_ADD, null);
+            tts.speak(text, TextToSpeech.QUEUE_ADD, map);
         }
     }
 
@@ -216,6 +229,38 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
         if (status != TextToSpeech.SUCCESS) {
             Log.d("InitTextToSpeech", "init text to speech failed; status: " + status);
             tts = null;
+        }
+        else {
+            tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
+                @Override
+                public void onStart(String s) {
+                    if(s.equals("uttered")) {
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                mFabProgressCircle.show();
+                            }
+                        });
+                    }
+                }
+
+                @Override
+                public void onDone(String s) {
+                    if(s.equals("uttered")) {
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                mFabProgressCircle.hide();
+                            }
+                        });
+                    }
+                }
+
+                @Override
+                public void onError(String s) {
+
+                }
+            });
         }
     }
 

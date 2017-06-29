@@ -84,7 +84,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10sp"
-                    android:max="80"
                     android:id="@+id/seekbar"/>
 
                 <ScrollView
@@ -97,7 +96,6 @@
                         android:padding="5sp"
                         android:textStyle="bold"
                         android:gravity="center"
-                        android:textSize="15sp"
                         android:textColor="#000"
                         android:id="@+id/desc"
                         android:layout_marginBottom="15sp"
@@ -112,14 +110,23 @@
 
     </LinearLayout>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:alpha="0.65"
-        android:layout_gravity="bottom|right"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
-        android:onClick="onClick"/>
+    <com.github.jorgecastilloprz.FABProgressCircle
+        android:layout_gravity="bottom|center"
+        android:id="@+id/fabProgressCircle"
+        app:arcColor="@color/colorPrimaryDifferent"
+        app:arcWidth="5sp"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_margin="@dimen/fab_margin">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:alpha="0.65"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
+            android:onClick="onClick"/>
+
+    </com.github.jorgecastilloprz.FABProgressCircle>
 
 </android.support.design.widget.CoordinatorLayout>
