@@ -7,6 +7,7 @@ import android.speech.tts.TextToSpeech;
 import android.speech.tts.UtteranceProgressListener;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -16,6 +17,8 @@ import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
@@ -27,8 +30,8 @@ import com.appbusters.robinpc.constitutionofindia.R;
 import com.appbusters.robinpc.constitutionofindia.controller.MyDBHelper;
 import com.appbusters.robinpc.constitutionofindia.ui.ABOUT;
 import com.appbusters.robinpc.constitutionofindia.utils.SharedPrefs;
-import com.github.jorgecastilloprz.FABProgressCircle;
 import com.google.firebase.analytics.FirebaseAnalytics;
+import com.mikhaellopez.circularprogressbar.CircularProgressBar;
 
 import java.util.HashMap;
 
@@ -44,7 +47,7 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
     private MyDBHelper myDBHelper;
     private Bundle params;
     private HashMap<String, String> map = new HashMap<>();
-    private FABProgressCircle mFabProgressCircle;
+    private CircularProgressBar circularProgressBar;
     private FirebaseAnalytics mFirebaseAnalytics;
     private int sizeCount = 0;
     private int ttsCount = 0;
@@ -57,12 +60,23 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        Window window = getWindow();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            window.setStatusBarColor(ContextCompat.getColor(this, R.color.colorPrimary));
+        }
+
         // Obtain the FirebaseAnalytics instance.
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
         params = new Bundle();
         params.putString("detail_screen", "arrived");
 
-        mFabProgressCircle = (FABProgressCircle) findViewById(R.id.fabProgressCircle);
+        circularProgressBar = findViewById(R.id.circular_progress);
         seekBar = (SeekBar) findViewById(R.id.seekbar);
         header = (TextView) findViewById(R.id.header);
         desc = (TextView) findViewById(R.id.desc);
@@ -88,7 +102,7 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
 
                 if(myDBHelper.checkIfSaved(schedule_header)){
 
-                    save_button.setImageDrawable(getResources().getDrawable(R.drawable.ic_favorite_white_24dp));
+                    save_button.setImageDrawable(getResources().getDrawable(R.drawable.baseline_favorite_white_24));
                     Snackbar.make(view, "Item Saved!", 3000).setAction("View", new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -102,7 +116,7 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
                 }
                 else {
 
-                    save_button.setImageDrawable(getResources().getDrawable(R.drawable.ic_favorite_border_white_24dp));
+                    save_button.setImageDrawable(getResources().getDrawable(R.drawable.baseline_favorite_border_white_24));
                     Snackbar.make(view, "Item Removed.!", 3000).setAction("Undo", new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -115,6 +129,8 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
                                     startActivity(i);
                                 }
                             }).show();
+
+//                            Toast.makeText(DetailSchedules.this, "Item Saved", Toast.LENGTH_SHORT).show();
 
                             myDBHelper.insertItem(schedule_header, schedule_detail);
 
@@ -251,7 +267,7 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                mFabProgressCircle.show();
+                                circularProgressBar.setVisibility(View.VISIBLE);
                             }
                         });
                     }
@@ -263,7 +279,7 @@ public class DetailSchedules extends AppCompatActivity implements TextToSpeech.O
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                mFabProgressCircle.hide();
+                                circularProgressBar.setVisibility(View.GONE);
                             }
                         });
                     }

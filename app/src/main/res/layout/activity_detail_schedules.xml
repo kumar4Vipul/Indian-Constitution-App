@@ -75,7 +75,7 @@
                         android:padding="10sp"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/ic_favorite_border_white_24dp"
+                        android:src="@drawable/baseline_favorite_border_white_24"
                         android:id="@+id/save_button"/>
 
                 </RelativeLayout>
@@ -110,23 +110,32 @@
 
     </LinearLayout>
 
-    <com.github.jorgecastilloprz.FABProgressCircle
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom|center"
-        android:id="@+id/fabProgressCircle"
-        app:arcColor="@color/colorPrimaryDifferent"
-        app:arcWidth="5sp"
-        android:layout_width="80sp"
-        android:layout_height="80sp"
         android:layout_margin="@dimen/fab_margin">
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:layout_width="65sp"
+            android:layout_height="65sp"
+            app:cpb_progressbar_color="@color/colorPrimaryDifferent"
+            app:cpb_background_progressbar_color="@color/colorWhiteShade"
+            app:cpb_progressbar_width="5sp"
+            app:cpb_indeterminate_mode="true"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:id="@+id/circular_progress"/>
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
             android:alpha="0.65"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="55sp"
+            android:layout_height="55sp"
+            android:layout_gravity="center"
             app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
             android:onClick="onClick"/>
 
-    </com.github.jorgecastilloprz.FABProgressCircle>
+    </FrameLayout>
 
 </android.support.design.widget.CoordinatorLayout>
