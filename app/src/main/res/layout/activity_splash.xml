@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.splash.SplashActivity">
+
+    <TextView
+        android:id="@+id/englishHeaderTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/indian_constitution_english"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lineSeparatorIv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <ImageView
+        android:id="@+id/lineSeparatorIv"
+        android:layout_width="0sp"
+        android:layout_height="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/black"
+        android:contentDescription="@string/line_separator"
+        app:layout_constraintBottom_toTopOf="@+id/hindiHeaderTv"
+        app:layout_constraintEnd_toEndOf="@id/englishHeaderTv"
+        app:layout_constraintStart_toStartOf="@id/englishHeaderTv"
+        app:layout_constraintTop_toBottomOf="@+id/englishHeaderTv"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/hindiHeaderTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/indian_constitution_hindi"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/indiaMonumentsIv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineSeparatorIv"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <ImageView
+        android:id="@+id/indiaMonumentsIv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:paddingTop="40dp"
+        android:contentDescription="@string/indian_monuments"
+        android:scaleType="centerCrop"
+        android:src="@drawable/india_monuments"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.ConstraintLayout>

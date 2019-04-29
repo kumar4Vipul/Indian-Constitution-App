@@ -5,15 +5,15 @@ import android.content.Context;
 
 public class ConstitutionApp extends Application{
 
-    private static Context sContext;
+    private static Context context;
 
     @Override
     public void onCreate() {
-        sContext = getApplicationContext();
+        context = getApplicationContext();
         super.onCreate();
     }
 
     public static Context getAppContext() {
-        return sContext;
+        return context;
     }
 }

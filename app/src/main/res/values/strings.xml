@@ -1,4 +1,8 @@
 <resources>
+    <string name="indian_constitution_english">INDIAN CONSTITUTION</string>
+    <string name="indian_constitution_hindi">भारतीय संविधान</string>
+
+
     <string name="app_name">Indian Constitution</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_preamble">PREAMBLE</string>
@@ -10681,5 +10685,7 @@ The Constitution was drafted by the Constituent Assembly, which was elected by t
         The 389 member Constituent Assembly took almost three years (two years, eleven months and eighteen days to be precise) to complete its historic task of drafting the Constitution for Independent India.
         During this period, it held eleven sessions covering a total of 165 days. Of these, 114 days were spent on the consideration of the Draft Constitution.\n
     </string>
+    <string name="indian_monuments">Indian Monuments</string>
+    <string name="line_separator">Line Separator</string>
 
 </resources>
