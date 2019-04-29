@@ -22,55 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".temp.ui.SplashActivity"
-            android:theme="@style/SplashTheme">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
-        <activity
-            android:name=".temp.ui.preamble"
-            android:label="@string/title_activity_preamble"
-            android:parentActivityName=".temp.ui.ScrollingActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".temp.ui.schedules"
-            android:label="@string/title_activity_schedules"
-            android:parentActivityName=".temp.ui.ScrollingActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".temp.ui.amendments"
-            android:label="@string/title_activity_amendments"
-            android:parentActivityName=".temp.ui.ScrollingActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".temp.ui.ScrollingActivity"
-            android:label="@string/title_activity_scrolling"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".temp.ui.ABOUT"
-            android:label="@string/title_activity_about"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".temp.view.DetailSchedules"
-            android:label="Details"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".temp.view.SavedActivity"
-            android:parentActivityName=".temp.ui.ScrollingActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".temp.ui.AllPartsActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".temp.ui.respectiveSubpartsActivity"
-            android:parentActivityName=".temp.ui.AllPartsActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
