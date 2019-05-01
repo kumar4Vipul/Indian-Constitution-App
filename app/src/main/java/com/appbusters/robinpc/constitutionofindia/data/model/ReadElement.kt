@@ -1,10 +1,16 @@
 package com.appbusters.robinpc.constitutionofindia.data.model
 
+import com.google.gson.annotations.SerializedName
+
 data class ReadElement(
+        @SerializedName("read_element_id")
         val id: Int,
-        val title: String,
+        @SerializedName("category")
+        val categoryName: String,
+        @SerializedName("content")
         val content: String,
-        val category: Category,
+        @SerializedName("tags")
         val tags: List<String>,
-        val isSaved: Boolean
+        @SerializedName("title")
+        val title: String
 )
