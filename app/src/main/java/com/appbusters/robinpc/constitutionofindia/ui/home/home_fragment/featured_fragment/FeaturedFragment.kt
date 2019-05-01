@@ -5,6 +5,7 @@ import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import androidx.core.content.ContextCompat
 import com.appbusters.robinpc.constitutionofindia.R
+import com.appbusters.robinpc.constitutionofindia.Utils.Constants
 import com.appbusters.robinpc.constitutionofindia.Utils.Constants.Companion.EXTRA_INDEX
 import com.appbusters.robinpc.constitutionofindia.Utils.Constants.Companion.FEATURED_PREAMBLE_INDEX
 import com.appbusters.robinpc.constitutionofindia.Utils.Constants.Companion.FEATURED_SAVED_BY_YOU_INDEX
@@ -77,7 +78,7 @@ class FeaturedFragment : BaseFragment() {
             when(pageIndex) {
                 FEATURED_PREAMBLE_INDEX -> {
                     context?.let {
-                        startActivity(ReadingActivity.newIntent(it))
+                        startActivity(ReadingActivity.newIntent(it, Constants.Companion.ReadElementIds.PREAMBLE_ID.ordinal))
                         (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
                     }
                 }
