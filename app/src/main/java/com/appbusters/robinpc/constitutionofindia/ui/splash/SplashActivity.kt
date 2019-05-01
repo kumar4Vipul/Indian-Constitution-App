@@ -3,8 +3,7 @@ package com.appbusters.robinpc.constitutionofindia.ui.splash
 import android.os.Handler
 import com.appbusters.robinpc.constitutionofindia.R
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseActivity
-import com.appbusters.robinpc.constitutionofindia.ui.login.LoginActivity
-
+import com.appbusters.robinpc.constitutionofindia.ui.home.HomeActivity
 
 class SplashActivity : BaseActivity() {
 
@@ -23,13 +22,9 @@ class SplashActivity : BaseActivity() {
 
     private fun launchNewsListActivity() {
         Handler().postDelayed({
-            startActivity(LoginActivity.newIntent(this))
+            startActivity(HomeActivity.newIntent(this))
             animateActivityTransition(R.anim.slide_in_right, R.anim.slide_out_left)
             finishAffinity()
         }, SPLASH_TIMEOUT)
-    }
-
-    protected fun animateActivityTransition(enterAnim: Int, exitAnim: Int) {
-        overridePendingTransition(enterAnim, exitAnim)
     }
 }

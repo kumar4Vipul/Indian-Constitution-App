@@ -6,6 +6,45 @@
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+
+    <!-- skeleton greys -->
+    <color name="skeleton_one">#F1F1F1</color>
+    <color name="skeleton_two">#D5D5D5</color>
+    <color name="skeleton_three">#AAAAAA</color>
+    <color name="skeleton_four">#808080</color>
+    <color name="skeleton_five">#4E4E4E</color>
+    <color name="skeleton_six">#2C2C2C</color>
+
+    <!-- home screen -->
+    <color name="home_header">#2C2C2C</color>
+    <color name="home_background">#F8F8F8</color>
+    <color name="home_status_separator">#BBBABA</color>
+    <color name="home_status_bar">#EBEBEB</color>
+    <color name="home_screen_titles">#848484</color>
+    <color name="home_screen_title_underline">#A8A8A8</color>
+
+    <!-- featured adapter <- home screen -->
+    <color name="preamble_start">#EFA632</color>
+    <color name="preamble_end">#FD2A2A</color>
+    <color name="your_progress_start">#9BC637</color>
+    <color name="your_progress_end">#118553</color>
+    <color name="saved_by_you_start">#5DE0DC</color>
+    <color name="saved_by_you_end">#0474D8</color>
+    <color name="dots_color">#AAAAAA</color>
+    <color name="selected_dot_color">#808080</color>
+    
+    <!-- categories adapter <- home screen -->
+    <color name="amendment_color">#DE7D78</color>
+    <color name="schedules_color">#87A4E3</color>
+    <color name="parts_color">#65B8E2</color>
+    <color name="preamble_color">#E3AA4F</color>
+
+    <!-- reading screen -->
+    <color name="reading_status_bar">#EBEBEB</color>
+
+    <!-- listing screen -->
+    <color name="listing_status_bar">#EBEBEB</color>
+
 </resources>
 
 

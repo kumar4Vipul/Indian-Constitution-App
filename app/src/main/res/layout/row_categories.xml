@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidUnknownAttribute -->
+<com.appbusters.robinpc.constitutionofindia.ui.custom.SquareCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="3dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/cardView"
+    tools:cardBackgroundColor="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <TextView
+            tools:text="AMENDMENTS"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            fontPath="fonts/home_regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingPrefix"
+            android:id="@+id/categoryTitleTv"/>
+
+</com.appbusters.robinpc.constitutionofindia.ui.custom.SquareCardView>

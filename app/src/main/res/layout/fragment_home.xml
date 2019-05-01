@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidUnknownAttribute -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.home_fragment.HomeFragment"
+    android:background="@color/home_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/header_home"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp"
+                android:textColor="@color/home_header"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                fontPath="fonts/home_bold.ttf"
+                tools:ignore="MissingPrefix"
+                android:id="@+id/headerHomeTv"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                app:layout_constraintHorizontal_weight="1"
+                android:layout_height="4dp"
+                android:background="@color/home_header"
+                app:layout_constraintTop_toBottomOf="@id/headerHomeTv"
+                app:layout_constraintStart_toStartOf="@id/headerHomeTv"
+                app:layout_constraintEnd_toEndOf="@id/headerHomeTv"
+                tools:ignore="ContentDescription"
+                android:id="@+id/underlineHomeHeaderIv"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/featured_home"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:textSize="18sp"
+                android:textColor="@color/home_screen_titles"
+                app:layout_constraintTop_toBottomOf="@id/underlineHomeHeaderIv"
+                app:layout_constraintStart_toStartOf="parent"
+                fontPath="fonts/home_semi_bold.ttf"
+                tools:ignore="MissingPrefix"
+                android:id="@+id/featuredTitleTv"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                app:layout_constraintHorizontal_weight="1"
+                android:layout_height="3dp"
+                android:background="@color/home_screen_title_underline"
+                app:layout_constraintTop_toBottomOf="@id/featuredTitleTv"
+                app:layout_constraintStart_toStartOf="@id/featuredTitleTv"
+                app:layout_constraintEnd_toEndOf="@id/featuredTitleTv"
+                tools:ignore="ContentDescription"
+                android:id="@+id/underlineFeaturedTitleIv"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@id/underlineFeaturedTitleIv"
+                android:id="@+id/featuredViewPager">
+
+            </androidx.viewpager.widget.ViewPager>
+
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:selectedDotColor="@color/selected_dot_color"
+                app:layout_constraintTop_toBottomOf="@id/featuredViewPager"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:dotsColor="@color/dots_color"
+                app:dotsCornerRadius="8dp"
+                app:dotsSize="7dp"
+                app:dotsSpacing="4dp"
+                app:dotsWidthFactor="2.5"
+                app:progressMode="false"
+                android:id="@+id/dotPagerIndicator">
+
+            </com.tbuonomo.viewpagerdotsindicator.DotsIndicator>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categories_home"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:textSize="18sp"
+                android:textColor="@color/home_screen_titles"
+                app:layout_constraintTop_toBottomOf="@id/dotPagerIndicator"
+                app:layout_constraintStart_toStartOf="parent"
+                fontPath="fonts/home_semi_bold.ttf"
+                tools:ignore="MissingPrefix"
+                android:id="@+id/categoriesTitleTv"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                app:layout_constraintHorizontal_weight="1"
+                android:layout_height="3dp"
+                android:background="@color/home_screen_title_underline"
+                app:layout_constraintTop_toBottomOf="@id/categoriesTitleTv"
+                app:layout_constraintStart_toStartOf="@id/categoriesTitleTv"
+                app:layout_constraintEnd_toEndOf="@id/categoriesTitleTv"
+                tools:ignore="ContentDescription"
+                android:id="@+id/underlineCategoriesTitleIv"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:clipToPadding="false"
+                android:id="@+id/categoriesRecycler"
+                app:layout_constraintTop_toBottomOf="@id/underlineCategoriesTitleIv">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recently_opened_home"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:textSize="18sp"
+                android:textColor="@color/home_screen_titles"
+                app:layout_constraintTop_toBottomOf="@id/categoriesRecycler"
+                app:layout_constraintStart_toStartOf="parent"
+                fontPath="fonts/home_semi_bold.ttf"
+                tools:ignore="MissingPrefix"
+                android:id="@+id/recentlyOpenedTitleTv"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                app:layout_constraintHorizontal_weight="1"
+                android:layout_height="3dp"
+                android:background="@color/home_screen_title_underline"
+                app:layout_constraintTop_toBottomOf="@id/recentlyOpenedTitleTv"
+                app:layout_constraintStart_toStartOf="@id/recentlyOpenedTitleTv"
+                app:layout_constraintEnd_toEndOf="@id/recentlyOpenedTitleTv"
+                tools:ignore="ContentDescription"
+                android:id="@+id/recentlyOpenTitleIv"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/skeleton_two"
+                android:id="@+id/recentlyOpenedRecycler"
+                app:layout_constraintTop_toBottomOf="@id/recentlyOpenTitleIv">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tags_home"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:textSize="18sp"
+                android:textColor="@color/home_screen_titles"
+                app:layout_constraintTop_toBottomOf="@id/recentlyOpenedRecycler"
+                app:layout_constraintStart_toStartOf="parent"
+                fontPath="fonts/home_semi_bold.ttf"
+                tools:ignore="MissingPrefix"
+                android:id="@+id/tagsTitleTv"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                app:layout_constraintHorizontal_weight="1"
+                android:layout_height="3dp"
+                android:background="@color/home_screen_title_underline"
+                app:layout_constraintTop_toBottomOf="@id/tagsTitleTv"
+                app:layout_constraintStart_toStartOf="@id/tagsTitleTv"
+                app:layout_constraintEnd_toEndOf="@id/tagsTitleTv"
+                tools:ignore="ContentDescription"
+                android:id="@+id/tagsTitleIv"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/skeleton_two"
+                android:id="@+id/tagsRecycler"
+                app:layout_constraintTop_toBottomOf="@id/tagsTitleIv">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

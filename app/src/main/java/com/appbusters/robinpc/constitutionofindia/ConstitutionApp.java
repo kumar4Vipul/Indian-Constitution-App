@@ -3,17 +3,21 @@ package com.appbusters.robinpc.constitutionofindia;
 import android.app.Application;
 import android.content.Context;
 
-public class ConstitutionApp extends Application{
+import io.github.inflationx.calligraphy3.CalligraphyConfig;
+import io.github.inflationx.calligraphy3.CalligraphyInterceptor;
+import io.github.inflationx.viewpump.ViewPump;
 
-    private static Context context;
+public class ConstitutionApp extends Application {
 
     @Override
     public void onCreate() {
-        context = getApplicationContext();
         super.onCreate();
-    }
 
-    public static Context getAppContext() {
-        return context;
+        ViewPump.init(ViewPump.builder()
+                .addInterceptor(new CalligraphyInterceptor(
+                        new CalligraphyConfig.Builder()
+                                .setDefaultFontPath("fonts/splash_english_simple.ttf")
+                                .setFontAttrId(R.attr.fontPath)
+                                .build())).build());
     }
 }
