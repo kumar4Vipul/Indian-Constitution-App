@@ -2,17 +2,13 @@ package com.appbusters.robinpc.constitutionofindia.ui.reading
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import android.util.Log
 import com.appbusters.robinpc.constitutionofindia.R
-import com.appbusters.robinpc.constitutionofindia.Utils.Constants
-import com.appbusters.robinpc.constitutionofindia.Utils.Constants.Companion.DEFAULT_VALUE
-import com.appbusters.robinpc.constitutionofindia.data.model.Category
+import com.appbusters.robinpc.constitutionofindia.utils.Constants
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.DEFAULT_VALUE_INT
 import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseActivity
 import com.google.gson.Gson
-import com.google.gson.JsonElement
 import org.json.JSONObject
 import java.io.IOException
 import java.nio.charset.Charset
@@ -44,7 +40,7 @@ class ReadingActivity : BaseActivity() {
     }
 
     private fun getExtraData() {
-        readElementId = intent.getIntExtra(READ_ELEMENT_ID, DEFAULT_VALUE)
+        readElementId = intent.getIntExtra(READ_ELEMENT_ID, DEFAULT_VALUE_INT)
     }
 
     private fun getReadElement() {

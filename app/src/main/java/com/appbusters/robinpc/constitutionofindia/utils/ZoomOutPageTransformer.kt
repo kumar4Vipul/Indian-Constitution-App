@@ -1,4 +1,4 @@
-package com.appbusters.robinpc.constitutionofindia.Utils
+package com.appbusters.robinpc.constitutionofindia.utils
 
 import android.view.View
 import androidx.viewpager.widget.ViewPager

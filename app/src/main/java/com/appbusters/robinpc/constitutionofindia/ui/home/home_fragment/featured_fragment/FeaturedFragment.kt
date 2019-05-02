@@ -5,11 +5,11 @@ import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import androidx.core.content.ContextCompat
 import com.appbusters.robinpc.constitutionofindia.R
-import com.appbusters.robinpc.constitutionofindia.Utils.Constants
-import com.appbusters.robinpc.constitutionofindia.Utils.Constants.Companion.EXTRA_INDEX
-import com.appbusters.robinpc.constitutionofindia.Utils.Constants.Companion.FEATURED_PREAMBLE_INDEX
-import com.appbusters.robinpc.constitutionofindia.Utils.Constants.Companion.FEATURED_SAVED_BY_YOU_INDEX
-import com.appbusters.robinpc.constitutionofindia.Utils.Constants.Companion.FEATURED_YOUR_PROGRESS_INDEX
+import com.appbusters.robinpc.constitutionofindia.utils.Constants
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.EXTRA_INDEX
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.FEATURED_PREAMBLE_INDEX
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.FEATURED_SAVED_BY_YOU_INDEX
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.FEATURED_YOUR_PROGRESS_INDEX
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseFragment
 import com.appbusters.robinpc.constitutionofindia.ui.reading.ReadingActivity
 import kotlinx.android.synthetic.main.fragment_featured.*
