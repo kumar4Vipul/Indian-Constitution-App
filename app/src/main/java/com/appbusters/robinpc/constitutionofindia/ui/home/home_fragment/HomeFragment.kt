@@ -9,8 +9,8 @@ import com.appbusters.robinpc.constitutionofindia.R
 import com.appbusters.robinpc.constitutionofindia.utils.ZoomOutPageTransformer
 import com.appbusters.robinpc.constitutionofindia.data.model.Category
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseFragment
-import com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapters.CategoriesListAdapter
-import com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapters.FeaturedPagerAdapter
+import com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapter.CategoriesListAdapter
+import com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapter.FeaturedPagerAdapter
 import com.appbusters.robinpc.constitutionofindia.ui.listing.ListingActivity
 import kotlinx.android.synthetic.main.fragment_home.*
 
@@ -54,6 +54,7 @@ class HomeFragment : BaseFragment(), CategoriesListAdapter.CategoryClickListener
         return categoriesList
     }
 
+    //TODO: inject using dagger
     private fun comparator(): DiffUtil.ItemCallback<Category> {
         return object : DiffUtil.ItemCallback<Category>() {
             override fun areItemsTheSame(oldItem: Category, newItem: Category): Boolean {

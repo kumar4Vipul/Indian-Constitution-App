@@ -6,6 +6,8 @@ class Constants {
         const val DEFAULT_VALUE_FLOAT = 0f
         const val DEFAULT_VALUE_LONG = 0L
         const val DEFAULT_VALUE_STRING = ""
+        const val CHARSET_UTF_8 = "UTF-8"
+        const val MAIN_DB_PATH = "main_db.json"
 
         const val FEATURED_PREAMBLE_INDEX = 0
         const val FEATURED_SAVED_BY_YOU_INDEX = 1

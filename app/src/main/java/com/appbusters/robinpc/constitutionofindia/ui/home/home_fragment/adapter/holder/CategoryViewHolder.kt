@@ -1,15 +1,10 @@
-package com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapters.view_holders
+package com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapter.holder
 
-import android.content.res.ColorStateList
-import android.graphics.Color
-import android.util.Log
 import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.appbusters.robinpc.constitutionofindia.R
 import com.appbusters.robinpc.constitutionofindia.data.model.Category
-import kotlinx.android.synthetic.main.fragment_home.view.*
-import kotlinx.android.synthetic.main.row_categories.view.*
+import kotlinx.android.synthetic.main.row_category.view.*
 
 class CategoryViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 

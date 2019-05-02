@@ -1,4 +1,4 @@
-package com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapters
+package com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

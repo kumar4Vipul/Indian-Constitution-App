@@ -1,0 +1,37 @@
+{
+	"read_elements": [
+		{
+			"read_element_id": 0,
+			"category": "PREAMBLE",
+			"content": "<p><b>WE, THE PEOPLE OF INDIA,</b> having solemnly resolved to constitute India into a 1<b>[SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC]</b> and to secure to all its citizens:</p> <br> <p><b>JUSTICE</b>, social, economic and political;</p> <br> <p><b>LIBERTY</b> of thought, expression, belief, faith and worship;</p> <br> <p><b>EQUALITY</b> of status and of opportunity; and to promote among them all</p> <br> <p><b>FRATERNITY</b> assuring the dignity of the individual and the 2 [unity and integrity of the Nation];</p> <br> <p><b>IN OUR CONSTITUENT ASSEMBLY</b> this twenty sixth day of November, 1949, do HEREBY ADOPT, <b>ENACT AND GIVE TO OURSELVES THIS CONSTITUTION.</b></p> <br> <p><small>(1) Subs. by the Constitution (Forty-second Amendment) Act, 1976, s. 2, for  “SOVEREIGN DEMOCRATIC REPUBLIC”  (w.e.f. 3-1-1977).</p> <br> <p>(2) Subs. by s. 2, ibid., for  “unity of the Nation”  (w.e.f. 3-1-1977).</small></p>",
+			"tags": ["justice","equality","liberty","fraternity","sovereign"],
+			"title": "PREAMBLE"
+		}
+	],
+	"tags": [
+		{
+			"title": "justice",
+			"read_element_ids": [
+					0, 1, 2, 3, 7, 11, 24
+			]
+		},
+		{
+			"title": "education",
+			"read_element_ids": [
+					4, 6, 8, 11, 15, 19, 24
+			]
+		},
+		{
+			"title": "justice",
+			"read_element_ids": [
+					0, 1, 2, 3, 7, 11, 24
+			]
+		},
+		{
+			"title": "justice",
+			"read_element_ids": [
+					4, 6, 8, 11, 15, 19, 24
+			]
+		}
+	]
+}

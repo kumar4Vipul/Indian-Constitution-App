@@ -1,4 +1,4 @@
-package com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapters
+package com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.appbusters.robinpc.constitutionofindia.R
 import com.appbusters.robinpc.constitutionofindia.data.model.Category
-import com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapters.view_holders.CategoryViewHolder
+import com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapter.holder.CategoryViewHolder
 
 class CategoriesListAdapter(comparator: DiffUtil.ItemCallback<Category>):
         ListAdapter<Category, CategoryViewHolder>(comparator),
@@ -16,7 +16,7 @@ class CategoriesListAdapter(comparator: DiffUtil.ItemCallback<Category>):
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {
         return CategoryViewHolder(
-                LayoutInflater.from(parent.context).inflate(R.layout.row_categories, parent, false)
+                LayoutInflater.from(parent.context).inflate(R.layout.row_category, parent, false)
         )
     }
 

@@ -2,13 +2,20 @@ package com.appbusters.robinpc.constitutionofindia.ui.reading
 
 import android.content.Context
 import android.content.Intent
-import android.util.Log
+import android.text.Html
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.appbusters.robinpc.constitutionofindia.R
-import com.appbusters.robinpc.constitutionofindia.utils.Constants
+import com.appbusters.robinpc.constitutionofindia.data.model.Category
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.DEFAULT_VALUE_INT
 import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
+import com.appbusters.robinpc.constitutionofindia.data.model.Tag
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseActivity
+import com.appbusters.robinpc.constitutionofindia.ui.reading.adapter.TagListAdapter
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CHARSET_UTF_8
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.MAIN_DB_PATH
 import com.google.gson.Gson
+import kotlinx.android.synthetic.main.activity_reading.*
 import org.json.JSONObject
 import java.io.IOException
 import java.nio.charset.Charset
@@ -16,7 +23,8 @@ import java.nio.charset.Charset
 class ReadingActivity : BaseActivity() {
 
     private var readElementId: Int = -1
-    private lateinit var readElement: ReadElement
+    private var readElement: ReadElement? = null
+    private lateinit var tagsAdapter: TagListAdapter
 
     companion object {
         private const val READ_ELEMENT_ID = "READ_ELEMENT_ID"
@@ -34,66 +42,79 @@ class ReadingActivity : BaseActivity() {
 
     override fun setup() {
         setStatusBarColor(R.color.reading_status_bar)
-        getExtraData()
-        getReadElement()
-        loadRespectiveElement()
+        getIntentData()
+        loadReadElement()
+        setTagsRecycler()
+        renderReadElement()
     }
 
-    private fun getExtraData() {
+    private fun getIntentData() {
         readElementId = intent.getIntExtra(READ_ELEMENT_ID, DEFAULT_VALUE_INT)
     }
 
-    private fun getReadElement() {
-        when(readElementId) {
-            Constants.Companion.ReadElementIds.PREAMBLE_ID.ordinal -> {
-//                readElement = ReadElement(
-//                        0,
-//                        "Robin Kamboj",
-//                        "Robin is a great guy, but you know....",
-//                        Category(R.color.preamble_color, getString(R.string.amendments_categories)),
-//                                listOf("justice", "equality", "liberty", "fraternity", "sovereign")
-//                )
-            }
-        }
-//        val list = listOf(readElement, readElement)
+    @Suppress("DEPRECATION")
+    private fun renderReadElement() {
+        readElement?.let {
+            titleTv.text = it.title
 
-//        Log.e("tag", Gson().toJson(list))
+            if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.N)
+                contentTv.text = Html.fromHtml(it.content)
+            else
+                contentTv.text = Html.fromHtml(it.content, Html.FROM_HTML_MODE_COMPACT)
+
+            tagsAdapter.submitList(
+                    getTagsFromStrings(it.tags, it.categoryName)
+            )
+        }
     }
 
-    private fun loadRespectiveElement() {
-        var json: String? = null
+    private fun getTagsFromStrings(stringTags: List<String>, categoryName: String): MutableList<Tag> {
+        val tagsList: MutableList<Tag> = ArrayList()
+        for(tag in stringTags) tagsList.add(Tag(tag, categoryName))
+        return tagsList
+    }
+
+    private fun setTagsRecycler() {
+        tagsRv.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        tagsAdapter = TagListAdapter(comparator())
+        tagsRv.adapter = tagsAdapter
+    }
+
+    private fun loadReadElement() {
+        val json: String?
         try {
-            Log.e("tag", "try")
-            val inputStream = assets.open("main_db.json")
+            val inputStream = assets.open(MAIN_DB_PATH)
             val size = inputStream.available()
             val buffer = ByteArray(size)
             inputStream.read(buffer)
             inputStream.close()
-            json = String(buffer, Charset.forName("UTF-8"))
+            json = String(buffer, Charset.forName(CHARSET_UTF_8))
 
             val jsonObject = JSONObject(json)
-
-            Log.e("tag", "json $jsonObject")
-
             val readElementsObjects = jsonObject.getJSONArray("read_elements")
-
-            Log.e("tag", "read elements $readElementsObjects")
-//
-            val readElementZero = readElementsObjects.getJSONObject(0)
-
-            Log.e("tag", "read element zero $readElementZero")
-
-            val readElement = Gson().fromJson(readElementZero.toString(8), ReadElement::class.java)
-
-            Log.e("tag", "read element zero ${readElement.id} ${readElement.title} ${readElement.content}")
+            val readElementZero = readElementsObjects.getJSONObject(readElementId)
+            readElement = Gson().fromJson(readElementZero.toString(), ReadElement::class.java)
         }
         catch (e: IOException) {
-            Log.e("tag", "error ${e.message} ${e.cause}")
+            //TODO: be very very sorry to the user. apologize like hell.
         }
     }
 
     override fun onBackPressed() {
         super.onBackPressed()
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+    }
+
+    //TODO: inject using dagger
+    private fun comparator(): DiffUtil.ItemCallback<Tag> {
+        return object : DiffUtil.ItemCallback<Tag>() {
+            override fun areItemsTheSame(oldItem: Tag, newItem: Tag): Boolean {
+                return oldItem.name == newItem.name
+            }
+
+            override fun areContentsTheSame(oldItem: Tag, newItem: Tag): Boolean {
+                return oldItem == newItem
+            }
+        }
     }
 }
