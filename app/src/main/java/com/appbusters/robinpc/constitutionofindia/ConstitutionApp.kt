@@ -1,5 +1,6 @@
 package com.appbusters.robinpc.constitutionofindia
 
+import android.app.Activity
 import android.app.Application
 import android.content.Context
 import com.appbusters.robinpc.constitutionofindia.di.component.ConstitutionAppComponent
@@ -31,5 +32,11 @@ class ConstitutionApp : Application() {
 
     fun constitutionAppComponent(): ConstitutionAppComponent {
         return component
+    }
+
+    companion object {
+        fun get(activity: Activity): ConstitutionApp {
+            return activity.application as ConstitutionApp
+        }
     }
 }

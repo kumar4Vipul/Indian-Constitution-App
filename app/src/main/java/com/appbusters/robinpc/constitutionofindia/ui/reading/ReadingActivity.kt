@@ -3,28 +3,35 @@ package com.appbusters.robinpc.constitutionofindia.ui.reading
 import android.content.Context
 import android.content.Intent
 import android.text.Html
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
 import com.appbusters.robinpc.constitutionofindia.R
-import com.appbusters.robinpc.constitutionofindia.data.model.Category
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.DEFAULT_VALUE_INT
 import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
 import com.appbusters.robinpc.constitutionofindia.data.model.Tag
+import com.appbusters.robinpc.constitutionofindia.di.component.activity.DaggerReadActivityComponent
+import com.appbusters.robinpc.constitutionofindia.di.module.activity.ReadActivityModule
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseActivity
 import com.appbusters.robinpc.constitutionofindia.ui.reading.adapter.TagListAdapter
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CHARSET_UTF_8
-import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.MAIN_DB_PATH
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_reading.*
 import org.json.JSONObject
 import java.io.IOException
+import java.io.InputStream
 import java.nio.charset.Charset
+import javax.inject.Inject
 
 class ReadingActivity : BaseActivity() {
 
+    @Inject
+    lateinit var tagsAdapter: TagListAdapter
+
+    @Inject
+    lateinit var databaseInputStream: InputStream
+
     private var readElementId: Int = -1
     private var readElement: ReadElement? = null
-    private lateinit var tagsAdapter: TagListAdapter
 
     companion object {
         private const val READ_ELEMENT_ID = "READ_ELEMENT_ID"
@@ -43,9 +50,17 @@ class ReadingActivity : BaseActivity() {
     override fun setup() {
         setStatusBarColor(R.color.reading_status_bar)
         getIntentData()
+        setComponent()
         loadReadElement()
         setTagsRecycler()
         renderReadElement()
+    }
+
+    private fun setComponent() {
+        DaggerReadActivityComponent.builder()
+                .constitutionAppComponent(ConstitutionApp.get(this).constitutionAppComponent())
+                .readActivityModule(ReadActivityModule(this))
+                .build().injectReadingActivity(this)
     }
 
     private fun getIntentData() {
@@ -76,18 +91,16 @@ class ReadingActivity : BaseActivity() {
 
     private fun setTagsRecycler() {
         tagsRv.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        tagsAdapter = TagListAdapter(comparator())
         tagsRv.adapter = tagsAdapter
     }
 
     private fun loadReadElement() {
         val json: String?
         try {
-            val inputStream = assets.open(MAIN_DB_PATH)
-            val size = inputStream.available()
+            val size = databaseInputStream.available()
             val buffer = ByteArray(size)
-            inputStream.read(buffer)
-            inputStream.close()
+            databaseInputStream.read(buffer)
+            databaseInputStream.close()
             json = String(buffer, Charset.forName(CHARSET_UTF_8))
 
             val jsonObject = JSONObject(json)
@@ -103,18 +116,5 @@ class ReadingActivity : BaseActivity() {
     override fun onBackPressed() {
         super.onBackPressed()
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
-    }
-
-    //TODO: inject using dagger
-    private fun comparator(): DiffUtil.ItemCallback<Tag> {
-        return object : DiffUtil.ItemCallback<Tag>() {
-            override fun areItemsTheSame(oldItem: Tag, newItem: Tag): Boolean {
-                return oldItem.name == newItem.name
-            }
-
-            override fun areContentsTheSame(oldItem: Tag, newItem: Tag): Boolean {
-                return oldItem == newItem
-            }
-        }
     }
 }

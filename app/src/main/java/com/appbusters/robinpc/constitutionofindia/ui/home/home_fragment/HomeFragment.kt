@@ -1,22 +1,28 @@
 package com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment
 
-
 import android.app.Activity
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
 
 import com.appbusters.robinpc.constitutionofindia.R
 import com.appbusters.robinpc.constitutionofindia.utils.ZoomOutPageTransformer
 import com.appbusters.robinpc.constitutionofindia.data.model.Category
+import com.appbusters.robinpc.constitutionofindia.di.component.fragment.DaggerHomeFragmentComponent
+import com.appbusters.robinpc.constitutionofindia.di.module.fragment.HomeFragmentModule
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseFragment
 import com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapter.CategoriesListAdapter
 import com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapter.FeaturedPagerAdapter
 import com.appbusters.robinpc.constitutionofindia.ui.listing.ListingActivity
 import kotlinx.android.synthetic.main.fragment_home.*
+import javax.inject.Inject
 
 class HomeFragment : BaseFragment(), CategoriesListAdapter.CategoryClickListener {
 
+    @Inject
     lateinit var categoriesAdapter: CategoriesListAdapter
+
+    @Inject
+    lateinit var featuredPagerAdapter: FeaturedPagerAdapter
 
     override fun getLayoutResId(): Int {
         return R.layout.fragment_home
@@ -27,18 +33,27 @@ class HomeFragment : BaseFragment(), CategoriesListAdapter.CategoryClickListener
     }
 
     override fun setup() {
+        setComponent()
         setFeaturedPagerAdapter()
         setCategoriesAdapter()
     }
 
+    private fun setComponent() {
+        activity?.let {
+            DaggerHomeFragmentComponent.builder()
+                    .constitutionAppComponent(ConstitutionApp.get(it).constitutionAppComponent())
+                    .homeFragmentModule(HomeFragmentModule(childFragmentManager))
+                    .build().injectHomeFragment(this)
+        }
+    }
+
     private fun setFeaturedPagerAdapter() {
-        featuredViewPager.adapter = FeaturedPagerAdapter(childFragmentManager)
+        featuredViewPager.adapter = featuredPagerAdapter
         featuredViewPager.setPageTransformer(false, ZoomOutPageTransformer())
         dotPagerIndicator.setViewPager(featuredViewPager)
     }
 
     private fun setCategoriesAdapter() {
-        categoriesAdapter = CategoriesListAdapter(comparator())
         categoriesAdapter.setCategoryClickListener(this)
         categoriesRecycler.adapter = categoriesAdapter
         categoriesRecycler.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
@@ -52,19 +67,6 @@ class HomeFragment : BaseFragment(), CategoriesListAdapter.CategoryClickListener
         categoriesList.add(Category(R.color.amendment_color, getString(R.string.amendments_categories)))
         categoriesList.add(Category(R.color.preamble_color, getString(R.string.preamble_categories)))
         return categoriesList
-    }
-
-    //TODO: inject using dagger
-    private fun comparator(): DiffUtil.ItemCallback<Category> {
-        return object : DiffUtil.ItemCallback<Category>() {
-            override fun areItemsTheSame(oldItem: Category, newItem: Category): Boolean {
-                return oldItem.name == newItem.name
-            }
-
-            override fun areContentsTheSame(oldItem: Category, newItem: Category): Boolean {
-                return oldItem == newItem
-            }
-        }
     }
 
     override fun onCategoryClicked(category: Category) {
