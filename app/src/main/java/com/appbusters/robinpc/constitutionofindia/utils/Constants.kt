@@ -13,11 +13,15 @@ class Constants {
         const val FEATURED_SAVED_BY_YOU_INDEX = 1
         const val FEATURED_YOUR_PROGRESS_INDEX = 2
 
+        const val CATEGORY_PARTS = "PARTS"
+        const val CATEGORY_PREAMBLE = "PREAMBLE"
+        const val CATEGORY_SCHEDULES = "SCHEDULES"
+        const val CATEGORY_AMENDMENTS = "AMENDMENTS"
+
         const val EXTRA_INDEX = "EXTRA_INDEX"
         const val EXTRA_READ_ELEMENT = "EXTRA_READ_ELEMENT"
+        const val EXTRA_CATEGORY = "EXTRA_CATEGORY"
 
-        enum class ReadElementIds {
-            PREAMBLE_ID
-        }
+        const val PREAMBLE_ID = 0
     }
 }

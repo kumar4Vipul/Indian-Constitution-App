@@ -44,6 +44,10 @@
 
     <!-- listing screen -->
     <color name="listing_status_bar">#EBEBEB</color>
+    <color name="listing_header">#2C2C2C</color>
+
+    <!-- intermediate screen -->
+    <color name="intermediate_status_bar">#EBEBEB</color>
 
 </resources>
 

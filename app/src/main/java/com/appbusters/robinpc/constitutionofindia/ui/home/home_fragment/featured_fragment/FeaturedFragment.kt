@@ -12,6 +12,7 @@ import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.FEAT
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.FEATURED_YOUR_PROGRESS_INDEX
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseFragment
 import com.appbusters.robinpc.constitutionofindia.ui.reading.ReadingActivity
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.PREAMBLE_ID
 import kotlinx.android.synthetic.main.fragment_featured.*
 
 class FeaturedFragment : BaseFragment() {
@@ -78,7 +79,7 @@ class FeaturedFragment : BaseFragment() {
             when(pageIndex) {
                 FEATURED_PREAMBLE_INDEX -> {
                     context?.let {
-                        startActivity(ReadingActivity.newIntent(it, Constants.Companion.ReadElementIds.PREAMBLE_ID.ordinal))
+                        startActivity(ReadingActivity.newIntent(it, PREAMBLE_ID))
                         (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
                     }
                 }
