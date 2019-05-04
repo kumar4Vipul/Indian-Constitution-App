@@ -12,7 +12,7 @@ import dagger.Provides
 import java.io.InputStream
 
 @Module
-class ReadActivityModule(val context: Context) {
+class ReadActivityModule {
 
     @Provides
     @PerFragmentScope
@@ -32,18 +32,5 @@ class ReadActivityModule(val context: Context) {
                 return oldItem == newItem
             }
         }
-    }
-
-    @Provides
-    @PerFragmentScope
-    fun mainDatabaseInputStream(@MainDatabaseString databaseFilePath: String): InputStream {
-        return context.assets.open(databaseFilePath)
-    }
-
-    @Provides
-    @MainDatabaseString
-    @PerFragmentScope
-    fun mainDatabaseFilePath(): String {
-        return Constants.MAIN_DB_PATH
     }
 }

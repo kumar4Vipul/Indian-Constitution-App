@@ -9,6 +9,7 @@ import com.appbusters.robinpc.constitutionofindia.di.component.activity.DaggerLi
 import com.appbusters.robinpc.constitutionofindia.di.module.activity.ListingActivityModule
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseActivity
 import com.appbusters.robinpc.constitutionofindia.ui.listing.adapter.ListingListAdapter
+import com.appbusters.robinpc.constitutionofindia.ui.reading.ReadingActivity
 import com.appbusters.robinpc.constitutionofindia.utils.Constants
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.AMENDMENTS_END_INDEX
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.AMENDMENTS_START_INDEX
@@ -28,7 +29,7 @@ import java.io.InputStream
 import java.nio.charset.Charset
 import javax.inject.Inject
 
-class ListingActivity : BaseActivity() {
+class ListingActivity : BaseActivity(), ListingListAdapter.ListItemClickListener {
 
     @Inject
     lateinit var listingAdapter: ListingListAdapter
@@ -133,6 +134,12 @@ class ListingActivity : BaseActivity() {
     private fun setRecycler() {
         listingRv.adapter = listingAdapter
         listingAdapter.submitList(elementsList)
+        listingAdapter.setListItemClickListener(this)
+    }
+
+    override fun onListItemClicked(readElement: ReadElement) {
+        startActivity(ReadingActivity.newIntent(this, readElement))
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
     }
 
     override fun onBackPressed() {

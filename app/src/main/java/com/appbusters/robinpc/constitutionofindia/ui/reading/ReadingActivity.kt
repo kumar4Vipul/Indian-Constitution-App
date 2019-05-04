@@ -10,17 +10,12 @@ import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.DEFA
 import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
 import com.appbusters.robinpc.constitutionofindia.data.model.Tag
 import com.appbusters.robinpc.constitutionofindia.di.component.activity.DaggerReadActivityComponent
-import com.appbusters.robinpc.constitutionofindia.di.module.activity.ReadActivityModule
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseActivity
 import com.appbusters.robinpc.constitutionofindia.ui.reading.adapter.TagListAdapter
-import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CHARSET_UTF_8
-import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.JSON_READ_ELEMENTS
+import com.appbusters.robinpc.constitutionofindia.utils.Constants
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.EXTRA_READ_ELEMENT
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_reading.*
-import org.json.JSONObject
-import java.io.IOException
-import java.io.InputStream
-import java.nio.charset.Charset
 import javax.inject.Inject
 
 class ReadingActivity : BaseActivity() {
@@ -31,18 +26,13 @@ class ReadingActivity : BaseActivity() {
     @Inject
     lateinit var tagsAdapter: TagListAdapter
 
-    @Inject
-    lateinit var databaseInputStream: InputStream
-
-    private var readElementId: Int = -1
     private var readElement: ReadElement? = null
 
     companion object {
-        private const val READ_ELEMENT_ID = "READ_ELEMENT_ID"
 
-        fun newIntent(context: Context, readElementId: Int): Intent {
+        fun newIntent(context: Context, readElement: ReadElement): Intent {
             val intent = Intent(context, ReadingActivity::class.java)
-            intent.putExtra(READ_ELEMENT_ID, readElementId)
+            intent.putExtra(EXTRA_READ_ELEMENT, readElement)
             return intent
         }
     }
@@ -63,12 +53,11 @@ class ReadingActivity : BaseActivity() {
     private fun setComponent() {
         DaggerReadActivityComponent.builder()
                 .constitutionAppComponent(ConstitutionApp.get(this).constitutionAppComponent())
-                .readActivityModule(ReadActivityModule(this))
                 .build().injectReadingActivity(this)
     }
 
     private fun getIntentData() {
-        readElementId = intent.getIntExtra(READ_ELEMENT_ID, DEFAULT_VALUE_INT)
+        readElement = intent.getParcelableExtra(EXTRA_READ_ELEMENT)
     }
 
     @Suppress("DEPRECATION")
@@ -82,7 +71,7 @@ class ReadingActivity : BaseActivity() {
                 contentTv.text = Html.fromHtml(it.content, Html.FROM_HTML_MODE_COMPACT)
 
             tagsAdapter.submitList(
-                    getTagsFromStrings(it.tags, it.categoryName)
+                    getTagsFromStrings(it.tags!!, it.categoryName!!)
             )
         }
     }
@@ -99,22 +88,7 @@ class ReadingActivity : BaseActivity() {
     }
 
     private fun loadReadElement() {
-        val json: String?
-        try {
-            val size = databaseInputStream.available()
-            val buffer = ByteArray(size)
-            databaseInputStream.read(buffer)
-            databaseInputStream.close()
-            json = String(buffer, Charset.forName(CHARSET_UTF_8))
-
-            val jsonObject = JSONObject(json)
-            val readElementsObjects = jsonObject.getJSONArray(JSON_READ_ELEMENTS)
-            val readElementZero = readElementsObjects.getJSONObject(readElementId)
-            readElement = gson.fromJson(readElementZero.toString(), ReadElement::class.java)
-        }
-        catch (e: IOException) {
-            //TODO: be very very sorry to the user. apologize like hell.
-        }
+        //TODO: fetch read element from preferences or from serializable/parcelable
     }
 
     override fun onBackPressed() {

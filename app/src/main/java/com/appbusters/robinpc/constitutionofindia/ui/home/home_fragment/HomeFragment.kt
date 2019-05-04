@@ -8,6 +8,7 @@ import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
 import com.appbusters.robinpc.constitutionofindia.R
 import com.appbusters.robinpc.constitutionofindia.utils.ZoomOutPageTransformer
 import com.appbusters.robinpc.constitutionofindia.data.model.Category
+import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
 import com.appbusters.robinpc.constitutionofindia.di.component.fragment.DaggerHomeFragmentComponent
 import com.appbusters.robinpc.constitutionofindia.di.module.fragment.HomeFragmentModule
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseFragment
@@ -83,7 +84,9 @@ class HomeFragment : BaseFragment(), CategoriesListAdapter.CategoryClickListener
             var intent: Intent? = null
 
             when(category.name) {
-                CATEGORY_PREAMBLE -> intent = ReadingActivity.newIntent(it, Constants.PREAMBLE_ID)
+                CATEGORY_PREAMBLE -> intent = ReadingActivity.newIntent(it, ReadElement(
+                        1, "", "", "", "", "", ArrayList()
+                ))
                 CATEGORY_PARTS -> intent = IntermediateActivity.newIntent(it, category.name)
                 CATEGORY_SCHEDULES, CATEGORY_AMENDMENTS -> intent = ListingActivity.newIntent(it, category.name)
             }
