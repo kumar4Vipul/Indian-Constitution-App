@@ -13,7 +13,7 @@
 			"read_element_id": 1,
 			"title": "SCHEDULE 1",
 			"subtitle": null,
-			"category": "SCHEDULE",
+			"category": "SCHEDULES",
 			"short_description": null,
 			"content": "This is a schedule.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -22,7 +22,7 @@
 			"read_element_id": 2,
 			"title": "SCHEDULE 2",
 			"subtitle": null,
-			"category": "SCHEDULE",
+			"category": "SCHEDULES",
 			"short_description": null,
 			"content": "This is a schedule.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -31,7 +31,7 @@
 			"read_element_id": 3,
 			"title": "SCHEDULE 3",
 			"subtitle": null,
-			"category": "SCHEDULE",
+			"category": "SCHEDULES",
 			"short_description": null,
 			"content": "This is a schedule.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -40,7 +40,7 @@
 			"read_element_id": 4,
 			"title": "SCHEDULE 4",
 			"subtitle": null,
-			"category": "SCHEDULE",
+			"category": "SCHEDULES",
 			"short_description": null,
 			"content": "This is a schedule.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -49,7 +49,7 @@
 			"read_element_id": 5,
 			"title": "SCHEDULE 5",
 			"subtitle": null,
-			"category": "SCHEDULE",
+			"category": "SCHEDULES",
 			"short_description": null,
 			"content": "This is a schedule.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -58,7 +58,7 @@
 			"read_element_id": 6,
 			"title": "SCHEDULE 6",
 			"subtitle": null,
-			"category": "SCHEDULE",
+			"category": "SCHEDULES",
 			"short_description": null,
 			"content": "This is a schedule.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -67,7 +67,7 @@
 			"read_element_id": 7,
 			"title": "SCHEDULE 7",
 			"subtitle": null,
-			"category": "SCHEDULE",
+			"category": "SCHEDULES",
 			"short_description": null,
 			"content": "This is a schedule.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -76,7 +76,7 @@
 			"read_element_id": 8,
 			"title": "SCHEDULE 8",
 			"subtitle": null,
-			"category": "SCHEDULE",
+			"category": "SCHEDULES",
 			"short_description": null,
 			"content": "This is a schedule.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -85,7 +85,7 @@
 			"read_element_id": 9,
 			"title": "SCHEDULE 9",
 			"subtitle": null,
-			"category": "SCHEDULE",
+			"category": "SCHEDULES",
 			"short_description": null,
 			"content": "This is a schedule.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -94,7 +94,7 @@
 			"read_element_id": 10,
 			"title": "SCHEDULE 10",
 			"subtitle": null,
-			"category": "SCHEDULE",
+			"category": "SCHEDULES",
 			"short_description": null,
 			"content": "This is a schedule.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -103,7 +103,7 @@
 			"read_element_id": 11,
 			"title": "SCHEDULE 11",
 			"subtitle": null,
-			"category": "SCHEDULE",
+			"category": "SCHEDULES",
 			"short_description": null,
 			"content": "This is a schedule.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -112,7 +112,7 @@
 			"read_element_id": 12,
 			"title": "SCHEDULE 12",
 			"subtitle": null,
-			"category": "SCHEDULE",
+			"category": "SCHEDULES",
 			"short_description": null,
 			"content": "This is a schedule.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -121,7 +121,7 @@
 			"read_element_id": 13,
 			"title": "AMENDMENT 1",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -130,7 +130,7 @@
 			"read_element_id": 14,
 			"title": "AMENDMENT 2",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -139,7 +139,7 @@
 			"read_element_id": 15,
 			"title": "AMENDMENT 3",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -148,7 +148,7 @@
 			"read_element_id": 16,
 			"title": "AMENDMENT 4",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -157,7 +157,7 @@
 			"read_element_id": 17,
 			"title": "AMENDMENT 5",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -166,7 +166,7 @@
 			"read_element_id": 18,
 			"title": "AMENDMENT 6",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -175,7 +175,7 @@
 			"read_element_id": 19,
 			"title": "AMENDMENT 7",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -184,7 +184,7 @@
 			"read_element_id": 20,
 			"title": "AMENDMENT 8",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -193,7 +193,7 @@
 			"read_element_id": 21,
 			"title": "AMENDMENT 9",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -202,7 +202,7 @@
 			"read_element_id": 22,
 			"title": "AMENDMENT 10",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -211,7 +211,7 @@
 			"read_element_id": 23,
 			"title": "AMENDMENT 11",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -220,7 +220,7 @@
 			"read_element_id": 24,
 			"title": "AMENDMENT 12",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -229,7 +229,7 @@
 			"read_element_id": 25,
 			"title": "AMENDMENT 13",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -238,7 +238,7 @@
 			"read_element_id": 26,
 			"title": "AMENDMENT 14",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -247,7 +247,7 @@
 			"read_element_id": 27,
 			"title": "AMENDMENT 15",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -256,7 +256,7 @@
 			"read_element_id": 28,
 			"title": "AMENDMENT 16",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -265,7 +265,7 @@
 			"read_element_id": 29,
 			"title": "AMENDMENT 17",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -274,7 +274,7 @@
 			"read_element_id": 30,
 			"title": "AMENDMENT 18",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -283,7 +283,7 @@
 			"read_element_id": 31,
 			"title": "AMENDMENT 19",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -292,7 +292,7 @@
 			"read_element_id": 32,
 			"title": "AMENDMENT 20",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -301,7 +301,7 @@
 			"read_element_id": 33,
 			"title": "AMENDMENT 21",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -310,7 +310,7 @@
 			"read_element_id": 34,
 			"title": "AMENDMENT 22",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -319,7 +319,7 @@
 			"read_element_id": 35,
 			"title": "AMENDMENT 23",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -328,7 +328,7 @@
 			"read_element_id": 36,
 			"title": "AMENDMENT 24",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -337,7 +337,7 @@
 			"read_element_id": 37,
 			"title": "AMENDMENT 25",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -346,7 +346,7 @@
 			"read_element_id": 38,
 			"title": "AMENDMENT 26",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -355,7 +355,7 @@
 			"read_element_id": 39,
 			"title": "AMENDMENT 27",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -364,7 +364,7 @@
 			"read_element_id": 40,
 			"title": "AMENDMENT 28",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -373,7 +373,7 @@
 			"read_element_id": 41,
 			"title": "AMENDMENT 29",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -382,7 +382,7 @@
 			"read_element_id": 42,
 			"title": "AMENDMENT 30",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -391,7 +391,7 @@
 			"read_element_id": 43,
 			"title": "AMENDMENT 31",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -400,7 +400,7 @@
 			"read_element_id": 44,
 			"title": "AMENDMENT 32",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -409,7 +409,7 @@
 			"read_element_id": 45,
 			"title": "AMENDMENT 33",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -418,7 +418,7 @@
 			"read_element_id": 46,
 			"title": "AMENDMENT 34",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -427,7 +427,7 @@
 			"read_element_id": 47,
 			"title": "AMENDMENT 35",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -436,7 +436,7 @@
 			"read_element_id": 48,
 			"title": "AMENDMENT 36",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -445,7 +445,7 @@
 			"read_element_id": 49,
 			"title": "AMENDMENT 37",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -454,7 +454,7 @@
 			"read_element_id": 50,
 			"title": "AMENDMENT 38",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -463,7 +463,7 @@
 			"read_element_id": 51,
 			"title": "AMENDMENT 39",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -472,7 +472,7 @@
 			"read_element_id": 52,
 			"title": "AMENDMENT 40",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -481,7 +481,7 @@
 			"read_element_id": 53,
 			"title": "AMENDMENT 41",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -490,7 +490,7 @@
 			"read_element_id": 54,
 			"title": "AMENDMENT 42",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -499,7 +499,7 @@
 			"read_element_id": 55,
 			"title": "AMENDMENT 43",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -508,7 +508,7 @@
 			"read_element_id": 56,
 			"title": "AMENDMENT 44",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -517,7 +517,7 @@
 			"read_element_id": 57,
 			"title": "AMENDMENT 45",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -526,7 +526,7 @@
 			"read_element_id": 58,
 			"title": "AMENDMENT 46",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -535,7 +535,7 @@
 			"read_element_id": 59,
 			"title": "AMENDMENT 47",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -544,7 +544,7 @@
 			"read_element_id": 60,
 			"title": "AMENDMENT 48",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -553,7 +553,7 @@
 			"read_element_id": 61,
 			"title": "AMENDMENT 49",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -562,7 +562,7 @@
 			"read_element_id": 62,
 			"title": "AMENDMENT 50",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -571,7 +571,7 @@
 			"read_element_id": 63,
 			"title": "AMENDMENT 51",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -580,7 +580,7 @@
 			"read_element_id": 64,
 			"title": "AMENDMENT 52",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -589,7 +589,7 @@
 			"read_element_id": 65,
 			"title": "AMENDMENT 53",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -598,7 +598,7 @@
 			"read_element_id": 66,
 			"title": "AMENDMENT 54",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -607,7 +607,7 @@
 			"read_element_id": 67,
 			"title": "AMENDMENT 55",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -616,7 +616,7 @@
 			"read_element_id": 68,
 			"title": "AMENDMENT 56",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -625,7 +625,7 @@
 			"read_element_id": 69,
 			"title": "AMENDMENT 57",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -634,7 +634,7 @@
 			"read_element_id": 70,
 			"title": "AMENDMENT 58",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -643,7 +643,7 @@
 			"read_element_id": 71,
 			"title": "AMENDMENT 59",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -652,7 +652,7 @@
 			"read_element_id": 72,
 			"title": "AMENDMENT 60",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -661,7 +661,7 @@
 			"read_element_id": 73,
 			"title": "AMENDMENT 61",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -670,7 +670,7 @@
 			"read_element_id": 74,
 			"title": "AMENDMENT 62",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -679,7 +679,7 @@
 			"read_element_id": 75,
 			"title": "AMENDMENT 63",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -688,7 +688,7 @@
 			"read_element_id": 76,
 			"title": "AMENDMENT 64",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -697,7 +697,7 @@
 			"read_element_id": 77,
 			"title": "AMENDMENT 65",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -706,7 +706,7 @@
 			"read_element_id": 78,
 			"title": "AMENDMENT 66",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -715,7 +715,7 @@
 			"read_element_id": 79,
 			"title": "AMENDMENT 67",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -724,7 +724,7 @@
 			"read_element_id": 80,
 			"title": "AMENDMENT 68",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -733,7 +733,7 @@
 			"read_element_id": 81,
 			"title": "AMENDMENT 69",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -742,7 +742,7 @@
 			"read_element_id": 82,
 			"title": "AMENDMENT 70",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -751,7 +751,7 @@
 			"read_element_id": 83,
 			"title": "AMENDMENT 71",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -760,7 +760,7 @@
 			"read_element_id": 84,
 			"title": "AMENDMENT 72",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -769,7 +769,7 @@
 			"read_element_id": 85,
 			"title": "AMENDMENT 73",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -778,7 +778,7 @@
 			"read_element_id": 86,
 			"title": "AMENDMENT 74",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -787,7 +787,7 @@
 			"read_element_id": 87,
 			"title": "AMENDMENT 75",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -796,7 +796,7 @@
 			"read_element_id": 88,
 			"title": "AMENDMENT 76",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -805,7 +805,7 @@
 			"read_element_id": 89,
 			"title": "AMENDMENT 77",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -814,7 +814,7 @@
 			"read_element_id": 90,
 			"title": "AMENDMENT 78",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -823,7 +823,7 @@
 			"read_element_id": 91,
 			"title": "AMENDMENT 79",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -832,7 +832,7 @@
 			"read_element_id": 92,
 			"title": "AMENDMENT 80",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -841,7 +841,7 @@
 			"read_element_id": 93,
 			"title": "AMENDMENT 81",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -850,7 +850,7 @@
 			"read_element_id": 94,
 			"title": "AMENDMENT 82",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -859,7 +859,7 @@
 			"read_element_id": 95,
 			"title": "AMENDMENT 83",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -868,7 +868,7 @@
 			"read_element_id": 96,
 			"title": "AMENDMENT 84",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -877,7 +877,7 @@
 			"read_element_id": 97,
 			"title": "AMENDMENT 85",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -886,7 +886,7 @@
 			"read_element_id": 98,
 			"title": "AMENDMENT 86",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -895,7 +895,7 @@
 			"read_element_id": 99,
 			"title": "AMENDMENT 87",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -904,7 +904,7 @@
 			"read_element_id": 100,
 			"title": "AMENDMENT 88",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -913,7 +913,7 @@
 			"read_element_id": 101,
 			"title": "AMENDMENT 89",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -922,7 +922,7 @@
 			"read_element_id": 102,
 			"title": "AMENDMENT 90",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -931,7 +931,7 @@
 			"read_element_id": 103,
 			"title": "AMENDMENT 91",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -940,7 +940,7 @@
 			"read_element_id": 104,
 			"title": "AMENDMENT 92",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -949,7 +949,7 @@
 			"read_element_id": 105,
 			"title": "AMENDMENT 93",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -958,7 +958,7 @@
 			"read_element_id": 106,
 			"title": "AMENDMENT 94",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -967,7 +967,7 @@
 			"read_element_id": 107,
 			"title": "AMENDMENT 95",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -976,7 +976,7 @@
 			"read_element_id": 108,
 			"title": "AMENDMENT 96",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -985,7 +985,7 @@
 			"read_element_id": 109,
 			"title": "AMENDMENT 97",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -994,7 +994,7 @@
 			"read_element_id": 110,
 			"title": "AMENDMENT 98",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -1003,7 +1003,7 @@
 			"read_element_id": 111,
 			"title": "AMENDMENT 99",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -1012,7 +1012,7 @@
 			"read_element_id": 112,
 			"title": "AMENDMENT 100",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]
@@ -1021,7 +1021,7 @@
 			"read_element_id": 113,
 			"title": "AMENDMENT 101",
 			"subtitle": null,
-			"category": "AMENDMENT",
+			"category": "AMENDMENTS",
 			"short_description": null,
 			"content": "This is an amendment.",
 			"tags": ["tag1", "tag2", "tag3"]

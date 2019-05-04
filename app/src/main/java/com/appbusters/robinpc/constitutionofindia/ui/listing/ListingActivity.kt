@@ -8,6 +8,7 @@ import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
 import com.appbusters.robinpc.constitutionofindia.di.component.activity.DaggerListingActivityComponent
 import com.appbusters.robinpc.constitutionofindia.di.module.activity.ListingActivityModule
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseActivity
+import com.appbusters.robinpc.constitutionofindia.ui.listing.adapter.ListingListAdapter
 import com.appbusters.robinpc.constitutionofindia.utils.Constants
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.AMENDMENTS_END_INDEX
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.AMENDMENTS_START_INDEX
@@ -28,6 +29,9 @@ import java.nio.charset.Charset
 import javax.inject.Inject
 
 class ListingActivity : BaseActivity() {
+
+    @Inject
+    lateinit var listingAdapter: ListingListAdapter
 
     @Inject
     lateinit var gson: Gson
@@ -122,6 +126,13 @@ class ListingActivity : BaseActivity() {
 
     private fun renderViewsForData() {
         headerListingTv.text = categoryName
+
+        setRecycler()
+    }
+
+    private fun setRecycler() {
+        listingRv.adapter = listingAdapter
+        listingAdapter.submitList(elementsList)
     }
 
     override fun onBackPressed() {
