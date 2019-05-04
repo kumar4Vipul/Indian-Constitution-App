@@ -18,6 +18,14 @@ class Constants {
         const val CATEGORY_SCHEDULES = "SCHEDULES"
         const val CATEGORY_AMENDMENTS = "AMENDMENTS"
 
+        const val JSON_READ_ELEMENTS = "read_elements"
+
+        const val SCHEDULES_START_INDEX = 1
+        const val SCHEDULES_END_INDEX = 12
+
+        const val AMENDMENTS_START_INDEX = 13
+        const val AMENDMENTS_END_INDEX = 113
+
         const val EXTRA_INDEX = "EXTRA_INDEX"
         const val EXTRA_READ_ELEMENT = "EXTRA_READ_ELEMENT"
         const val EXTRA_CATEGORY = "EXTRA_CATEGORY"

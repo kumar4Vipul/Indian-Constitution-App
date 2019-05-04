@@ -84,7 +84,7 @@ class HomeFragment : BaseFragment(), CategoriesListAdapter.CategoryClickListener
 
             when(category.name) {
                 CATEGORY_PREAMBLE -> intent = ReadingActivity.newIntent(it, Constants.PREAMBLE_ID)
-                CATEGORY_PARTS -> intent = IntermediateActivity.newIntent(it)
+                CATEGORY_PARTS -> intent = IntermediateActivity.newIntent(it, category.name)
                 CATEGORY_SCHEDULES, CATEGORY_AMENDMENTS -> intent = ListingActivity.newIntent(it, category.name)
             }
 

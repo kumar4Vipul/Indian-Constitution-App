@@ -14,6 +14,7 @@ import com.appbusters.robinpc.constitutionofindia.di.module.activity.ReadActivit
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseActivity
 import com.appbusters.robinpc.constitutionofindia.ui.reading.adapter.TagListAdapter
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CHARSET_UTF_8
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.JSON_READ_ELEMENTS
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_reading.*
 import org.json.JSONObject
@@ -23,6 +24,9 @@ import java.nio.charset.Charset
 import javax.inject.Inject
 
 class ReadingActivity : BaseActivity() {
+
+    @Inject
+    lateinit var gson: Gson
 
     @Inject
     lateinit var tagsAdapter: TagListAdapter
@@ -104,9 +108,9 @@ class ReadingActivity : BaseActivity() {
             json = String(buffer, Charset.forName(CHARSET_UTF_8))
 
             val jsonObject = JSONObject(json)
-            val readElementsObjects = jsonObject.getJSONArray("read_elements")
+            val readElementsObjects = jsonObject.getJSONArray(JSON_READ_ELEMENTS)
             val readElementZero = readElementsObjects.getJSONObject(readElementId)
-            readElement = Gson().fromJson(readElementZero.toString(), ReadElement::class.java)
+            readElement = gson.fromJson(readElementZero.toString(), ReadElement::class.java)
         }
         catch (e: IOException) {
             //TODO: be very very sorry to the user. apologize like hell.

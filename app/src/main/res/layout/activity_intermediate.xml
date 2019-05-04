@@ -32,18 +32,18 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 fontPath="fonts/home_bold.ttf"
                 tools:ignore="MissingPrefix"
-                android:id="@+id/headerListingTv"/>
+                android:id="@+id/headerIntermediateTv"/>
 
             <ImageView
                 android:layout_width="0dp"
                 app:layout_constraintHorizontal_weight="1"
                 android:layout_height="4dp"
                 android:background="@color/home_header"
-                app:layout_constraintTop_toBottomOf="@id/headerListingTv"
-                app:layout_constraintStart_toStartOf="@id/headerListingTv"
-                app:layout_constraintEnd_toEndOf="@id/headerListingTv"
+                app:layout_constraintTop_toBottomOf="@id/headerIntermediateTv"
+                app:layout_constraintStart_toStartOf="@id/headerIntermediateTv"
+                app:layout_constraintEnd_toEndOf="@id/headerIntermediateTv"
                 tools:ignore="ContentDescription"
-                android:id="@+id/underlineHomeHeaderIv"/>
+                android:id="@+id/underlineIntermediateIv"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
@@ -53,11 +53,11 @@
                 android:clipToPadding="false"
                 android:overScrollMode="never"
                 android:scrollbars="none"
-                app:layout_constraintTop_toBottomOf="@id/underlineHomeHeaderIv"
+                app:layout_constraintTop_toBottomOf="@id/underlineIntermediateIv"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:id="@+id/listingRv">
+                android:id="@+id/intermediateRv">
 
             </androidx.recyclerview.widget.RecyclerView>
 
