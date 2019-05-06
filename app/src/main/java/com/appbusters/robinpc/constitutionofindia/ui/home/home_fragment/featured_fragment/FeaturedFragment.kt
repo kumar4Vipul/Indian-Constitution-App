@@ -6,14 +6,16 @@ import android.os.Bundle
 import androidx.core.content.ContextCompat
 import com.appbusters.robinpc.constitutionofindia.R
 import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
-import com.appbusters.robinpc.constitutionofindia.utils.Constants
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.EXTRA_INDEX
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.FEATURED_PREAMBLE_INDEX
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.FEATURED_SAVED_BY_YOU_INDEX
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.FEATURED_YOUR_PROGRESS_INDEX
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseFragment
+import com.appbusters.robinpc.constitutionofindia.ui.listing.ListingActivity
 import com.appbusters.robinpc.constitutionofindia.ui.reading.ReadingActivity
-import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.PREAMBLE_ID
+import com.appbusters.robinpc.constitutionofindia.utils.Constants
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_PREAMBLE
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.PREAMBLE_INDEX
 import kotlinx.android.synthetic.main.fragment_featured.*
 
 class FeaturedFragment : BaseFragment() {
@@ -80,9 +82,11 @@ class FeaturedFragment : BaseFragment() {
             when(pageIndex) {
                 FEATURED_PREAMBLE_INDEX -> {
                     context?.let {
-                        startActivity(ReadingActivity.newIntent(it,  ReadElement(
-                                1, "", "", "", "", "", ArrayList()
-                        )))
+                        startActivity(
+                                ListingActivity.newIntent(
+                                        it, CATEGORY_PREAMBLE, CATEGORY_PREAMBLE, PREAMBLE_INDEX, PREAMBLE_INDEX
+                                )
+                        )
                         (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
                     }
                 }

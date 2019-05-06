@@ -14,14 +14,18 @@ import com.appbusters.robinpc.constitutionofindia.di.module.fragment.HomeFragmen
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseFragment
 import com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapter.CategoriesListAdapter
 import com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapter.FeaturedPagerAdapter
-import com.appbusters.robinpc.constitutionofindia.ui.intermediate.IntermediateActivity
+import com.appbusters.robinpc.constitutionofindia.ui.intermediate.MiddleActivity
 import com.appbusters.robinpc.constitutionofindia.ui.listing.ListingActivity
 import com.appbusters.robinpc.constitutionofindia.ui.reading.ReadingActivity
-import com.appbusters.robinpc.constitutionofindia.utils.Constants
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.AMENDMENTS_END_INDEX
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.AMENDMENTS_START_INDEX
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_AMENDMENTS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_PARTS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_PREAMBLE
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_SCHEDULES
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.PREAMBLE_INDEX
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.SCHEDULES_END_INDEX
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.SCHEDULES_START_INDEX
 import kotlinx.android.synthetic.main.fragment_home.*
 import javax.inject.Inject
 
@@ -84,11 +88,14 @@ class HomeFragment : BaseFragment(), CategoriesListAdapter.CategoryClickListener
             var intent: Intent? = null
 
             when(category.name) {
-                CATEGORY_PREAMBLE -> intent = ReadingActivity.newIntent(it, ReadElement(
-                        1, "", "", "", "", "", ArrayList()
-                ))
-                CATEGORY_PARTS -> intent = IntermediateActivity.newIntent(it, category.name)
-                CATEGORY_SCHEDULES, CATEGORY_AMENDMENTS -> intent = ListingActivity.newIntent(it, category.name)
+                CATEGORY_PARTS ->
+                    intent = MiddleActivity.newIntent(it, category.name)
+                CATEGORY_PREAMBLE ->
+                    intent = ListingActivity.newIntent(it, category.name, category.name, PREAMBLE_INDEX, PREAMBLE_INDEX)
+                CATEGORY_SCHEDULES ->
+                    intent = ListingActivity.newIntent(it, category.name, category.name, SCHEDULES_START_INDEX, SCHEDULES_END_INDEX)
+                CATEGORY_AMENDMENTS ->
+                    intent = ListingActivity.newIntent(it, category.name, category.name, AMENDMENTS_START_INDEX, AMENDMENTS_END_INDEX)
             }
 
             startActivity(intent)

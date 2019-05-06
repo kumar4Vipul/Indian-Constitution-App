@@ -5,13 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.intermediate.IntermediateActivity"
-    android:background="@color/home_background">
+    tools:context=".ui.intermediate.MiddleActivity"
+    android:background="@color/white">
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:overScrollMode="never"
+        android:scrollbars="none"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -32,37 +33,37 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 fontPath="fonts/home_bold.ttf"
                 tools:ignore="MissingPrefix"
-                android:id="@+id/headerIntermediateTv"/>
+                android:id="@+id/headerMiddleTv"/>
 
             <ImageView
                 android:layout_width="0dp"
                 app:layout_constraintHorizontal_weight="1"
                 android:layout_height="4dp"
                 android:background="@color/home_header"
-                app:layout_constraintTop_toBottomOf="@id/headerIntermediateTv"
-                app:layout_constraintStart_toStartOf="@id/headerIntermediateTv"
-                app:layout_constraintEnd_toEndOf="@id/headerIntermediateTv"
+                app:layout_constraintTop_toBottomOf="@id/headerMiddleTv"
+                app:layout_constraintStart_toStartOf="@id/headerMiddleTv"
+                app:layout_constraintEnd_toEndOf="@id/headerMiddleTv"
                 tools:ignore="ContentDescription"
-                android:id="@+id/underlineIntermediateIv"/>
+                android:id="@+id/underlineMiddleIv"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="30dp"
-                android:paddingBottom="30dp"
                 android:clipToPadding="false"
                 android:overScrollMode="never"
                 android:scrollbars="none"
-                app:layout_constraintTop_toBottomOf="@id/underlineIntermediateIv"
+                android:nestedScrollingEnabled="false"
+                app:layout_constraintTop_toBottomOf="@id/underlineMiddleIv"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:id="@+id/intermediateRv">
+                android:id="@+id/middleRv">
 
             </androidx.recyclerview.widget.RecyclerView>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

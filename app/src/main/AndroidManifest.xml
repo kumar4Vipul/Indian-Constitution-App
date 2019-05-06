@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.intermediate.IntermediateActivity"
+        <activity android:name=".ui.intermediate.MiddleActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.listing.ListingActivity"

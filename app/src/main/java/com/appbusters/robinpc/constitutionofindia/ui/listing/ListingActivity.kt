@@ -2,6 +2,7 @@ package com.appbusters.robinpc.constitutionofindia.ui.listing
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
 import com.appbusters.robinpc.constitutionofindia.R
 import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
@@ -11,16 +12,13 @@ import com.appbusters.robinpc.constitutionofindia.ui.base.BaseActivity
 import com.appbusters.robinpc.constitutionofindia.ui.listing.adapter.ListingListAdapter
 import com.appbusters.robinpc.constitutionofindia.ui.reading.ReadingActivity
 import com.appbusters.robinpc.constitutionofindia.utils.Constants
-import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.AMENDMENTS_END_INDEX
-import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.AMENDMENTS_START_INDEX
-import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_AMENDMENTS
-import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_SCHEDULES
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.DEFAULT_VALUE_INT
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.EXTRA_CATEGORY
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.EXTRA_END_INDEX
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.EXTRA_START_INDEX
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.EXTRA_TITLE
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.JSON_READ_ELEMENTS
-import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.SCHEDULES_END_INDEX
-import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.SCHEDULES_START_INDEX
 import com.google.gson.Gson
-import com.google.gson.JsonArray
 import kotlinx.android.synthetic.main.activity_listing.*
 import org.json.JSONArray
 import org.json.JSONObject
@@ -40,13 +38,18 @@ class ListingActivity : BaseActivity(), ListingListAdapter.ListItemClickListener
     @Inject
     lateinit var databaseInputStream: InputStream
 
-    lateinit var categoryName: String
+    var startIndex: Int = 0
+    var endIndex: Int = 0
+    lateinit var titleName: String
     private var elementsList: MutableList<ReadElement> = ArrayList()
 
     companion object {
-        fun newIntent(context: Context, categoryName: String): Intent {
+        fun newIntent(context: Context, categoryName: String, title: String, start: Int, end: Int): Intent {
             val intent = Intent(context, ListingActivity::class.java)
             intent.putExtra(EXTRA_CATEGORY, categoryName)
+            intent.putExtra(EXTRA_START_INDEX, start)
+            intent.putExtra(EXTRA_END_INDEX, end)
+            intent.putExtra(EXTRA_TITLE, title)
             return intent
         }
     }
@@ -71,14 +74,15 @@ class ListingActivity : BaseActivity(), ListingListAdapter.ListItemClickListener
     }
 
     private fun getIntentData() {
-        categoryName = intent.getStringExtra(EXTRA_CATEGORY)
+        startIndex = intent.getIntExtra(EXTRA_START_INDEX, DEFAULT_VALUE_INT)
+        endIndex = intent.getIntExtra(EXTRA_END_INDEX, DEFAULT_VALUE_INT)
+        titleName = intent.getStringExtra(EXTRA_TITLE)
     }
 
     private fun loadReadElements() {
-        val rangePair: Pair<Int, Int> = getElementsRange(categoryName)
 
         try {
-            inflateElementsList(getJsonElementsArray(), rangePair.first, rangePair.second)
+            inflateElementsList(getJsonElementsArray(), startIndex, endIndex)
         }
         catch (e: IOException) {
             //TODO: be very very sorry to the user. apologize like hell.
@@ -86,6 +90,9 @@ class ListingActivity : BaseActivity(), ListingListAdapter.ListItemClickListener
     }
 
     private fun inflateElementsList(readElements: JSONArray, start: Int, end: Int) {
+
+        Log.e("tag", "start and end $start $end")
+
         for(elementId: Int in start..end)
             elementsList.add(
                     gson.fromJson(
@@ -105,28 +112,8 @@ class ListingActivity : BaseActivity(), ListingListAdapter.ListItemClickListener
         return jsonObject.getJSONArray(JSON_READ_ELEMENTS)
     }
 
-    private fun getElementsRange(categoryName: String): Pair<Int, Int> {
-        val startIndex: Int
-        val endIndex: Int
-        when(categoryName) {
-            CATEGORY_AMENDMENTS -> {
-                startIndex = AMENDMENTS_START_INDEX
-                endIndex = AMENDMENTS_END_INDEX
-            }
-            CATEGORY_SCHEDULES -> {
-                startIndex = SCHEDULES_START_INDEX
-                endIndex = SCHEDULES_END_INDEX
-            }
-            else -> {
-                startIndex = 0
-                endIndex = 0
-            }
-        }
-        return Pair(startIndex, endIndex)
-    }
-
     private fun renderViewsForData() {
-        headerListingTv.text = categoryName
+        headerListingTv.text = titleName
 
         setRecycler()
     }
