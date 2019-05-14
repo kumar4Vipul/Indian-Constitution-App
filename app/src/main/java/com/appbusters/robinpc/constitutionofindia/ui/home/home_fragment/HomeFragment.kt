@@ -2,7 +2,9 @@ package com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment
 
 import android.app.Activity
 import android.content.Intent
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
 
 import com.appbusters.robinpc.constitutionofindia.R
@@ -42,6 +44,8 @@ class HomeFragment : BaseFragment(), CategoriesListAdapter.CategoryClickListener
     }
 
     companion object {
+        const val SPAN_COUNT = 2
+
         fun newInstance() = HomeFragment()
     }
 
@@ -69,7 +73,7 @@ class HomeFragment : BaseFragment(), CategoriesListAdapter.CategoryClickListener
     private fun setCategoriesAdapter() {
         categoriesAdapter.setCategoryClickListener(this)
         categoriesRecycler.adapter = categoriesAdapter
-        categoriesRecycler.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+        categoriesRecycler.layoutManager = GridLayoutManager(context, SPAN_COUNT, RecyclerView.VERTICAL, false)
         categoriesAdapter.submitList(getCategoriesList())
     }
 

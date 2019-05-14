@@ -41,9 +41,6 @@ class ListingHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         itemView.setOnClickListener {
             listItemClickListener.onListingItemClicked(readElement)
         }
-        itemView.bookmarkIv.setOnClickListener {
-
-        }
     }
 
     private fun getCategoryColor(categoryName: String): Int {

@@ -90,9 +90,6 @@ class ListingActivity : BaseActivity(), ListingListAdapter.ListItemClickListener
     }
 
     private fun inflateElementsList(readElements: JSONArray, start: Int, end: Int) {
-
-        Log.e("tag", "start and end $start $end")
-
         for(elementId: Int in start..end)
             elementsList.add(
                     gson.fromJson(

@@ -55,20 +55,7 @@
             android:gravity="start|center_vertical"
             tools:ignore="MissingPrefix,RtlSymmetry"
             app:layout_constraintStart_toEndOf="@id/startLineIv"
-            app:layout_constraintEnd_toStartOf="@id/bookmarkIv"/>
-
-        <ImageView
-            android:layout_width="?attr/actionBarSize"
-            android:layout_height="?attr/actionBarSize"
-            android:id="@+id/bookmarkIv"
-            android:contentDescription="@string/bookmark_button"
-            android:src="@drawable/ic_bookmark"
-            android:padding="16dp"
-            android:layout_marginEnd="8dp"
-            android:tint="@color/skeleton_two"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
