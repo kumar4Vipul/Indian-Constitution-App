@@ -29,7 +29,7 @@ class ListingActivityModule(val context: Context) {
             }
 
             override fun areContentsTheSame(oldItem: ReadElement, newItem: ReadElement): Boolean {
-                return oldItem == newItem
+                return oldItem.equals(newItem)
             }
         }
     }

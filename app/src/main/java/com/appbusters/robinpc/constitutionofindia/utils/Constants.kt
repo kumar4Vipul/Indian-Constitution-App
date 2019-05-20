@@ -21,6 +21,8 @@ class Constants {
         const val JSON_READ_ELEMENTS = "read_elements"
         const val JSON_PARTS = "parts"
 
+        const val PREAMBLE_INDEX = 0
+
         const val SCHEDULES_START_INDEX = 1
         const val SCHEDULES_END_INDEX = 12
 
@@ -33,11 +35,8 @@ class Constants {
         const val EXTRA_TITLE = "EXTRA_TITLE"
         const val EXTRA_READ_ELEMENT = "EXTRA_READ_ELEMENT"
         const val EXTRA_CATEGORY = "EXTRA_CATEGORY"
-
-        const val PREAMBLE_INDEX = 0
     }
 }
-
 
 //        const val START_PART_1 = 121
 //        const val END_PART_1 = 124
