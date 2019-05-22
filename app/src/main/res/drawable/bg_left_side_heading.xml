@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <solid
-        android:color="@color/bg_side_heading"/>
+        android:color="@color/bg_left_side_heading"/>
 
     <corners
         android:topLeftRadius="0dp"

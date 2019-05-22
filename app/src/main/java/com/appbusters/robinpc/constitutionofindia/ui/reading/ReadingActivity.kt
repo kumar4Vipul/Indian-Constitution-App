@@ -6,13 +6,11 @@ import android.text.Html
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
 import com.appbusters.robinpc.constitutionofindia.R
-import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.DEFAULT_VALUE_INT
+import com.appbusters.robinpc.constitutionofindia.data.model.DummyTag
 import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
-import com.appbusters.robinpc.constitutionofindia.data.model.Tag
 import com.appbusters.robinpc.constitutionofindia.di.component.activity.DaggerReadActivityComponent
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseActivity
-import com.appbusters.robinpc.constitutionofindia.ui.reading.adapter.TagListAdapter
-import com.appbusters.robinpc.constitutionofindia.utils.Constants
+import com.appbusters.robinpc.constitutionofindia.ui.reading.adapter.DummyTagListAdapter
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.EXTRA_READ_ELEMENT
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_reading.*
@@ -24,7 +22,7 @@ class ReadingActivity : BaseActivity() {
     lateinit var gson: Gson
 
     @Inject
-    lateinit var tagsAdapter: TagListAdapter
+    lateinit var dummyTagsAdapter: DummyTagListAdapter
 
     private var readElement: ReadElement? = null
 
@@ -45,7 +43,6 @@ class ReadingActivity : BaseActivity() {
         setStatusBarColor(R.color.reading_status_bar)
         getIntentData()
         setComponent()
-        loadReadElement()
         setTagsRecycler()
         renderReadElement()
     }
@@ -70,25 +67,21 @@ class ReadingActivity : BaseActivity() {
             else
                 contentTv.text = Html.fromHtml(it.content, Html.FROM_HTML_MODE_COMPACT)
 
-            tagsAdapter.submitList(
+            dummyTagsAdapter.submitList(
                     getTagsFromStrings(it.tags!!, it.categoryName!!)
             )
         }
     }
 
-    private fun getTagsFromStrings(stringTags: List<String>, categoryName: String): MutableList<Tag> {
-        val tagsList: MutableList<Tag> = ArrayList()
-        for(tag in stringTags) tagsList.add(Tag(tag, categoryName))
+    private fun getTagsFromStrings(stringTags: List<String>, categoryName: String): MutableList<DummyTag> {
+        val tagsList: MutableList<DummyTag> = ArrayList()
+        for(tag in stringTags) tagsList.add(DummyTag(tag, categoryName))
         return tagsList
     }
 
     private fun setTagsRecycler() {
         tagsRv.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        tagsRv.adapter = tagsAdapter
-    }
-
-    private fun loadReadElement() {
-        //TODO: fetch read element from preferences or from serializable/parcelable
+        tagsRv.adapter = dummyTagsAdapter
     }
 
     override fun onBackPressed() {

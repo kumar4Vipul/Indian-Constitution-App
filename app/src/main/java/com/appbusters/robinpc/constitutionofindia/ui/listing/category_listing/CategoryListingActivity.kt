@@ -1,15 +1,14 @@
-package com.appbusters.robinpc.constitutionofindia.ui.listing
+package com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing
 
 import android.content.Context
 import android.content.Intent
-import android.util.Log
 import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
 import com.appbusters.robinpc.constitutionofindia.R
 import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
 import com.appbusters.robinpc.constitutionofindia.di.component.activity.DaggerListingActivityComponent
 import com.appbusters.robinpc.constitutionofindia.di.module.activity.ListingActivityModule
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseActivity
-import com.appbusters.robinpc.constitutionofindia.ui.listing.adapter.ListingListAdapter
+import com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing.adapter.ListingListAdapter
 import com.appbusters.robinpc.constitutionofindia.ui.reading.ReadingActivity
 import com.appbusters.robinpc.constitutionofindia.utils.Constants
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.DEFAULT_VALUE_INT
@@ -19,7 +18,7 @@ import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.EXTR
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.EXTRA_TITLE
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.JSON_READ_ELEMENTS
 import com.google.gson.Gson
-import kotlinx.android.synthetic.main.activity_listing.*
+import kotlinx.android.synthetic.main.activity_category_listing.*
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.IOException
@@ -27,7 +26,7 @@ import java.io.InputStream
 import java.nio.charset.Charset
 import javax.inject.Inject
 
-class ListingActivity : BaseActivity(), ListingListAdapter.ListItemClickListener {
+class CategoryListingActivity : BaseActivity(), ListingListAdapter.ListItemClickListener {
 
     @Inject
     lateinit var listingAdapter: ListingListAdapter
@@ -45,7 +44,7 @@ class ListingActivity : BaseActivity(), ListingListAdapter.ListItemClickListener
 
     companion object {
         fun newIntent(context: Context, categoryName: String, title: String, start: Int, end: Int): Intent {
-            val intent = Intent(context, ListingActivity::class.java)
+            val intent = Intent(context, CategoryListingActivity::class.java)
             intent.putExtra(EXTRA_CATEGORY, categoryName)
             intent.putExtra(EXTRA_START_INDEX, start)
             intent.putExtra(EXTRA_END_INDEX, end)
@@ -55,7 +54,7 @@ class ListingActivity : BaseActivity(), ListingListAdapter.ListItemClickListener
     }
 
     override fun getLayoutResId(): Int {
-        return R.layout.activity_listing
+        return R.layout.activity_category_listing
     }
 
     override fun setup() {

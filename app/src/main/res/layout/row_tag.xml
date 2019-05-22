@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--suppress AndroidUnknownAttribute -->
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:cardCornerRadius="18dp"
-    android:layout_marginStart="5dp"
-    android:layout_marginEnd="5dp"
-    android:id="@+id/backgroundCv"
-    app:cardElevation="3dp"
-    tools:cardBackgroundColor="@color/black">
+    app:cardBackgroundColor="@color/black"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="5dp">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:paddingStart="22dp"
-        android:paddingEnd="22dp"
-        android:paddingTop="4dp"
-        android:paddingBottom="4dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
         android:textSize="16sp"
-        tools:text="Robillo"
-        fontPath="fonts/home_regular.ttf"
-        tools:ignore="MissingPrefix"
+        tools:text="#education"
+        android:lines="1"
         android:id="@+id/tagTitleTv"/>
 
 </androidx.cardview.widget.CardView>

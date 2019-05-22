@@ -1,11 +1,10 @@
-package com.appbusters.robinpc.constitutionofindia.ui.listing.adapter.holder
+package com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing.adapter.holder
 
 import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.appbusters.robinpc.constitutionofindia.R
 import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
-import com.appbusters.robinpc.constitutionofindia.utils.Constants
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_AMENDMENTS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_PARTS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_PREAMBLE

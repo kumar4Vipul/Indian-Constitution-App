@@ -5,7 +5,7 @@ import androidx.recyclerview.widget.DiffUtil
 import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
 import com.appbusters.robinpc.constitutionofindia.di.qualifier.MainDatabaseString
 import com.appbusters.robinpc.constitutionofindia.di.scope.PerFragmentScope
-import com.appbusters.robinpc.constitutionofindia.ui.listing.adapter.ListingListAdapter
+import com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing.adapter.ListingListAdapter
 import com.appbusters.robinpc.constitutionofindia.utils.Constants
 import dagger.Module
 import dagger.Provides

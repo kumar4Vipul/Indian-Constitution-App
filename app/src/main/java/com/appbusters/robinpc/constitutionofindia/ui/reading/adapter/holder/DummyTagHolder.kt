@@ -5,21 +5,22 @@ import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.appbusters.robinpc.constitutionofindia.R
+import com.appbusters.robinpc.constitutionofindia.data.model.DummyTag
 import com.appbusters.robinpc.constitutionofindia.data.model.Tag
-import kotlinx.android.synthetic.main.row_tag.view.*
+import kotlinx.android.synthetic.main.row_dummy_tag.view.*
 
-class TagHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+class DummyTagHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
-    private lateinit var tag: Tag
+    private lateinit var tag: DummyTag
     private lateinit var tagClickListener: OnTagClickListener
 
-    fun setTag(tag: Tag) {
+    fun setTag(tag: DummyTag) {
         this.tag = tag
         renderViews()
     }
 
     private fun renderViews() {
-        itemView.tagTitleTv.text = tag.name
+        itemView.tagTitleTv.text = tag.title
         renderTagBackground()
     }
 
@@ -43,6 +44,6 @@ class TagHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
     }
 
     interface OnTagClickListener {
-        fun onTagClicked(tag: Tag)
+        fun onTagClicked(tag: DummyTag)
     }
 }

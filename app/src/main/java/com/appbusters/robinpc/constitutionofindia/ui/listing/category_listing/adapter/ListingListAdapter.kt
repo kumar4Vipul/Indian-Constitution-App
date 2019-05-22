@@ -1,4 +1,4 @@
-package com.appbusters.robinpc.constitutionofindia.ui.listing.adapter
+package com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.appbusters.robinpc.constitutionofindia.R
 import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
-import com.appbusters.robinpc.constitutionofindia.ui.listing.adapter.holder.ListingHolder
+import com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing.adapter.holder.ListingHolder
 
 class ListingListAdapter(comparator: DiffUtil.ItemCallback<ReadElement>):
         ListAdapter<ReadElement, ListingHolder>(comparator), ListingHolder.ListItemClickListener {

@@ -13,12 +13,14 @@ class Constants {
         const val FEATURED_SAVED_BY_YOU_INDEX = 1
         const val FEATURED_YOUR_PROGRESS_INDEX = 2
 
+        const val CATEGORY_STATE = "state"
         const val CATEGORY_PARTS = "PARTS"
         const val CATEGORY_PREAMBLE = "PREAMBLE"
         const val CATEGORY_SCHEDULES = "SCHEDULES"
         const val CATEGORY_AMENDMENTS = "AMENDMENTS"
 
         const val JSON_READ_ELEMENTS = "read_elements"
+        const val JSON_TAGS = "tags"
         const val JSON_PARTS = "parts"
 
         const val PREAMBLE_INDEX = 0

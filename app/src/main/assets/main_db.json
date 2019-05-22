@@ -5686,7 +5686,7 @@
 	],
 	"tags": [
 		{
-			"title": "justice",
+			"title": "#justice",
 			"elaborate_title": "Justice",
 			"search_term": "justice",
 			"category": "",
@@ -5695,7 +5695,7 @@
 			]
 		},
 		{
-			"title": "equality",
+			"title": "#equality",
 			"elaborate_title": "Equality",
 			"search_term": "equality",
 			"category": "",
@@ -5704,7 +5704,7 @@
 			]
 		},
 		{
-			"title": "liberty",
+			"title": "#liberty",
 			"elaborate_title": "Liberty",
 			"search_term": "liberty",
 			"category": "",
@@ -5713,7 +5713,7 @@
 			]
 		},
 		{
-			"title": "fraternity",
+			"title": "#fraternity",
 			"elaborate_title": "Fraternity",
 			"search_term": "fraternity",
 			"category": "",
@@ -5722,7 +5722,7 @@
 			]
 		},
 		{
-			"title": "sovereign",
+			"title": "#sovereign",
 			"elaborate_title": "Sovereign",
 			"search_term": "sovereign",
 			"category": "",
@@ -5730,8 +5730,8 @@
 				0, 3, 28, 52, 54, 139, 181
 			]
 		},
-				{
-			"title": "democratic",
+		{
+			"title": "#democratic",
 			"elaborate_title": "Democratic",
 			"search_term": "democratic",
 			"category": "",
@@ -5740,7 +5740,7 @@
 			]
 		},
 		{
-			"title": "socialist",
+			"title": "#socialist",
 			"elaborate_title": "Socialist",
 			"search_term": "socialis",
 			"category": "",
@@ -5749,7 +5749,7 @@
 			]
 		},
 		{
-			"title": "secular",
+			"title": "#secular",
 			"elaborate_title": "Secular",
 			"search_term": "secular",
 			"category": "",
@@ -5758,7 +5758,7 @@
 			]
 		},
 		{
-			"title": "president",
+			"title": "#president",
 			"elaborate_title": "President",
 			"search_term": "president",
 			"category": "",
@@ -5768,7 +5768,7 @@
 			]
 		},
 		{
-			"title": "election",
+			"title": "#election",
 			"elaborate_title": "Elections",
 			"search_term": "election",
 			"category": "",
@@ -5777,7 +5777,7 @@
 			]
 		},
 		{
-			"title": "tax",
+			"title": "#tax",
 			"elaborate_title": "Taxes",
 			"search_term": "tax",
 			"category": "",
@@ -5786,7 +5786,7 @@
 			]
 		},
 		{
-			"title": "emergency",
+			"title": "#emergency",
 			"elaborate_title": "Emergency",
 			"search_term": "emergency",
 			"category": "",
@@ -5795,7 +5795,7 @@
 			]
 		},
 		{
-			"title": "culture",
+			"title": "#culture",
 			"elaborate_title": "Culture",
 			"search_term": "culture",
 			"category": "",
@@ -5804,7 +5804,7 @@
 			]
 		},
 				{
-			"title": "poverty",
+			"title": "#poverty",
 			"elaborate_title": "Poverty",
 			"search_term": "poverty",
 			"category": "",
@@ -5813,7 +5813,7 @@
 			]
 		},
 		{
-			"title": "discrimination",
+			"title": "#discrimination",
 			"elaborate_title": "Discrimination",
 			"search_term": "discriminat",
 			"category": "",
@@ -5822,7 +5822,7 @@
 			]
 		},
 		{
-			"title": "unconstitutional",
+			"title": "#unconstitutional",
 			"elaborate_title": "Unconstitutional",
 			"search_term": "unconstitutional",
 			"category": "",
@@ -5831,7 +5831,7 @@
 			]
 		},
 				{
-			"title": "democracy",
+			"title": "#democracy",
 			"elaborate_title": "Democracy",
 			"search_term": "democracy",
 			"category": "",
@@ -5840,7 +5840,7 @@
 			]
 		},
 		{
-			"title": "religion",
+			"title": "#religion",
 			"elaborate_title": "Religion",
 			"search_term": "religio",
 			"category": "",
@@ -5849,7 +5849,7 @@
 			]
 		},
 		{
-			"title": "rich",
+			"title": "#rich",
 			"elaborate_title": "rich",
 			"search_term": "rich",
 			"category": "",
@@ -5858,7 +5858,7 @@
 			]
 		},
 				{
-			"title": "integrity",
+			"title": "#integrity",
 			"elaborate_title": "Integrity",
 			"search_term": "integrity",
 			"category": "",
@@ -5867,7 +5867,7 @@
 			]
 		},
 		{
-			"title": "governor",
+			"title": "#governor",
 			"elaborate_title": "Governor",
 			"search_term": "governor",
 			"category": "",
@@ -5876,7 +5876,7 @@
 			]
 		},
 		{
-			"title": "loksabha",
+			"title": "#loksabha",
 			"elaborate_title": "Lok Sabha",
 			"search_term": "lok Sabha",
 			"category": "",
@@ -5885,7 +5885,7 @@
 			]
 		},
 				{
-			"title": "parliament",
+			"title": "#parliament",
 			"elaborate_title": "Parliament",
 			"search_term": "parliament",
 			"category": "",
@@ -5894,7 +5894,7 @@
 			]
 		},
 		{
-			"title": "legislature",
+			"title": "#legislature",
 			"elaborate_title": "Legislation",
 			"search_term": "legisla",
 			"category": "",
@@ -5903,16 +5903,7 @@
 			]
 		},
 		{
-			"title": "education",
-			"elaborate_title": "Education",
-			"search_term": "education",
-			"category": "",
-			"read_element_ids": [
-				6, 7, 9, 11, 12, 13, 19, 37, 44, 54, 56, 85, 86, 88, 98, 105, 109, 110, 135, 142, 149, 150, 151, 168, 174, 175, 308, 423, 533, 537, 548, 574, 578, 584
-			]
-		},
-				{
-			"title": "citizen",
+			"title": "#citizen",
 			"elaborate_title": "Citizen",
 			"search_term": "citizen",
 			"category": "",
@@ -5921,7 +5912,7 @@
 			]
 		},
 		{
-			"title": "territory",
+			"title": "#territory",
 			"elaborate_title": "Territories",
 			"search_term": "territor",
 			"category": "",
@@ -5930,7 +5921,7 @@
 			]
 		},
 		{
-			"title": "untouchability",
+			"title": "#untouchability",
 			"elaborate_title": "Untouchability",
 			"search_term": "untouchab",
 			"category": "",
@@ -5939,7 +5930,7 @@
 			]
 		},
 		{
-			"title": "violation",
+			"title": "#violation",
 			"elaborate_title": "Violations",
 			"search_term": "violat",
 			"category": "",
@@ -5948,7 +5939,7 @@
 			]
 		},
 		{
-			"title": "repealed",
+			"title": "#repealed",
 			"elaborate_title": "Repealed",
 			"search_term": "repeal, rep.",
 			"category": "",
@@ -5957,7 +5948,7 @@
 			]
 		},
 		{
-			"title": "definition",
+			"title": "#definition",
 			"elaborate_title": "Definitions",
 			"search_term": "definition",
 			"category": "",
@@ -5966,7 +5957,7 @@
 			]
 		},
 		{
-			"title": "panchayat",
+			"title": "#panchayat",
 			"elaborate_title": "Panchayats",
 			"search_term": "panchayat",
 			"category": "",
@@ -5975,7 +5966,7 @@
 			]
 		},
 		{
-			"title": "maternity",
+			"title": "#maternity",
 			"elaborate_title": "Maternity",
 			"search_term": "matern",
 			"category": "",
@@ -5984,7 +5975,7 @@
 			]
 		},
 		{
-			"title": "dutyofthestate",
+			"title": "#dutyofthestate",
 			"elaborate_title": "State Duties",
 			"search_term": "duty of the State",
 			"category": "",
@@ -5993,7 +5984,7 @@
 			]
 		},
 		{
-			"title": "deputyspeaker",
+			"title": "#deputyspeaker",
 			"elaborate_title": "Deputy Speaker",
 			"search_term": "deputy Speaker",
 			"category": "",
@@ -6002,7 +5993,7 @@
 			]
 		},
 		{
-			"title": "politicalparty",
+			"title": "#politicalparty",
 			"elaborate_title": "Political Parties",
 			"search_term": "political part",
 			"category": "",
@@ -6011,7 +6002,7 @@
 			]
 		},
 		{
-			"title": "fundamentalright",
+			"title": "#fundamentalright",
 			"elaborate_title": "Fundamental Rights",
 			"search_term": "fundamental right",
 			"category": "",
@@ -6020,7 +6011,7 @@
 			]
 		},
 		{
-			"title": "moneybill",
+			"title": "#moneybill",
 			"elaborate_title": "Money Bill",
 			"search_term": "money Bill",
 			"category": "",
@@ -6029,7 +6020,7 @@
 			]
 		},
 		{
-			"title": "primeminister",
+			"title": "#primeminister",
 			"elaborate_title": "Prime Minister",
 			"search_term": "Prime Minister",
 			"category": "",
@@ -6038,7 +6029,7 @@
 			]
 		},
 		{
-			"title": "supremecourt",
+			"title": "#supremecourt",
 			"elaborate_title": "Supreme Court",
 			"search_term": "Supreme Court",
 			"category": "",
@@ -6047,7 +6038,7 @@
 			]
 		},
 		{
-			"title": "independence",
+			"title": "#independence",
 			"elaborate_title": "Independence",
 			"search_term": "independence",
 			"category": "",
@@ -6056,7 +6047,7 @@
 			]
 		},
 		{
-			"title": "highcourt",
+			"title": "#highcourt",
 			"elaborate_title": "High Court",
 			"search_term": "high Court",
 			"category": "",
@@ -6065,7 +6056,7 @@
 			]
 		},
 		{
-			"title": "omittedbyconstitution",
+			"title": "#omittedbyconstitution",
 			"elaborate_title": "Omitted by the Constitution",
 			"search_term": "omitted by the Constitution",
 			"category": "",
@@ -6074,7 +6065,7 @@
 			]
 		},
 		{
-			"title": "protection",
+			"title": "#protection",
 			"elaborate_title": "Protection",
 			"search_term": "protect",
 			"category": "",
@@ -6083,7 +6074,7 @@
 			]
 		},
 		{
-			"title": "language",
+			"title": "#language",
 			"elaborate_title": "Language",
 			"search_term": "language",
 			"category": "",
@@ -6091,7 +6082,7 @@
 				6, 8, 33, 50, 54, 70, 83, 150, 151, 250, 347, 540, 541, 542, 543, 544, 545, 546, 547, 550
 			]
 		},{
-			"title": "education",
+			"title": "#education",
 			"elaborate_title": "Education",
 			"search_term": "educat",
 			"category": "",
@@ -6100,7 +6091,7 @@
 			]
 		},
 		{
-			"title": "scheduledcastes",
+			"title": "#scheduledcastes",
 			"elaborate_title": "Scheduled Castes",
 			"search_term": "scheduled Castes",
 			"category": "",
@@ -6109,7 +6100,7 @@
 			]
 		},
 		{
-			"title": "scheduledtribes",
+			"title": "#scheduledtribes",
 			"elaborate_title": "Scheduled Tribes",
 			"search_term": "scheduled Tribes",
 			"category": "",
@@ -6118,7 +6109,7 @@
 			]
 		},
 		{
-			"title": "reservation",
+			"title": "#reservation",
 			"elaborate_title": "Reservations",
 			"search_term": "reservation",
 			"category": "",
@@ -6127,7 +6118,7 @@
 			]
 		},
 		{
-			"title": "angloindian",
+			"title": "#angloindian",
 			"elaborate_title": "Anglo-Indian",
 			"search_term": "anglo-Indian",
 			"category": "",
@@ -6136,7 +6127,7 @@
 			]
 		},
 		{
-			"title": "revenue",
+			"title": "#revenue",
 			"elaborate_title": "Revenue",
 			"search_term": "revenue",
 			"category": "",
@@ -6145,7 +6136,7 @@
 			]
 		},
 		{
-			"title": "fund",
+			"title": "#fund",
 			"elaborate_title": "Fund",
 			"search_term": "fund",
 			"category": "",
@@ -6154,7 +6145,7 @@
 			]
 		},
 		{
-			"title": "income",
+			"title": "#income",
 			"elaborate_title": "Income",
 			"search_term": "income",
 			"category": "",
@@ -6163,7 +6154,7 @@
 			]
 		},
 		{
-			"title": "finance",
+			"title": "#finance",
 			"elaborate_title": "Fincances",
 			"search_term": "finance",
 			"category": "",
@@ -6172,7 +6163,7 @@
 			]
 		},
 		{
-			"title": "power",
+			"title": "#power",
 			"elaborate_title": "Constitutional Powers",
 			"search_term": "power",
 			"category": "",
@@ -6181,7 +6172,7 @@
 			]
 		},
 		{
-			"title": "andhrapradesh",
+			"title": "#andhrapradesh",
 			"elaborate_title": "Andhra Pradesh",
 			"search_term": "Andhra Pradesh",
 			"category": "state",
@@ -6190,7 +6181,7 @@
 			]
 		},
 		{
-			"title": "arunachalpradesh",
+			"title": "#arunachalpradesh",
 			"elaborate_title": "Arunachal Pradesh",
 			"search_term": "Arunachal Pradesh",
 			"category": "state",
@@ -6199,7 +6190,7 @@
 			]
 		},
 		{
-			"title": "assam",
+			"title": "#assam",
 			"elaborate_title": "Assam",
 			"search_term": "assam",
 			"category": "state",
@@ -6208,7 +6199,7 @@
 			]
 		},
 		{
-			"title": "bihar",
+			"title": "#bihar",
 			"elaborate_title": "Bihar",
 			"search_term": "Bihar",
 			"category": "state",
@@ -6217,7 +6208,7 @@
 			]
 		},
 		{
-			"title": "chhattisgarh",
+			"title": "#chhattisgarh",
 			"elaborate_title": "Chhattisgarh",
 			"search_term": "Chhattisgarh",
 			"category": "state",
@@ -6226,7 +6217,7 @@
 			]
 		},
 		{
-			"title": "goa",
+			"title": "#goa",
 			"elaborate_title": "Goa",
 			"search_term": "Goa",
 			"category": "state",
@@ -6235,7 +6226,7 @@
 			]
 		},
 		{
-			"title": "gujarat",
+			"title": "#gujarat",
 			"elaborate_title": "Gujarat",
 			"search_term": "Gujarat",
 			"category": "state",
@@ -6244,7 +6235,7 @@
 			]
 		},
 		{
-			"title": "haryana",
+			"title": "#haryana",
 			"elaborate_title": "Haryana",
 			"search_term": "Haryana",
 			"category": "state",
@@ -6253,7 +6244,7 @@
 			]
 		},
 		{
-			"title": "himachalpradesh",
+			"title": "#himachalpradesh",
 			"elaborate_title": "Himachal Pradesh",
 			"search_term": "Himachal Pradesh",
 			"category": "state",
@@ -6262,7 +6253,7 @@
 			]
 		},
 		{
-			"title": "jammuandkashmir",
+			"title": "#jammuandkashmir",
 			"elaborate_title": "Jammu and Kashmir",
 			"search_term": "Jammu and Kashmir",
 			"category": "state",
@@ -6271,7 +6262,7 @@
 			]
 		},
 		{
-			"title": "jharkhand",
+			"title": "#jharkhand",
 			"elaborate_title": "Jharkhand",
 			"search_term": "Jharkhand",
 			"category": "state",
@@ -6280,7 +6271,7 @@
 			]
 		},
 		{
-			"title": "karnataka",
+			"title": "#karnataka",
 			"elaborate_title": "Karnataka",
 			"search_term": "Karnataka",
 			"category": "state",
@@ -6289,7 +6280,7 @@
 			]
 		},
 		{
-			"title": "kerala",
+			"title": "#kerala",
 			"elaborate_title": "Kerala",
 			"search_term": "Kerala",
 			"category": "state",
@@ -6298,7 +6289,7 @@
 			]
 		},
 		{
-			"title": "madhyapradesh",
+			"title": "#madhyapradesh",
 			"elaborate_title": "Madhya Pradesh",
 			"search_term": "Madhya Pradesh",
 			"category": "state",
@@ -6307,7 +6298,7 @@
 			]
 		},
 		{
-			"title": "maharashtra",
+			"title": "#maharashtra",
 			"elaborate_title": "Maharashtra",
 			"search_term": "Maharashtra",
 			"category": "state",
@@ -6316,7 +6307,7 @@
 			]
 		},
 		{
-			"title": "manipur",
+			"title": "#manipur",
 			"elaborate_title": "Manipur",
 			"search_term": "Manipur",
 			"category": "state",
@@ -6325,7 +6316,7 @@
 			]
 		},
 		{
-			"title": "meghalaya",
+			"title": "#meghalaya",
 			"elaborate_title": "Meghalaya",
 			"search_term": "Meghalaya",
 			"category": "state",
@@ -6334,7 +6325,7 @@
 			]
 		},
 		{
-			"title": "mizoram",
+			"title": "#mizoram",
 			"elaborate_title": "Mizoram",
 			"search_term": "Mizoram",
 			"category": "state",
@@ -6343,7 +6334,7 @@
 			]
 		},
 		{
-			"title": "nagaland",
+			"title": "#nagaland",
 			"elaborate_title": "Nagaland",
 			"search_term": "Nagaland",
 			"category": "state",
@@ -6352,7 +6343,7 @@
 			]
 		},
 		{
-			"title": "odisha",
+			"title": "#odisha",
 			"elaborate_title": "Odisha",
 			"search_term": "orissa",
 			"category": "state",
@@ -6361,7 +6352,7 @@
 			]
 		},
 		{
-			"title": "punjab",
+			"title": "#punjab",
 			"elaborate_title": "Punjab",
 			"search_term": "Punjab",
 			"category": "state",
@@ -6370,7 +6361,7 @@
 			]
 		},
 		{
-			"title": "rajasthan",
+			"title": "#rajasthan",
 			"elaborate_title": "Rajasthan",
 			"search_term": "Rajasthan",
 			"category": "state",
@@ -6379,7 +6370,7 @@
 			]
 		},
 		{
-			"title": "sikkim",
+			"title": "#sikkim",
 			"elaborate_title": "Sikkim",
 			"search_term": "Sikkim",
 			"category": "state",
@@ -6388,7 +6379,7 @@
 			]
 		},
 		{
-			"title": "tamilnadu",
+			"title": "#tamilnadu",
 			"elaborate_title": "Tamil Nadu",
 			"search_term": "Tamil Nadu",
 			"category": "state",
@@ -6397,7 +6388,7 @@
 			]
 		},
 		{
-			"title": "telangana",
+			"title": "#telangana",
 			"elaborate_title": "Telangana",
 			"search_term": "Telangana",
 			"category": "state",
@@ -6406,7 +6397,7 @@
 			]
 		},
 		{
-			"title": "tripura",
+			"title": "#tripura",
 			"elaborate_title": "Tripura",
 			"search_term": "Tripura",
 			"category": "state",
@@ -6415,7 +6406,7 @@
 			]
 		},
 		{
-			"title": "uttarpradesh",
+			"title": "#uttarpradesh",
 			"elaborate_title": "Uttar Pradesh",
 			"search_term": "Uttar Pradesh",
 			"category": "state",
@@ -6424,7 +6415,7 @@
 			]
 		},
 		{
-			"title": "uttarakhand",
+			"title": "#uttarakhand",
 			"elaborate_title": "Uttarakhand",
 			"search_term": "Uttarakhand",
 			"category": "state",
@@ -6433,7 +6424,7 @@
 			]
 		},
 		{
-			"title": "westbengal",
+			"title": "#westbengal",
 			"elaborate_title": "West Bengal",
 			"search_term": "West Bengal",
 			"category": "state",
@@ -6442,7 +6433,7 @@
 			]
 		},
 		{
-			"title": "andamanandnicobar",
+			"title": "#andamanandnicobar",
 			"elaborate_title": "Andaman and Nicobar Islands",
 			"search_term": "Andaman and Nicobar",
 			"category": "state",
@@ -6451,7 +6442,7 @@
 			]
 		},
 		{
-			"title": "chandigarh",
+			"title": "#chandigarh",
 			"elaborate_title": "Chandigarh",
 			"search_term": "Chandigarh",
 			"category": "state",
@@ -6460,7 +6451,7 @@
 			]
 		},
 		{
-			"title": "damananddiu",
+			"title": "#damananddiu",
 			"elaborate_title": "Daman and Diu",
 			"search_term": "Daman and Diu",
 			"category": "state",
@@ -6469,7 +6460,7 @@
 			]
 		},
 		{
-			"title": "delhi",
+			"title": "#delhi",
 			"elaborate_title": "Delhi",
 			"search_term": "Delhi",
 			"category": "state",
@@ -6478,7 +6469,7 @@
 			]
 		},
 		{
-			"title": "lakshadweep",
+			"title": "#lakshadweep",
 			"elaborate_title": "Lakshadweep",
 			"search_term": "Lakshadweep",
 			"category": "state",
@@ -6487,7 +6478,7 @@
 			]
 		},
 		{
-			"title": "pondicherry",
+			"title": "#pondicherry",
 			"elaborate_title": "Pondicherry",
 			"search_term": "Pondicherry",
 			"category": "state",

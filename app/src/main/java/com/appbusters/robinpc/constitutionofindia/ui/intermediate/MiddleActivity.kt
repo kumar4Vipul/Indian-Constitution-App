@@ -2,7 +2,6 @@ package com.appbusters.robinpc.constitutionofindia.ui.intermediate
 
 import android.content.Context
 import android.content.Intent
-import android.util.Log
 import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
 import com.appbusters.robinpc.constitutionofindia.R
 import com.appbusters.robinpc.constitutionofindia.data.model.Part
@@ -10,7 +9,7 @@ import com.appbusters.robinpc.constitutionofindia.di.component.activity.DaggerMi
 import com.appbusters.robinpc.constitutionofindia.di.module.activity.MiddleActivityModule
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseActivity
 import com.appbusters.robinpc.constitutionofindia.ui.intermediate.adapter.MiddleListAdapter
-import com.appbusters.robinpc.constitutionofindia.ui.listing.ListingActivity
+import com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing.CategoryListingActivity
 import com.appbusters.robinpc.constitutionofindia.utils.Constants
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.EXTRA_CATEGORY
 import com.google.gson.Gson
@@ -109,7 +108,7 @@ class MiddleActivity : BaseActivity(), MiddleListAdapter.OnPartClickListener {
     }
 
     override fun onPartClicked(part: Part) {
-        startActivity(ListingActivity.newIntent(this, categoryName, part.title, part.startIndex, part.endIndex))
+        startActivity(CategoryListingActivity.newIntent(this, categoryName, part.title, part.startIndex, part.endIndex))
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
     }
 

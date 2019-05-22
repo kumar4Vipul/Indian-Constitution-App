@@ -5,7 +5,7 @@ import com.appbusters.robinpc.constitutionofindia.di.module.ViewModelFactoryModu
 import com.appbusters.robinpc.constitutionofindia.di.module.ViewModelModule
 import com.appbusters.robinpc.constitutionofindia.di.module.activity.ListingActivityModule
 import com.appbusters.robinpc.constitutionofindia.di.scope.PerFragmentScope
-import com.appbusters.robinpc.constitutionofindia.ui.listing.ListingActivity
+import com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing.CategoryListingActivity
 import dagger.Component
 
 @PerFragmentScope
@@ -13,5 +13,5 @@ import dagger.Component
         dependencies = [ConstitutionAppComponent::class])
 interface ListingActivityComponent {
 
-    fun injectListingActivity(activity: ListingActivity)
+    fun injectListingActivity(activity: CategoryListingActivity)
 }

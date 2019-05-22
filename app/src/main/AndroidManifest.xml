@@ -8,14 +8,19 @@
         android:name=".ConstitutionApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.intermediate.MiddleActivity"
+        <activity android:name=".ui.listing.tags_list.TagsListActivity"></activity>
+        <activity
+            android:name=".ui.listing.tag_listing.TagChildrenActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.listing.ListingActivity"
+            android:name=".ui.intermediate.MiddleActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.listing.category_listing.CategoryListingActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.reading.ReadingActivity"
