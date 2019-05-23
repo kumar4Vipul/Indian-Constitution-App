@@ -8,6 +8,7 @@
     android:layout_height="match_parent"
     android:overScrollMode="never"
     android:scrollbars="none"
+    android:background="@color/white"
     tools:context=".ui.listing.tag_listing.TagChildrenActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,16 +19,15 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             tools:text="#education"
-            android:lines="1"
             android:textSize="28sp"
             android:background="@drawable/tag_children_title_bg"
             android:gravity="center"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             tools:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            fontPath="fonts/read_english_semi_bold.ttf"
+            fontPath="fonts/read_english_bold.ttf"
             tools:ignore="MissingPrefix"
             android:id="@+id/titleTagTv"/>
 

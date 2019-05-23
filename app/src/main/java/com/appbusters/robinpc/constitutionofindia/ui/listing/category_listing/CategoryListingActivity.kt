@@ -93,7 +93,8 @@ class CategoryListingActivity : BaseActivity(), ListingListAdapter.ListItemClick
             elementsList.add(
                     gson.fromJson(
                             readElements.getJSONObject(elementId).toString(),
-                            ReadElement::class.java)
+                            ReadElement::class.java
+                    )
             )
     }
 

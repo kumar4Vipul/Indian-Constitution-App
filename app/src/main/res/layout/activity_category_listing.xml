@@ -22,40 +22,29 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:text="@string/header_home"
-                android:layout_marginTop="20dp"
-                android:textSize="22sp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                tools:text="Amendments"
+                tools:textStyle="bold"
+                android:textSize="28sp"
+                android:gravity="center"
                 android:textColor="@color/listing_header"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                fontPath="fonts/home_semi_bold.ttf"
+                fontPath="fonts/read_english_bold.ttf"
                 tools:ignore="MissingPrefix"
                 android:id="@+id/headerListingTv"/>
-
-            <ImageView
-                android:layout_width="0dp"
-                app:layout_constraintHorizontal_weight="1"
-                android:layout_height="2dp"
-                android:background="@color/home_header"
-                app:layout_constraintTop_toBottomOf="@id/headerListingTv"
-                app:layout_constraintStart_toStartOf="@id/headerListingTv"
-                app:layout_constraintEnd_toEndOf="@id/headerListingTv"
-                tools:ignore="ContentDescription"
-                android:id="@+id/underlineHomeHeaderIv"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="30dp"
                 android:clipToPadding="false"
                 android:overScrollMode="never"
                 android:scrollbars="none"
                 android:nestedScrollingEnabled="false"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                app:layout_constraintTop_toBottomOf="@id/underlineHomeHeaderIv"
+                app:layout_constraintTop_toBottomOf="@id/headerListingTv"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:id="@+id/listingRv">

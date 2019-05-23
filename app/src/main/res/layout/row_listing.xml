@@ -49,7 +49,7 @@
             android:id="@+id/titleTv"
             android:textSize="18sp"
             android:textColor="@color/black"
-            fontPath="fonts/read_regular.ttf"
+            fontPath="fonts/read_semi_bold.ttf"
             tools:text="@string/preamble_featured"
             android:paddingStart="40dp"
             android:gravity="start|center_vertical"

@@ -51,7 +51,7 @@ class TagChildrenActivity : BaseActivity(), ListingListAdapter.ListItemClickList
     }
 
     override fun setup() {
-        setStatusBarColor(R.color.title_gradient_top)
+        setStatusBarColor(R.color.tags_children_status_bar)
         getIntentData()
         setComponent()
         loadReadElements()
