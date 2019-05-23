@@ -19,7 +19,7 @@
             android:layout_marginBottom="50dp"
             android:layout_gravity="center"
             android:textColor="@color/white"
-            fontPath="fonts/home_regular.ttf"
+            fontPath="fonts/read_english_semi_bold.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"

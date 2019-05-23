@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidUnknownAttribute -->
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,16 +10,18 @@
     app:cardCornerRadius="5dp">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         android:textSize="16sp"
         tools:text="#education"
         android:lines="1"
-        android:id="@+id/tagTitleTv"/>
+        android:id="@+id/tagTitleTv"
+        fontPath="fonts/read_english_regular.ttf"
+        tools:ignore="MissingPrefix" />
 
 </androidx.cardview.widget.CardView>

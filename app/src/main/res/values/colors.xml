@@ -41,9 +41,14 @@
     <color name="preamble_color">#E69E29</color>
 
     <!-- flag colors -->
-    <color name="orange_dark">#FC302A</color>
+    <color name="orange_dark">#D64B20</color>
+    <color name="orange">#E64F21</color>
     <color name="blue_dark">#0861B1</color>
     <color name="blue_light">#0861B1</color>
+
+    <!-- tags children screen -->
+    <color name="title_gradient_top">#6E95E8</color>
+    <color name="title_gradient_bottom">#688DDB</color>
 
     <!-- reading screen -->
     <color name="reading_status_bar">#EBEBEB</color>

@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
 
 import com.appbusters.robinpc.constitutionofindia.R
@@ -19,7 +20,6 @@ import com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapter.
 import com.appbusters.robinpc.constitutionofindia.ui.intermediate.MiddleActivity
 import com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing.CategoryListingActivity
 import com.appbusters.robinpc.constitutionofindia.ui.listing.tag_listing.TagChildrenActivity
-import com.appbusters.robinpc.constitutionofindia.ui.listing.tags_list.TagsListActivity
 import com.appbusters.robinpc.constitutionofindia.utils.Constants
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.AMENDMENTS_END_INDEX
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.AMENDMENTS_START_INDEX
@@ -66,8 +66,8 @@ class HomeFragment : BaseFragment(),
     }
 
     companion object {
-        const val SPAN_COUNT = 2
-        const val MAX_TAGS_COUNT = 12
+        const val CATEGORY_SPAN_COUNT = 2
+        const val TAG_SPAN_COUNT = 4
 
         fun newInstance() = HomeFragment()
     }
@@ -90,12 +90,6 @@ class HomeFragment : BaseFragment(),
     }
 
     private fun setClickListeners() {
-        tagsViewMoreTv.setOnClickListener {
-            context?.let {
-                startActivity(TagsListActivity.newIntent(it))
-                (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-            }
-        }
     }
 
     private fun setFeaturedPagerAdapter() {
@@ -107,7 +101,7 @@ class HomeFragment : BaseFragment(),
     private fun setCategoriesAdapter() {
         categoriesAdapter.setCategoryClickListener(this)
         categoriesRecycler.adapter = categoriesAdapter
-        categoriesRecycler.layoutManager = GridLayoutManager(context, SPAN_COUNT, RecyclerView.VERTICAL, false)
+        categoriesRecycler.layoutManager = GridLayoutManager(context, CATEGORY_SPAN_COUNT, RecyclerView.VERTICAL, false)
         categoriesAdapter.submitList(getCategoriesList())
     }
 
@@ -122,11 +116,9 @@ class HomeFragment : BaseFragment(),
 
     private fun setTagsAdapter() {
         loadTags()
-
-        //TODO: inflate adapter
         tagsRecycler.adapter = tagsAdapter
         tagsAdapter.setTagClickListener(this)
-        tagsRecycler.layoutManager = GridLayoutManager(context, 3, RecyclerView.VERTICAL, false)
+        tagsRecycler.layoutManager = StaggeredGridLayoutManager(TAG_SPAN_COUNT, RecyclerView.HORIZONTAL)
         tagsAdapter.submitList(tagsList)
     }
 
@@ -144,7 +136,7 @@ class HomeFragment : BaseFragment(),
         for(tagNumber: Int in 0 until tags.length()) {
             tagItem = gson.fromJson(tags.getJSONObject(tagNumber).toString(), Tag::class.java)
 
-            if(!tagItem.categoryName.equals(CATEGORY_STATE) && tagsList.size < MAX_TAGS_COUNT)
+            if(!tagItem.categoryName.equals(CATEGORY_STATE))
                 tagsList.add(tagItem)
         }
     }
@@ -183,7 +175,7 @@ class HomeFragment : BaseFragment(),
 
     override fun onTagClicked(tag: Tag) {
         context?.let {
-            startActivity(TagChildrenActivity.newIntent(it))
+            startActivity(TagChildrenActivity.newIntent(it, tag))
             (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
     }

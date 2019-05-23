@@ -31,7 +31,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                fontPath="fonts/home_bold.ttf"
+                fontPath="fonts/read_english_bold.ttf"
                 tools:ignore="MissingPrefix"
                 android:id="@+id/headerHomeTv"/>
 
@@ -60,7 +60,7 @@
                 android:textColor="@color/white"
                 app:layout_constraintTop_toBottomOf="@id/underlineHomeHeaderIv"
                 app:layout_constraintStart_toStartOf="parent"
-                fontPath="fonts/home_semi_bold.ttf"
+                fontPath="fonts/read_english_semi_bold.ttf"
                 tools:ignore="MissingPrefix"
                 android:id="@+id/featuredTitleTv"/>
 
@@ -105,7 +105,7 @@
                 android:textColor="@color/white"
                 app:layout_constraintTop_toBottomOf="@id/dotPagerIndicator"
                 app:layout_constraintStart_toStartOf="parent"
-                fontPath="fonts/home_semi_bold.ttf"
+                fontPath="fonts/read_english_semi_bold.ttf"
                 tools:ignore="MissingPrefix"
                 android:id="@+id/categoriesTitleTv"/>
 
@@ -136,7 +136,7 @@
                 android:textColor="@color/white"
                 app:layout_constraintTop_toBottomOf="@id/categoriesRecycler"
                 app:layout_constraintStart_toStartOf="parent"
-                fontPath="fonts/home_semi_bold.ttf"
+                fontPath="fonts/read_english_semi_bold.ttf"
                 tools:ignore="MissingPrefix"
                 android:id="@+id/tagsTitleTv"/>
 
@@ -147,31 +147,13 @@
                 android:id="@+id/tagsRecycler"
                 android:nestedScrollingEnabled="false"
                 app:layout_constraintTop_toBottomOf="@id/tagsTitleTv"
-                android:layout_marginStart="13dp"
-                android:layout_marginEnd="13dp">
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="20dp"
+                android:paddingStart="13dp"
+                android:paddingEnd="13dp"
+                android:clipToPadding="false">
 
             </androidx.recyclerview.widget.RecyclerView>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/view_all"
-                android:layout_marginTop="20dp"
-                android:paddingStart="30dp"
-                android:paddingEnd="15dp"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                android:background="@drawable/bg_right_side_button"
-                android:textSize="15sp"
-                android:textColor="@color/black"
-                app:layout_constraintTop_toBottomOf="@id/tagsRecycler"
-                app:layout_constraintEnd_toEndOf="parent"
-                fontPath="fonts/home_semi_bold.ttf"
-                tools:ignore="MissingPrefix"
-                android:id="@+id/tagsViewMoreTv"
-                android:layout_marginBottom="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

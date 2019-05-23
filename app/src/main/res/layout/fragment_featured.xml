@@ -28,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                fontPath="fonts/home_semi_bold.ttf"
+                fontPath="fonts/read_english_semi_bold.ttf"
                 tools:ignore="MissingPrefix"
                 android:textColor="@color/white"
                 android:textSize="22sp"

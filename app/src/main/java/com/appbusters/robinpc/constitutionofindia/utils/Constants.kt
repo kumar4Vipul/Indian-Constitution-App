@@ -37,6 +37,7 @@ class Constants {
         const val EXTRA_TITLE = "EXTRA_TITLE"
         const val EXTRA_READ_ELEMENT = "EXTRA_READ_ELEMENT"
         const val EXTRA_CATEGORY = "EXTRA_CATEGORY"
+        const val EXTRA_TAG = "EXTRA_TAG"
     }
 }
 
