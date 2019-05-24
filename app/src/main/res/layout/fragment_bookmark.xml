@@ -66,10 +66,230 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:id="@+id/categoriesHolderView"
                 app:layout_constraintTop_toBottomOf="@id/categoryTitleTv">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardBackgroundColor="@color/schedules_color"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/savedArticlesButton"
+                    android:id="@+id/savedSchedulesButton">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="66dp"
+                            android:gravity="center"
+                            android:text="@string/schedules_categories"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toTopOf="@id/savedSchedulesCountTv"
+                            fontPath="fonts/read_english_semi_bold.ttf"
+                            tools:ignore="MissingPrefix"
+                            android:id="@+id/schedulesTitleTv"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/dummy_save_count"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/schedules_color_light"
+                            android:background="@color/schedules_color_dark"
+                            app:layout_constraintTop_toBottomOf="@id/schedulesTitleTv"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            fontPath="fonts/read_english_regular.ttf"
+                            tools:ignore="MissingPrefix"
+                            android:id="@+id/savedSchedulesCountTv"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardBackgroundColor="@color/parts_color"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/savedSchedulesButton"
+                    android:id="@+id/savedArticlesButton">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="66dp"
+                            android:gravity="center"
+                            android:text="@string/parts_categories"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toTopOf="@id/savedArticlesCountTv"
+                            fontPath="fonts/read_english_semi_bold.ttf"
+                            tools:ignore="MissingPrefix"
+                            android:id="@+id/partsTitleTv"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/dummy_save_count"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/parts_color_light"
+                            android:background="@color/parts_color_dark"
+                            app:layout_constraintTop_toBottomOf="@id/partsTitleTv"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            fontPath="fonts/read_english_regular.ttf"
+                            tools:ignore="MissingPrefix"
+                            android:id="@+id/savedArticlesCountTv"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="@color/amendment_color"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintTop_toBottomOf="@id/savedSchedulesButton"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/savedPreambleButton"
+                    android:id="@+id/savedAmendmentsButton">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="66dp"
+                            android:gravity="center"
+                            android:text="@string/amendments_categories"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toTopOf="@id/savedAmendmentsCountTv"
+                            fontPath="fonts/read_english_semi_bold.ttf"
+                            tools:ignore="MissingPrefix"
+                            android:id="@+id/amendmentsTitleTv"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/dummy_save_count"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/amendment_color_light"
+                            android:background="@color/amendment_color_dark"
+                            app:layout_constraintTop_toBottomOf="@id/amendmentsTitleTv"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            fontPath="fonts/read_english_regular.ttf"
+                            tools:ignore="MissingPrefix"
+                            android:id="@+id/savedAmendmentsCountTv"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginTop="5dp"
+                    app:cardBackgroundColor="@color/preamble_color"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintTop_toBottomOf="@id/savedArticlesButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/savedAmendmentsButton"
+                    android:id="@+id/savedPreambleButton">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="66dp"
+                            android:gravity="center"
+                            android:text="@string/preamble_categories"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toTopOf="@id/savedPreambleCountTv"
+                            fontPath="fonts/read_english_semi_bold.ttf"
+                            tools:ignore="MissingPrefix"
+                            android:id="@+id/preambleTitleTv"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/dummy_save_count"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/preamble_color_light"
+                            android:background="@color/preamble_color_dark"
+                            app:layout_constraintTop_toBottomOf="@id/preambleTitleTv"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            fontPath="fonts/read_english_regular.ttf"
+                            tools:ignore="MissingPrefix"
+                            android:id="@+id/savedPreambleCountTv"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

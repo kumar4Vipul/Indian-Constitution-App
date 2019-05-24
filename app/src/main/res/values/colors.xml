@@ -40,6 +40,16 @@
     <color name="parts_color">#4AB0E3</color>
     <color name="preamble_color">#E69E29</color>
 
+    <color name="amendment_color_dark">#D92E26</color>
+    <color name="schedules_color_dark">#4270D1</color>
+    <color name="parts_color_dark">#2398D3</color>
+    <color name="preamble_color_dark">#DD8900</color>
+
+    <color name="amendment_color_light">#FFB2AF</color>
+    <color name="schedules_color_light">#BBCDF5</color>
+    <color name="parts_color_light">#B7DDF0</color>
+    <color name="preamble_color_light">#F0D5A9</color>
+
     <!-- flag colors -->
     <color name="orange_dark">#D64B20</color>
     <color name="orange">#E64F21</color>
