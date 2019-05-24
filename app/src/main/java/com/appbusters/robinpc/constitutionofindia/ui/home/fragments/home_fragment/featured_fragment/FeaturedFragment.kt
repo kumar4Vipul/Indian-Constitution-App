@@ -1,4 +1,4 @@
-package com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.featured_fragment
+package com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.featured_fragment
 
 import android.app.Activity
 import android.graphics.drawable.GradientDrawable

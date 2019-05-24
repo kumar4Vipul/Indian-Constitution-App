@@ -9,7 +9,7 @@
     android:paddingStart="10dp"
     android:paddingEnd="10dp"
     android:id="@+id/fullPage"
-    tools:context=".ui.home.home_fragment.featured_fragment.FeaturedFragment">
+    tools:context=".ui.home.fragments.home_fragment.featured_fragment.FeaturedFragment">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

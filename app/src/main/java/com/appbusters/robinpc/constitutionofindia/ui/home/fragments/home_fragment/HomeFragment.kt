@@ -1,4 +1,4 @@
-package com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment
+package com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment
 
 import android.app.Activity
 import android.content.Intent
@@ -14,9 +14,9 @@ import com.appbusters.robinpc.constitutionofindia.data.model.Tag
 import com.appbusters.robinpc.constitutionofindia.di.component.fragment.DaggerHomeFragmentComponent
 import com.appbusters.robinpc.constitutionofindia.di.module.fragment.HomeFragmentModule
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseFragment
-import com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapter.CategoriesListAdapter
-import com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapter.FeaturedPagerAdapter
-import com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapter.TagListAdapter
+import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.adapter.CategoriesListAdapter
+import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.adapter.FeaturedPagerAdapter
+import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.adapter.TagListAdapter
 import com.appbusters.robinpc.constitutionofindia.ui.intermediate.MiddleActivity
 import com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing.CategoryListingActivity
 import com.appbusters.robinpc.constitutionofindia.ui.listing.tag_listing.TagChildrenActivity

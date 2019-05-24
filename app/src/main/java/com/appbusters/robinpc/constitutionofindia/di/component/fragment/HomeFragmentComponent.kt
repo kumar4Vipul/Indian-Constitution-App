@@ -5,7 +5,7 @@ import com.appbusters.robinpc.constitutionofindia.di.module.ViewModelFactoryModu
 import com.appbusters.robinpc.constitutionofindia.di.module.ViewModelModule
 import com.appbusters.robinpc.constitutionofindia.di.module.fragment.HomeFragmentModule
 import com.appbusters.robinpc.constitutionofindia.di.scope.PerFragmentScope
-import com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.HomeFragment
+import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.HomeFragment
 import dagger.Component
 
 @PerFragmentScope

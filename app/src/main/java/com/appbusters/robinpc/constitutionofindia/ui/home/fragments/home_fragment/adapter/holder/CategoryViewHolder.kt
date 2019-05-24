@@ -1,4 +1,4 @@
-package com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapter.holder
+package com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.adapter.holder
 
 import android.view.View
 import androidx.core.content.ContextCompat

@@ -1,13 +1,12 @@
-package com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapter
+package com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.appbusters.robinpc.constitutionofindia.R
-import com.appbusters.robinpc.constitutionofindia.data.model.Category
 import com.appbusters.robinpc.constitutionofindia.data.model.Tag
-import com.appbusters.robinpc.constitutionofindia.ui.home.home_fragment.adapter.holder.TagHolder
+import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.adapter.holder.TagHolder
 
 class TagListAdapter(comparator: DiffUtil.ItemCallback<Tag>):
         ListAdapter<Tag, TagHolder>(comparator), TagHolder.OnTagClickListener {

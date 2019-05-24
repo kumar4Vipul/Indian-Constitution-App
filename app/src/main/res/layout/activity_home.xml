@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintVertical_weight="1"
@@ -14,14 +14,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
-        android:id="@+id/fragmentContainer">
+        android:id="@+id/homeFragmentsPager">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.viewpager.widget.ViewPager>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        app:layout_constraintTop_toBottomOf="@id/fragmentContainer"
+        app:layout_constraintTop_toBottomOf="@id/homeFragmentsPager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +40,9 @@
                 android:padding="12dp"
                 android:background="?attr/selectableItemBackground"
                 android:tint="@color/colorAccent"
-                android:src="@drawable/ic_home_filled"/>
+                android:src="@drawable/ic_home_filled"
+                tools:ignore="ContentDescription"
+                android:id="@+id/homeButton"/>
 
             <ImageView
                 android:layout_width="0dp"
@@ -49,7 +51,9 @@
                 android:padding="12dp"
                 android:background="?attr/selectableItemBackground"
                 android:tint="@color/colorAccent"
-                android:src="@drawable/ic_bookmark"/>
+                android:src="@drawable/ic_bookmark"
+                tools:ignore="ContentDescription"
+                android:id="@+id/bookmarksButton"/>
 
         </LinearLayout>
 
