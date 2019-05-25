@@ -88,8 +88,10 @@
         android:background="@color/white">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintEnd_toStartOf="@id/bottomRateView"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -118,7 +120,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:paddingBottom="5dp"
                 android:paddingTop="3dp"
-                android:textSize="14sp"
+                android:textSize="15sp"
                 android:gravity="center"
                 android:text="@string/save_status_unsaved"
                 fontPath="fonts/read_english_bold.ttf"
@@ -129,13 +131,14 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
+            app:layout_constraintHorizontal_weight="1"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/bottomSaveStatusView"
             app:layout_constraintEnd_toStartOf="@id/bottomWhatsAppView"
-            android:background="@color/white"
+            android:background="?attr/selectableItemBackground"
             android:id="@+id/bottomRateView">
 
             <ImageView
@@ -160,7 +163,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:paddingBottom="5dp"
                 android:paddingTop="3dp"
-                android:textSize="14sp"
+                android:textSize="12sp"
                 android:gravity="center"
                 android:text="@string/rate"
                 fontPath="fonts/read_english_bold.ttf"
@@ -171,13 +174,14 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            app:layout_constraintEnd_toStartOf="@id/bottomMessengerView"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintEnd_toStartOf="@id/bottomShareView"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@id/bottomRateView"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:background="@color/white"
+            android:background="?attr/selectableItemBackground"
             android:id="@+id/bottomWhatsAppView">
 
             <ImageView
@@ -190,7 +194,7 @@
                 app:layout_constraintBottom_toTopOf="@id/whatsAppTv"
                 app:layout_constraintVertical_weight="1"
                 android:src="@drawable/ic_whatsapp_icon"
-                tools:tint="@color/whats_app_color"
+                android:tint="@color/whats_app_color"
                 tools:ignore="ContentDescription"
                 android:id="@+id/whatsAppIv"/>
 
@@ -202,9 +206,9 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:paddingBottom="5dp"
                 android:paddingTop="3dp"
-                android:textSize="14sp"
+                android:textSize="12sp"
                 android:gravity="center"
-                android:text="@string/share"
+                android:text="@string/whatsapp"
                 fontPath="fonts/read_english_bold.ttf"
                 android:textColor="@color/whats_app_color"
                 android:id="@+id/whatsAppTv"
@@ -213,14 +217,15 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="75dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            app:layout_constraintEnd_toStartOf="@id/bottomTwitterView"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@id/bottomWhatsAppView"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:background="@color/white"
-            android:id="@+id/bottomMessengerView">
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/bottomShareView">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -229,12 +234,12 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/messengerTv"
+                app:layout_constraintBottom_toTopOf="@id/shareTv"
                 app:layout_constraintVertical_weight="1"
-                android:src="@drawable/ic_messenger_icon"
-                tools:tint="@color/messenger_color"
+                android:src="@drawable/ic_baseline_share"
+                android:tint="@color/share_color"
                 tools:ignore="ContentDescription"
-                android:id="@+id/messengerIv"/>
+                android:id="@+id/shareIv"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -244,65 +249,23 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:paddingBottom="5dp"
                 android:paddingTop="3dp"
-                android:textSize="14sp"
+                android:textSize="12sp"
                 android:gravity="center"
                 android:text="@string/share"
                 fontPath="fonts/read_english_bold.ttf"
-                android:textColor="@color/messenger_color"
-                android:id="@+id/messengerTv"
-                tools:ignore="MissingPrefix" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="75dp"
-            android:layout_height="match_parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/bottomMessengerView"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:background="@color/white"
-            android:id="@+id/bottomTwitterView">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:paddingTop="10dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/twitterTv"
-                app:layout_constraintVertical_weight="1"
-                android:src="@drawable/ic_twitter_icon"
-                tools:tint="@color/twitter_color"
-                tools:ignore="ContentDescription"
-                android:id="@+id/twitterIv"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:paddingBottom="5dp"
-                android:paddingTop="3dp"
-                android:textSize="14sp"
-                android:gravity="center"
-                android:text="@string/share"
-                fontPath="fonts/read_english_bold.ttf"
-                android:textColor="@color/twitter_color"
-                android:id="@+id/twitterTv"
+                android:textColor="@color/share_color"
+                android:id="@+id/shareTv"
                 tools:ignore="MissingPrefix" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="4dp"
+            android:layout_height="2dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:background="@color/schedules_color"
+            android:background="@color/skeleton_two"
             tools:ignore="ContentDescription"
             android:id="@+id/bottomLayoutLineIv"/>
         

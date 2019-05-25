@@ -70,7 +70,6 @@ class ReadingActivity : BaseActivity() {
     private fun renderInitial() {
         findCategoryColor()
 
-        bottomLayoutLineIv.background = ContextCompat.getDrawable(this, categoryColor)
         bottomSaveStatusView.background = ContextCompat.getDrawable(this, categoryColor)
 
         renderReadElement()
@@ -127,6 +126,18 @@ class ReadingActivity : BaseActivity() {
                 saveStatusTv.text = getStringFromId(R.string.saved)
             }
             isSaved = !isSaved
+        }
+
+        bottomRateView.setOnClickListener {
+
+        }
+
+        bottomWhatsAppView.setOnClickListener {
+
+        }
+
+        bottomShareView.setOnClickListener {
+
         }
     }
 

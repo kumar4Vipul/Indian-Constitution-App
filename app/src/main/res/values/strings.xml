@@ -55,6 +55,7 @@
     <string name="saved">SAVED</string>
     <string name="share">SHARE</string>
     <string name="save_status_unsaved">SAVE</string>
-    <string name="rate">RATE</string>
+    <string name="rate">RATE APP</string>
+    <string name="whatsapp">WHATSAPP</string>
 
 </resources>
