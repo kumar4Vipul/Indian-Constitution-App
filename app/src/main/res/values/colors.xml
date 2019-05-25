@@ -71,6 +71,13 @@
     <!-- intermediate screen -->
     <color name="intermediate_status_bar">#EBEBEB</color>
 
+    <!-- arbitrary colors -->
+    <color name="whats_app_color">#009688</color>
+    <color name="messenger_color">#2196F3</color>
+    <color name="facebook_color">#2256C2</color>
+    <color name="twitter_color">#03A9F4</color>
+    <color name="rate_color">#EFA632</color>
+
 </resources>
 
 
