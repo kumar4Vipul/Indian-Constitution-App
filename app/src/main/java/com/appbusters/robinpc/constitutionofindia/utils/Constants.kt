@@ -2,6 +2,8 @@ package com.appbusters.robinpc.constitutionofindia.utils
 
 class Constants {
     companion object {
+        const val APP_DATABASE = "app_database"
+
         const val DEFAULT_VALUE_INT = 0
         const val DEFAULT_VALUE_FLOAT = 0f
         const val DEFAULT_VALUE_LONG = 0L

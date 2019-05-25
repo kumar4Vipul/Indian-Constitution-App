@@ -8,6 +8,8 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
 import com.appbusters.robinpc.constitutionofindia.R
+import com.appbusters.robinpc.constitutionofindia.data.dao.ReadElementDao
+import com.appbusters.robinpc.constitutionofindia.data.database.AppDatabase
 import com.appbusters.robinpc.constitutionofindia.data.model.DummyTag
 import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
 import com.appbusters.robinpc.constitutionofindia.di.component.activity.DaggerReadActivityComponent
@@ -30,6 +32,10 @@ class ReadingActivity : BaseActivity() {
     @Inject
     lateinit var dummyTagsAdapter: DummyTagListAdapter
 
+    @Inject
+    lateinit var appDatabase: AppDatabase
+
+    private lateinit var elementsDao: ReadElementDao
     private lateinit var readElement: ReadElement
 
     private var categoryColor: Int = 0
@@ -61,10 +67,13 @@ class ReadingActivity : BaseActivity() {
         DaggerReadActivityComponent.builder()
                 .constitutionAppComponent(ConstitutionApp.get(this).constitutionAppComponent())
                 .build().injectReadingActivity(this)
+
+        elementsDao = appDatabase.readElementDao()
     }
 
     private fun getIntentData() {
         readElement = intent.getParcelableExtra(EXTRA_READ_ELEMENT)
+        checkIfElementIsSaved(readElement.id)
     }
 
     private fun renderInitial() {
@@ -73,11 +82,6 @@ class ReadingActivity : BaseActivity() {
         bottomSaveStatusView.background = ContextCompat.getDrawable(this, categoryColor)
 
         renderReadElement()
-    }
-
-    private fun getShareString(title: String): String {
-        val savedString = getString(R.string.share)
-        return savedString.plus(" ").plus(title).plus(" :")
     }
 
     private fun findCategoryColor() {
@@ -103,6 +107,10 @@ class ReadingActivity : BaseActivity() {
         )
     }
 
+    private fun checkIfElementIsSaved(elementId: Int) {
+        isSaved = elementsDao.checkIfElementIsSaved(elementId) > 0
+    }
+
     private fun getTagsFromStrings(stringTags: List<String>, categoryName: String): MutableList<DummyTag> {
         val tagsList: MutableList<DummyTag> = ArrayList()
         for(tag in stringTags) tagsList.add(DummyTag(tag, categoryName))
@@ -116,16 +124,8 @@ class ReadingActivity : BaseActivity() {
 
     private fun setClickListeners() {
         bottomSaveStatusView.setOnClickListener {
-            //TODO: save if unsaved, unsave if saved
-            if(isSaved) {
-                saveStatusIv.setImageDrawable(getDrawableFromId(R.drawable.ic_bookmark))
-                saveStatusTv.text = getStringFromId(R.string.save)
-            }
-            else {
-                saveStatusIv.setImageDrawable(getDrawableFromId(R.drawable.ic_bookmark_filled))
-                saveStatusTv.text = getStringFromId(R.string.saved)
-            }
-            isSaved = !isSaved
+            if(isSaved) removeElementFromDb()
+            else saveElementToDb()
         }
 
         bottomRateView.setOnClickListener {
@@ -138,6 +138,28 @@ class ReadingActivity : BaseActivity() {
 
         bottomShareView.setOnClickListener {
 
+        }
+    }
+
+    private fun saveElementToDb() {
+        elementsDao.markElementAsSaved(readElement.id)
+        updateSaveStatus(true)
+    }
+
+    private fun removeElementFromDb() {
+        elementsDao.markElementAsUnsaved(readElement.id)
+        updateSaveStatus(false)
+    }
+
+    private fun updateSaveStatus(isSaved: Boolean) {
+        this.isSaved = isSaved
+        if(isSaved) {
+            saveStatusIv.setImageDrawable(getDrawableFromId(R.drawable.ic_bookmark))
+            saveStatusTv.text = getStringFromId(R.string.save)
+        }
+        else {
+            saveStatusIv.setImageDrawable(getDrawableFromId(R.drawable.ic_bookmark_filled))
+            saveStatusTv.text = getStringFromId(R.string.saved)
         }
     }
 

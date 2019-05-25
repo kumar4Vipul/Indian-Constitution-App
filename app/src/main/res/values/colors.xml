@@ -19,7 +19,7 @@
     <color name="home_header">#2C2C2C</color>
     <color name="home_background">#F5F5F5</color>
     <color name="home_status_separator">#BBBABA</color>
-    <color name="home_status_bar">#EBEBEB</color>
+    <color name="home_status_bar">#FFFFFF</color>
     <color name="home_screen_titles">#848484</color>
     <color name="home_screen_title_underline">#A8A8A8</color>
     <color name="bg_left_side_heading">#FC302A</color>
@@ -57,19 +57,19 @@
     <color name="blue_light">#0861B1</color>
 
     <!-- tags children screen -->
-    <color name="tags_children_status_bar">#EBEBEB</color>
+    <color name="tags_children_status_bar">#FFFFFF</color>
     <color name="title_gradient_top">#FFFFFF</color>
     <color name="title_gradient_bottom">#FFFFFF</color>
 
     <!-- reading screen -->
-    <color name="reading_status_bar">#EBEBEB</color>
+    <color name="reading_status_bar">#FFFFFF</color>
 
     <!-- listing screen -->
-    <color name="listing_status_bar">#EBEBEB</color>
+    <color name="listing_status_bar">#FFFFFF</color>
     <color name="listing_header">#2C2C2C</color>
 
     <!-- intermediate screen -->
-    <color name="intermediate_status_bar">#EBEBEB</color>
+    <color name="intermediate_status_bar">#FFFFFF</color>
 
     <!-- arbitrary colors -->
     <color name="whats_app_color">#009688</color>

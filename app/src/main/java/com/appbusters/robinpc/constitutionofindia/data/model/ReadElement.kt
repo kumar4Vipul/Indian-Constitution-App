@@ -2,15 +2,20 @@ package com.appbusters.robinpc.constitutionofindia.data.model
 
 import android.os.Parcel
 import android.os.Parcelable
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
-class ReadElement(@SerializedName("read_element_id") val id: Int,
-                  @SerializedName("title") val title: String?,
-                  @SerializedName("subtitle") val subtitle: String?,
-                  @SerializedName("category") val categoryName: String?,
-                  @SerializedName("short_description") val shortDescription: String?,
-                  @SerializedName("content") val content: String?,
-                  @SerializedName("tags") val tags: List<String>?): Parcelable {
+@Entity(tableName = "read_element")
+class ReadElement(@PrimaryKey @SerializedName("read_element_id") val id: Int,
+                  @ColumnInfo(name = "title") @SerializedName("title") val title: String?,
+                  @ColumnInfo(name = "subtitle") @SerializedName("subtitle") val subtitle: String?,
+                  @ColumnInfo(name = "category") @SerializedName("category") val categoryName: String?,
+                  @ColumnInfo(name = "short_description") @SerializedName("short_description") val shortDescription: String?,
+                  @ColumnInfo(name = "content") @SerializedName("content") val content: String?,
+                  @ColumnInfo(name = "tags") @SerializedName("tags") val tags: List<String>?,
+                  @ColumnInfo(name = "is_saved") val isSaved: Int = 0): Parcelable {
 
         constructor(parcel: Parcel) : this(
                 parcel.readInt(),
@@ -19,7 +24,8 @@ class ReadElement(@SerializedName("read_element_id") val id: Int,
                 parcel.readString(),
                 parcel.readString(),
                 parcel.readString(),
-                parcel.createStringArrayList()) {
+                parcel.createStringArrayList(),
+                parcel.readInt()) {
         }
 
         override fun writeToParcel(parcel: Parcel, flags: Int) {
@@ -30,6 +36,7 @@ class ReadElement(@SerializedName("read_element_id") val id: Int,
                 parcel.writeString(shortDescription)
                 parcel.writeString(content)
                 parcel.writeStringList(tags)
+                parcel.writeInt(isSaved)
         }
 
         override fun describeContents(): Int {
