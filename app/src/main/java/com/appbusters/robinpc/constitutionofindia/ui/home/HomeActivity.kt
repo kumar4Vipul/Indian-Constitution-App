@@ -2,7 +2,10 @@ package com.appbusters.robinpc.constitutionofindia.ui.home
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import android.view.View
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import androidx.core.content.ContextCompat
 import androidx.viewpager.widget.ViewPager
@@ -19,6 +22,8 @@ class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener, HomeFragmen
 
     @Inject
     lateinit var homePagerAdapter: HomeFragmentsAdapter
+
+    private lateinit var fadeOutAnimation: Animation
 
     companion object {
         const val HOME_PAGE = 0
@@ -95,6 +100,24 @@ class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener, HomeFragmen
     }
 
     override fun onLoadComplete() {
-        loadingScreen.visibility = View.GONE
+        fadeOutAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_out)
+
+        fadeOutAnimation.setAnimationListener(object: Animation.AnimationListener {
+
+            override fun onAnimationRepeat(animation: Animation?) {
+            }
+
+            override fun onAnimationEnd(animation: Animation?) {
+                loadingScreen.visibility = View.GONE
+                lottieAnimationView.pauseAnimation()
+            }
+
+            override fun onAnimationStart(animation: Animation?) {
+                loadingStatusTv.text = getString(R.string.load_complete)
+            }
+
+        })
+
+        loadingScreen.startAnimation(fadeOutAnimation)
     }
 }

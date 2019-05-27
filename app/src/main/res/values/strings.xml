@@ -57,5 +57,7 @@
     <string name="save_status_unsaved">SAVE</string>
     <string name="rate">RATE APP</string>
     <string name="whatsapp">WHATSAPP</string>
+    <string name="loading">LOADING..</string>
+    <string name="load_complete">LOAD COMPLETE</string>
 
 </resources>
