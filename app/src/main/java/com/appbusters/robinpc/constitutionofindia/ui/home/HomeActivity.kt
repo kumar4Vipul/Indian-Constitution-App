@@ -1,5 +1,6 @@
 package com.appbusters.robinpc.constitutionofindia.ui.home
 
+import android.util.Log
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
@@ -56,10 +57,12 @@ class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener, HomeFragmen
 
     private fun setClickListeners() {
         homeButton.setOnClickListener {
+            Log.e("tag", "home button clicked")
             highlightNavigation(it as ImageView)
             homeFragmentsPager.currentItem = HOME_PAGE
         }
         bookmarksButton.setOnClickListener {
+            Log.e("tag", "bookmarks button clicked")
             highlightNavigation(it as ImageView)
             homeFragmentsPager.currentItem = BOOKMARKS_PAGE
         }
