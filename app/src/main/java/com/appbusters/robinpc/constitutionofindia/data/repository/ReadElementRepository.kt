@@ -1,32 +1,66 @@
 package com.appbusters.robinpc.constitutionofindia.data.repository
 
 import android.os.AsyncTask
-import android.util.Log
 import androidx.lifecycle.LiveData
 import com.appbusters.robinpc.constitutionofindia.data.dao.ReadElementDao
 import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
 
 class ReadElementRepository(private val elementsDao: ReadElementDao) {
 
-    private val elementsListLiveData: LiveData<List<ReadElement>> = elementsDao.getAllElements()
-    private val elementsCountLiveData: LiveData<Int> = elementsDao.getNumberOfElements()
-
     fun getAllElements(): LiveData<List<ReadElement>> {
-        return elementsListLiveData
+        return elementsDao.getAllElements()
     }
 
     fun getNumberOfElements(): LiveData<Int> {
-        return elementsCountLiveData
+        return elementsDao.getNumberOfElements()
     }
 
     fun insertElements(vararg tags: ReadElement) {
-        InsertTagsTask(elementsDao).execute(*tags)
+        InsertElementsTask(elementsDao).execute(*tags)
     }
 
-    private class InsertTagsTask internal constructor(private val elementsDao: ReadElementDao) : AsyncTask<ReadElement, Void, Void>() {
+    fun getElementsInRange(startId: Int, endId: Int): LiveData<List<ReadElement>> {
+        return elementsDao.getElementsInRange(startId, endId)
+    }
+
+    fun getElementsForIds(ids: List<Int>): LiveData<List<ReadElement>> {
+        return elementsDao.getElementsForIds(ids)
+    }
+
+    fun markElementAsSaved(elementId: Int) {
+        SaveStatusTask(elementsDao).execute(elementId)
+    }
+
+    fun markElementAsUnsaved(elementId: Int) {
+        UnsaveStatusTask(elementsDao).execute(elementId)
+    }
+
+    fun isElementSaved(elementId: Int): LiveData<Int> {
+        return elementsDao.isElementSaved(elementId)
+    }
+
+    private class SaveStatusTask internal constructor(private val elementsDao: ReadElementDao)
+        : AsyncTask<Int, Void, Void>() {
+
+        override fun doInBackground(vararg params: Int?): Void? {
+            params[0]?.let { elementsDao.markElementAsSaved(it) }
+            return null
+        }
+    }
+
+    private class UnsaveStatusTask internal constructor(private val elementsDao: ReadElementDao)
+        : AsyncTask<Int, Void, Void>() {
+
+        override fun doInBackground(vararg params: Int?): Void? {
+            params[0]?.let { elementsDao.markElementAsUnsaved(it) }
+            return null
+        }
+    }
+
+    private class InsertElementsTask internal constructor(private val elementsDao: ReadElementDao)
+        : AsyncTask<ReadElement, Void, Void>() {
 
         override fun doInBackground(vararg params: ReadElement): Void? {
-            Log.e("tag", "inserting element")
             elementsDao.insertElements(*params)
             return null
         }

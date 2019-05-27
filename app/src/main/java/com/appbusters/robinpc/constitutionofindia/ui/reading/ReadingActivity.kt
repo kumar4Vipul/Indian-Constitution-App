@@ -5,13 +5,12 @@ import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.text.Html
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
 import com.appbusters.robinpc.constitutionofindia.R
-import com.appbusters.robinpc.constitutionofindia.data.dao.ReadElementDao
-import com.appbusters.robinpc.constitutionofindia.data.database.AppDatabase
 import com.appbusters.robinpc.constitutionofindia.data.model.DummyTag
 import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
 import com.appbusters.robinpc.constitutionofindia.di.component.activity.DaggerReadActivityComponent
@@ -22,6 +21,7 @@ import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATE
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_PREAMBLE
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_SCHEDULES
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.EXTRA_READ_ELEMENT
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.SAVED_STATUS
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_reading.*
 import javax.inject.Inject
@@ -37,15 +37,12 @@ class ReadingActivity : BaseActivity() {
     @Inject
     lateinit var dummyTagsAdapter: DummyTagListAdapter
 
-    @Inject
-    lateinit var appDatabase: AppDatabase
-
-    private lateinit var elementsDao: ReadElementDao
     private lateinit var readElement: ReadElement
-    private lateinit var readingViewModel: ReadingActivityViewModel
+    private lateinit var viewModel: ReadingActivityViewModel
+
+    private var isSaved: Boolean = false
 
     private var categoryColor: Int = 0
-    private var isSaved: Boolean = false
 
     companion object {
 
@@ -64,7 +61,7 @@ class ReadingActivity : BaseActivity() {
         setStatusBarColor(R.color.reading_status_bar)
         getIntentData()
         setComponent()
-        checkIfElementIsSaved(readElement.id)
+        setObservers()
         setTagsRecycler()
         renderInitial()
         setClickListeners()
@@ -75,9 +72,7 @@ class ReadingActivity : BaseActivity() {
                 .constitutionAppComponent(ConstitutionApp.get(this).constitutionAppComponent())
                 .build().injectReadingActivity(this)
 
-        readingViewModel = ViewModelProviders.of(this, viewModelFactory).get(ReadingActivityViewModel::class.java)
-
-        elementsDao = appDatabase.readElementDao()
+        viewModel = ViewModelProviders.of(this, viewModelFactory).get(ReadingActivityViewModel::class.java)
     }
 
     private fun getIntentData() {
@@ -90,6 +85,15 @@ class ReadingActivity : BaseActivity() {
         bottomSaveStatusView.background = ContextCompat.getDrawable(this, categoryColor)
 
         renderReadElement()
+    }
+
+    private fun setObservers() {
+        viewModel.isElementSaved(readElement.id).observe(this, Observer {
+            it?.let {
+                this.isSaved = it == SAVED_STATUS
+                renderSaveStatus(isSaved)
+            }
+        })
     }
 
     private fun findCategoryColor() {
@@ -115,11 +119,6 @@ class ReadingActivity : BaseActivity() {
         )
     }
 
-    private fun checkIfElementIsSaved(elementId: Int) {
-        //TODO: call view model for this
-//        isSaved = elementsDao.checkIfElementIsSaved(elementId) > 0
-    }
-
     private fun getTagsFromStrings(stringTags: List<String>, categoryName: String): MutableList<DummyTag> {
         val tagsList: MutableList<DummyTag> = ArrayList()
         for(tag in stringTags) tagsList.add(DummyTag(tag, categoryName))
@@ -133,7 +132,7 @@ class ReadingActivity : BaseActivity() {
 
     private fun setClickListeners() {
         bottomSaveStatusView.setOnClickListener {
-            if(isSaved) removeElementFromDb()
+            if(isSaved) unsaveElementFromDb()
             else saveElementToDb()
         }
 
@@ -151,24 +150,23 @@ class ReadingActivity : BaseActivity() {
     }
 
     private fun saveElementToDb() {
-        elementsDao.markElementAsSaved(readElement.id)
-        updateSaveStatus(true)
+        viewModel.markElementAsSaved(readElement.id)
+        renderSaveStatus(true)
     }
 
-    private fun removeElementFromDb() {
-        elementsDao.markElementAsUnsaved(readElement.id)
-        updateSaveStatus(false)
+    private fun unsaveElementFromDb() {
+        viewModel.markElementAsUnsaved(readElement.id)
+        renderSaveStatus(false)
     }
 
-    private fun updateSaveStatus(isSaved: Boolean) {
-        this.isSaved = isSaved
+    private fun renderSaveStatus(isSaved: Boolean) {
         if(isSaved) {
-            saveStatusIv.setImageDrawable(getDrawableFromId(R.drawable.ic_bookmark))
-            saveStatusTv.text = getStringFromId(R.string.save)
-        }
-        else {
             saveStatusIv.setImageDrawable(getDrawableFromId(R.drawable.ic_bookmark_filled))
             saveStatusTv.text = getStringFromId(R.string.saved)
+        }
+        else {
+            saveStatusIv.setImageDrawable(getDrawableFromId(R.drawable.ic_bookmark))
+            saveStatusTv.text = getStringFromId(R.string.save)
         }
     }
 

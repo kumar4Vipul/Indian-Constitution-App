@@ -5,7 +5,7 @@ import com.appbusters.robinpc.constitutionofindia.di.module.ViewModelFactoryModu
 import com.appbusters.robinpc.constitutionofindia.di.module.ViewModelModule
 import com.appbusters.robinpc.constitutionofindia.di.module.activity.TagChildrenActivityModule
 import com.appbusters.robinpc.constitutionofindia.di.scope.PerFragmentScope
-import com.appbusters.robinpc.constitutionofindia.ui.listing.tag_listing.TagChildrenActivity
+import com.appbusters.robinpc.constitutionofindia.ui.listing.tag_children.TagChildrenActivity
 import dagger.Component
 
 @PerFragmentScope

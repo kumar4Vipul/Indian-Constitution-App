@@ -15,7 +15,7 @@
         <activity android:name=".ui.listing.tags_list.TagsListActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name=".ui.listing.tag_listing.TagChildrenActivity"
+            android:name=".ui.listing.tag_children.TagChildrenActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.intermediate.MiddleActivity"

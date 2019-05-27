@@ -7,11 +7,14 @@ import androidx.lifecycle.ViewModel
 import com.appbusters.robinpc.constitutionofindia.R
 import com.appbusters.robinpc.constitutionofindia.data.database.AppDatabase
 import com.appbusters.robinpc.constitutionofindia.data.model.Category
+import com.appbusters.robinpc.constitutionofindia.data.model.Part
 import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
 import com.appbusters.robinpc.constitutionofindia.data.model.Tag
+import com.appbusters.robinpc.constitutionofindia.data.repository.PartRepository
 import com.appbusters.robinpc.constitutionofindia.data.repository.ReadElementRepository
 import com.appbusters.robinpc.constitutionofindia.data.repository.TagRepository
 import com.appbusters.robinpc.constitutionofindia.utils.Constants
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.JSON_PARTS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.JSON_READ_ELEMENTS
 import com.google.gson.Gson
 import org.json.JSONArray
@@ -29,6 +32,7 @@ class HomeFragmentViewModel @Inject constructor(
 
     private var tagRepository: TagRepository = TagRepository(appDatabase.tagDao())
     private var elementsRepository: ReadElementRepository = ReadElementRepository(appDatabase.readElementDao())
+    private var partsRepository: PartRepository = PartRepository(appDatabase.partDao())
 
     private var allTagsLiveData: LiveData<List<Tag>>
     private var tagsCountLiveData: LiveData<Int>
@@ -50,6 +54,10 @@ class HomeFragmentViewModel @Inject constructor(
 
         allElementsLiveData = elementsRepository.getAllElements()
         elementsCountLiveData = elementsRepository.getNumberOfElements()
+    }
+
+    fun getAllParts(): LiveData<List<Part>> {
+        return partsRepository.getAllParts()
     }
 
     fun getAllTags(): LiveData<List<Tag>> {
@@ -76,12 +84,42 @@ class HomeFragmentViewModel @Inject constructor(
         elementsRepository.insertElements(*elements)
     }
 
+    private fun insertParts(vararg parts: Part) {
+        partsRepository.insertParts(*parts)
+    }
+
     fun inflateCategoriesList() {
         categoriesList.add(Category(R.color.schedules_color, Constants.CATEGORY_SCHEDULES))
         categoriesList.add(Category(R.color.parts_color, Constants.CATEGORY_PARTS))
         categoriesList.add(Category(R.color.amendment_color, Constants.CATEGORY_AMENDMENTS))
         categoriesList.add(Category(R.color.preamble_color, Constants.CATEGORY_PREAMBLE))
         _categoriesListLiveData.postValue(categoriesList)
+    }
+
+    fun loadPartsFromJson() {
+        try {
+            inflatePartsList(getPartsArray())
+        }
+        catch (e: IOException) {}
+    }
+
+    private fun getPartsArray(): JSONArray {
+        if(::jsonString.isInitialized) {
+            val jsonObject = JSONObject(jsonString)
+            return jsonObject.getJSONArray(JSON_PARTS)
+        }
+        else {
+            loadJsonString()
+            return getPartsArray()
+        }
+    }
+
+    fun inflatePartsList(parts: JSONArray) {
+        var part: Part
+        for(partIndex: Int in 0 until parts.length()) {
+            part = gson.fromJson(parts.getJSONObject(partIndex).toString(), Part::class.java)
+            insertParts(part)
+        }
     }
 
     fun loadTagsFromJson() {

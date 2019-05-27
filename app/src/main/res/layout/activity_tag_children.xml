@@ -9,7 +9,7 @@
     android:overScrollMode="never"
     android:scrollbars="none"
     android:background="@color/white"
-    tools:context=".ui.listing.tag_listing.TagChildrenActivity">
+    tools:context=".ui.listing.tag_children.TagChildrenActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

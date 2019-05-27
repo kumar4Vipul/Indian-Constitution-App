@@ -22,6 +22,12 @@ interface ReadElementDao {
     @Query("SELECT count(*) FROM read_element WHERE id = :elementId AND is_saved = 1")
     fun checkIfElementIsSaved(elementId: Int): LiveData<Int>
 
+    @Query("SELECT * FROM read_element WHERE id BETWEEN :startId AND :endId")
+    fun getElementsInRange(startId: Int, endId: Int): LiveData<List<ReadElement>>
+
+    @Query("SELECT * FROM read_element WHERE id IN(:ids)")
+    fun getElementsForIds(ids: List<Int>): LiveData<List<ReadElement>>
+
     @Query("UPDATE read_element SET is_saved = 1 WHERE id = :elementId")
     fun markElementAsSaved(elementId: Int)
 
@@ -36,4 +42,7 @@ interface ReadElementDao {
 
     @Delete
     fun delete(readElement: ReadElement)
+
+    @Query("SELECT is_saved FROM read_element WHERE id = :elementId")
+    fun isElementSaved(elementId: Int): LiveData<Int>
 }

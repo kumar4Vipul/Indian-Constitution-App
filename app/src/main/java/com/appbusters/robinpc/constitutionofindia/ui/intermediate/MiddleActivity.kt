@@ -2,6 +2,9 @@ package com.appbusters.robinpc.constitutionofindia.ui.intermediate
 
 import android.content.Context
 import android.content.Intent
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
 import com.appbusters.robinpc.constitutionofindia.R
 import com.appbusters.robinpc.constitutionofindia.data.model.Part
@@ -27,13 +30,13 @@ class MiddleActivity : BaseActivity(), MiddleListAdapter.OnPartClickListener {
     lateinit var gson: Gson
 
     @Inject
-    lateinit var middleAdapter: MiddleListAdapter
+    lateinit var viewModelFactory: ViewModelProvider.Factory
 
     @Inject
-    lateinit var databaseInputStream: InputStream
+    lateinit var middleAdapter: MiddleListAdapter
 
     private lateinit var categoryName: String
-    private var partsList: MutableList<Part> = ArrayList()
+    private lateinit var viewModel: MiddleActivityViewModel
 
     companion object {
         fun newIntent(context: Context, categoryName: String): Intent {
@@ -51,8 +54,8 @@ class MiddleActivity : BaseActivity(), MiddleListAdapter.OnPartClickListener {
         setStatusBarColor(R.color.intermediate_status_bar)
         setComponent()
         getIntentData()
-        loadReadElements()
         renderViewsForData()
+        setObservers()
     }
 
     private fun setComponent() {
@@ -60,36 +63,16 @@ class MiddleActivity : BaseActivity(), MiddleListAdapter.OnPartClickListener {
                 .constitutionAppComponent(ConstitutionApp.get(this).constitutionAppComponent())
                 .middleActivityModule(MiddleActivityModule(this))
                 .build().injectMiddleActivity(this)
+
+        viewModel = ViewModelProviders.of(this, viewModelFactory).get(MiddleActivityViewModel::class.java)
     }
 
-
-    private fun loadReadElements() {
-        try {
-            inflateElementsList(getJsonElementsArray())
-        }
-        catch (e: IOException) {
-            //TODO: be very very sorry to the user. apologize like hell.
-        }
-    }
-
-    private fun inflateElementsList(parts: JSONArray) {
-        for(elementId: Int in 0 until parts.length())
-            partsList.add(
-                    gson.fromJson(
-                            parts.getJSONObject(elementId).toString(),
-                            Part::class.java)
-            )
-    }
-
-    private fun getJsonElementsArray(): JSONArray {
-        val json: String?
-        val buffer = ByteArray(databaseInputStream.available())
-        databaseInputStream.read(buffer)
-        databaseInputStream.close()
-        json = String(buffer, Charset.forName(Constants.CHARSET_UTF_8))
-
-        val jsonObject = JSONObject(json)
-        return jsonObject.getJSONArray(Constants.JSON_PARTS)
+    private fun setObservers() {
+        viewModel.getAllParts().observe(this, Observer {
+            it?.let {
+                middleAdapter.submitList(it)
+            }
+        })
     }
 
     private fun getIntentData() {
@@ -103,7 +86,6 @@ class MiddleActivity : BaseActivity(), MiddleListAdapter.OnPartClickListener {
 
     private fun setRecycler() {
         middleRv.adapter = middleAdapter
-        middleAdapter.submitList(partsList)
         middleAdapter.setPartClickListener(this)
     }
 

@@ -2,7 +2,6 @@ package com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragme
 
 import android.app.Activity
 import android.content.Intent
-import android.util.Log
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
@@ -23,7 +22,7 @@ import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragmen
 import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.adapter.TagListAdapter
 import com.appbusters.robinpc.constitutionofindia.ui.intermediate.MiddleActivity
 import com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing.CategoryListingActivity
-import com.appbusters.robinpc.constitutionofindia.ui.listing.tag_listing.TagChildrenActivity
+import com.appbusters.robinpc.constitutionofindia.ui.listing.tag_children.TagChildrenActivity
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.AMENDMENTS_END_INDEX
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.AMENDMENTS_START_INDEX
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_AMENDMENTS
@@ -31,6 +30,7 @@ import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATE
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_PREAMBLE
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_SCHEDULES
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.NUMBER_OF_ELEMENTS
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.NUMBER_OF_PARTS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.NUMBER_OF_TAGS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.PREAMBLE_INDEX
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.SCHEDULES_END_INDEX
@@ -101,7 +101,7 @@ class HomeFragment : BaseFragment(),
 
                     tagsAdapter.submitList(viewModel.getSubmitTagList(it))
 
-                    setElementsObserver()
+                    setPartsObserver()
                 }
             }
             else
@@ -113,6 +113,21 @@ class HomeFragment : BaseFragment(),
                 categoriesAdapter.submitList(it)
             }
         })
+    }
+
+    private fun setPartsObserver() {
+
+        viewModel.getAllParts().observe(this, Observer {
+            if(it.isNullOrEmpty()) {
+                viewModel.loadPartsFromJson()
+            }
+            else {
+                if(it.size != NUMBER_OF_PARTS) viewModel.loadPartsFromJson()
+                else setElementsObserver()
+            }
+        })
+
+        setElementsObserver()
     }
 
     private fun setElementsObserver() {

@@ -11,26 +11,17 @@ import javax.inject.Inject
 
 class ReadingActivityViewModel @Inject constructor(appDatabase: AppDatabase): ViewModel() {
 
-    private var tagRepository: TagRepository = TagRepository(appDatabase.tagDao())
     private var elementsRepository: ReadElementRepository = ReadElementRepository(appDatabase.readElementDao())
 
-    private var allTagsLiveData: LiveData<List<Tag>>
-    private var tagsCountLiveData: LiveData<Int>
-
-    init {
-        allTagsLiveData = tagRepository.getAllTags()
-        tagsCountLiveData = tagRepository.getNumberOfTags()
+    fun markElementAsSaved(elementId: Int) {
+        elementsRepository.markElementAsSaved(elementId)
     }
 
-    fun getAllTags(): LiveData<List<Tag>> {
-        return allTagsLiveData
+    fun markElementAsUnsaved(elementId: Int) {
+        elementsRepository.markElementAsUnsaved(elementId)
     }
 
-    fun getNumberOfTags(): LiveData<Int> {
-        return tagsCountLiveData
-    }
-
-    fun insertTags(vararg tags: Tag) {
-        tagRepository.insertTags(*tags)
+    fun isElementSaved(elementId: Int): LiveData<Int> {
+        return elementsRepository.isElementSaved(elementId)
     }
 }

@@ -1,7 +1,10 @@
-package com.appbusters.robinpc.constitutionofindia.ui.listing.tag_listing
+package com.appbusters.robinpc.constitutionofindia.ui.listing.tag_children
 
 import android.content.Context
 import android.content.Intent
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
 import com.appbusters.robinpc.constitutionofindia.R
@@ -12,18 +15,15 @@ import com.appbusters.robinpc.constitutionofindia.di.module.activity.TagChildren
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseActivity
 import com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing.adapter.ListingListAdapter
 import com.appbusters.robinpc.constitutionofindia.ui.reading.ReadingActivity
-import com.appbusters.robinpc.constitutionofindia.utils.Constants
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.EXTRA_TAG
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_tag_children.*
-import org.json.JSONArray
-import org.json.JSONObject
-import java.io.IOException
-import java.io.InputStream
-import java.nio.charset.Charset
 import javax.inject.Inject
 
 class TagChildrenActivity : BaseActivity(), ListingListAdapter.ListItemClickListener {
+
+    @Inject
+    lateinit var viewModelFactory: ViewModelProvider.Factory
 
     @Inject
     lateinit var listingAdapter: ListingListAdapter
@@ -31,12 +31,9 @@ class TagChildrenActivity : BaseActivity(), ListingListAdapter.ListItemClickList
     @Inject
     lateinit var gson: Gson
 
-    @Inject
-    lateinit var databaseInputStream: InputStream
-
     private lateinit var displayTag: Tag
     private lateinit var elementIds: List<Int>
-    private var elementsList: MutableList<ReadElement> = ArrayList()
+    private lateinit var viewModel: TagChildrenActivityViewModel
 
     companion object {
         fun newIntent(context: Context, tag: Tag): Intent {
@@ -54,8 +51,8 @@ class TagChildrenActivity : BaseActivity(), ListingListAdapter.ListItemClickList
         setStatusBarColor(R.color.tags_children_status_bar)
         getIntentData()
         setComponent()
-        loadReadElements()
         renderViewsForTag()
+        setObservers()
     }
 
     private fun getIntentData() {
@@ -68,37 +65,8 @@ class TagChildrenActivity : BaseActivity(), ListingListAdapter.ListItemClickList
                 .constitutionAppComponent(ConstitutionApp.get(this).constitutionAppComponent())
                 .tagChildrenActivityModule(TagChildrenActivityModule(this))
                 .build().injectTagChildrenActivity(this)
-    }
 
-    private fun loadReadElements() {
-
-        try {
-            inflateElementsList(getJsonElementsArray())
-        }
-        catch (e: IOException) {
-            //TODO: be very very sorry to the user. apologize like hell.
-        }
-    }
-
-    private fun inflateElementsList(readElements: JSONArray) {
-        for(index: Int in 0 until elementIds.size)
-            elementsList.add(
-                    gson.fromJson(
-                            readElements.getJSONObject(elementIds[index]).toString(),
-                            ReadElement::class.java
-                    )
-            )
-    }
-
-    private fun getJsonElementsArray(): JSONArray {
-        val json: String?
-        val buffer = ByteArray(databaseInputStream.available())
-        databaseInputStream.read(buffer)
-        databaseInputStream.close()
-        json = String(buffer, Charset.forName(Constants.CHARSET_UTF_8))
-
-        val jsonObject = JSONObject(json)
-        return jsonObject.getJSONArray(Constants.JSON_READ_ELEMENTS)
+        viewModel = ViewModelProviders.of(this, viewModelFactory).get(TagChildrenActivityViewModel::class.java)
     }
 
     private fun renderViewsForTag() {
@@ -107,10 +75,17 @@ class TagChildrenActivity : BaseActivity(), ListingListAdapter.ListItemClickList
         setRecycler()
     }
 
+    private fun setObservers() {
+        viewModel.getElementsForIds(elementIds).observe(this, Observer {
+            it?.let {
+                listingAdapter.submitList(it)
+            }
+        })
+    }
+
     private fun setRecycler() {
         tagChildrenRecycler.adapter = listingAdapter
         tagChildrenRecycler.layoutManager = LinearLayoutManager(this)
-        listingAdapter.submitList(elementsList)
         listingAdapter.setListItemClickListener(this)
     }
 

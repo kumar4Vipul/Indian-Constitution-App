@@ -43,6 +43,10 @@ class Constants {
 
         const val NUMBER_OF_TAGS = 89
         const val NUMBER_OF_ELEMENTS = 610
+        const val NUMBER_OF_PARTS = 26
+
+        const val SAVED_STATUS = 1
+        const val UNSAVED_STATUS = 0
     }
 }
 

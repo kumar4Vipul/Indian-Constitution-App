@@ -1,8 +1,5 @@
 package com.appbusters.robinpc.constitutionofindia.ui.home
 
-import android.content.Context
-import android.content.Intent
-import android.util.Log
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
@@ -17,21 +14,20 @@ import com.appbusters.robinpc.constitutionofindia.ui.base.BaseActivity
 import com.appbusters.robinpc.constitutionofindia.ui.home.adapter.HomeFragmentsAdapter
 import kotlinx.android.synthetic.main.activity_home.*
 import javax.inject.Inject
+import java.util.*
+
 
 class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener, HomeFragmentsAdapter.OnLoadCompleteListener {
 
     @Inject
     lateinit var homePagerAdapter: HomeFragmentsAdapter
 
-    private lateinit var fadeOutAnimation: Animation
+    private var wasLoadingShowed = false
+    private lateinit var loadingLayoutAnimation: Animation
 
     companion object {
         const val HOME_PAGE = 0
         const val BOOKMARKS_PAGE = 1
-
-        fun newIntent(context: Context): Intent {
-            return Intent(context, HomeActivity::class.java)
-        }
     }
 
     override fun getLayoutResId(): Int {
@@ -100,24 +96,39 @@ class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener, HomeFragmen
     }
 
     override fun onLoadComplete() {
-        fadeOutAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_out)
+        if(!wasLoadingShowed) {
+            loadingStatusTv.text = getString(R.string.load_complete)
 
-        fadeOutAnimation.setAnimationListener(object: Animation.AnimationListener {
+            startHideTimer()
+        }
+    }
 
-            override fun onAnimationRepeat(animation: Animation?) {
+    private fun startHideTimer() {
+        Timer().schedule(object : TimerTask() {
+            override fun run() {
+                hideLoadingLayout()
             }
+        }, 2000)
+    }
+
+    private fun hideLoadingLayout() {
+        loadingLayoutAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_out)
+
+        loadingLayoutAnimation.setAnimationListener(object: Animation.AnimationListener {
+
+            override fun onAnimationRepeat(animation: Animation?) {}
 
             override fun onAnimationEnd(animation: Animation?) {
                 loadingScreen.visibility = View.GONE
-                lottieAnimationView.pauseAnimation()
+                wasLoadingShowed = true
             }
 
             override fun onAnimationStart(animation: Animation?) {
-                loadingStatusTv.text = getString(R.string.load_complete)
+                lottieAnimationView.pauseAnimation()
             }
 
         })
 
-        loadingScreen.startAnimation(fadeOutAnimation)
+        loadingScreen.startAnimation(loadingLayoutAnimation)
     }
 }
