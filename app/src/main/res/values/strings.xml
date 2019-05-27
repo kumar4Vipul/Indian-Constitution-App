@@ -59,5 +59,6 @@
     <string name="whatsapp">WHATSAPP</string>
     <string name="loading">LOADING..</string>
     <string name="load_complete">LOAD COMPLETE</string>
+    <string name="no_items_saved">NO SAVED ITEMS</string>
 
 </resources>

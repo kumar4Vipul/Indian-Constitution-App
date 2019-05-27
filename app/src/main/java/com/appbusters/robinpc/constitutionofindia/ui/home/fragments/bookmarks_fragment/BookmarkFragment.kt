@@ -1,6 +1,8 @@
 package com.appbusters.robinpc.constitutionofindia.ui.home.fragments.bookmarks_fragment
 
 import android.app.Activity
+import android.util.Log
+import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
@@ -17,6 +19,9 @@ import kotlinx.android.synthetic.main.fragment_bookmark.*
 import javax.inject.Inject
 
 class BookmarkFragment : BaseFragment(), SavedItemAdapter.SavedItemClickListener {
+
+    private var isViewShown = false
+    private var isSavedItemListEmpty = true
 
     @Inject
     lateinit var savedItemsAdapter: SavedItemAdapter
@@ -37,6 +42,10 @@ class BookmarkFragment : BaseFragment(), SavedItemAdapter.SavedItemClickListener
     }
 
     override fun setup() {
+
+        if(isViewShown)
+            lottieAnimationView.playAnimation()
+
         setComponent()
         setAllSavedAdapter()
         setClickListeners()
@@ -76,7 +85,24 @@ class BookmarkFragment : BaseFragment(), SavedItemAdapter.SavedItemClickListener
         })
         viewModel.getSavedElements().observe(this, Observer {
             it?.let {
-                savedItemsAdapter.submitList(it)
+                if(it.isNotEmpty()) {
+                    savedItemsAdapter.submitList(it)
+                    allSavedItemsRecycler.visibility = View.VISIBLE
+                    isSavedItemListEmpty = false
+                    noItemsSavedView.visibility = View.GONE
+                    lottieAnimationView.pauseAnimation()
+                }
+                else {
+                    isSavedItemListEmpty = true
+                    allSavedItemsRecycler.visibility = View.GONE
+                    noItemsSavedView.visibility = View.VISIBLE
+                    lottieAnimationView.playAnimation()
+                }
+            } ?: run {
+                isSavedItemListEmpty = true
+                allSavedItemsRecycler.visibility = View.GONE
+                noItemsSavedView.visibility = View.VISIBLE
+                lottieAnimationView.playAnimation()
             }
         })
     }
@@ -111,6 +137,22 @@ class BookmarkFragment : BaseFragment(), SavedItemAdapter.SavedItemClickListener
         context?.let {
             it.startActivity(ReadingActivity.newIntent(it, readElement))
             (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+        }
+    }
+
+    override fun setUserVisibleHint(isVisibleToUser: Boolean) {
+        super.setUserVisibleHint(isVisibleToUser)
+
+        view?.let {
+            isViewShown = true
+
+            if(isSavedItemListEmpty) {
+                if(isVisibleToUser) lottieAnimationView.playAnimation()
+                else lottieAnimationView.pauseAnimation()
+            }
+
+        } ?: run {
+            isViewShown = false
         }
     }
 }

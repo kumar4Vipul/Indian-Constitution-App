@@ -8,8 +8,11 @@ import androidx.fragment.app.Fragment
 
 abstract class BaseFragment: Fragment() {
 
+    private lateinit var parent: View
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(getLayoutResId(), container, false)
+        parent = inflater.inflate(getLayoutResId(), container, false)
+        return parent
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -20,4 +23,8 @@ abstract class BaseFragment: Fragment() {
     abstract fun getLayoutResId(): Int
 
     abstract fun setup()
+
+    fun getParentView(): View {
+        return parent
+    }
 }
