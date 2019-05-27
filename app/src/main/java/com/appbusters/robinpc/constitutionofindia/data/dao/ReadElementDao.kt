@@ -45,4 +45,10 @@ interface ReadElementDao {
 
     @Query("SELECT is_saved FROM read_element WHERE id = :elementId")
     fun isElementSaved(elementId: Int): LiveData<Int>
+
+    @Query("SELECT count(*) FROM read_element WHERE category = :categoryName AND is_saved = 1")
+    fun getSaveCountForCategory(categoryName: String): LiveData<Int>
+
+    @Query("SELECT * FROM read_element WHERE is_saved = 1")
+    fun getSavedElements(): LiveData<List<ReadElement>>
 }

@@ -5,15 +5,12 @@ import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.DiffUtil
 import com.appbusters.robinpc.constitutionofindia.data.model.Category
 import com.appbusters.robinpc.constitutionofindia.data.model.Tag
-import com.appbusters.robinpc.constitutionofindia.di.qualifier.MainDatabaseString
 import com.appbusters.robinpc.constitutionofindia.di.scope.PerFragmentScope
 import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.adapter.CategoriesListAdapter
 import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.adapter.FeaturedPagerAdapter
 import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.adapter.TagListAdapter
-import com.appbusters.robinpc.constitutionofindia.utils.Constants
 import dagger.Module
 import dagger.Provides
-import java.io.InputStream
 
 @Module
 class HomeFragmentModule(private val fragmentManager: FragmentManager, private val context: Context) {

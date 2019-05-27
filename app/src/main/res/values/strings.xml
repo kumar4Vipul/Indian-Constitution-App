@@ -49,7 +49,7 @@
     <string name="view_all">VIEW ALL</string>
     <string name="bookmarks">BOOKMARK</string>
     <string name="category">Category</string>
-    <string name="recent_history">Recent History</string>
+    <string name="all_saved_items">All Saved</string>
     <string name="dummy_save_count">0 SAVED</string>
     <string name="save">SAVE</string>
     <string name="saved">SAVED</string>

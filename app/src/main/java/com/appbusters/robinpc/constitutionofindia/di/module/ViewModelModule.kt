@@ -2,6 +2,7 @@ package com.appbusters.robinpc.constitutionofindia.di.module
 
 import androidx.lifecycle.ViewModel
 import com.appbusters.robinpc.constitutionofindia.di.mapkey.ViewModelKey
+import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.bookmarks_fragment.BookmarkFragmentViewModel
 import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.HomeFragmentViewModel
 import com.appbusters.robinpc.constitutionofindia.ui.intermediate.MiddleActivityViewModel
 import com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing.CategoryListingActivityViewModel
@@ -28,6 +29,11 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(ReadingActivityViewModel::class)
     abstract fun bindReadingActivityViewModel(readingActivityViewModel: ReadingActivityViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(BookmarkFragmentViewModel::class)
+    abstract fun bindBookmarkFragmentViewModel(bookmarkFragmentViewModel: BookmarkFragmentViewModel): ViewModel
 
     @Binds
     @IntoMap

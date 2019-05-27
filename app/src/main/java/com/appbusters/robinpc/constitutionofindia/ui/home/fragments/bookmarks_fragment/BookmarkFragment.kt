@@ -1,17 +1,34 @@
 package com.appbusters.robinpc.constitutionofindia.ui.home.fragments.bookmarks_fragment
 
+import android.app.Activity
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
 import com.appbusters.robinpc.constitutionofindia.R
+import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
+import com.appbusters.robinpc.constitutionofindia.di.component.fragment.DaggerBookmarkFragmentComponent
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseFragment
+import com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing.adapter.SavedItemAdapter
+import com.appbusters.robinpc.constitutionofindia.ui.reading.ReadingActivity
 import kotlinx.android.synthetic.main.fragment_bookmark.*
+import javax.inject.Inject
 
-class BookmarkFragment : BaseFragment() {
+class BookmarkFragment : BaseFragment(), SavedItemAdapter.SavedItemClickListener {
 
-    private var savedSchedulesCount = 0
-    private var savedAmendmentsCount = 0
-    private var savedArticlesCount = 0
-    private var savedPreambleCount = 0
+    @Inject
+    lateinit var savedItemsAdapter: SavedItemAdapter
+
+    @Inject
+    lateinit var viewModelFactory: ViewModelProvider.Factory
+
+    private lateinit var viewModel: BookmarkFragmentViewModel
 
     companion object {
+        const val SAVED_ITEMS_ADAPTER_SPAN_COUNT = 2
+
         fun newInstance() = BookmarkFragment()
     }
 
@@ -20,8 +37,48 @@ class BookmarkFragment : BaseFragment() {
     }
 
     override fun setup() {
+        setComponent()
+        setAllSavedAdapter()
         setClickListeners()
-        fetchSavedItemCount()
+        setObservers()
+    }
+
+    private fun setComponent() {
+        activity?.let {
+            DaggerBookmarkFragmentComponent.builder()
+                    .constitutionAppComponent(ConstitutionApp.get(it).constitutionAppComponent())
+                    .build().injectBookmarkFragment(this)
+        }
+
+        viewModel = ViewModelProviders.of(this, viewModelFactory).get(BookmarkFragmentViewModel::class.java)
+    }
+
+    private fun setObservers() {
+        viewModel.getSavedAmendmentsCount().observe(this, Observer {
+            it?.let {
+                savedAmendmentsCountTv.text = getCountString(it)
+            }
+        })
+        viewModel.getSavedArticlesCount().observe(this, Observer {
+            it?.let {
+                savedArticlesCountTv.text = getCountString(it)
+            }
+        })
+        viewModel.getSavedPreambleCount().observe(this, Observer {
+            it?.let {
+                savedPreambleCountTv.text = getCountString(it)
+            }
+        })
+        viewModel.getSavedSchedulesCount().observe(this, Observer {
+            it?.let {
+                savedSchedulesCountTv.text = getCountString(it)
+            }
+        })
+        viewModel.getSavedElements().observe(this, Observer {
+            it?.let {
+                savedItemsAdapter.submitList(it)
+            }
+        })
     }
 
     private fun setClickListeners() {
@@ -35,22 +92,25 @@ class BookmarkFragment : BaseFragment() {
         }
     }
 
-    private fun fetchSavedItemCount() {
-        //TODO: fetch saved item count for each category by room and store them in count variables
-        setCountForFetchResult()
-    }
+    private fun setAllSavedAdapter() {
+        savedItemsAdapter.setSavedItemClickListener(this)
 
-    private fun setCountForFetchResult() {
         context?.let {
-            savedSchedulesCountTv.text = getCountString(savedSchedulesCount)
-            savedArticlesCountTv.text = getCountString(savedArticlesCount)
-            savedAmendmentsCountTv.text = getCountString(savedAmendmentsCount)
-            savedPreambleCountTv.text = getCountString(savedPreambleCount)
+            allSavedItemsRecycler.layoutManager =
+                    GridLayoutManager(it, SAVED_ITEMS_ADAPTER_SPAN_COUNT, RecyclerView.VERTICAL, false)
         }
+        allSavedItemsRecycler.adapter = savedItemsAdapter
     }
 
     private fun getCountString(count: Int): String {
         val savedString = getString(R.string.saved)
         return count.toString().plus(" ").plus(savedString)
+    }
+
+    override fun onSavedItemClicked(readElement: ReadElement) {
+        context?.let {
+            it.startActivity(ReadingActivity.newIntent(it, readElement))
+            (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+        }
     }
 }
