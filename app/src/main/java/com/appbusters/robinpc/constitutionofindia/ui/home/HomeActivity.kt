@@ -2,6 +2,7 @@ package com.appbusters.robinpc.constitutionofindia.ui.home
 
 import android.content.Context
 import android.content.Intent
+import android.view.View
 import android.widget.ImageView
 import androidx.core.content.ContextCompat
 import androidx.viewpager.widget.ViewPager
@@ -14,7 +15,7 @@ import com.appbusters.robinpc.constitutionofindia.ui.home.adapter.HomeFragmentsA
 import kotlinx.android.synthetic.main.activity_home.*
 import javax.inject.Inject
 
-class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener {
+class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener, HomeFragmentsAdapter.OnLoadCompleteListener {
 
     @Inject
     lateinit var homePagerAdapter: HomeFragmentsAdapter
@@ -48,6 +49,7 @@ class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener {
     }
 
     private fun setViewPager() {
+        homePagerAdapter.setLoadCompleteListener(this)
         homeFragmentsPager.adapter = homePagerAdapter
     }
 
@@ -90,5 +92,9 @@ class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener {
             HOME_PAGE -> highlightNavigation(homeButton)
             BOOKMARKS_PAGE -> highlightNavigation(bookmarksButton)
         }
+    }
+
+    override fun onLoadComplete() {
+        loadingScreen.visibility = View.GONE
     }
 }

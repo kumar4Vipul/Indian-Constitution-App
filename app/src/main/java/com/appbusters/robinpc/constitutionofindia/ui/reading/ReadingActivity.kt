@@ -5,6 +5,8 @@ import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.text.Html
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
 import com.appbusters.robinpc.constitutionofindia.R
@@ -30,6 +32,9 @@ class ReadingActivity : BaseActivity() {
     lateinit var gson: Gson
 
     @Inject
+    lateinit var viewModelFactory: ViewModelProvider.Factory
+
+    @Inject
     lateinit var dummyTagsAdapter: DummyTagListAdapter
 
     @Inject
@@ -37,6 +42,7 @@ class ReadingActivity : BaseActivity() {
 
     private lateinit var elementsDao: ReadElementDao
     private lateinit var readElement: ReadElement
+    private lateinit var readingViewModel: ReadingActivityViewModel
 
     private var categoryColor: Int = 0
     private var isSaved: Boolean = false
@@ -58,6 +64,7 @@ class ReadingActivity : BaseActivity() {
         setStatusBarColor(R.color.reading_status_bar)
         getIntentData()
         setComponent()
+        checkIfElementIsSaved(readElement.id)
         setTagsRecycler()
         renderInitial()
         setClickListeners()
@@ -68,12 +75,13 @@ class ReadingActivity : BaseActivity() {
                 .constitutionAppComponent(ConstitutionApp.get(this).constitutionAppComponent())
                 .build().injectReadingActivity(this)
 
+        readingViewModel = ViewModelProviders.of(this, viewModelFactory).get(ReadingActivityViewModel::class.java)
+
         elementsDao = appDatabase.readElementDao()
     }
 
     private fun getIntentData() {
         readElement = intent.getParcelableExtra(EXTRA_READ_ELEMENT)
-        checkIfElementIsSaved(readElement.id)
     }
 
     private fun renderInitial() {
@@ -108,7 +116,8 @@ class ReadingActivity : BaseActivity() {
     }
 
     private fun checkIfElementIsSaved(elementId: Int) {
-        isSaved = elementsDao.checkIfElementIsSaved(elementId) > 0
+        //TODO: call view model for this
+//        isSaved = elementsDao.checkIfElementIsSaved(elementId) > 0
     }
 
     private fun getTagsFromStrings(stringTags: List<String>, categoryName: String): MutableList<DummyTag> {

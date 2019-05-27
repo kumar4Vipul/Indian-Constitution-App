@@ -2,6 +2,10 @@ package com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragme
 
 import android.app.Activity
 import android.content.Intent
+import android.util.Log
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
@@ -20,24 +24,18 @@ import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragmen
 import com.appbusters.robinpc.constitutionofindia.ui.intermediate.MiddleActivity
 import com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing.CategoryListingActivity
 import com.appbusters.robinpc.constitutionofindia.ui.listing.tag_listing.TagChildrenActivity
-import com.appbusters.robinpc.constitutionofindia.utils.Constants
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.AMENDMENTS_END_INDEX
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.AMENDMENTS_START_INDEX
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_AMENDMENTS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_PARTS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_PREAMBLE
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_SCHEDULES
-import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_STATE
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.NUMBER_OF_ELEMENTS
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.NUMBER_OF_TAGS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.PREAMBLE_INDEX
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.SCHEDULES_END_INDEX
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.SCHEDULES_START_INDEX
-import com.google.gson.Gson
 import kotlinx.android.synthetic.main.fragment_home.*
-import org.json.JSONArray
-import org.json.JSONObject
-import java.io.IOException
-import java.io.InputStream
-import java.nio.charset.Charset
 import javax.inject.Inject
 
 class HomeFragment : BaseFragment(),
@@ -45,10 +43,7 @@ class HomeFragment : BaseFragment(),
         TagListAdapter.OnTagClickListener {
 
     @Inject
-    lateinit var gson: Gson
-
-    @Inject
-    lateinit var databaseInputStream: InputStream
+    lateinit var viewModelFactory: ViewModelProvider.Factory
 
     @Inject
     lateinit var categoriesAdapter: CategoriesListAdapter
@@ -59,7 +54,8 @@ class HomeFragment : BaseFragment(),
     @Inject
     lateinit var tagsAdapter: TagListAdapter
 
-    private var tagsList: MutableList<Tag> = ArrayList()
+    private lateinit var onLoadCompleteListener: OnLoadCompleteListener
+    private lateinit var viewModel: HomeFragmentViewModel
 
     override fun getLayoutResId(): Int {
         return R.layout.fragment_home
@@ -74,10 +70,12 @@ class HomeFragment : BaseFragment(),
 
     override fun setup() {
         setComponent()
-        setClickListeners()
+        setObservers()
         setFeaturedPagerAdapter()
         setCategoriesAdapter()
         setTagsAdapter()
+        fetchData()
+        setClickListeners()
     }
 
     private fun setComponent() {
@@ -87,9 +85,49 @@ class HomeFragment : BaseFragment(),
                     .homeFragmentModule(HomeFragmentModule(childFragmentManager, it.baseContext))
                     .build().injectHomeFragment(this)
         }
+
+        viewModel = ViewModelProviders.of(this, viewModelFactory).get(HomeFragmentViewModel::class.java)
     }
 
     private fun setClickListeners() {
+    }
+
+    private fun setObservers() {
+
+        viewModel.getAllTags().observe(this, Observer {
+
+            if(!it.isNullOrEmpty()) {
+                if(it.size == NUMBER_OF_TAGS) {
+
+                    tagsAdapter.submitList(viewModel.getSubmitTagList(it))
+
+                    setElementsObserver()
+                }
+            }
+            else
+                viewModel.loadTagsFromJson()
+        })
+
+        viewModel.categoriesListLiveData.observe(this, Observer {
+            it?.let {
+                categoriesAdapter.submitList(it)
+            }
+        })
+    }
+
+    private fun setElementsObserver() {
+        viewModel.getAllElements().observe(this, Observer {
+            if(it.isNullOrEmpty())
+                viewModel.loadElementsFromJson()
+            else {
+                if(it.size != NUMBER_OF_ELEMENTS) viewModel.loadElementsFromJson()
+                else onLoadCompleteListener.onLoadComplete()
+            }
+        })
+    }
+
+    private fun fetchData() {
+        viewModel.inflateCategoriesList()
     }
 
     private fun setFeaturedPagerAdapter() {
@@ -102,54 +140,12 @@ class HomeFragment : BaseFragment(),
         categoriesAdapter.setCategoryClickListener(this)
         categoriesRecycler.adapter = categoriesAdapter
         categoriesRecycler.layoutManager = GridLayoutManager(context, CATEGORY_SPAN_COUNT, RecyclerView.VERTICAL, false)
-        categoriesAdapter.submitList(getCategoriesList())
-    }
-
-    private fun getCategoriesList(): MutableList<Category> {
-        val categoriesList = ArrayList<Category>()
-        categoriesList.add(Category(R.color.schedules_color, CATEGORY_SCHEDULES))
-        categoriesList.add(Category(R.color.parts_color, CATEGORY_PARTS))
-        categoriesList.add(Category(R.color.amendment_color, CATEGORY_AMENDMENTS))
-        categoriesList.add(Category(R.color.preamble_color, CATEGORY_PREAMBLE))
-        return categoriesList
     }
 
     private fun setTagsAdapter() {
-        loadTags()
         tagsRecycler.adapter = tagsAdapter
         tagsAdapter.setTagClickListener(this)
         tagsRecycler.layoutManager = StaggeredGridLayoutManager(TAG_SPAN_COUNT, RecyclerView.HORIZONTAL)
-        tagsAdapter.submitList(tagsList)
-    }
-
-    private fun loadTags() {
-        try {
-            inflateTagsList(getJsonTagsArray())
-        }
-        catch (e: IOException) {
-            //TODO: be very very sorry to the user. apologize like hell.
-        }
-    }
-
-    private fun inflateTagsList(tags: JSONArray) {
-        var  tagItem: Tag
-        for(tagNumber: Int in 0 until tags.length()) {
-            tagItem = gson.fromJson(tags.getJSONObject(tagNumber).toString(), Tag::class.java)
-
-            if(!tagItem.categoryName.equals(CATEGORY_STATE))
-                tagsList.add(tagItem)
-        }
-    }
-
-    private fun getJsonTagsArray(): JSONArray {
-        val json: String?
-        val buffer = ByteArray(databaseInputStream.available())
-        databaseInputStream.read(buffer)
-        databaseInputStream.close()
-        json = String(buffer, Charset.forName(Constants.CHARSET_UTF_8))
-
-        val jsonObject = JSONObject(json)
-        return jsonObject.getJSONArray(Constants.JSON_TAGS)
     }
 
     override fun onCategoryClicked(category: Category) {
@@ -178,5 +174,13 @@ class HomeFragment : BaseFragment(),
             startActivity(TagChildrenActivity.newIntent(it, tag))
             (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
+    }
+
+    fun setOnLoadCompleteListener(onLoadCompleteListener: OnLoadCompleteListener) {
+        this.onLoadCompleteListener = onLoadCompleteListener
+    }
+
+    interface OnLoadCompleteListener {
+        fun onLoadComplete()
     }
 }

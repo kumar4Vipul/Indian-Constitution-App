@@ -40,6 +40,9 @@ class Constants {
         const val EXTRA_READ_ELEMENT = "EXTRA_READ_ELEMENT"
         const val EXTRA_CATEGORY = "EXTRA_CATEGORY"
         const val EXTRA_TAG = "EXTRA_TAG"
+
+        const val NUMBER_OF_TAGS = 89
+        const val NUMBER_OF_ELEMENTS = 610
     }
 }
 

@@ -12,6 +12,5 @@ import dagger.Component
 @Component(modules = [ReadActivityModule::class, ViewModelFactoryModule::class, ViewModelModule::class],
         dependencies = [ConstitutionAppComponent::class])
 interface ReadActivityComponent {
-
     fun injectReadingActivity(activity: ReadingActivity)
 }

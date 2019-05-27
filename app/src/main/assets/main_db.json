@@ -1082,15 +1082,6 @@
 		},
 		{
 			"read_element_id": 120,
-			"title": null,
-			"subtitle": null,
-			"category": null,
-			"short_description": null,
-			"content": null,
-			"tags": []
-		},
-		{
-			"read_element_id": 121,
 			"title": "ARTICLE 1",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1612,7 +1603,7 @@
 			"tags": ["prohibition", "culture" ]
 		},
 		{
-			"read_element_id": 177,
+			"read_element_id": 178,
 			"title": "ARTICLE 48A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1621,7 +1612,7 @@
 			"tags": ["forest" ]
 		},
 		{
-			"read_element_id": 178,
+			"read_element_id": 179,
 			"title": "ARTICLE 49",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1630,7 +1621,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 179,
+			"read_element_id": 180,
 			"title": "ARTICLE 50",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1639,7 +1630,7 @@
 			"tags": ["judiciary" ]
 		},
 		{
-			"read_element_id": 180,
+			"read_element_id": 181,
 			"title": "ARTICLE 51",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1648,7 +1639,7 @@
 			"tags": ["peace" ]
 		},
 		{
-			"read_element_id": 181,
+			"read_element_id": 182,
 			"title": "ARTICLE 51A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1657,7 +1648,7 @@
 			"tags": ["sovereign", "rich", "culture", "integrity", "citizen", "forest" ]
 		},
 		{
-			"read_element_id": 182,
+			"read_element_id": 183,
 			"title": "ARTICLE 52",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1666,7 +1657,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 183,
+			"read_element_id": 184,
 			"title": "ARTICLE 53",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1675,7 +1666,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 184,
+			"read_element_id": 185,
 			"title": "ARTICLE 54",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1684,7 +1675,7 @@
 			"tags": ["pondicherry", "delhi", "election", "president", "parliament", "territory" ]
 		},
 		{
-			"read_element_id": 185,
+			"read_element_id": 186,
 			"title": "ARTICLE 55",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1693,7 +1684,7 @@
 			"tags": ["population", "election", "president", "parliament" ]
 		},
 		{
-			"read_element_id": 186,
+			"read_element_id": 187,
 			"title": "ARTICLE 56",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1702,7 +1693,7 @@
 			"tags": ["violation", "president", "resign" ]
 		},
 		{
-			"read_element_id": 187,
+			"read_element_id": 188,
 			"title": "ARTICLE 57",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1711,7 +1702,7 @@
 			"tags": ["election", "president" ]
 		},
 		{
-			"read_element_id": 188,
+			"read_element_id": 189,
 			"title": "ARTICLE 58",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1720,7 +1711,7 @@
 			"tags": ["election", "president", "governor", "citizen" ]
 		},
 		{
-			"read_element_id": 189,
+			"read_element_id": 190,
 			"title": "ARTICLE 59",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1729,7 +1720,7 @@
 			"tags": ["president", "legislature", "parliament" ]
 		},
 		{
-			"read_element_id": 190,
+			"read_element_id": 191,
 			"title": "ARTICLE 60",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1738,7 +1729,7 @@
 			"tags": ["president", "supremecourt" ]
 		},
 		{
-			"read_element_id": 191,
+			"read_element_id": 192,
 			"title": "ARTICLE 61",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1747,7 +1738,7 @@
 			"tags": ["violation", "president", "parliament" ]
 		},
 		{
-			"read_element_id": 192,
+			"read_element_id": 193,
 			"title": "ARTICLE 62",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1756,7 +1747,7 @@
 			"tags": ["election", "president", "resign" ]
 		},
 		{
-			"read_element_id": 193,
+			"read_element_id": 194,
 			"title": "ARTICLE 63",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1765,7 +1756,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 194,
+			"read_element_id": 195,
 			"title": "ARTICLE 64",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1774,7 +1765,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 195,
+			"read_element_id": 196,
 			"title": "ARTICLE 65",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1783,7 +1774,7 @@
 			"tags": ["president", "parliament", "resign" ]
 		},
 		{
-			"read_element_id": 196,
+			"read_element_id": 197,
 			"title": "ARTICLE 66",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1792,7 +1783,7 @@
 			"tags": ["election", "president", "governor", "legislature", "parliament", "citizen" ]
 		},
 		{
-			"read_element_id": 197,
+			"read_element_id": 198,
 			"title": "ARTICLE 67",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1801,7 +1792,7 @@
 			"tags": ["president", "resign" ]
 		},
 		{
-			"read_element_id": 198,
+			"read_element_id": 199,
 			"title": "ARTICLE 68",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1810,7 +1801,7 @@
 			"tags": ["election", "president", "resign" ]
 		},
 		{
-			"read_element_id": 199,
+			"read_element_id": 200,
 			"title": "ARTICLE 69",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1819,7 +1810,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 200,
+			"read_element_id": 201,
 			"title": "ARTICLE 70",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1828,7 +1819,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 201,
+			"read_element_id": 202,
 			"title": "ARTICLE 71",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1837,7 +1828,7 @@
 			"tags": ["election", "president", "parliament", "supremecourt" ]
 		},
 		{
-			"read_element_id": 202,
+			"read_element_id": 203,
 			"title": "ARTICLE 72",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1846,7 +1837,7 @@
 			"tags": ["president", "governor" ]
 		},
 		{
-			"read_element_id": 203,
+			"read_element_id": 204,
 			"title": "ARTICLE 73",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1855,7 +1846,7 @@
 			"tags": ["legislature", "parliament" ]
 		},
 		{
-			"read_element_id": 204,
+			"read_element_id": 205,
 			"title": "ARTICLE 74",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1864,7 +1855,7 @@
 			"tags": ["president", "primeminister" ]
 		},
 		{
-			"read_element_id": 205,
+			"read_element_id": 206,
 			"title": "ARTICLE 75",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1873,7 +1864,7 @@
 			"tags": ["election", "politicalparty", "president", "parliament", "primeminister" ]
 		},
 		{
-			"read_element_id": 206,
+			"read_element_id": 207,
 			"title": "ARTICLE 76",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1882,7 +1873,7 @@
 			"tags": ["president", "territory", "supremecourt" ]
 		},
 		{
-			"read_element_id": 207,
+			"read_element_id": 208,
 			"title": "ARTICLE 77",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1891,7 +1882,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 208,
+			"read_element_id": 209,
 			"title": "ARTICLE 78",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1900,7 +1891,7 @@
 			"tags": ["president", "primeminister" ]
 		},
 		{
-			"read_element_id": 209,
+			"read_element_id": 210,
 			"title": "ARTICLE 79",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1909,7 +1900,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 210,
+			"read_element_id": 211,
 			"title": "ARTICLE 80",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1918,7 +1909,7 @@
 			"tags": ["president", "parliament", "territory" ]
 		},
 		{
-			"read_element_id": 211,
+			"read_element_id": 212,
 			"title": "ARTICLE 81",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1927,7 +1918,7 @@
 			"tags": ["population", "election", "parliament", "territory" ]
 		},
 		{
-			"read_element_id": 212,
+			"read_element_id": 213,
 			"title": "ARTICLE 82",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1936,7 +1927,7 @@
 			"tags": ["election", "president", "parliament", "territory" ]
 		},
 		{
-			"read_element_id": 213,
+			"read_element_id": 214,
 			"title": "ARTICLE 83",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1945,7 +1936,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 214,
+			"read_element_id": 215,
 			"title": "ARTICLE 84",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1954,7 +1945,7 @@
 			"tags": ["election", "parliament", "citizen" ]
 		},
 		{
-			"read_element_id": 215,
+			"read_element_id": 216,
 			"title": "ARTICLE 85",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1963,7 +1954,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 216,
+			"read_element_id": 217,
 			"title": "ARTICLE 86",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1972,7 +1963,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 217,
+			"read_element_id": 218,
 			"title": "ARTICLE 87",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1981,7 +1972,7 @@
 			"tags": ["election", "president", "parliament" ]
 		},
 		{
-			"read_element_id": 218,
+			"read_element_id": 219,
 			"title": "ARTICLE 88",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1990,7 +1981,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 219,
+			"read_element_id": 220,
 			"title": "ARTICLE 89",
 			"subtitle": null,
 			"category": "PARTS",
@@ -1999,7 +1990,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 220,
+			"read_element_id": 221,
 			"title": "ARTICLE 90",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2008,7 +1999,7 @@
 			"tags": ["resign" ]
 		},
 		{
-			"read_element_id": 221,
+			"read_element_id": 222,
 			"title": "ARTICLE 91",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2017,7 +2008,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 222,
+			"read_element_id": 223,
 			"title": "ARTICLE 92",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2026,7 +2017,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 223,
+			"read_element_id": 224,
 			"title": "ARTICLE 93",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2035,7 +2026,7 @@
 			"tags": ["deputyspeaker" ]
 		},
 		{
-			"read_element_id": 224,
+			"read_element_id": 225,
 			"title": "ARTICLE 94",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2044,7 +2035,7 @@
 			"tags": ["deputyspeaker", "resign" ]
 		},
 		{
-			"read_element_id": 225,
+			"read_element_id": 226,
 			"title": "ARTICLE 95",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2053,7 +2044,7 @@
 			"tags": ["deputyspeaker", "president" ]
 		},
 		{
-			"read_element_id": 226,
+			"read_element_id": 227,
 			"title": "ARTICLE 96",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2062,7 +2053,7 @@
 			"tags": ["deputyspeaker", "equality" ]
 		},
 		{
-			"read_element_id": 227,
+			"read_element_id": 228,
 			"title": "ARTICLE 97",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2071,7 +2062,7 @@
 			"tags": ["deputyspeaker", "parliament" ]
 		},
 		{
-			"read_element_id": 228,
+			"read_element_id": 229,
 			"title": "ARTICLE 98",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2080,7 +2071,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 229,
+			"read_element_id": 230,
 			"title": "ARTICLE 99",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2089,7 +2080,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 230,
+			"read_element_id": 231,
 			"title": "ARTICLE 100",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2098,7 +2089,7 @@
 			"tags": ["equality", "parliament" ]
 		},
 		{
-			"read_element_id": 231,
+			"read_element_id": 232,
 			"title": "ARTICLE 101",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2107,7 +2098,7 @@
 			"tags": ["president", "legislature", "parliament", "resign" ]
 		},
 		{
-			"read_element_id": 232,
+			"read_element_id": 233,
 			"title": "ARTICLE 102",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2116,7 +2107,7 @@
 			"tags": ["parliament", "citizen" ]
 		},
 		{
-			"read_element_id": 233,
+			"read_element_id": 234,
 			"title": "ARTICLE 103",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2125,7 +2116,7 @@
 			"tags": ["election", "president", "parliament" ]
 		},
 		{
-			"read_element_id": 234,
+			"read_element_id": 235,
 			"title": "ARTICLE 104",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2134,7 +2125,7 @@
 			"tags": ["prohibition", "parliament" ]
 		},
 		{
-			"read_element_id": 235,
+			"read_element_id": 236,
 			"title": "ARTICLE 105",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2143,7 +2134,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 236,
+			"read_element_id": 237,
 			"title": "ARTICLE 106",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2152,7 +2143,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 237,
+			"read_element_id": 238,
 			"title": "ARTICLE 107",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2161,7 +2152,7 @@
 			"tags": ["parliament", "moneybill" ]
 		},
 		{
-			"read_element_id": 238,
+			"read_element_id": 239,
 			"title": "ARTICLE 108",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2170,7 +2161,7 @@
 			"tags": ["president", "moneybill" ]
 		},
 		{
-			"read_element_id": 239,
+			"read_element_id": 240,
 			"title": "ARTICLE 109",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2179,7 +2170,7 @@
 			"tags": ["moneybill" ]
 		},
 		{
-			"read_element_id": 240,
+			"read_element_id": 241,
 			"title": "ARTICLE 110",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2188,7 +2179,7 @@
 			"tags": ["definition", "tax", "president", "moneybill" ]
 		},
 		{
-			"read_element_id": 241,
+			"read_element_id": 242,
 			"title": "ARTICLE 111",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2197,7 +2188,7 @@
 			"tags": ["president", "parliament", "moneybill" ]
 		},
 		{
-			"read_element_id": 242,
+			"read_element_id": 243,
 			"title": "ARTICLE 112",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2206,7 +2197,7 @@
 			"tags": ["deputyspeaker", "president", "governor", "parliament", "territory", "supremecourt", "highcourt" ]
 		},
 		{
-			"read_element_id": 243,
+			"read_element_id": 244,
 			"title": "ARTICLE 113",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2215,7 +2206,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 244,
+			"read_element_id": 245,
 			"title": "ARTICLE 114",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2224,7 +2215,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 245,
+			"read_element_id": 246,
 			"title": "ARTICLE 115",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2233,7 +2224,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 246,
+			"read_element_id": 247,
 			"title": "ARTICLE 116",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2242,7 +2233,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 247,
+			"read_element_id": 248,
 			"title": "ARTICLE 117",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2251,7 +2242,7 @@
 			"tags": ["tax", "president", "parliament" ]
 		},
 		{
-			"read_element_id": 248,
+			"read_element_id": 249,
 			"title": "ARTICLE 118",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2260,7 +2251,7 @@
 			"tags": ["president", "legislature", "parliament" ]
 		},
 		{
-			"read_element_id": 249,
+			"read_element_id": 250,
 			"title": "ARTICLE 119",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2269,7 +2260,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 250,
+			"read_element_id": 251,
 			"title": "ARTICLE 120",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2278,7 +2269,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 251,
+			"read_element_id": 252,
 			"title": "ARTICLE 121",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2287,7 +2278,7 @@
 			"tags": ["president", "parliament", "highcourt" ]
 		},
 		{
-			"read_element_id": 252,
+			"read_element_id": 253,
 			"title": "ARTICLE 122",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2296,7 +2287,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 253,
+			"read_element_id": 254,
 			"title": "ARTICLE 123",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2305,7 +2296,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 254,
+			"read_element_id": 255,
 			"title": "ARTICLE 124",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2314,7 +2305,7 @@
 			"tags": ["president", "parliament", "citizen", "territory", "resign", "supremecourt", "highcourt" ]
 		},
 		{
-			"read_element_id": 255,
+			"read_element_id": 256,
 			"title": "ARTICLE 124A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2323,7 +2314,7 @@
 			"tags": ["primeminister", "supremecourt" ]
 		},
 		{
-			"read_element_id": 256,
+			"read_element_id": 257,
 			"title": "ARTICLE 124B",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2332,7 +2323,7 @@
 			"tags": ["integrity", "supremecourt", "highcourt" ]
 		},
 		{
-			"read_element_id": 257,
+			"read_element_id": 258,
 			"title": "ARTICLE 124C",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2341,7 +2332,7 @@
 			"tags": ["election", "parliament", "supremecourt", "highcourt" ]
 		},
 		{
-			"read_element_id": 258,
+			"read_element_id": 259,
 			"title": "ARTICLE 125",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2350,7 +2341,7 @@
 			"tags": ["parliament", "supremecourt" ]
 		},
 		{
-			"read_element_id": 259,
+			"read_element_id": 260,
 			"title": "ARTICLE 126",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2359,7 +2350,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 260,
+			"read_element_id": 261,
 			"title": "ARTICLE 127",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2368,7 +2359,7 @@
 			"tags": ["president", "supremecourt", "highcourt" ]
 		},
 		{
-			"read_element_id": 261,
+			"read_element_id": 262,
 			"title": "ARTICLE 128",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2377,7 +2368,7 @@
 			"tags": ["president", "supremecourt", "highcourt" ]
 		},
 		{
-			"read_element_id": 262,
+			"read_element_id": 263,
 			"title": "ARTICLE 129",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2386,7 +2377,7 @@
 			"tags": ["supremecourt" ]
 		},
 		{
-			"read_element_id": 263,
+			"read_element_id": 264,
 			"title": "ARTICLE 130",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2395,7 +2386,7 @@
 			"tags": ["delhi", "president", "supremecourt" ]
 		},
 		{
-			"read_element_id": 264,
+			"read_element_id": 265,
 			"title": "ARTICLE 131",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2404,7 +2395,7 @@
 			"tags": ["supremecourt" ]
 		},
 		{
-			"read_element_id": 265,
+			"read_element_id": 266,
 			"title": "ARTICLE 131A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2413,7 +2404,7 @@
 			"tags": ["repealed", "supremecourt" ]
 		},
 		{
-			"read_element_id": 266,
+			"read_element_id": 267,
 			"title": "ARTICLE 132",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2422,7 +2413,7 @@
 			"tags": ["territory", "supremecourt", "highcourt" ]
 		},
 		{
-			"read_element_id": 267,
+			"read_element_id": 268,
 			"title": "ARTICLE 133",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2431,7 +2422,7 @@
 			"tags": ["parliament", "territory", "supremecourt", "highcourt" ]
 		},
 		{
-			"read_element_id": 268,
+			"read_element_id": 269,
 			"title": "ARTICLE 134",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2440,7 +2431,7 @@
 			"tags": ["parliament", "territory", "supremecourt", "highcourt" ]
 		},
 		{
-			"read_element_id": 269,
+			"read_element_id": 270,
 			"title": "ARTICLE 134A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2449,7 +2440,7 @@
 			"tags": ["supremecourt", "highcourt" ]
 		},
 		{
-			"read_element_id": 270,
+			"read_element_id": 271,
 			"title": "ARTICLE 135",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2458,7 +2449,7 @@
 			"tags": ["parliament", "supremecourt" ]
 		},
 		{
-			"read_element_id": 271,
+			"read_element_id": 272,
 			"title": "ARTICLE 136",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2467,7 +2458,7 @@
 			"tags": ["territory", "supremecourt" ]
 		},
 		{
-			"read_element_id": 272,
+			"read_element_id": 273,
 			"title": "ARTICLE 137",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2476,7 +2467,7 @@
 			"tags": ["parliament", "supremecourt" ]
 		},
 		{
-			"read_element_id": 273,
+			"read_element_id": 274,
 			"title": "ARTICLE 138",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2485,7 +2476,7 @@
 			"tags": ["parliament", "supremecourt" ]
 		},
 		{
-			"read_element_id": 274,
+			"read_element_id": 275,
 			"title": "ARTICLE 139",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2494,7 +2485,7 @@
 			"tags": ["prohibition", "parliament", "supremecourt" ]
 		},
 		{
-			"read_element_id": 275,
+			"read_element_id": 276,
 			"title": "ARTICLE 139A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2503,7 +2494,7 @@
 			"tags": ["justice", "supremecourt", "highcourt" ]
 		},
 		{
-			"read_element_id": 276,
+			"read_element_id": 277,
 			"title": "ARTICLE 140",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2512,7 +2503,7 @@
 			"tags": ["parliament", "supremecourt" ]
 		},
 		{
-			"read_element_id": 277,
+			"read_element_id": 278,
 			"title": "ARTICLE 141",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2521,7 +2512,7 @@
 			"tags": ["territory", "supremecourt" ]
 		},
 		{
-			"read_element_id": 278,
+			"read_element_id": 279,
 			"title": "ARTICLE 142",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2530,7 +2521,7 @@
 			"tags": ["justice", "president", "parliament", "territory", "supremecourt" ]
 		},
 		{
-			"read_element_id": 279,
+			"read_element_id": 280,
 			"title": "ARTICLE 143",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2539,7 +2530,7 @@
 			"tags": ["president", "supremecourt" ]
 		},
 		{
-			"read_element_id": 280,
+			"read_element_id": 281,
 			"title": "ARTICLE 144",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2548,7 +2539,7 @@
 			"tags": ["territory", "supremecourt" ]
 		},
 		{
-			"read_element_id": 281,
+			"read_element_id": 282,
 			"title": "ARTICLE 144A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2557,7 +2548,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 282,
+			"read_element_id": 283,
 			"title": "ARTICLE 145",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2566,7 +2557,7 @@
 			"tags": ["president", "parliament", "supremecourt" ]
 		},
 		{
-			"read_element_id": 283,
+			"read_element_id": 284,
 			"title": "ARTICLE 146",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2575,7 +2566,7 @@
 			"tags": ["president", "parliament", "supremecourt", "justice" ]
 		},
 		{
-			"read_element_id": 284,
+			"read_element_id": 285,
 			"title": "ARTICLE 147",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2584,7 +2575,7 @@
 			"tags": ["independence" ]
 		},
 		{
-			"read_element_id": 285,
+			"read_element_id": 286,
 			"title": "ARTICLE 148",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2593,7 +2584,7 @@
 			"tags": ["president", "parliament", "supremecourt" ]
 		},
 		{
-			"read_element_id": 286,
+			"read_element_id": 287,
 			"title": "ARTICLE 149",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2602,7 +2593,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 287,
+			"read_element_id": 288,
 			"title": "ARTICLE 150",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2611,7 +2602,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 288,
+			"read_element_id": 289,
 			"title": "ARTICLE 151",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2620,7 +2611,7 @@
 			"tags": ["president", "governor", "legislature", "parliament" ]
 		},
 		{
-			"read_element_id": 289,
+			"read_element_id": 290,
 			"title": "ARTICLE 152",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2629,7 +2620,7 @@
 			"tags": ["definition", "jammuandkashmir" ]
 		},
 		{
-			"read_element_id": 290,
+			"read_element_id": 291,
 			"title": "ARTICLE 153",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2638,7 +2629,7 @@
 			"tags": ["governor" ]
 		},
 		{
-			"read_element_id": 291,
+			"read_element_id": 292,
 			"title": "ARTICLE 154",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2647,7 +2638,7 @@
 			"tags": ["governor", "legislature", "parliament" ]
 		},
 		{
-			"read_element_id": 292,
+			"read_element_id": 293,
 			"title": "ARTICLE 155",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2656,7 +2647,7 @@
 			"tags": ["president", "governor" ]
 		},
 		{
-			"read_element_id": 293,
+			"read_element_id": 294,
 			"title": "ARTICLE 156",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2665,7 +2656,7 @@
 			"tags": ["president", "governor", "resign" ]
 		},
 		{
-			"read_element_id": 294,
+			"read_element_id": 295,
 			"title": "ARTICLE 157",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2674,7 +2665,7 @@
 			"tags": ["governor", "citizen" ]
 		},
 		{
-			"read_element_id": 295,
+			"read_element_id": 296,
 			"title": "ARTICLE 158",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2683,7 +2674,7 @@
 			"tags": ["president", "governor", "legislature", "parliament" ]
 		},
 		{
-			"read_element_id": 296,
+			"read_element_id": 297,
 			"title": "ARTICLE 159",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2692,7 +2683,7 @@
 			"tags": ["governor", "highcourt", "justice" ]
 		},
 		{
-			"read_element_id": 297,
+			"read_element_id": 298,
 			"title": "ARTICLE 160",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2701,7 +2692,7 @@
 			"tags": ["president", "governor" ]
 		},
 		{
-			"read_element_id": 298,
+			"read_element_id": 299,
 			"title": "ARTICLE 161",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2710,7 +2701,7 @@
 			"tags": ["governor" ]
 		},
 		{
-			"read_element_id": 299,
+			"read_element_id": 300,
 			"title": "ARTICLE 162",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2719,7 +2710,7 @@
 			"tags": ["legislature", "parliament" ]
 		},
 		{
-			"read_element_id": 300,
+			"read_element_id": 301,
 			"title": "ARTICLE 163",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2728,7 +2719,7 @@
 			"tags": ["governor" ]
 		},
 		{
-			"read_element_id": 301,
+			"read_element_id": 302,
 			"title": "ARTICLE 164",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2737,7 +2728,7 @@
 			"tags": ["legislature", "orissa", "bihar", "election", "politicalparty", "president", "madhyapradesh", "governor" ]
 		},
 		{
-			"read_element_id": 302,
+			"read_element_id": 303,
 			"title": "ARTICLE 165",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2746,7 +2737,7 @@
 			"tags": ["governor", "highcourt" ]
 		},
 		{
-			"read_element_id": 303,
+			"read_element_id": 304,
 			"title": "ARTICLE 166",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2755,7 +2746,7 @@
 			"tags": ["governor" ]
 		},
 		{
-			"read_element_id": 304,
+			"read_element_id": 305,
 			"title": "ARTICLE 167",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2764,7 +2755,7 @@
 			"tags": ["governor" ]
 		},
 		{
-			"read_element_id": 305,
+			"read_element_id": 306,
 			"title": "ARTICLE 168",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2773,7 +2764,7 @@
 			"tags": ["legislature", "maharashtra", "karnataka", "bihar", "uttarpradesh", "governor" ]
 		},
 		{
-			"read_element_id": 306,
+			"read_element_id": 307,
 			"title": "ARTICLE 169",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2782,7 +2773,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 307,
+			"read_element_id": 308,
 			"title": "ARTICLE 170",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2791,7 +2782,7 @@
 			"tags": ["election", "president", "population", "parliament", "territory" ]
 		},
 		{
-			"read_element_id": 308,
+			"read_element_id": 309,
 			"title": "ARTICLE 171",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2800,7 +2791,7 @@
 			"tags": ["election", "governor", "parliament", "education", "territory" ]
 		},
 		{
-			"read_element_id": 309,
+			"read_element_id": 310,
 			"title": "ARTICLE 172",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2809,7 +2800,7 @@
 			"tags": ["legislature", "emergency", "parliament" ]
 		},
 		{
-			"read_element_id": 310,
+			"read_element_id": 311,
 			"title": "ARTICLE 173",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2818,7 +2809,7 @@
 			"tags": ["legislature", "election", "parliament", "citizen" ]
 		},
 		{
-			"read_element_id": 311,
+			"read_element_id": 312,
 			"title": "ARTICLE 174",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2827,7 +2818,7 @@
 			"tags": ["legislature", "governor" ]
 		},
 		{
-			"read_element_id": 312,
+			"read_element_id": 313,
 			"title": "ARTICLE 175",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2836,7 +2827,7 @@
 			"tags": ["legislature", "governor" ]
 		},
 		{
-			"read_element_id": 313,
+			"read_element_id": 314,
 			"title": "ARTICLE 176",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2845,7 +2836,7 @@
 			"tags": ["legislature", "election", "governor" ]
 		},
 		{
-			"read_element_id": 314,
+			"read_element_id": 315,
 			"title": "ARTICLE 177",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2854,7 +2845,7 @@
 			"tags": ["legislature" ]
 		},
 		{
-			"read_element_id": 315,
+			"read_element_id": 316,
 			"title": "ARTICLE 178",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2863,7 +2854,7 @@
 			"tags": ["deputyspeaker" ]
 		},
 		{
-			"read_element_id": 316,
+			"read_element_id": 317,
 			"title": "ARTICLE 179",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2872,7 +2863,7 @@
 			"tags": ["deputyspeaker", "resign" ]
 		},
 		{
-			"read_element_id": 317,
+			"read_element_id": 318,
 			"title": "ARTICLE 180",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2881,7 +2872,7 @@
 			"tags": ["deputyspeaker", "governor" ]
 		},
 		{
-			"read_element_id": 318,
+			"read_element_id": 319,
 			"title": "ARTICLE 181",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2890,7 +2881,7 @@
 			"tags": ["deputyspeaker", "equality" ]
 		},
 		{
-			"read_element_id": 319,
+			"read_element_id": 320,
 			"title": "ARTICLE 182",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2899,7 +2890,7 @@
 			"tags": ["legislature" ]
 		},
 		{
-			"read_element_id": 320,
+			"read_element_id": 321,
 			"title": "ARTICLE 183",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2908,7 +2899,7 @@
 			"tags": ["resign" ]
 		},
 		{
-			"read_element_id": 321,
+			"read_element_id": 322,
 			"title": "ARTICLE 184",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2917,7 +2908,7 @@
 			"tags": ["governor" ]
 		},
 		{
-			"read_element_id": 322,
+			"read_element_id": 323,
 			"title": "ARTICLE 185",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2926,7 +2917,7 @@
 			"tags": ["equality"]
 		},
 		{
-			"read_element_id": 323,
+			"read_element_id": 324,
 			"title": "ARTICLE 186",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2935,7 +2926,7 @@
 			"tags": ["deputyspeaker", "legislature" ]
 		},
 		{
-			"read_element_id": 324,
+			"read_element_id": 325,
 			"title": "ARTICLE 187",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2944,7 +2935,7 @@
 			"tags": ["governor", "legislature" ]
 		},
 		{
-			"read_element_id": 325,
+			"read_element_id": 326,
 			"title": "ARTICLE 188",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2953,7 +2944,7 @@
 			"tags": ["governor" ]
 		},
 		{
-			"read_element_id": 326,
+			"read_element_id": 327,
 			"title": "ARTICLE 189",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2962,7 +2953,7 @@
 			"tags": ["equality", "legislature" ]
 		},
 		{
-			"read_element_id": 327,
+			"read_element_id": 328,
 			"title": "ARTICLE 190",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2971,7 +2962,7 @@
 			"tags": ["president", "legislature", "resign" ]
 		},
 		{
-			"read_element_id": 328,
+			"read_element_id": 329,
 			"title": "ARTICLE 191",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2980,7 +2971,7 @@
 			"tags": ["legislature", "parliament", "citizen" ]
 		},
 		{
-			"read_element_id": 329,
+			"read_element_id": 330,
 			"title": "ARTICLE 192",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2989,7 +2980,7 @@
 			"tags": ["election", "governor", "legislature" ]
 		},
 		{
-			"read_element_id": 330,
+			"read_element_id": 331,
 			"title": "ARTICLE 193",
 			"subtitle": null,
 			"category": "PARTS",
@@ -2998,7 +2989,7 @@
 			"tags": ["prohibition", "legislature", "parliament" ]
 		},
 		{
-			"read_element_id": 331,
+			"read_element_id": 332,
 			"title": "ARTICLE 194",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3007,7 +2998,7 @@
 			"tags": ["legislature" ]
 		},
 		{
-			"read_element_id": 332,
+			"read_element_id": 333,
 			"title": "ARTICLE 195",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3016,7 +3007,7 @@
 			"tags": ["legislature" ]
 		},
 		{
-			"read_element_id": 333,
+			"read_element_id": 334,
 			"title": "ARTICLE 196",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3025,7 +3016,7 @@
 			"tags": ["legislature", "moneybill" ]
 		},
 		{
-			"read_element_id": 334,
+			"read_element_id": 335,
 			"title": "ARTICLE 197",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3034,7 +3025,7 @@
 			"tags": ["legislature", "moneybill" ]
 		},
 		{
-			"read_element_id": 335,
+			"read_element_id": 336,
 			"title": "ARTICLE 198",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3043,7 +3034,7 @@
 			"tags": ["moneybill" ]
 		},
 		{
-			"read_element_id": 336,
+			"read_element_id": 337,
 			"title": "ARTICLE 199",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3052,7 +3043,7 @@
 			"tags": ["definition", "tax", "governor", "legislature", "moneybill" ]
 		},
 		{
-			"read_element_id": 337,
+			"read_element_id": 338,
 			"title": "ARTICLE 200",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3061,7 +3052,7 @@
 			"tags": ["president", "governor", "legislature", "moneybill", "highcourt" ]
 		},
 		{
-			"read_element_id": 338,
+			"read_element_id": 339,
 			"title": "ARTICLE 201",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3070,7 +3061,7 @@
 			"tags": ["president", "governor", "legislature", "moneybill" ]
 		},
 		{
-			"read_element_id": 339,
+			"read_element_id": 340,
 			"title": "ARTICLE 202",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3079,7 +3070,7 @@
 			"tags": ["deputyspeaker", "governor", "legislature", "highcourt" ]
 		},
 		{
-			"read_element_id": 340,
+			"read_element_id": 341,
 			"title": "ARTICLE 203",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3088,7 +3079,7 @@
 			"tags": ["governor", "legislature" ]
 		},
 		{
-			"read_element_id": 341,
+			"read_element_id": 342,
 			"title": "ARTICLE 204",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3097,7 +3088,7 @@
 			"tags": ["legislature" ]
 		},
 		{
-			"read_element_id": 342,
+			"read_element_id": 343,
 			"title": "ARTICLE 205",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3106,7 +3097,7 @@
 			"tags": ["governor", "legislature" ]
 		},
 		{
-			"read_element_id": 343,
+			"read_element_id": 344,
 			"title": "ARTICLE 206",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3115,7 +3106,7 @@
 			"tags": ["legislature" ]
 		},
 		{
-			"read_element_id": 344,
+			"read_element_id": 345,
 			"title": "ARTICLE 207",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3124,7 +3115,7 @@
 			"tags": ["tax", "governor", "legislature" ]
 		},
 		{
-			"read_element_id": 345,
+			"read_element_id": 346,
 			"title": "ARTICLE 208",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3133,7 +3124,7 @@
 			"tags": ["governor", "legislature" ]
 		},
 		{
-			"read_element_id": 346,
+			"read_element_id": 347,
 			"title": "ARTICLE 209",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3142,7 +3133,7 @@
 			"tags": ["legislature" ]
 		},
 		{
-			"read_element_id": 347,
+			"read_element_id": 348,
 			"title": "ARTICLE 210",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3151,7 +3142,7 @@
 			"tags": ["tripura", "mizoram", "meghalaya", "manipur", "goa", "arunachalpradesh", "himachalpradesh", "legislature" ]
 		},
 		{
-			"read_element_id": 348,
+			"read_element_id": 349,
 			"title": "ARTICLE 211",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3160,7 +3151,7 @@
 			"tags": ["legislature", "supremecourt", "highcourt" ]
 		},
 		{
-			"read_element_id": 349,
+			"read_element_id": 350,
 			"title": "ARTICLE 212",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3169,7 +3160,7 @@
 			"tags": ["legislature" ]
 		},
 		{
-			"read_element_id": 350,
+			"read_element_id": 351,
 			"title": "ARTICLE 213",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3178,7 +3169,7 @@
 			"tags": ["president","governor", "legislature", "parliament" ]
 		},
 		{
-			"read_element_id": 351,
+			"read_element_id": 352,
 			"title": "ARTICLE 214",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3187,7 +3178,7 @@
 			"tags": ["highcourt" ]
 		},
 		{
-			"read_element_id": 352,
+			"read_element_id": 353,
 			"title": "ARTICLE 215",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3196,7 +3187,7 @@
 			"tags": ["highcourt" ]
 		},
 		{
-			"read_element_id": 353,
+			"read_element_id": 354,
 			"title": "ARTICLE 216",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3205,7 +3196,7 @@
 			"tags": ["president", "highcourt", "justice" ]
 		},
 		{
-			"read_element_id": 354,
+			"read_element_id": 355,
 			"title": "ARTICLE 217",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3214,7 +3205,7 @@
 			"tags": ["president", "governor", "citizen", "territory", "resign", "supremecourt", "highcourt", "justice" ]
 		},
 		{
-			"read_element_id": 355,
+			"read_element_id": 356,
 			"title": "ARTICLE 218",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3223,7 +3214,7 @@
 			"tags": ["supremecourt", "highcourt" ]
 		},
 		{
-			"read_element_id": 356,
+			"read_element_id": 357,
 			"title": "ARTICLE 219",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3232,7 +3223,7 @@
 			"tags": ["governor", "highcourt" ]
 		},
 		{
-			"read_element_id": 357,
+			"read_element_id": 358,
 			"title": "ARTICLE 220",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3241,7 +3232,7 @@
 			"tags": ["supremecourt", "highcourt" ]
 		},
 		{
-			"read_element_id": 358,
+			"read_element_id": 359,
 			"title": "ARTICLE 221",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3250,7 +3241,7 @@
 			"tags": ["parliament", "highcourt" ]
 		},
 		{
-			"read_element_id": 359,
+			"read_element_id": 360,
 			"title": "ARTICLE 222",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3259,7 +3250,7 @@
 			"tags": ["president", "parliament", "highcourt", "justice" ]
 		},
 		{
-			"read_element_id": 360,
+			"read_element_id": 361,
 			"title": "ARTICLE 223",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3268,7 +3259,7 @@
 			"tags": ["president", "highcourt", "justice" ]
 		},
 		{
-			"read_element_id": 361,
+			"read_element_id": 362,
 			"title": "ARTICLE 224",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3277,7 +3268,7 @@
 			"tags": ["president", "highcourt", "justice" ]
 		},
 		{
-			"read_element_id": 362,
+			"read_element_id": 363,
 			"title": "ARTICLE 224A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3286,7 +3277,7 @@
 			"tags": ["president", "highcourt", "justice" ]
 		},
 		{
-			"read_element_id": 363,
+			"read_element_id": 364,
 			"title": "ARTICLE 225",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3295,7 +3286,7 @@
 			"tags": ["justice", "legislature", "highcourt" ]
 		},
 		{
-			"read_element_id": 364,
+			"read_element_id": 365,
 			"title": "ARTICLE 226",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3304,7 +3295,7 @@
 			"tags": ["prohibition", "territory", "supremecourt", "highcourt" ]
 		},
 		{
-			"read_element_id": 365,
+			"read_element_id": 366,
 			"title": "ARTICLE 226A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3313,7 +3304,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 366,
+			"read_element_id": 367,
 			"title": "ARTICLE 227",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3322,7 +3313,7 @@
 			"tags": ["governor", "territory", "highcourt" ]
 		},
 		{
-			"read_element_id": 367,
+			"read_element_id": 368,
 			"title": "ARTICLE 228",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3331,7 +3322,7 @@
 			"tags": ["highcourt" ]
 		},
 		{
-			"read_element_id": 368,
+			"read_element_id": 369,
 			"title": "ARTICLE 228A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3340,7 +3331,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 369,
+			"read_element_id": 370,
 			"title": "ARTICLE 229",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3349,7 +3340,7 @@
 			"tags": ["governor", "legislature", "highcourt", "justice" ]
 		},
 		{
-			"read_element_id": 370,
+			"read_element_id": 371,
 			"title": "ARTICLE 230",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3358,7 +3349,7 @@
 			"tags": ["president","governor", "legislature", "parliament", "territory", "highcourt" ]
 		},
 		{
-			"read_element_id": 371,
+			"read_element_id": 372,
 			"title": "ARTICLE 231",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3367,7 +3358,7 @@
 			"tags": ["president", "governor", "legislature", "parliament", "territory", "highcourt" ]
 		},
 		{
-			"read_element_id": 372,
+			"read_element_id": 373,
 			"title": "ARTICLE 232",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3376,7 +3367,7 @@
 			"tags": ["omittedbyconstitution"]
 		},
 		{
-			"read_element_id": 373,
+			"read_element_id": 374,
 			"title": "ARTICLE 233",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3385,7 +3376,7 @@
 			"tags": ["governor", "highcourt" ]
 		},
 		{
-			"read_element_id": 374,
+			"read_element_id": 375,
 			"title": "ARTICLE 234",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3394,7 +3385,7 @@
 			"tags": ["governor", "highcourt" ]
 		},
 		{
-			"read_element_id": 375,
+			"read_element_id": 376,
 			"title": "ARTICLE 235",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3403,7 +3394,7 @@
 			"tags": ["highcourt" ]
 		},
 		{
-			"read_element_id": 376,
+			"read_element_id": 377,
 			"title": "ARTICLE 236",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3412,7 +3403,7 @@
 			"tags": ["judiciary" ]
 		},
 		{
-			"read_element_id": 377,
+			"read_element_id": 378,
 			"title": "ARTICLE 237",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3421,7 +3412,7 @@
 			"tags": ["governor" ]
 		},
 		{
-			"read_element_id": 378,
+			"read_element_id": 379,
 			"title": "ARTICLE 238",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3430,7 +3421,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 379,
+			"read_element_id": 380,
 			"title": "ARTICLE 239",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3439,7 +3430,7 @@
 			"tags": ["president","governor", "parliament", "territory" ]
 		},
 		{
-			"read_element_id": 380,
+			"read_element_id": 381,
 			"title": "ARTICLE 239A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3448,7 +3439,7 @@
 			"tags": ["pondicherry", "legislature", "parliament", "territory" ]
 		},
 		{
-			"read_element_id": 381,
+			"read_element_id": 382,
 			"title": "ARTICLE 239AA",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3457,7 +3448,7 @@
 			"tags": ["pondicherry", "delhi", "election", "president", "governor", "legislature", "parliament", "territory" ]
 		},
 		{
-			"read_element_id": 382,
+			"read_element_id": 383,
 			"title": "ARTICLE 239AB",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3466,7 +3457,7 @@
 			"tags": ["president", "governor", "territory" ]
 		},
 		{
-			"read_element_id": 383,
+			"read_element_id": 384,
 			"title": "ARTICLE 239B",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3475,7 +3466,7 @@
 			"tags": ["pondicherry", "president", "legislature", "territory" ]
 		},
 		{
-			"read_element_id": 384,
+			"read_element_id": 385,
 			"title": "ARTICLE 240",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3484,7 +3475,7 @@
 			"tags": ["peace", "pondicherry", "lakshadweep", "damananddiu", "andamanandnicobar", "president", "legislature", "parliament", "territory" ]
 		},
 		{
-			"read_element_id": 385,
+			"read_element_id": 386,
 			"title": "ARTICLE 241",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3493,7 +3484,7 @@
 			"tags": ["legislature", "parliament", "territory", "highcourt" ]
 		},
 		{
-			"read_element_id": 386,
+			"read_element_id": 387,
 			"title": "ARTICLE 242",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3502,7 +3493,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 387,
+			"read_element_id": 388,
 			"title": "ARTICLE 243",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3511,7 +3502,7 @@
 			"tags": ["definition", "governor", "population", "territory", "panchayat" ]
 		},
 		{
-			"read_element_id": 388,
+			"read_element_id": 389,
 			"title": "ARTICLE 243A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3520,7 +3511,7 @@
 			"tags": ["legislature" ]
 		},
 		{
-			"read_element_id": 389,
+			"read_element_id": 390,
 			"title": "ARTICLE 243B",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3529,7 +3520,7 @@
 			"tags": ["population", "panchayat" ]
 		},
 		{
-			"read_element_id": 390,
+			"read_element_id": 391,
 			"title": "ARTICLE 243C",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3538,7 +3529,7 @@
 			"tags": ["election", "population", "legislature", "territory", "panchayat" ]
 		},
 		{
-			"read_element_id": 391,
+			"read_element_id": 392,
 			"title": "ARTICLE 243D",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3547,7 +3538,7 @@
 			"tags": ["election", "population", "legislature", "citizen", "panchayat" ]
 		},
 		{
-			"read_element_id": 392,
+			"read_element_id": 393,
 			"title": "ARTICLE 243E",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3556,7 +3547,7 @@
 			"tags": ["election", "panchayat" ]
 		},
 		{
-			"read_element_id": 393,
+			"read_element_id": 394,
 			"title": "ARTICLE 243F",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3565,7 +3556,7 @@
 			"tags": ["election", "legislature", "panchayat" ]
 		},
 		{
-			"read_element_id": 394,
+			"read_element_id": 395,
 			"title": "ARTICLE 243G",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3574,7 +3565,7 @@
 			"tags": ["panchayat", "justice" ]
 		},
 		{
-			"read_element_id": 395,
+			"read_element_id": 396,
 			"title": "ARTICLE 243H",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3583,7 +3574,7 @@
 			"tags": ["panchayat", "tax", "power", "legislature" ]
 		},
 		{
-			"read_element_id": 396,
+			"read_element_id": 397,
 			"title": "ARTICLE 243I",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3592,7 +3583,7 @@
 			"tags": ["panchayat", "tax", "finance" ]
 		},
 		{
-			"read_element_id": 397,
+			"read_element_id": 398,
 			"title": "ARTICLE 243J",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3601,7 +3592,7 @@
 			"tags": ["panchayat", "legislature" ]
 		},
 		{
-			"read_element_id": 398,
+			"read_element_id": 399,
 			"title": "ARTICLE 243K",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3610,7 +3601,7 @@
 			"tags": ["panchayat", "highcourt", "election" ]
 		},
 		{
-			"read_element_id": 399,
+			"read_element_id": 400,
 			"title": "ARTICLE 243L",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3619,7 +3610,7 @@
 			"tags": ["territory", "president", "legislature" ]
 		},
 		{
-			"read_element_id": 400,
+			"read_element_id": 401,
 			"title": "ARTICLE 243M",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3628,7 +3619,7 @@
 			"tags": ["panchayat", "manipur", "nagaland", "meghalaya", "mizoram" ]
 		},
 		{
-			"read_element_id": 401,
+			"read_element_id": 402,
 			"title": "ARTICLE 243N",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3637,7 +3628,7 @@
 			"tags": ["panchayat" ]
 		},
 		{
-			"read_element_id": 402,
+			"read_element_id": 403,
 			"title": "ARTICLE 243O",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3646,7 +3637,7 @@
 			"tags": ["panchayat", "election" ]
 		},
 		{
-			"read_element_id": 403,
+			"read_element_id": 404,
 			"title": "ARTICLE 243P",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3655,7 +3646,7 @@
 			"tags": ["panchayat" ]
 		},
 		{
-			"read_element_id": 404,
+			"read_element_id": 405,
 			"title": "ARTICLE 243Q",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3664,7 +3655,7 @@
 			"tags": ["panchayat" ]
 		},
 		{
-			"read_element_id": 405,
+			"read_element_id": 406,
 			"title": "ARTICLE 243R",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3673,7 +3664,7 @@
 			"tags": ["election", "territory", "legislature" ]
 		},
 		{
-			"read_element_id": 406,
+			"read_element_id": 407,
 			"title": "ARTICLE 243S",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3682,7 +3673,7 @@
 			"tags": ["territory", "legislature" ]
 		},
 		{
-			"read_element_id": 407,
+			"read_element_id": 408,
 			"title": "ARTICLE 243T",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3691,7 +3682,7 @@
 			"tags": ["election", "scheduledcastes", "scheduledtribes", "reservation" ]
 		},
 		{
-			"read_element_id": 408,
+			"read_element_id": 409,
 			"title": "ARTICLE 243U",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3700,7 +3691,7 @@
 			"tags": ["election" ]
 		},
 		{
-			"read_element_id": 409,
+			"read_element_id": 410,
 			"title": "ARTICLE 243V",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3709,7 +3700,7 @@
 			"tags": ["election", "legislature" ]
 		},
 		{
-			"read_element_id": 410,
+			"read_element_id": 411,
 			"title": "ARTICLE 243W",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3718,7 +3709,7 @@
 			"tags": ["justice", "legislature", "power" ]
 		},
 		{
-			"read_element_id": 411,
+			"read_element_id": 412,
 			"title": "ARTICLE 243X",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3727,7 +3718,7 @@
 			"tags": ["tax", "power", "fund", "legislature" ]
 		},
 		{
-			"read_element_id": 412,
+			"read_element_id": 413,
 			"title": "ARTICLE 243Y",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3736,7 +3727,7 @@
 			"tags": ["tax", "finance" ]
 		},
 		{
-			"read_element_id": 413,
+			"read_element_id": 414,
 			"title": "ARTICLE 243Z",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3745,7 +3736,7 @@
 			"tags": ["legislature" ]
 		},
 		{
-			"read_element_id": 414,
+			"read_element_id": 415,
 			"title": "ARTICLE 243ZA",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3754,7 +3745,7 @@
 			"tags": ["election", "legislature" ]
 		},
 		{
-			"read_element_id": 415,
+			"read_element_id": 416,
 			"title": "ARTICLE 243ZB",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3763,7 +3754,7 @@
 			"tags": ["president", "territory", "legislature" ]
 		},
 		{
-			"read_element_id": 416,
+			"read_element_id": 417,
 			"title": "ARTICLE 243ZC",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3772,7 +3763,7 @@
 			"tags": ["westbengal", "parliament" ]
 		},
 		{
-			"read_element_id": 417,
+			"read_element_id": 418,
 			"title": "ARTICLE 243ZD",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3781,7 +3772,7 @@
 			"tags": ["panchayat" ]
 		},
 		{
-			"read_element_id": 418,
+			"read_element_id": 419,
 			"title": "ARTICLE 243ZE",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3790,7 +3781,7 @@
 			"tags": ["panchayat" ]
 		},
 		{
-			"read_element_id": 419,
+			"read_element_id": 420,
 			"title": "ARTICLE 243ZF",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3799,7 +3790,7 @@
 			"tags": ["legislature" ]
 		},
 		{
-			"read_element_id": 420,
+			"read_element_id": 421,
 			"title": "ARTICLE 243ZG",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3808,7 +3799,7 @@
 			"tags": ["election" ]
 		},
 		{
-			"read_element_id": 416,
+			"read_element_id": 422,
 			"title": "ARTICLE 243ZH",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3817,7 +3808,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 417,
+			"read_element_id": 423,
 			"title": "ARTICLE 243ZI",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3826,7 +3817,7 @@
 			"tags": ["democratic", "legislature" ]
 		},
 		{
-			"read_element_id": 418,
+			"read_element_id": 424,
 			"title": "ARTICLE 243ZJ",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3835,7 +3826,7 @@
 			"tags": ["election", "scheduledcastes", "scheduledtribes", "legislature" ]
 		},
 		{
-			"read_element_id": 419,
+			"read_element_id": 425,
 			"title": "ARTICLE 243ZK",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3844,7 +3835,7 @@
 			"tags": ["election", "legislature" ]
 		},
 		{
-			"read_element_id": 420,
+			"read_element_id": 426,
 			"title": "ARTICLE 243ZL",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3853,7 +3844,7 @@
 			"tags": ["election", "legislature" ]
 		},
 		{
-			"read_element_id": 421,
+			"read_element_id": 427,
 			"title": "ARTICLE 243ZM",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3862,7 +3853,7 @@
 			"tags": ["legislature", "finance" ]
 		},
 		{
-			"read_element_id": 422,
+			"read_element_id": 428,
 			"title": "ARTICLE 243ZN",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3871,7 +3862,7 @@
 			"tags": ["legislature" ]
 		},
 		{
-			"read_element_id": 423,
+			"read_element_id": 429,
 			"title": "ARTICLE 243ZO",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3880,7 +3871,7 @@
 			"tags": ["legislature" ]
 		},
 		{
-			"read_element_id": 424,
+			"read_element_id": 430,
 			"title": "ARTICLE 243ZP",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3889,7 +3880,7 @@
 			"tags": ["election", "finance" ]
 		},
 		{
-			"read_element_id": 425,
+			"read_element_id": 431,
 			"title": "ARTICLE 243ZQ",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3898,7 +3889,7 @@
 			"tags": ["election", "legislature" ]
 		},
 		{
-			"read_element_id": 426,
+			"read_element_id": 432,
 			"title": "ARTICLE 243ZR",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3907,7 +3898,7 @@
 			"tags": ["legislature", "parliament" ]
 		},
 		{
-			"read_element_id": 427,
+			"read_element_id": 433,
 			"title": "ARTICLE 243ZS",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3916,7 +3907,7 @@
 			"tags": ["president", "territory", "legislature" ]
 		},
 		{
-			"read_element_id": 428,
+			"read_element_id": 434,
 			"title": "ARTICLE 243ZT",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3925,7 +3916,7 @@
 			"tags": ["legislature", "territory" ]
 		},
 		{
-			"read_element_id": 429,
+			"read_element_id": 435,
 			"title": "ARTICLE 244",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3934,7 +3925,7 @@
 			"tags": ["scheduledtribes", "assam" , "meghalaya", "tripura", "mizoram" ]
 		},
 		{
-			"read_element_id": 430,
+			"read_element_id": 436,
 			"title": "ARTICLE 244A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3943,7 +3934,7 @@
 			"tags": ["tax", "assam", "legislature", "parliament", "power" ]
 		},
 		{
-			"read_element_id": 431,
+			"read_element_id": 437,
 			"title": "ARTICLE 245",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3952,7 +3943,7 @@
 			"tags": ["parliament", "legislature", "territory" ]
 		},
 		{
-			"read_element_id": 432,
+			"read_element_id": 438,
 			"title": "ARTICLE 246",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3961,7 +3952,7 @@
 			"tags": ["parliament", "legislature", "territory" ]
 		},
 		{
-			"read_element_id": 433,
+			"read_element_id": 439,
 			"title": "ARTICLE 246A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3970,7 +3961,7 @@
 			"tags": ["tax", "legislature", "parliament" ]
 		},
 		{
-			"read_element_id": 434,
+			"read_element_id": 440,
 			"title": "ARTICLE 247",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3979,7 +3970,7 @@
 			"tags": ["power", "parliament" ]
 		},
 		{
-			"read_element_id": 435,
+			"read_element_id": 441,
 			"title": "ARTICLE 248",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3988,7 +3979,7 @@
 			"tags": ["tax", "power", "legislature" ]
 		},
 		{
-			"read_element_id": 436,
+			"read_element_id": 442,
 			"title": "ARTICLE 249",
 			"subtitle": null,
 			"category": "PARTS",
@@ -3997,7 +3988,7 @@
 			"tags": ["power", "parliament", "legislature", "territory" ]
 		},
 		{
-			"read_element_id": 437,
+			"read_element_id": 443,
 			"title": "ARTICLE 250",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4006,7 +3997,7 @@
 			"tags": ["power", "parliament", "emergency" ]
 		},
 		{
-			"read_element_id": 438,
+			"read_element_id": 444,
 			"title": "ARTICLE 251",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4015,7 +4006,7 @@
 			"tags": ["parliament", "legislature" ]
 		},
 		{
-			"read_element_id": 439,
+			"read_element_id": 445,
 			"title": "ARTICLE 252",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4024,7 +4015,7 @@
 			"tags": ["power", "parliament", "legislature" ]
 		},
 		{
-			"read_element_id": 440,
+			"read_element_id": 446,
 			"title": "ARTICLE 253",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4033,7 +4024,7 @@
 			"tags": ["legislature", "parliament", "territory" ]
 		},
 		{
-			"read_element_id": 441,
+			"read_element_id": 447,
 			"title": "ARTICLE 254",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4042,7 +4033,7 @@
 			"tags": ["president", "parliament", "legislature" ]
 		},
 		{
-			"read_element_id": 442,
+			"read_element_id": 448,
 			"title": "ARTICLE 255",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4051,7 +4042,7 @@
 			"tags": ["president", "legislature" ]
 		},
 		{
-			"read_element_id": 443,
+			"read_element_id": 449,
 			"title": "ARTICLE 256",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4060,7 +4051,7 @@
 			"tags": ["power" ]
 		},
 		{
-			"read_element_id": 444,
+			"read_element_id": 450,
 			"title": "ARTICLE 257",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4069,7 +4060,7 @@
 			"tags": ["justice", "power", "parliament" ]
 		},
 		{
-			"read_element_id": 445,
+			"read_element_id": 451,
 			"title": "ARTICLE 257A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4078,7 +4069,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 446,
+			"read_element_id": 452,
 			"title": "ARTICLE 258",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4087,7 +4078,7 @@
 			"tags": ["justice", "president", "power" ]
 		},
 		{
-			"read_element_id": 447,
+			"read_element_id": 453,
 			"title": "ARTICLE 258A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4096,7 +4087,7 @@
 			"tags": ["power" ]
 		},
 		{
-			"read_element_id": 448,
+			"read_element_id": 454,
 			"title": "ARTICLE 259",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4105,7 +4096,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 449,
+			"read_element_id": 455,
 			"title": "ARTICLE 260",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4114,7 +4105,7 @@
 			"tags": ["territory", "legislature", "judiciary" ]
 		},
 		{
-			"read_element_id": 450,
+			"read_element_id": 456,
 			"title": "ARTICLE 261",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4123,7 +4114,7 @@
 			"tags": ["judiciary", "parliament", "territory" ]
 		},
 		{
-			"read_element_id": 451,
+			"read_element_id": 457,
 			"title": "ARTICLE 262",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4132,7 +4123,7 @@
 			"tags": ["supremecourt" ]
 		},
 		{
-			"read_element_id": 452,
+			"read_element_id": 458,
 			"title": "ARTICLE 263",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4141,7 +4132,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 453,
+			"read_element_id": 459,
 			"title": "ARTICLE 264",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4150,7 +4141,7 @@
 			"tags": ["finance" ]
 		},
 		{
-			"read_element_id": 454,
+			"read_element_id": 460,
 			"title": "ARTICLE 265",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4159,7 +4150,7 @@
 			"tags": ["tax" ]
 		},
 		{
-			"read_element_id": 455,
+			"read_element_id": 461,
 			"title": "ARTICLE 266",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4168,7 +4159,7 @@
 			"tags": ["tax", "fund" ]
 		},
 		{
-			"read_element_id": 456,
+			"read_element_id": 462,
 			"title": "ARTICLE 267",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4177,7 +4168,7 @@
 			"tags": ["president", "parliament", "fund" ]
 		},
 		{
-			"read_element_id": 457,
+			"read_element_id": 463,
 			"title": "ARTICLE 268",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4186,7 +4177,7 @@
 			"tags": ["fund" ]
 		},
 		{
-			"read_element_id": 458,
+			"read_element_id": 464,
 			"title": "ARTICLE 269",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4195,7 +4186,7 @@
 			"tags": ["tax", "parliament" ]
 		},
 		{
-			"read_element_id": 459,
+			"read_element_id": 465,
 			"title": "ARTICLE 269A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4204,7 +4195,7 @@
 			"tags": ["president", "tax" ]
 		},
 		{
-			"read_element_id": 460,
+			"read_element_id": 466,
 			"title": "ARTICLE 270",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4213,7 +4204,7 @@
 			"tags": ["president", "tax", "territory", "income" ]
 		},
 		{
-			"read_element_id": 461,
+			"read_element_id": 467,
 			"title": "ARTICLE 271",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4222,7 +4213,7 @@
 			"tags": ["tax", "parliament" ]
 		},
 		{
-			"read_element_id": 462,
+			"read_element_id": 468,
 			"title": "ARTICLE 272",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4231,7 +4222,7 @@
 			"tags": ["repealed", "tax" ]
 		},
 		{
-			"read_element_id": 463,
+			"read_element_id": 469,
 			"title": "ARTICLE 273",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4240,7 +4231,7 @@
 			"tags": ["revenue", "fund" ]
 		},
 		{
-			"read_element_id": 464,
+			"read_element_id": 470,
 			"title": "ARTICLE 274",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4249,7 +4240,7 @@
 			"tags": ["president", "tax" ]
 		},
 		{
-			"read_element_id": 465,
+			"read_element_id": 471,
 			"title": "ARTICLE 275",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4258,7 +4249,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 466,
+			"read_element_id": 472,
 			"title": "ARTICLE 276",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4267,7 +4258,7 @@
 			"tags": ["tax", "legislature" ]
 		},
 		{
-			"read_element_id": 467,
+			"read_element_id": 473,
 			"title": "ARTICLE 277",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4276,7 +4267,7 @@
 			"tags": ["tax" ]
 		},
 		{
-			"read_element_id": 468,
+			"read_element_id": 474,
 			"title": "ARTICLE 278",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4285,7 +4276,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 469,
+			"read_element_id": 475,
 			"title": "ARTICLE 279",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4294,7 +4285,7 @@
 			"tags": ["president", "tax" ]
 		},
 		{
-			"read_element_id": 470,
+			"read_element_id": 476,
 			"title": "ARTICLE 280",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4303,7 +4294,7 @@
 			"tags": ["panchayat", "president", "tax" ]
 		},
 		{
-			"read_element_id": 471,
+			"read_element_id": 477,
 			"title": "ARTICLE 281",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4312,7 +4303,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 472,
+			"read_element_id": 478,
 			"title": "ARTICLE 282",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4321,7 +4312,7 @@
 			"tags": ["legislature" ]
 		},
 		{
-			"read_element_id": 473,
+			"read_element_id": 479,
 			"title": "ARTICLE 283",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4330,7 +4321,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 474,
+			"read_element_id": 480,
 			"title": "ARTICLE 284",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4339,7 +4330,7 @@
 			"tags": ["territory" ]
 		},
 		{
-			"read_element_id": 475,
+			"read_element_id": 481,
 			"title": "ARTICLE 285",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4348,7 +4339,7 @@
 			"tags": ["tax", "parliament" ]
 		},
 		{
-			"read_element_id": 476,
+			"read_element_id": 482,
 			"title": "ARTICLE 286",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4357,7 +4348,7 @@
 			"tags": ["tax", "parliament" ]
 		},
 		{
-			"read_element_id": 477,
+			"read_element_id": 483,
 			"title": "ARTICLE 287",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4366,7 +4357,7 @@
 			"tags": ["tax", "parliament" ]
 		},
 		{
-			"read_element_id": 478,
+			"read_element_id": 484,
 			"title": "ARTICLE 288",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4375,7 +4366,7 @@
 			"tags": ["president", "tax" ]
 		},
 		{
-			"read_element_id": 479,
+			"read_element_id": 485,
 			"title": "ARTICLE 289",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4384,7 +4375,7 @@
 			"tags": ["tax", "parliament" ]
 		},
 		{
-			"read_element_id": 480,
+			"read_element_id": 486,
 			"title": "ARTICLE 290",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4393,7 +4384,7 @@
 			"tags": ["justice", "justice" ]
 		},
 		{
-			"read_element_id": 481,
+			"read_element_id": 487,
 			"title": "ARTICLE 290A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4402,7 +4393,7 @@
 			"tags": ["kerala", "tamilnadu", "territory" ]
 		},
 		{
-			"read_element_id": 482,
+			"read_element_id": 488,
 			"title": "ARTICLE 291",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4411,7 +4402,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 483,
+			"read_element_id": 489,
 			"title": "ARTICLE 292",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4420,7 +4411,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 484,
+			"read_element_id": 490,
 			"title": "ARTICLE 293",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4429,7 +4420,7 @@
 			"tags": ["legislature", "parliament" ]
 		},
 		{
-			"read_element_id": 485,
+			"read_element_id": 491,
 			"title": "ARTICLE 294",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4438,7 +4429,7 @@
 			"tags": ["parliament", "westbengal", "punjab" ]
 		},
 		{
-			"read_element_id": 486,
+			"read_element_id": 492,
 			"title": "ARTICLE 295",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4447,7 +4438,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 487,
+			"read_element_id": 493,
 			"title": "ARTICLE 296",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4456,7 +4447,7 @@
 			"tags": ["territory" ]
 		},
 		{
-			"read_element_id": 488,
+			"read_element_id": 494,
 			"title": "ARTICLE 297",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4465,7 +4456,7 @@
 			"tags": ["territory", "parliament" ]
 		},
 		{
-			"read_element_id": 489,
+			"read_element_id": 495,
 			"title": "ARTICLE 298",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4474,7 +4465,7 @@
 			"tags": ["legislature", "parliament" ]
 		},
 		{
-			"read_element_id": 490,
+			"read_element_id": 496,
 			"title": "ARTICLE 299",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4483,7 +4474,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 491,
+			"read_element_id": 497,
 			"title": "ARTICLE 300",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4492,7 +4483,7 @@
 			"tags": ["parliament", "legislature" ]
 		},
 		{
-			"read_element_id": 492,
+			"read_element_id": 498,
 			"title": "ARTICLE 300A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4501,7 +4492,7 @@
 			"tags": ["fundamentalright" ]
 		},
 		{
-			"read_element_id": 493,
+			"read_element_id": 499,
 			"title": "ARTICLE 301",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4510,7 +4501,7 @@
 			"tags": ["territory" ]
 		},
 		{
-			"read_element_id": 494,
+			"read_element_id": 500,
 			"title": "ARTICLE 302",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4519,7 +4510,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 495,
+			"read_element_id": 501,
 			"title": "ARTICLE 303",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4528,7 +4519,7 @@
 			"tags": ["discrimination", "legislature", "territory" ]
 		},
 		{
-			"read_element_id": 496,
+			"read_element_id": 502,
 			"title": "ARTICLE 304",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4537,7 +4528,7 @@
 			"tags": ["president", "tax", "legislature" ]
 		},
 		{
-			"read_element_id": 497,
+			"read_element_id": 503,
 			"title": "ARTICLE 305",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4546,7 +4537,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 498,
+			"read_element_id": 504,
 			"title": "ARTICLE 306",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4555,7 +4546,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 499,
+			"read_element_id": 505,
 			"title": "ARTICLE 307",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4564,7 +4555,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 500,
+			"read_element_id": 506,
 			"title": "ARTICLE 308",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4573,7 +4564,7 @@
 			"tags": ["jammuandkashmir" ]
 		},
 		{
-			"read_element_id": 501,
+			"read_element_id": 507,
 			"title": "ARTICLE 309",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4582,7 +4573,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 502,
+			"read_element_id": 508,
 			"title": "ARTICLE 310",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4591,7 +4582,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 503,
+			"read_element_id": 509,
 			"title": "ARTICLE 311",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4600,7 +4591,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 504,
+			"read_element_id": 510,
 			"title": "ARTICLE 312",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4609,7 +4600,7 @@
 			"tags": ["parliament", "judiciary", "election" ]
 		},
 		{
-			"read_element_id": 505,
+			"read_element_id": 511,
 			"title": "ARTICLE 312A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4618,7 +4609,7 @@
 			"tags": ["supremecourt", "highcourt", "justice", "election" ]
 		},
 		{
-			"read_element_id": 506,
+			"read_element_id": 512,
 			"title": "ARTICLE 313",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4627,7 +4618,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 507,
+			"read_element_id": 513,
 			"title": "ARTICLE 314",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4636,7 +4627,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 508,
+			"read_element_id": 514,
 			"title": "ARTICLE 315",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4645,7 +4636,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 509,
+			"read_element_id": 515,
 			"title": "ARTICLE 316",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4654,7 +4645,7 @@
 			"tags": ["resign", "president" ]
 		},
 		{
-			"read_element_id": 510,
+			"read_element_id": 516,
 			"title": "ARTICLE 317",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4663,7 +4654,7 @@
 			"tags": ["supremecourt", "president" ]
 		},
 		{
-			"read_element_id": 511,
+			"read_element_id": 517,
 			"title": "ARTICLE 318",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4672,7 +4663,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 512,
+			"read_element_id": 518,
 			"title": "ARTICLE 319",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4681,7 +4672,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 513,
+			"read_element_id": 519,
 			"title": "ARTICLE 320",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4690,7 +4681,7 @@
 			"tags": ["president", "legislature" ]
 		},
 		{
-			"read_element_id": 514,
+			"read_element_id": 520,
 			"title": "ARTICLE 321",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4699,7 +4690,7 @@
 			"tags": ["parliament", "legislature" ]
 		},
 		{
-			"read_element_id": 515,
+			"read_element_id": 521,
 			"title": "ARTICLE 322",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4708,7 +4699,7 @@
 			"tags": ["moneybill" ]
 		},
 		{
-			"read_element_id": 516,
+			"read_element_id": 522,
 			"title": "ARTICLE 323",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4717,7 +4708,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 517,
+			"read_element_id": 523,
 			"title": "ARTICLE 323A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4726,7 +4717,7 @@
 			"tags": ["supremecourt", "president", "parliament" ]
 		},
 		{
-			"read_element_id": 518,
+			"read_element_id": 524,
 			"title": "ARTICLE 323B",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4735,7 +4726,7 @@
 			"tags": ["supremecourt", "president", "election", "tax", "legislature" ]
 		},
 		{
-			"read_element_id": 519,
+			"read_element_id": 525,
 			"title": "ARTICLE 324",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4744,7 +4735,7 @@
 			"tags": ["supremecourt", "president", "election", "legislature", "parliament" ]
 		},
 		{
-			"read_element_id": 520,
+			"read_element_id": 526,
 			"title": "ARTICLE 325",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4753,7 +4744,7 @@
 			"tags": ["election", "religion", "parliament", "legislature" ]
 		},
 		{
-			"read_element_id": 521,
+			"read_element_id": 527,
 			"title": "ARTICLE 326",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4762,7 +4753,7 @@
 			"tags": ["election", "legislature", "citizen" ]
 		},
 		{
-			"read_element_id": 522,
+			"read_element_id": 528,
 			"title": "ARTICLE 327",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4771,7 +4762,7 @@
 			"tags": ["election", "parliament", "legislature" ]
 		},
 		{
-			"read_element_id": 523,
+			"read_element_id": 529,
 			"title": "ARTICLE 328",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4780,7 +4771,7 @@
 			"tags": ["election", "legislature" ]
 		},
 		{
-			"read_element_id": 524,
+			"read_element_id": 530,
 			"title": "ARTICLE 329",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4789,7 +4780,7 @@
 			"tags": ["election", "parliament", "legislature" ]
 		},
 		{
-			"read_element_id": 525,
+			"read_element_id": 531,
 			"title": "ARTICLE 329A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4798,7 +4789,7 @@
 			"tags": ["repealed", "primeminister", "election", "parliament" ]
 		},
 		{
-			"read_element_id": 526,
+			"read_element_id": 532,
 			"title": "ARTICLE 330",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4807,7 +4798,7 @@
 			"tags": ["reservation", "scheduledtribes", "scheduledcastes", "assam", "territory" ]
 		},
 		{
-			"read_element_id": 527,
+			"read_element_id": 533,
 			"title": "ARTICLE 331",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4816,7 +4807,7 @@
 			"tags": ["president", "angloindian" ]
 		},
 		{
-			"read_element_id": 528,
+			"read_element_id": 534,
 			"title": "ARTICLE 332",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4825,7 +4816,7 @@
 			"tags": ["election", "scheduledcastes", "scheduledtribes", "legislature", "assam", "arunachalpradesh", "meghalaya", "mizoram", "nagaland" ]
 		},
 		{
-			"read_element_id": 529,
+			"read_element_id": 535,
 			"title": "ARTICLE 333",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4834,7 +4825,7 @@
 			"tags": ["legislature", "angloindian" ]
 		},
 		{
-			"read_element_id": 530,
+			"read_element_id": 536,
 			"title": "ARTICLE 334",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4843,7 +4834,7 @@
 			"tags": ["scheduledcastes", "scheduledtribes" ]
 		},
 		{
-			"read_element_id": 531,
+			"read_element_id": 537,
 			"title": "ARTICLE 335",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4852,7 +4843,7 @@
 			"tags": ["scheduledcastes", "scheduledtribes" ]
 		},
 		{
-			"read_element_id": 532,
+			"read_element_id": 538,
 			"title": "ARTICLE 336",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4861,7 +4852,7 @@
 			"tags": ["reservation", "angloindian" ]
 		},
 		{
-			"read_element_id": 533,
+			"read_element_id": 539,
 			"title": "ARTICLE 337",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4870,7 +4861,7 @@
 			"tags": ["education" ]
 		},
 		{
-			"read_element_id": 534,
+			"read_element_id": 540,
 			"title": "ARTICLE 338",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4879,7 +4870,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 535,
+			"read_element_id": 541,
 			"title": "ARTICLE 338A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4888,7 +4879,7 @@
 			"tags": ["president", "scheduledtribes" ]
 		},
 		{
-			"read_element_id": 536,
+			"read_element_id": 542,
 			"title": "ARTICLE 339",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4897,7 +4888,7 @@
 			"tags": ["president", "scheduledtribes" ]
 		},
 		{
-			"read_element_id": 537,
+			"read_element_id": 543,
 			"title": "ARTICLE 340",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4906,7 +4897,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 538,
+			"read_element_id": 544,
 			"title": "ARTICLE 341",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4915,7 +4906,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 538,
+			"read_element_id": 545,
 			"title": "ARTICLE 342",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4924,7 +4915,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 540,
+			"read_element_id": 546,
 			"title": "ARTICLE 343",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4933,7 +4924,7 @@
 			"tags": ["president", "language" ]
 		},
 		{
-			"read_element_id": 541,
+			"read_element_id": 547,
 			"title": "ARTICLE 344",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4942,7 +4933,7 @@
 			"tags": ["president", "parliament", "language" ]
 		},
 		{
-			"read_element_id": 542,
+			"read_element_id": 548,
 			"title": "ARTICLE 345",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4951,7 +4942,7 @@
 			"tags": ["language", "legislature" ]
 		},
 		{
-			"read_element_id": 543,
+			"read_element_id": 549,
 			"title": "ARTICLE 346",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4960,7 +4951,7 @@
 			"tags": ["language" ]
 		},
 		{
-			"read_element_id": 544,
+			"read_element_id": 550,
 			"title": "ARTICLE 347",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4969,7 +4960,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 545,
+			"read_element_id": 551,
 			"title": "ARTICLE 348",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4978,7 +4969,7 @@
 			"tags": ["supremecourt", "highcourt", "president" ]
 		},
 		{
-			"read_element_id": 546,
+			"read_element_id": 552,
 			"title": "ARTICLE 349",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4987,7 +4978,7 @@
 			"tags": ["president", "language" ]
 		},
 		{
-			"read_element_id": 547,
+			"read_element_id": 553,
 			"title": "ARTICLE 350",
 			"subtitle": null,
 			"category": "PARTS",
@@ -4996,7 +4987,7 @@
 			"tags": ["emergency", "language" ]
 		},
 		{
-			"read_element_id": 548,
+			"read_element_id": 554,
 			"title": "ARTICLE 350A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5005,7 +4996,7 @@
 			"tags": ["president", "culture" ]
 		},
 		{
-			"read_element_id": 549,
+			"read_element_id": 555,
 			"title": "ARTICLE 350B",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5014,7 +5005,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 550,
+			"read_element_id": 556,
 			"title": "ARTICLE 351",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5023,7 +5014,7 @@
 			"tags": ["culture", "language" ]
 		},
 		{
-			"read_element_id": 551,
+			"read_element_id": 557,
 			"title": "ARTICLE 352",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5032,7 +5023,7 @@
 			"tags": ["primeminister", "president", "emergency" ]
 		},
 		{
-			"read_element_id": 552,
+			"read_element_id": 558,
 			"title": "ARTICLE 353",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5041,7 +5032,7 @@
 			"tags": ["emergency" ]
 		},
 		{
-			"read_element_id": 553,
+			"read_element_id": 559,
 			"title": "ARTICLE 354",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5050,7 +5041,7 @@
 			"tags": ["president", "emergency" ]
 		},
 		{
-			"read_element_id": 554,
+			"read_element_id": 560,
 			"title": "ARTICLE 355",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5059,7 +5050,7 @@
 			"tags": ["protection" ]
 		},
 		{
-			"read_element_id": 555,
+			"read_element_id": 561,
 			"title": "ARTICLE 356",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5068,7 +5059,7 @@
 			"tags": ["highcourt", "president", "election", "emergency" ]
 		},
 		{
-			"read_element_id": 556,
+			"read_element_id": 562,
 			"title": "ARTICLE 357",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5077,7 +5068,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 557,
+			"read_element_id": 563,
 			"title": "ARTICLE 358",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5086,7 +5077,7 @@
 			"tags": ["emergency" ]
 		},
 		{
-			"read_element_id": 558,
+			"read_element_id": 564,
 			"title": "ARTICLE 359",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5095,7 +5086,7 @@
 			"tags": ["president", "emergency" ]
 		},
 		{
-			"read_element_id": 559,
+			"read_element_id": 565,
 			"title": "ARTICLE 359A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5104,7 +5095,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 560,
+			"read_element_id": 566,
 			"title": "ARTICLE 360",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5113,7 +5104,7 @@
 			"tags": ["moneybill", "supremecourt", "highcourt", "president", "emergency" ]
 		},
 		{
-			"read_element_id": 561,
+			"read_element_id": 567,
 			"title": "ARTICLE 361",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5122,7 +5113,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 562,
+			"read_element_id": 568,
 			"title": "ARTICLE 361A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5131,7 +5122,7 @@
 			"tags": ["parliament", "legislature" ]
 		},
 		{
-			"read_element_id": 563,
+			"read_element_id": 569,
 			"title": "ARTICLE 361B",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5140,7 +5131,7 @@
 			"tags": ["election" ]
 		},
 		{
-			"read_element_id": 564,
+			"read_element_id": 570,
 			"title": "ARTICLE 362",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5149,7 +5140,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 565,
+			"read_element_id": 571,
 			"title": "ARTICLE 363",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5158,7 +5149,7 @@
 			"tags": ["supremecourt" ]
 		},
 		{
-			"read_element_id": 566,
+			"read_element_id": 572,
 			"title": "ARTICLE 363A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5167,7 +5158,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 567,
+			"read_element_id": 573,
 			"title": "ARTICLE 364",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5176,7 +5167,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 568,
+			"read_element_id": 574,
 			"title": "ARTICLE 365",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5185,7 +5176,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 569,
+			"read_element_id": 575,
 			"title": "ARTICLE 366",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5194,7 +5185,7 @@
 			"tags": ["highcourt", "president", "tax", "emergency" ]
 		},
 		{
-			"read_element_id": 570,
+			"read_element_id": 576,
 			"title": "ARTICLE 367",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5203,7 +5194,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 571,
+			"read_element_id": 577,
 			"title": "ARTICLE 368",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5212,7 +5203,7 @@
 			"tags": ["supremecourt", "president" ]
 		},
 		{
-			"read_element_id": 572,
+			"read_element_id": 578,
 			"title": "ARTICLE 369",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5221,7 +5212,7 @@
 			"tags": ["supremecourt" ]
 		},
 		{
-			"read_element_id": 573,
+			"read_element_id": 579,
 			"title": "ARTICLE 370",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5230,7 +5221,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 574,
+			"read_element_id": 580,
 			"title": "ARTICLE 371",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5239,7 +5230,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 575,
+			"read_element_id": 581,
 			"title": "ARTICLE 371A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5248,7 +5239,7 @@
 			"tags": ["peace", "justice", "president", "election" ]
 		},
 		{
-			"read_element_id": 576,
+			"read_element_id": 582,
 			"title": "ARTICLE 371B",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5257,7 +5248,7 @@
 			"tags": ["assam", "legislature" ]
 		},
 		{
-			"read_element_id": 577,
+			"read_element_id": 583,
 			"title": "ARTICLE 371C",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5266,7 +5257,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 578,
+			"read_element_id": 584,
 			"title": "ARTICLE 371D",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5275,7 +5266,7 @@
 			"tags": ["supremecourt", "highcourt", "president" ]
 		},
 		{
-			"read_element_id": 579,
+			"read_element_id": 585,
 			"title": "ARTICLE 371E",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5284,7 +5275,7 @@
 			"tags": ["andhrapradesh", "parliament" ]
 		},
 		{
-			"read_element_id": 580,
+			"read_element_id": 586,
 			"title": "ARTICLE 371F",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5293,7 +5284,7 @@
 			"tags": ["peace", "supremecourt", "highcourt", "president", "election", "parliament", "sikkim", "territory", "judiciary", "legislature" ]
 		},
 		{
-			"read_element_id": 581,
+			"read_element_id": 587,
 			"title": "ARTICLE 371G",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5302,7 +5293,7 @@
 			"tags": ["justice", "mizoram", "religion" ]
 		},
 		{
-			"read_element_id": 582,
+			"read_element_id": 588,
 			"title": "ARTICLE 371H",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5311,7 +5302,7 @@
 			"tags": ["president", "arunachalpradesh"  ]
 		},
 		{
-			"read_element_id": 583,
+			"read_element_id": 589,
 			"title": "ARTICLE 371I",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5320,7 +5311,7 @@
 			"tags": ["goa" ]
 		},
 		{
-			"read_element_id": 584,
+			"read_element_id": 590,
 			"title": "ARTICLE 371J",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5329,7 +5320,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 585,
+			"read_element_id": 591,
 			"title": "ARTICLE 372",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5338,7 +5329,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 586,
+			"read_element_id": 592,
 			"title": "ARTICLE 372A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5347,7 +5338,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 587,
+			"read_element_id": 593,
 			"title": "ARTICLE 373",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5356,7 +5347,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 588,
+			"read_element_id": 594,
 			"title": "ARTICLE 374",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5365,7 +5356,7 @@
 			"tags": ["supremecourt" ]
 		},
 		{
-			"read_element_id": 589,
+			"read_element_id": 595,
 			"title": "ARTICLE 375",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5374,7 +5365,7 @@
 			"tags": ["judiciary" ]
 		},
 		{
-			"read_element_id": 590,
+			"read_element_id": 596,
 			"title": "ARTICLE 376",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5383,7 +5374,7 @@
 			"tags": ["highcourt", "justice", "president" ]
 		},
 		{
-			"read_element_id": 591,
+			"read_element_id": 597,
 			"title": "ARTICLE 377",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5392,7 +5383,7 @@
 			"tags": []
 		},
 		{
-			"read_element_id": 592,
+			"read_element_id": 598,
 			"title": "ARTICLE 378",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5401,7 +5392,7 @@
 			"tags": []
 		},
 		{
-			"read_element_id": 593,
+			"read_element_id": 599,
 			"title": "ARTICLE 378A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5410,7 +5401,7 @@
 			"tags": ["andhrapradesh" ]
 		},
 		{
-			"read_element_id": 594,
+			"read_element_id": 600,
 			"title": "ARTICLE 379 to 391",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5419,7 +5410,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 595,
+			"read_element_id": 601,
 			"title": "ARTICLE 392",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5428,7 +5419,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 596,
+			"read_element_id": 602,
 			"title": "ARTICLE 393",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5437,7 +5428,7 @@
 			"tags": []
 		},
 		{
-			"read_element_id": 597,
+			"read_element_id": 603,
 			"title": "ARTICLE 394",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5446,7 +5437,7 @@
 			"tags": []
 		},
 		{
-			"read_element_id": 598,
+			"read_element_id": 604,
 			"title": "ARTICLE 394A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5455,7 +5446,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 599,
+			"read_element_id": 605,
 			"title": "ARTICLE 395",
 			"subtitle": null,
 			"category": "PARTS",
@@ -5464,7 +5455,7 @@
 			"tags": ["independence" ]
 		},
 		{
-			"read_element_id": 600,
+			"read_element_id": 606,
 			"title": null,
 			"subtitle": null,
 			"category": null,
@@ -5473,7 +5464,7 @@
 			"tags": null
 		},
 		{
-			"read_element_id": 601,
+			"read_element_id": 607,
 			"title": null,
 			"subtitle": null,
 			"category": null,
@@ -5482,7 +5473,7 @@
 			"tags": null
 		},
 		{
-			"read_element_id": 602,
+			"read_element_id": 608,
 			"title": null,
 			"subtitle": null,
 			"category": null,
@@ -5491,7 +5482,7 @@
 			"tags": null
 		},
 		{
-			"read_element_id": 603,
+			"read_element_id": 609,
 			"title": null,
 			"subtitle": null,
 			"category": null,

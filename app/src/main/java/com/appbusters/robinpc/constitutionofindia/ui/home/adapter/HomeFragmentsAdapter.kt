@@ -8,21 +8,39 @@ import com.appbusters.robinpc.constitutionofindia.ui.home.HomeActivity.Companion
 import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.bookmarks_fragment.BookmarkFragment
 import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.HomeFragment
 
-class HomeFragmentsAdapter(fragmentManager: FragmentManager): FragmentStatePagerAdapter(fragmentManager) {
+class HomeFragmentsAdapter(fragmentManager: FragmentManager): FragmentStatePagerAdapter(fragmentManager), HomeFragment.OnLoadCompleteListener {
+
+    private lateinit var onLoadCompleteListener: OnLoadCompleteListener
 
     companion object {
         const val PAGE_COUNT = 2
     }
 
     override fun getItem(position: Int): Fragment {
-        return when(position) {
-            HOME_PAGE -> HomeFragment.newInstance()
-            BOOKMARKS_PAGE -> BookmarkFragment.newInstance()
-            else -> BookmarkFragment.newInstance()
+        when(position) {
+            HOME_PAGE ->  {
+                val fragment = HomeFragment.newInstance()
+                fragment.setOnLoadCompleteListener(this)
+                return fragment
+            }
+            BOOKMARKS_PAGE -> return BookmarkFragment.newInstance()
+            else -> return BookmarkFragment.newInstance()
         }
     }
 
     override fun getCount(): Int {
         return PAGE_COUNT
+    }
+
+    override fun onLoadComplete() {
+        onLoadCompleteListener.onLoadComplete()
+    }
+
+    fun setLoadCompleteListener(onLoadCompleteListener: OnLoadCompleteListener) {
+        this.onLoadCompleteListener = onLoadCompleteListener
+    }
+
+    interface OnLoadCompleteListener {
+        fun onLoadComplete()
     }
 }

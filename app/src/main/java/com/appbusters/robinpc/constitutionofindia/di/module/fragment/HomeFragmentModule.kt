@@ -63,17 +63,4 @@ class HomeFragmentModule(private val fragmentManager: FragmentManager, private v
             }
         }
     }
-
-    @Provides
-    @PerFragmentScope
-    fun mainDatabaseInputStream(@MainDatabaseString databaseFilePath: String): InputStream {
-        return context.assets.open(databaseFilePath)
-    }
-
-    @Provides
-    @MainDatabaseString
-    @PerFragmentScope
-    fun mainDatabaseFilePath(): String {
-        return Constants.MAIN_DB_PATH
-    }
 }

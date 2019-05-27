@@ -8,11 +8,9 @@ import com.appbusters.robinpc.constitutionofindia.di.scope.PerFragmentScope
 import com.appbusters.robinpc.constitutionofindia.ui.intermediate.MiddleActivity
 import dagger.Component
 
-
 @PerFragmentScope
 @Component(modules = [MiddleActivityModule::class, ViewModelFactoryModule::class, ViewModelModule::class],
         dependencies = [ConstitutionAppComponent::class])
 interface MiddleActivityComponent {
-
     fun injectMiddleActivity(activity: MiddleActivity)
 }
