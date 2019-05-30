@@ -1,5 +1,6 @@
 package com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.featured_fragment
 
+import android.app.Activity
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.util.Log
@@ -19,6 +20,7 @@ import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.net.Uri
+import android.widget.Toast
 import com.appbusters.robinpc.constitutionofindia.R
 import com.bumptech.glide.Glide
 
@@ -128,11 +130,13 @@ class FeaturedFragment : BaseFragment() {
 
     private fun openAffiliateLink() {
         context?.let {
-            Log.e("tag", "affiliate link ${bookLink.affiliateLink}")
+            Toast.makeText(it, getString(R.string.opening_book_link), Toast.LENGTH_SHORT).show()
+
             val affiliateUrl = bookLink.affiliateLink
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(affiliateUrl)
             it.startActivity(intent)
+            (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
     }
 }

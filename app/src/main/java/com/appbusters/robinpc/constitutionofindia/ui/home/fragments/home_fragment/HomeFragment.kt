@@ -164,6 +164,12 @@ class HomeFragment : BaseFragment(),
 
     private fun setFeaturedPagerAdapter() {
         featuredViewPager.adapter = featuredPagerAdapter
+        featuredViewPager.setPageTransformer(false, ZoomOutPageTransformer())
+        featuredViewPager.setOnTouchListener { v, event ->
+            featuredViewPager.parent.requestDisallowInterceptTouchEvent(true)
+            return@setOnTouchListener false
+        }
+        featuredViewPager.currentItem = COUNT_DAYS
         dotPagerIndicator.setViewPager(featuredViewPager)
     }
 

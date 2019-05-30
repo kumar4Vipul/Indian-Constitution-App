@@ -64,5 +64,6 @@
     <string name="sample_author">MARK MANSON</string>
     <string name="view_book">VIEW BOOK</string>
     <string name="order_now">ORDER NOW</string>
+    <string name="opening_book_link">Opening the book link for you.</string>
 
 </resources>
