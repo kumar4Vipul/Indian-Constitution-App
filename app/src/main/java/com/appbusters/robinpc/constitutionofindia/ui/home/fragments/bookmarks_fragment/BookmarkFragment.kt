@@ -14,7 +14,12 @@ import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
 import com.appbusters.robinpc.constitutionofindia.di.component.fragment.DaggerBookmarkFragmentComponent
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseFragment
 import com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing.adapter.SavedItemAdapter
+import com.appbusters.robinpc.constitutionofindia.ui.listing.saved_category_listing.SavedCategoryActivity
 import com.appbusters.robinpc.constitutionofindia.ui.reading.ReadingActivity
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_AMENDMENTS
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_PARTS
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_PREAMBLE
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_SCHEDULES
 import kotlinx.android.synthetic.main.fragment_bookmark.*
 import javax.inject.Inject
 
@@ -109,12 +114,16 @@ class BookmarkFragment : BaseFragment(), SavedItemAdapter.SavedItemClickListener
 
     private fun setClickListeners() {
         savedSchedulesButton.setOnClickListener {
+            launchSavedListActivity(CATEGORY_SCHEDULES)
         }
         savedArticlesButton.setOnClickListener {
+            launchSavedListActivity(CATEGORY_PARTS)
         }
         savedAmendmentsButton.setOnClickListener {
+            launchSavedListActivity(CATEGORY_AMENDMENTS)
         }
         savedPreambleButton.setOnClickListener {
+            launchSavedListActivity(CATEGORY_PREAMBLE)
         }
     }
 
@@ -136,6 +145,13 @@ class BookmarkFragment : BaseFragment(), SavedItemAdapter.SavedItemClickListener
     override fun onSavedItemClicked(readElement: ReadElement) {
         context?.let {
             it.startActivity(ReadingActivity.newIntent(it, readElement))
+            (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+        }
+    }
+
+    private fun launchSavedListActivity(categoryName: String) {
+        context?.let {
+            startActivity(SavedCategoryActivity.newIntent(it, categoryName))
             (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }
     }

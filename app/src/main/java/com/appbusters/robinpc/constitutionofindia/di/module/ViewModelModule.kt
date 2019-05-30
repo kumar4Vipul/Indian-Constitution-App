@@ -4,8 +4,10 @@ import androidx.lifecycle.ViewModel
 import com.appbusters.robinpc.constitutionofindia.di.mapkey.ViewModelKey
 import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.bookmarks_fragment.BookmarkFragmentViewModel
 import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.HomeFragmentViewModel
+import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.featured_fragment.FeaturedFragmentViewModel
 import com.appbusters.robinpc.constitutionofindia.ui.intermediate.MiddleActivityViewModel
 import com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing.CategoryListingActivityViewModel
+import com.appbusters.robinpc.constitutionofindia.ui.listing.saved_category_listing.SavedCategoryActivityViewModel
 import com.appbusters.robinpc.constitutionofindia.ui.listing.tag_children.TagChildrenActivityViewModel
 import com.appbusters.robinpc.constitutionofindia.ui.reading.ReadingActivityViewModel
 import dagger.Binds
@@ -29,6 +31,16 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(ReadingActivityViewModel::class)
     abstract fun bindReadingActivityViewModel(readingActivityViewModel: ReadingActivityViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(SavedCategoryActivityViewModel::class)
+    abstract fun bindSavedCategoryActivityViewModel(savedCategoryViewModel: SavedCategoryActivityViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(FeaturedFragmentViewModel::class)
+    abstract fun bindFeaturedFragmentViewModel(featuredFragmentViewModel: FeaturedFragmentViewModel): ViewModel
 
     @Binds
     @IntoMap

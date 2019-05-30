@@ -12,8 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.listing.tags_list.TagsListActivity"
+        <activity android:name=".ui.listing.saved_category_listing.SavedCategoryActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ui.listing.tags_list.TagsListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.listing.tag_children.TagChildrenActivity"
             android:theme="@style/AppTheme.NoActionBar" />

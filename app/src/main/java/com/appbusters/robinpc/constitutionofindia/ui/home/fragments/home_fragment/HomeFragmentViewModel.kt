@@ -6,14 +6,13 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.appbusters.robinpc.constitutionofindia.R
 import com.appbusters.robinpc.constitutionofindia.data.database.AppDatabase
-import com.appbusters.robinpc.constitutionofindia.data.model.Category
-import com.appbusters.robinpc.constitutionofindia.data.model.Part
-import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
-import com.appbusters.robinpc.constitutionofindia.data.model.Tag
+import com.appbusters.robinpc.constitutionofindia.data.model.*
+import com.appbusters.robinpc.constitutionofindia.data.repository.BookLinkRepository
 import com.appbusters.robinpc.constitutionofindia.data.repository.PartRepository
 import com.appbusters.robinpc.constitutionofindia.data.repository.ReadElementRepository
 import com.appbusters.robinpc.constitutionofindia.data.repository.TagRepository
 import com.appbusters.robinpc.constitutionofindia.utils.Constants
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.JSON_BOOK_LINKS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.JSON_PARTS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.JSON_READ_ELEMENTS
 import com.google.gson.Gson
@@ -33,6 +32,7 @@ class HomeFragmentViewModel @Inject constructor(
     private var tagRepository: TagRepository = TagRepository(appDatabase.tagDao())
     private var elementsRepository: ReadElementRepository = ReadElementRepository(appDatabase.readElementDao())
     private var partsRepository: PartRepository = PartRepository(appDatabase.partDao())
+    private var bookLinkRepository: BookLinkRepository = BookLinkRepository(appDatabase.bookLinkDao())
 
     private var allTagsLiveData: LiveData<List<Tag>>
     private var tagsCountLiveData: LiveData<Int>
@@ -54,6 +54,10 @@ class HomeFragmentViewModel @Inject constructor(
 
         allElementsLiveData = elementsRepository.getAllElements()
         elementsCountLiveData = elementsRepository.getNumberOfElements()
+    }
+
+    fun getAllBooks(): LiveData<List<BookLink>> {
+        return bookLinkRepository.getAllBooks()
     }
 
     fun getAllParts(): LiveData<List<Part>> {
@@ -82,6 +86,10 @@ class HomeFragmentViewModel @Inject constructor(
 
     private fun insertElements(vararg elements: ReadElement) {
         elementsRepository.insertElements(*elements)
+    }
+
+    private fun insertBooks(vararg books: BookLink) {
+        bookLinkRepository.insertBookLinks(*books)
     }
 
     private fun insertParts(vararg parts: Part) {
@@ -158,6 +166,20 @@ class HomeFragmentViewModel @Inject constructor(
         }
     }
 
+    fun loadBooksFromJson() {
+        try {
+            inflateBooksList(getBooksArray())
+        } catch (e: IOException) {}
+    }
+
+    private fun inflateBooksList(books: JSONArray) {
+        var  book: BookLink
+        for(bookNumber: Int in 0 until books.length()) {
+            book = gson.fromJson(books.getJSONObject(bookNumber).toString(), BookLink::class.java)
+            insertBooks(book)
+        }
+    }
+
     fun loadElementsFromJson() {
         try {
             inflateElementsList(getElementsArray())
@@ -170,6 +192,17 @@ class HomeFragmentViewModel @Inject constructor(
         for(elementNumber: Int in 0 until elements.length()) {
             elementItem = gson.fromJson(elements.getJSONObject(elementNumber).toString(), ReadElement::class.java)
             insertElements(elementItem)
+        }
+    }
+
+    private fun getBooksArray(): JSONArray {
+        if(::jsonString.isInitialized) {
+            val jsonObject = JSONObject(jsonString)
+            return jsonObject.getJSONArray(JSON_BOOK_LINKS)
+        }
+        else {
+            loadJsonString()
+            return getBooksArray()
         }
     }
 

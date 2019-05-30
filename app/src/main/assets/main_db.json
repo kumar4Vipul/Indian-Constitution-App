@@ -1,4 +1,3300 @@
 {
+	"book_links": [
+		{
+			"day_number": 1,
+			"book_title": "The Subtle Art Of Not Giving A F*ck",
+			"author_name": "Mark Manson",
+			"short_description": "In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be \\“positive\\” all the time so that we can truly become better, happier people.",
+			"accent_color": "#FD5101",
+			"cover_url": "https://images-na.ssl-images-amazon.com/images/I/71t4GuxLCuL.jpg",
+			"affiliate_link": "https://www.amazon.in/gp/product/0062641549/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=robillo-21&creative=24630&linkCode=as2&creativeASIN=0062641549&linkId=32625cdc0c2f40cdf8581527afbbfd0b"
+		},
+		{
+			"day_number": 2,
+			"book_title": "You Are A Badass",
+			"author_name": "Jen Sincero",
+			"short_description": "This book helps you to helping you to identify and change the self-sabotaging beliefs and behaviours that stop you from getting what you want, create a life you totally love, make some damn money already.",
+			"accent_color": "#FCDD32",
+			"cover_url": "https://images-na.ssl-images-amazon.com/images/I/611yyf54DwL.jpg",
+			"affiliate_link": "https://www.amazon.in/gp/product/1473649528/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=robillo-21&creative=24630&linkCode=as2&creativeASIN=1473649528&linkId=e441db4f52cc2b75577fce4001eec85e"
+		},
+		{
+			"day_number": 3,
+			"book_title": "Smarter, Faster, Better",
+			"author_name": "Charles Duhigg",
+			"short_description": "In Smarter Faster Better, the author applies the same relentless curiosity, rigorous reporting and rich storytelling to explain how we can get better at the things we do.",
+			"accent_color": "#000000",
+			"cover_url": "https://images-na.ssl-images-amazon.com/images/I/71qsB2BxYsL.jpg",
+			"affiliate_link": "https://www.amazon.in/gp/product/0434023469/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=robillo-21&creative=24630&linkCode=as2&creativeASIN=0434023469&linkId=edee16474a23523ca1ee7257ab2a2e16"
+		},
+		{
+			"day_number": 4,
+			"book_title": "Grit",
+			"author_name": "Angela Duckworth",
+			"short_description": "In this must-read for anyone seeking to succeed, pioneering psychologist Angela Duckworth takes us on an eye-opening journey to discover the true qualities that lead to outstanding achievement.",
+			"accent_color": "#2444E9",
+			"cover_url": "https://images-na.ssl-images-amazon.com/images/I/91%2BhkK-PWlL.jpg",
+			"affiliate_link": "https://www.amazon.in/gp/product/1785040200/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=robillo-21&creative=24630&linkCode=as2&creativeASIN=1785040200&linkId=fddfbbe2253443df302f00c81b3e42ce"
+		},
+		{
+			"day_number": 5,
+			"book_title": "Think and Grow Rich",
+			"author_name": "Napolean Hill",
+			"short_description": "Think and Grow Rich' is the world's most widely acclaimed motivational book on success ever published. It became the must-have bible of prosperity and success for millions of readers since its initial publication.",
+			"accent_color": "#A7E4F5",
+			"cover_url": "https://images-na.ssl-images-amazon.com/images/I/81WeE3UgtCL.jpg",
+			"affiliate_link": "https://www.amazon.in/gp/product/9387669351/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=robillo-21&creative=24630&linkCode=as2&creativeASIN=9387669351&linkId=f26612511edc053eb34348b371e74576"
+		},
+		{
+			"day_number": 6,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 7,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 8,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 9,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 10,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 11,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 12,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 13,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 14,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 15,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 16,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 17,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 18,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 19,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 20,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 21,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 22,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 23,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 24,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 25,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 26,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 27,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 28,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 29,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 30,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 31,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 32,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 33,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 34,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 35,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 36,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 37,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 38,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 39,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 40,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": "https://amzn.to/2W1X2w2"
+		},
+		{
+			"day_number": 41,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 42,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 43,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 44,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 45,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 46,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 47,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 48,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 49,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 50,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 51,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 52,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 53,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 54,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 55,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 56,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 57,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 58,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 59,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 60,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 61,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 62,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 63,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 64,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 65,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 66,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 67,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 68,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 69,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 70,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 71,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 72,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 73,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 74,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 75,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 76,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 77,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 78,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 79,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 80,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 81,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 82,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 83,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 84,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 85,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 86,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 87,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 88,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 89,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 90,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 91,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 92,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 93,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 94,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 95,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 96,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 97,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 98,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 99,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 100,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 101,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 102,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 103,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 104,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 105,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 106,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 107,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 108,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 109,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 110,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 111,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 112,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 113,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 114,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 115,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 116,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 117,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 118,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 119,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 120,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 121,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 122,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 123,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 124,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 125,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 126,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 127,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 128,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 129,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 130,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 131,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 132,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 133,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 134,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 135,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 136,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 137,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 138,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 139,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 140,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 141,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 142,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 143,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 144,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 145,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 146,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 147,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 148,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 149,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 150,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 151,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 152,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 153,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 154,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 155,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 156,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 157,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 158,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 159,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 160,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 161,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 162,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 163,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 164,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 165,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 166,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 167,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 168,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 169,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 170,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 171,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 172,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 173,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 174,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 175,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 176,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 177,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 178,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 179,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 180,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 181,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 182,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 183,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 184,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 185,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 186,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 187,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 188,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 189,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 190,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 191,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 192,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 193,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 194,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 195,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 196,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 197,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 198,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 199,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 200,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 201,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 202,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 203,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 204,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 205,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 206,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 207,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 208,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 209,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 210,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 211,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 212,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 213,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 214,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 215,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 216,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 217,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 218,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 219,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 220,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 221,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 222,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 223,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 224,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 225,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 226,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 227,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 228,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 229,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 230,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 231,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 232,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 233,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 234,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 235,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 236,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 237,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 238,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 239,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 240,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 241,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 242,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 243,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 244,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 245,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 246,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 247,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 248,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 249,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 250,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 251,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 252,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 253,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 254,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 255,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 256,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 257,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 258,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 259,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 260,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 261,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 262,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 263,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 264,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 265,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 266,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 267,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 268,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 269,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 270,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 271,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 272,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 273,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 274,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 275,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 276,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 277,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 278,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 279,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 280,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 281,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 282,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 283,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 284,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 285,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 286,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 287,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 288,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 289,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 290,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 291,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 292,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 293,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 294,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 295,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 296,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 297,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 298,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 299,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 300,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 301,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 302,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 303,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 304,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 305,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 306,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 307,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 308,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 309,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 310,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 311,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 312,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 313,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 314,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 315,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 316,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 317,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 318,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 319,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 320,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 321,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 322,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 323,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 324,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 325,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 326,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 327,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 328,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 329,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 330,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 331,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 332,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 333,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 334,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 335,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 336,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 337,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 338,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 339,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 340,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 341,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 342,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 343,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 344,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 345,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 346,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 347,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 348,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 349,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 350,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 351,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 352,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 353,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 354,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 355,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 356,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 357,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 358,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 359,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 360,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 361,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 362,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 363,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 364,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 365,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		},
+		{
+			"day_number": 366,
+			"book_title": "",
+			"author_name": "",
+			"short_description": "",
+			"accent_color": "#000000",
+			"cover_url": "",
+			"affiliate_link": ""
+		}
+	],
 	"read_elements": [
 		{
 			"read_element_id": 0,

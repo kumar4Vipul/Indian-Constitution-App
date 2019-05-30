@@ -7,109 +7,120 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeActivity">
 
-    <androidx.viewpager.widget.ViewPager
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintVertical_weight="1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
-        android:id="@+id/homeFragmentsPager">
-
-    </androidx.viewpager.widget.ViewPager>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        app:layout_constraintTop_toBottomOf="@id/homeFragmentsPager"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/bottomNavigation">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:background="@color/skeleton_one"
-                tools:ignore="ContentDescription" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="12dp"
-                    android:background="?attr/selectableItemBackground"
-                    android:tint="@color/colorAccent"
-                    android:src="@drawable/ic_home_filled"
-                    tools:ignore="ContentDescription"
-                    android:id="@+id/homeButton"/>
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="12dp"
-                    android:background="?attr/selectableItemBackground"
-                    android:tint="@color/colorAccent"
-                    android:src="@drawable/ic_bookmark"
-                    tools:ignore="ContentDescription"
-                    android:id="@+id/bookmarksButton"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@color/white"
-        android:id="@+id/loadingScreen"
-        android:translationZ="2dp"
-        tools:visibility="gone">
+        android:id="@+id/mainHomeLayout">
 
-        <com.airbnb.lottie.LottieAnimationView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="30dp"
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_weight="1"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
+            android:id="@+id/homeFragmentsPager">
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintTop_toBottomOf="@id/homeFragmentsPager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/bottomNavigation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/skeleton_one"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="12dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:tint="@color/colorAccent"
+                        android:src="@drawable/ic_home_filled"
+                        tools:ignore="ContentDescription"
+                        android:id="@+id/homeButton"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="12dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:tint="@color/colorAccent"
+                        android:src="@drawable/ic_bookmark"
+                        tools:ignore="ContentDescription"
+                        android:id="@+id/bookmarksButton"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loadingScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintBottom_toTopOf="@id/loadingStatusTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
             app:lottie_fileName="loading_book.json"
             app:lottie_loop="true"
-            app:lottie_autoPlay="true"
             tools:background="@color/black"
-            android:id="@+id/lottieAnimationView"/>
+            app:layout_constraintVertical_chainStyle="packed"/>
 
         <TextView
+            android:id="@+id/loadingStatusTv"
+            fontPath="fonts/read_english_bold.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/lottieAnimationView"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:text="@string/loading"
-            android:paddingTop="20dp"
             android:textColor="@color/colorPrimary"
-            fontPath="fonts/read_english_bold.ttf"
             android:textSize="20sp"
-            android:id="@+id/loadingStatusTv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lottieAnimationView"
             tools:ignore="MissingPrefix" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

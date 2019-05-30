@@ -56,13 +56,14 @@ class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener, HomeFragmen
     }
 
     private fun setClickListeners() {
+        loadingScreen.setOnClickListener {
+            Log.e("tag", "loading clicked")
+        }
         homeButton.setOnClickListener {
-            Log.e("tag", "home button clicked")
             highlightNavigation(it as ImageView)
             homeFragmentsPager.currentItem = HOME_PAGE
         }
         bookmarksButton.setOnClickListener {
-            Log.e("tag", "bookmarks button clicked")
             highlightNavigation(it as ImageView)
             homeFragmentsPager.currentItem = BOOKMARKS_PAGE
         }
@@ -115,7 +116,7 @@ class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener, HomeFragmen
     }
 
     private fun hideLoadingLayout() {
-        loadingLayoutAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_out)
+        loadingLayoutAnimation = AnimationUtils.loadAnimation(this, R.anim.slide_out_bottom)
 
         loadingLayoutAnimation.setAnimationListener(object: Animation.AnimationListener {
 

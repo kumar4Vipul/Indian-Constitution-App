@@ -2,7 +2,6 @@ package com.appbusters.robinpc.constitutionofindia
 
 import android.app.Activity
 import android.app.Application
-import android.content.Context
 import com.appbusters.robinpc.constitutionofindia.di.component.ConstitutionAppComponent
 import com.appbusters.robinpc.constitutionofindia.di.component.DaggerConstitutionAppComponent
 import com.appbusters.robinpc.constitutionofindia.di.module.ContextModule
@@ -21,7 +20,7 @@ class ConstitutionApp : Application() {
         ViewPump.init(ViewPump.builder()
                 .addInterceptor(CalligraphyInterceptor(
                         CalligraphyConfig.Builder()
-                                .setDefaultFontPath("fonts/splash_english_simple.ttf")
+                                .setDefaultFontPath("fonts/read_english_regular.ttf")
                                 .setFontAttrId(R.attr.fontPath)
                                 .build())).build())
 

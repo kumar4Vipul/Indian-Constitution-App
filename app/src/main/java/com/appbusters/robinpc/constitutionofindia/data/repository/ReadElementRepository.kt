@@ -47,6 +47,10 @@ class ReadElementRepository(private val elementsDao: ReadElementDao) {
         return elementsDao.getSavedElements()
     }
 
+    fun getCategorySavedElements(categoryName: String): LiveData<List<ReadElement>> {
+        return elementsDao.getCategorySavedElements(categoryName)
+    }
+
     private class SaveStatusTask internal constructor(private val elementsDao: ReadElementDao)
         : AsyncTask<Int, Void, Void>() {
 

@@ -16,7 +16,6 @@ import com.appbusters.robinpc.constitutionofindia.ui.base.BaseActivity
 import com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing.adapter.ListingListAdapter
 import com.appbusters.robinpc.constitutionofindia.ui.reading.ReadingActivity
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.EXTRA_TAG
-import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_tag_children.*
 import javax.inject.Inject
 
@@ -27,9 +26,6 @@ class TagChildrenActivity : BaseActivity(), ListingListAdapter.ListItemClickList
 
     @Inject
     lateinit var listingAdapter: ListingListAdapter
-
-    @Inject
-    lateinit var gson: Gson
 
     private lateinit var displayTag: Tag
     private lateinit var elementIds: List<Int>

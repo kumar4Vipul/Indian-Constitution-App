@@ -51,4 +51,7 @@ interface ReadElementDao {
 
     @Query("SELECT * FROM read_element WHERE is_saved = 1")
     fun getSavedElements(): LiveData<List<ReadElement>>
+
+    @Query("SELECT * FROM read_element WHERE category = :categoryName AND is_saved = 1")
+    fun getCategorySavedElements(categoryName: String): LiveData<List<ReadElement>>
 }

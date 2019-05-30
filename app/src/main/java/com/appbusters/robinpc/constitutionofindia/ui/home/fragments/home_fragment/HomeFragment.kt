@@ -2,6 +2,7 @@ package com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragme
 
 import android.app.Activity
 import android.content.Intent
+import android.util.Log
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
@@ -29,6 +30,8 @@ import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATE
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_PARTS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_PREAMBLE
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_SCHEDULES
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.COUNT_DAYS
+import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.NUMBER_OF_BOOKS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.NUMBER_OF_ELEMENTS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.NUMBER_OF_PARTS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.NUMBER_OF_TAGS
@@ -71,7 +74,6 @@ class HomeFragment : BaseFragment(),
     override fun setup() {
         setComponent()
         setObservers()
-        setFeaturedPagerAdapter()
         setCategoriesAdapter()
         setTagsAdapter()
         fetchData()
@@ -136,7 +138,22 @@ class HomeFragment : BaseFragment(),
                 viewModel.loadElementsFromJson()
             else {
                 if(it.size != NUMBER_OF_ELEMENTS) viewModel.loadElementsFromJson()
-                else onLoadCompleteListener.onLoadComplete()
+                else setBookLinksObserver()
+            }
+        })
+    }
+
+    private fun setBookLinksObserver() {
+        viewModel.getAllBooks().observe(this, Observer {
+            if(it.isNullOrEmpty())
+                viewModel.loadBooksFromJson()
+            else {
+                if(it.size != NUMBER_OF_BOOKS)
+                    viewModel.loadBooksFromJson()
+                else {
+                    setFeaturedPagerAdapter()
+                    onLoadCompleteListener.onLoadComplete()
+                }
             }
         })
     }

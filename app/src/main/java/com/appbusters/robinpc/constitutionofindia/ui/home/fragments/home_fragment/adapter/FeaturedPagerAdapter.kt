@@ -8,7 +8,7 @@ import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragmen
 class FeaturedPagerAdapter(fragmentManager: FragmentManager): FragmentStatePagerAdapter(fragmentManager) {
 
     companion object {
-        const val PAGE_COUNT = 3
+        const val PAGE_COUNT = 7
     }
 
     override fun getItem(position: Int): Fragment {
