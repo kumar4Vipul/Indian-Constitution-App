@@ -2,8 +2,6 @@ package com.appbusters.robinpc.constitutionofindia.ui.home
 
 import android.util.Log
 import android.view.View
-import android.view.animation.Animation
-import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import androidx.core.content.ContextCompat
 import androidx.viewpager.widget.ViewPager
@@ -14,6 +12,7 @@ import com.appbusters.robinpc.constitutionofindia.di.module.activity.HomeActivit
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseActivity
 import com.appbusters.robinpc.constitutionofindia.ui.home.adapter.HomeFragmentsAdapter
 import kotlinx.android.synthetic.main.activity_home.*
+import java.lang.IllegalStateException
 import javax.inject.Inject
 import java.util.*
 
@@ -24,7 +23,6 @@ class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener, HomeFragmen
     lateinit var homePagerAdapter: HomeFragmentsAdapter
 
     private var wasLoadingShowed = false
-    private lateinit var loadingLayoutAnimation: Animation
 
     companion object {
         const val HOME_PAGE = 0
@@ -116,23 +114,13 @@ class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener, HomeFragmen
     }
 
     private fun hideLoadingLayout() {
-        loadingLayoutAnimation = AnimationUtils.loadAnimation(this, R.anim.slide_out_bottom)
-
-        loadingLayoutAnimation.setAnimationListener(object: Animation.AnimationListener {
-
-            override fun onAnimationRepeat(animation: Animation?) {}
-
-            override fun onAnimationEnd(animation: Animation?) {
+        runOnUiThread {
+            try {
+                lottieAnimationView.pauseAnimation()
                 loadingScreen.visibility = View.GONE
                 wasLoadingShowed = true
             }
-
-            override fun onAnimationStart(animation: Animation?) {
-                lottieAnimationView.pauseAnimation()
-            }
-
-        })
-
-        loadingScreen.startAnimation(loadingLayoutAnimation)
+            catch (e: IllegalStateException) {}
+        }
     }
 }

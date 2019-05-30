@@ -22,7 +22,7 @@
 
     <!-- HOME FRAGMENT -->
     <string name="header_home">HOME</string>
-    <string name="featured_home">Featured</string>
+    <string name="featured_home">Learning Zone</string>
     <string name="categories_home">Categories</string>
     <string name="recently_opened_home">Recent Items</string>
     <string name="tags_home">Tags</string>
@@ -60,5 +60,9 @@
     <string name="loading">LOADING..</string>
     <string name="load_complete">LOAD COMPLETE</string>
     <string name="no_items_saved">NO SAVED ITEMS</string>
+    <string name="sample_book_name">THE SUBTLE ART OF NOT GIVING A F*CK</string>
+    <string name="sample_author">MARK MANSON</string>
+    <string name="view_book">VIEW BOOK</string>
+    <string name="order_now">ORDER NOW</string>
 
 </resources>

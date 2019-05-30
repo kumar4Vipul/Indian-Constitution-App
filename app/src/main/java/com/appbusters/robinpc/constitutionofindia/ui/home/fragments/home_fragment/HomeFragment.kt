@@ -164,7 +164,6 @@ class HomeFragment : BaseFragment(),
 
     private fun setFeaturedPagerAdapter() {
         featuredViewPager.adapter = featuredPagerAdapter
-        featuredViewPager.setPageTransformer(false, ZoomOutPageTransformer())
         dotPagerIndicator.setViewPager(featuredViewPager)
     }
 

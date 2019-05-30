@@ -25,6 +25,7 @@
     <color name="bg_left_side_heading">#FC302A</color>
 
     <!-- featured adapter <- home screen -->
+    <color name="short_description_color">#1C1C1C</color>
     <color name="preamble_start">#EFA632</color>
     <color name="preamble_end">#FD2A2A</color>
     <color name="your_progress_start">#9BC637</color>

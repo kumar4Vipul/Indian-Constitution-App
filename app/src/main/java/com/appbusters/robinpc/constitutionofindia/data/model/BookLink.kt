@@ -8,7 +8,7 @@ import com.google.gson.annotations.SerializedName
 
 @Entity(tableName = "book_links")
 data class BookLink(
-        @PrimaryKey @SerializedName("day_number") val id: Int,
+        @PrimaryKey @ColumnInfo(name = "id") @SerializedName("day_number") val id: Int,
         @ColumnInfo(name = "book_title") @SerializedName("book_title") val bookTitle: String,
         @ColumnInfo(name = "author_name") @SerializedName("author_name") val authorName: String,
         @ColumnInfo(name = "short_description") @SerializedName("short_description") val shortDescription: String,
