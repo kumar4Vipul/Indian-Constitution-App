@@ -9,14 +9,14 @@
     android:layout_marginBottom="2dp"
     android:layout_marginEnd="2dp"
     app:cardCornerRadius="8dp"
-    app:cardUseCompatPadding="true"
-    android:background="@drawable/bg_transparent">
+    app:cardUseCompatPadding="true">
     
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="20dp"
-        android:paddingBottom="20dp">
+        android:paddingBottom="20dp"
+        android:background="@drawable/bg_transparent">
 
         <ImageView
             android:layout_width="10dp"
