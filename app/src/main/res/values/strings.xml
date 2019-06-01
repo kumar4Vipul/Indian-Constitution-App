@@ -54,6 +54,7 @@
     <string name="save">SAVE</string>
     <string name="saved">SAVED</string>
     <string name="share">SHARE</string>
+    <string name="share_small">Share</string>
     <string name="save_status_unsaved">SAVE</string>
     <string name="rate">RATE APP</string>
     <string name="whatsapp">WHATSAPP</string>
@@ -65,5 +66,12 @@
     <string name="view_book">VIEW BOOK</string>
     <string name="order_now">ORDER NOW</string>
     <string name="opening_book_link">Opening the book link for you.</string>
+    <string name="data_sync_success">Data sync success. Enjoy the app!</string>
+    <string name="was_saved">was saved</string>
+    <string name="was_removed">was removed</string>
+    <string name="plain_text_share_type">text/plain</string>
+    <string name="i_am_sharing">Hi. I am sharing</string>
+    <string name="with_you">with you.</string>
+    <string name="whatsapp_package">com.whatsapp</string>
 
 </resources>

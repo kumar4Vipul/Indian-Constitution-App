@@ -110,7 +110,7 @@ class CategoryListingActivity : BaseActivity(), ListingListAdapter.ListItemClick
 
     override fun onBackPressed() {
         super.onBackPressed()
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+        overridePendingTransition(R.anim.no_animation, R.anim.slide_out_right)
     }
 }
 

@@ -8,8 +8,11 @@ import com.appbusters.robinpc.constitutionofindia.ui.home.HomeActivity.Companion
 import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.bookmarks_fragment.BookmarkFragment
 import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.HomeFragment
 
-class HomeFragmentsAdapter(fragmentManager: FragmentManager): FragmentStatePagerAdapter(fragmentManager), HomeFragment.OnLoadCompleteListener {
+class HomeFragmentsAdapter(fragmentManager: FragmentManager):
+        FragmentStatePagerAdapter(fragmentManager),
+        HomeFragment.OnLoadCompleteListener, HomeFragment.OnSyncCompleteListener {
 
+    private lateinit var onSyncCompleteListener: OnSyncCompleteListener
     private lateinit var onLoadCompleteListener: OnLoadCompleteListener
 
     companion object {
@@ -21,6 +24,7 @@ class HomeFragmentsAdapter(fragmentManager: FragmentManager): FragmentStatePager
             HOME_PAGE ->  {
                 val fragment = HomeFragment.newInstance()
                 fragment.setOnLoadCompleteListener(this)
+                fragment.setOnSyncCompleteListener(this)
                 return fragment
             }
             BOOKMARKS_PAGE -> return BookmarkFragment.newInstance()
@@ -36,11 +40,23 @@ class HomeFragmentsAdapter(fragmentManager: FragmentManager): FragmentStatePager
         onLoadCompleteListener.onLoadComplete()
     }
 
+    override fun onSyncCompleted() {
+        onSyncCompleteListener.onSyncComplete()
+    }
+
     fun setLoadCompleteListener(onLoadCompleteListener: OnLoadCompleteListener) {
         this.onLoadCompleteListener = onLoadCompleteListener
     }
 
+    fun setOnSyncCompleteListener(onSyncCompleteListener: OnSyncCompleteListener) {
+        this.onSyncCompleteListener = onSyncCompleteListener
+    }
+
     interface OnLoadCompleteListener {
         fun onLoadComplete()
+    }
+
+    interface OnSyncCompleteListener {
+        fun onSyncComplete()
     }
 }

@@ -1,7 +1,6 @@
 package com.appbusters.robinpc.constitutionofindia.ui.home.fragments.bookmarks_fragment
 
 import android.app.Activity
-import android.util.Log
 import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -144,15 +143,15 @@ class BookmarkFragment : BaseFragment(), SavedItemAdapter.SavedItemClickListener
 
     override fun onSavedItemClicked(readElement: ReadElement) {
         context?.let {
-            it.startActivity(ReadingActivity.newIntent(it, readElement))
-            (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+            it.startActivity(ReadingActivity.newIntent(it, readElement, true))
+            (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.no_animation)
         }
     }
 
     private fun launchSavedListActivity(categoryName: String) {
         context?.let {
             startActivity(SavedCategoryActivity.newIntent(it, categoryName))
-            (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+            (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.no_animation)
         }
     }
 

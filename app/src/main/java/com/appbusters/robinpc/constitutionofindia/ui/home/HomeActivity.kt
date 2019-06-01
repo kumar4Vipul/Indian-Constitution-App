@@ -1,8 +1,8 @@
 package com.appbusters.robinpc.constitutionofindia.ui.home
 
-import android.util.Log
 import android.view.View
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.viewpager.widget.ViewPager
 import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
@@ -11,18 +11,19 @@ import com.appbusters.robinpc.constitutionofindia.di.component.activity.DaggerHo
 import com.appbusters.robinpc.constitutionofindia.di.module.activity.HomeActivityModule
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseActivity
 import com.appbusters.robinpc.constitutionofindia.ui.home.adapter.HomeFragmentsAdapter
+import es.dmoral.toasty.Toasty
 import kotlinx.android.synthetic.main.activity_home.*
-import java.lang.IllegalStateException
-import javax.inject.Inject
 import java.util.*
+import javax.inject.Inject
 
+class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener,
+        HomeFragmentsAdapter.OnLoadCompleteListener, HomeFragmentsAdapter.OnSyncCompleteListener {
 
-class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener, HomeFragmentsAdapter.OnLoadCompleteListener {
+    private var wasLoadingShowed = false
+    private var wasSyncCompleted = false
 
     @Inject
     lateinit var homePagerAdapter: HomeFragmentsAdapter
-
-    private var wasLoadingShowed = false
 
     companion object {
         const val HOME_PAGE = 0
@@ -50,13 +51,11 @@ class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener, HomeFragmen
 
     private fun setViewPager() {
         homePagerAdapter.setLoadCompleteListener(this)
+        homePagerAdapter.setOnSyncCompleteListener(this)
         homeFragmentsPager.adapter = homePagerAdapter
     }
 
     private fun setClickListeners() {
-        loadingScreen.setOnClickListener {
-            Log.e("tag", "loading clicked")
-        }
         homeButton.setOnClickListener {
             highlightNavigation(it as ImageView)
             homeFragmentsPager.currentItem = HOME_PAGE
@@ -111,6 +110,13 @@ class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener, HomeFragmen
                 hideLoadingLayout()
             }
         }, 2000)
+    }
+
+    override fun onSyncComplete() {
+        if(!wasSyncCompleted)
+            Toasty.success(this, getString(R.string.data_sync_success), Toast.LENGTH_SHORT, true).show();
+
+        wasSyncCompleted = true
     }
 
     private fun hideLoadingLayout() {
