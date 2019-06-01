@@ -28,11 +28,8 @@ import kotlinx.android.synthetic.main.activity_reading.*
 import javax.inject.Inject
 import android.content.ActivityNotFoundException
 import android.net.Uri
-import android.widget.Toast
 import es.dmoral.toasty.Toasty
 import java.lang.StringBuilder
-
-
 
 class ReadingActivity : BaseActivity() {
 
@@ -161,7 +158,7 @@ class ReadingActivity : BaseActivity() {
     }
 
     private fun shareContentOnWhatsApp() {
-        Toasty.normal(this, "Sharing ${getSimpleString()}").show()
+        Toasty.normal(this, getSharingToastMessage()).show()
 
         val whatsappIntent = Intent(Intent.ACTION_SEND)
         whatsappIntent.type = getString(R.string.plain_text_share_type)
@@ -175,6 +172,8 @@ class ReadingActivity : BaseActivity() {
     }
 
     private fun rateApp() {
+        Toasty.normal(this, getString(R.string.rate_app_play_store)).show()
+
         val packageString = "/details?id=$packageName"
         val uri = Uri.parse("market:/$packageString")
         val goToMarket = Intent(Intent.ACTION_VIEW, uri)
@@ -200,13 +199,15 @@ class ReadingActivity : BaseActivity() {
     private fun saveElementToDb() {
         viewModel.markElementAsSaved(readElement.id)
         renderSaveStatus(true)
-        Toasty.info(this, getSavedString(), Toast.LENGTH_SHORT, true).show()
+        showCategoryToast(getSavedString())
+//        Toasty.info(this, getSavedString(), Toast.LENGTH_SHORT, true).show()
     }
 
     private fun unsaveElementFromDb() {
         viewModel.markElementAsUnsaved(readElement.id)
         renderSaveStatus(false)
-        Toasty.info(this, getRemovedString(), Toast.LENGTH_SHORT, true).show()
+        showCategoryToast(getRemovedString())
+//        Toasty.info(this, getRemovedString(), Toast.LENGTH_SHORT, true).show()
     }
 
     private fun getSavedString(): String {
@@ -226,14 +227,12 @@ class ReadingActivity : BaseActivity() {
         return builder.toString()
     }
 
+    @Suppress("DEPRECATION")
     private fun getShareString(): String {
-        Toasty.normal(this, "Sharing ${getSimpleString()}").show()
+        Toasty.normal(this, getSharingToastMessage()).show()
 
         val builder = StringBuilder("*${readElement.title!!}*\n\n")
-
-        builder.append("Get the Constitution App *HERE:* ${getAppLink()}")
-
-        builder.append("\n\n")
+        builder.append(getMessageAppLink()).append("\n\n")
 
         if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.N)
             builder.append(Html.fromHtml(readElement.content))
@@ -241,6 +240,14 @@ class ReadingActivity : BaseActivity() {
             builder.append(Html.fromHtml(readElement.content, Html.FROM_HTML_MODE_LEGACY))
 
         return builder.toString()
+    }
+
+    private fun getSharingToastMessage(): String {
+        return "${getString(R.string.sharing)} ${getSimpleString()}"
+    }
+
+    private fun getMessageAppLink(): String {
+        return "${getString(R.string.get_constitution_app)} ${getAppLink()}"
     }
 
     private fun shareContent() {
@@ -288,5 +295,12 @@ class ReadingActivity : BaseActivity() {
             overridePendingTransition(R.anim.no_animation, R.anim.slide_out_right)
         else
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+    }
+
+    private fun showCategoryToast(message: String) {
+        Toasty.custom(
+                this, message, R.drawable.ic_bookmark,
+                categoryColor, Toasty.LENGTH_SHORT, false, true
+        ).show();
     }
 }

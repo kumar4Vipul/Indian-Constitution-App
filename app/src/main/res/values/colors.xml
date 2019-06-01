@@ -79,6 +79,7 @@
     <color name="twitter_color">#03A9F4</color>
     <color name="share_color">#585858</color>
     <color name="rate_color">#EFA632</color>
+    <color name="transparent">#00000000</color>
 
 </resources>
 

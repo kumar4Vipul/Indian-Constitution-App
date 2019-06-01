@@ -67,11 +67,14 @@
     <string name="order_now">ORDER NOW</string>
     <string name="opening_book_link">Opening the book link for you.</string>
     <string name="data_sync_success">Data sync success. Enjoy the app!</string>
-    <string name="was_saved">was saved</string>
-    <string name="was_removed">was removed</string>
+    <string name="was_saved">saved</string>
+    <string name="was_removed">removed</string>
     <string name="plain_text_share_type">text/plain</string>
     <string name="i_am_sharing">Hi. I am sharing</string>
     <string name="with_you">with you.</string>
     <string name="whatsapp_package">com.whatsapp</string>
+    <string name="get_constitution_app">Get the Constitution App *HERE:*</string>
+    <string name="sharing">Sharing</string>
+    <string name="rate_app_play_store">Rate App on Play Store</string>
 
 </resources>
