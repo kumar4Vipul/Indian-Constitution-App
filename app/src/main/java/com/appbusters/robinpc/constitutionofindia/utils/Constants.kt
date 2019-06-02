@@ -48,6 +48,7 @@ class Constants {
         const val EXTRA_INDEX = "EXTRA_INDEX"
         const val EXTRA_TITLE = "EXTRA_TITLE"
         const val EXTRA_READ_ELEMENT = "EXTRA_READ_ELEMENT"
+        const val EXTRA_WAS_LAUNCHED_FROM_HOME = "EXTRA_WAS_LAUNCHED_FROM_HOME"
         const val EXTRA_CATEGORY = "EXTRA_CATEGORY"
         const val EXTRA_TAG = "EXTRA_TAG"
 

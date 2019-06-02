@@ -2,7 +2,6 @@ package com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragme
 
 import android.app.Activity
 import android.content.Intent
-import android.util.Log
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
@@ -57,8 +56,9 @@ class HomeFragment : BaseFragment(),
     @Inject
     lateinit var tagsAdapter: TagListAdapter
 
-    private lateinit var onLoadCompleteListener: OnLoadCompleteListener
     private lateinit var viewModel: HomeFragmentViewModel
+    private lateinit var onSyncCompleteListener: OnSyncCompleteListener
+    private lateinit var onLoadCompleteListener: OnLoadCompleteListener
 
     override fun getLayoutResId(): Int {
         return R.layout.fragment_home
@@ -103,7 +103,7 @@ class HomeFragment : BaseFragment(),
 
                     tagsAdapter.submitList(viewModel.getSubmitTagList(it))
 
-                    setPartsObserver()
+                    setBookLinksObserver()
                 }
             }
             else
@@ -113,6 +113,22 @@ class HomeFragment : BaseFragment(),
         viewModel.categoriesListLiveData.observe(this, Observer {
             it?.let {
                 categoriesAdapter.submitList(it)
+            }
+        })
+    }
+
+    private fun setBookLinksObserver() {
+        viewModel.getAllBooks().observe(this, Observer {
+            if(it.isNullOrEmpty())
+                viewModel.loadBooksFromJson()
+            else {
+                if(it.size != NUMBER_OF_BOOKS)
+                    viewModel.loadBooksFromJson()
+                else {
+                    setFeaturedPagerAdapter()
+                    onLoadCompleteListener.onLoadComplete()
+                    setPartsObserver()
+                }
             }
         })
     }
@@ -128,8 +144,6 @@ class HomeFragment : BaseFragment(),
                 else setElementsObserver()
             }
         })
-
-        setElementsObserver()
     }
 
     private fun setElementsObserver() {
@@ -137,23 +151,10 @@ class HomeFragment : BaseFragment(),
             if(it.isNullOrEmpty())
                 viewModel.loadElementsFromJson()
             else {
-                if(it.size != NUMBER_OF_ELEMENTS) viewModel.loadElementsFromJson()
-                else setBookLinksObserver()
-            }
-        })
-    }
-
-    private fun setBookLinksObserver() {
-        viewModel.getAllBooks().observe(this, Observer {
-            if(it.isNullOrEmpty())
-                viewModel.loadBooksFromJson()
-            else {
-                if(it.size != NUMBER_OF_BOOKS)
-                    viewModel.loadBooksFromJson()
-                else {
-                    setFeaturedPagerAdapter()
-                    onLoadCompleteListener.onLoadComplete()
-                }
+                if(it.size != NUMBER_OF_ELEMENTS)
+                    viewModel.loadElementsFromJson()
+                else
+                    onSyncCompleteListener.onSyncCompleted()
             }
         })
     }
@@ -164,11 +165,6 @@ class HomeFragment : BaseFragment(),
 
     private fun setFeaturedPagerAdapter() {
         featuredViewPager.adapter = featuredPagerAdapter
-        featuredViewPager.setPageTransformer(false, ZoomOutPageTransformer())
-        featuredViewPager.setOnTouchListener { v, event ->
-            featuredViewPager.parent.requestDisallowInterceptTouchEvent(true)
-            return@setOnTouchListener false
-        }
         featuredViewPager.currentItem = COUNT_DAYS
         dotPagerIndicator.setViewPager(featuredViewPager)
     }
@@ -180,6 +176,7 @@ class HomeFragment : BaseFragment(),
     }
 
     private fun setTagsAdapter() {
+
         tagsRecycler.adapter = tagsAdapter
         tagsAdapter.setTagClickListener(this)
         tagsRecycler.layoutManager = StaggeredGridLayoutManager(TAG_SPAN_COUNT, RecyclerView.HORIZONTAL)
@@ -200,16 +197,18 @@ class HomeFragment : BaseFragment(),
                 CATEGORY_AMENDMENTS ->
                     intent = CategoryListingActivity.newIntent(it, category.name, category.name, AMENDMENTS_START_INDEX, AMENDMENTS_END_INDEX)
             }
-
+            
+            //TODO: apply condition for if data is not yet synced
             startActivity(intent)
-            (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+            (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.no_animation)
         }
     }
 
     override fun onTagClicked(tag: Tag) {
         context?.let {
+            //TODO: apply condition for if data is not yet synced
             startActivity(TagChildrenActivity.newIntent(it, tag))
-            (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+            (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.no_animation)
         }
     }
 
@@ -217,7 +216,15 @@ class HomeFragment : BaseFragment(),
         this.onLoadCompleteListener = onLoadCompleteListener
     }
 
+    fun setOnSyncCompleteListener(onSyncCompleteListener: OnSyncCompleteListener) {
+        this.onSyncCompleteListener = onSyncCompleteListener
+    }
+
     interface OnLoadCompleteListener {
         fun onLoadComplete()
+    }
+
+    interface OnSyncCompleteListener {
+        fun onSyncCompleted()
     }
 }

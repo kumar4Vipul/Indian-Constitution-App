@@ -79,7 +79,6 @@
                     app:cardUseCompatPadding="true"
                     app:cardCornerRadius="5dp"
                     android:layout_marginBottom="5dp"
-                    app:cardBackgroundColor="@color/schedules_color"
                     app:layout_constraintHorizontal_weight="1"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +87,8 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_schedules">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -143,7 +143,8 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_parts">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -198,7 +199,8 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_amendments">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -253,7 +255,8 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_preamble">
 
                         <TextView
                             android:layout_width="match_parent"

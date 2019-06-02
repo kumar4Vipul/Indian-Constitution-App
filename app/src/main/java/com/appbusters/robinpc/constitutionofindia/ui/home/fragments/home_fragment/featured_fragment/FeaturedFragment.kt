@@ -23,6 +23,7 @@ import android.net.Uri
 import android.widget.Toast
 import com.appbusters.robinpc.constitutionofindia.R
 import com.bumptech.glide.Glide
+import es.dmoral.toasty.Toasty
 
 
 class FeaturedFragment : BaseFragment() {
@@ -130,7 +131,7 @@ class FeaturedFragment : BaseFragment() {
 
     private fun openAffiliateLink() {
         context?.let {
-            Toast.makeText(it, getString(R.string.opening_book_link), Toast.LENGTH_SHORT).show()
+            Toasty.normal(it, getString(R.string.opening_book_link), Toast.LENGTH_SHORT).show()
 
             val affiliateUrl = bookLink.affiliateLink
             val intent = Intent(Intent.ACTION_VIEW)
