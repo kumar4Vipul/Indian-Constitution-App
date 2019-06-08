@@ -23,6 +23,7 @@ import android.net.Uri
 import android.widget.Toast
 import com.appbusters.robinpc.constitutionofindia.R
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 import es.dmoral.toasty.Toasty
 
 

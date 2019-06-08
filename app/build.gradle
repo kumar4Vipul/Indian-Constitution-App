@@ -11,8 +11,8 @@ android {
         applicationId "com.appbusters.robinpc.constitutionofindia"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 21
-        versionName "7.0"
+        versionCode 22
+        versionName "10.0"
     }
     buildTypes {
         release {
@@ -54,6 +54,9 @@ dependencies {
 
     //lottie animations
     implementation "com.airbnb.android:lottie:3.0.3"
+
+    //work-manager
+    implementation "android.arch.work:work-runtime:1.0.1"
 
     //glide
     implementation 'com.github.bumptech.glide:glide:4.9.0'

@@ -8,7 +8,7 @@ import com.appbusters.robinpc.constitutionofindia.ui.home.HomeActivity.Companion
 import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.bookmarks_fragment.BookmarkFragment
 import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.HomeFragment
 
-class HomeFragmentsAdapter(fragmentManager: FragmentManager):
+class HomeFragmentAdapter(fragmentManager: FragmentManager):
         FragmentStatePagerAdapter(fragmentManager),
         HomeFragment.OnLoadCompleteListener, HomeFragment.OnSyncCompleteListener {
 
