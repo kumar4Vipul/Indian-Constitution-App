@@ -1,5 +1,6 @@
 package com.appbusters.robinpc.constitutionofindia.ui.intermediate.adapter.holder
 
+import android.text.Html
 import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
@@ -22,7 +23,7 @@ class MiddleHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
     }
 
     private fun setTexts() {
-        itemView.titleTv.text = part.title
+        itemView.titleTv.text = part.title.plus("  (${part.subtitle})")
     }
 
     private fun setClickListeners() {

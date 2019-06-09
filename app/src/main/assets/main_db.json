@@ -4940,7 +4940,7 @@
 			"subtitle": null,
 			"category": "PARTS",
 			"short_description": null,
-			"content": "<b>Fundamental duties </b> <br><br> It shall be the duty of every citizen of India—<br><br> (a) to abide by the Constitution and respect its ideals and institutions, the National Flag and the National Anthem;<br><br> (b) to cherish and follow the noble ideals which inspired our national struggle for freedom;<br><br> (c) to uphold and protect the sovereignty, unity and integrity of India;<br><br> (d) to defend the country and render national service when called upon to do so;<br><br> (e) to promote harmony and the spirit of common brotherhood amongst all the people of India transcending religious, linguistic and regional or sectional diversities; to renounce practices derogatory to the dignity of women;<br><br> (f) to value and preserve the rich heritage of our composite culture;<br><br> (g) to protect and improve the natural environment including forests, lakes, rivers and wild life, and to have compassion for living creatures;<br><br> (h) to develop the scientific temper, humanism and the spirit of inquiry and reform;<br><br> (i) to safeguard public property and to abjure violence;<br><br> (j) to strive towards excellence in all spheres of individual and collective activity so that the nation constantly rises to higher levels of endeavour and achievement.<br><br>",
+			"content": "<b>Fundamental duties </b> <br><br> It shall be the duty of every citizen of India—<br><br> (a) to abide by the Constitution and respect its ideals and institutions, the National Flag and the National Anthem;<br><br> (b) to cherish and follow the noble ideals which inspired our national struggle for freedom;<br><br> (c) to uphold and protect the sovereignty, unity and integrity of India;<br><br> (d) to defend the country and render national service when called upon to do so;<br><br> (e) to promote harmony and the spirit of common brotherhood amongst all the people of India transcending religious, linguistic and regional or sectional diversities; to renounce practices derogatory to the dignity of women;<br><br> (f) to value and preserve the rich heritage of our composite culture;<br><br> (g) to protect and improve the natural environment including forests, lakes, rivers and wild life, and to have compassion for living creatures;<br><br> (h) to develop the scientific temper, humanism and the spirit of inquiry and reform;<br><br> (i) to safeguard public property and to abjure violence;<br><br> (j) to strive towards excellence in all spheres of individual and collective activity so that the nation constantly rises to higher levels of endeavour and achievement.<br><br> (k) who is a parent or guardian to provide opportunities for education to his child or, as the case may be, ward between the age of six and fourteen years.<br><br>",
 			"tags": ["sovereign", "rich", "culture", "integrity", "citizen", "forest" ]
 		},
 		{
@@ -7580,8 +7580,17 @@
 			"content": "<b>Calculation of \"net proceeds\", etc </b> <br><br> (1) In the foregoing provisions of this Chapter, \"net proceeds\" means in relation to any tax or duty the proceeds thereof reduced by the cost of collection, and for the purposes of those provisions the net proceeds of any tax or duty, or of any part of any tax or duty, in or attributable to any area shall be ascertained and certified by the Comptroller and Auditor-General of India, whose certificate shall be final.<br><br> (2) Subject as aforesaid, and to any other express provision of this Chapter, a law made by Parliament or an order of the President may, in any case where under this Part the proceeds of any duty or tax are, or may be, assigned to any State, provide for the manner in which the proceeds are to be calculated, for the time from or at which and the manner in which any payments are to be made, for the making of adjustments between one financial year and another, and for any other incidental or ancillary matters.<br><br>",
 			"tags": ["president", "tax" ]
 		},
+        {
+            "read_element_id": 476,
+            "title": "ARTICLE 279A",
+            "subtitle": null,
+            "category": "PARTS",
+            "short_description": null,
+            "content": "This article provides for <b>constitution of a GST council by president within sixty days</b> from this act coming into force.<br><br>The GST council will constitute the following members:<br><br>Union Finance Minister as chairman of the council<br><br>Union Minister of State in charge of Revenue or Finance<br><br>One nominated member from each state who is in charge of finance or taxation<br><br>The GST council will be empowered to take decisions on the following:<br><br>The taxes, cesses and surcharges levied by the Union, the States and the local bodies which may be subsumed in the goods and services tax;<br><br>The goods and services that may be subjected to, or exempted from, the goods and services tax;<br><br>Model Goods and Services Tax Laws, principles of levy, apportionment of Integrated Goods and Services Tax and the principles that govern the place of supply;<br><br>The threshold limit of turnover below which goods and services may be exempted from goods and services tax;<br><br>The rates including floor rates with bands of goods and services tax;<br><br>Any special rate or rates for a specified period, to raise additional resources during any natural calamity or disaster; Special provision with respect to the States of Arunachal Pradesh, Assam, Jammu and Kashmir, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim, Tripura, Himachal Pradesh and Uttarakhand; and<br><br>Any other matter relating to the goods and services tax, as the Council may decide.<br><br>All decisions taken at the GST council will be taken based on voting. Process of voting is clearly articulated in detail in the constitutional amendment bill;<br><br>",
+            "tags": ["president", "tax", "arunachalpradesh", "assam", "jammuandkashmir", "manipur", "meghalaya", "mizoram", "nagaland", "sikkim", "tripura", "himachalpradesh", "uttarakhand", "election" ]
+        },
 		{
-			"read_element_id": 476,
+			"read_element_id": 477,
 			"title": "ARTICLE 280",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7590,7 +7599,7 @@
 			"tags": ["panchayat", "president", "tax" ]
 		},
 		{
-			"read_element_id": 477,
+			"read_element_id": 478,
 			"title": "ARTICLE 281",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7599,7 +7608,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 478,
+			"read_element_id": 479,
 			"title": "ARTICLE 282",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7608,7 +7617,7 @@
 			"tags": ["legislature" ]
 		},
 		{
-			"read_element_id": 479,
+			"read_element_id": 480,
 			"title": "ARTICLE 283",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7617,7 +7626,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 480,
+			"read_element_id": 481,
 			"title": "ARTICLE 284",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7626,7 +7635,7 @@
 			"tags": ["territory" ]
 		},
 		{
-			"read_element_id": 481,
+			"read_element_id": 482,
 			"title": "ARTICLE 285",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7635,7 +7644,7 @@
 			"tags": ["tax", "parliament" ]
 		},
 		{
-			"read_element_id": 482,
+			"read_element_id": 483,
 			"title": "ARTICLE 286",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7644,7 +7653,7 @@
 			"tags": ["tax", "parliament" ]
 		},
 		{
-			"read_element_id": 483,
+			"read_element_id": 484,
 			"title": "ARTICLE 287",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7653,7 +7662,7 @@
 			"tags": ["tax", "parliament" ]
 		},
 		{
-			"read_element_id": 484,
+			"read_element_id": 485,
 			"title": "ARTICLE 288",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7662,7 +7671,7 @@
 			"tags": ["president", "tax" ]
 		},
 		{
-			"read_element_id": 485,
+			"read_element_id": 486,
 			"title": "ARTICLE 289",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7671,7 +7680,7 @@
 			"tags": ["tax", "parliament" ]
 		},
 		{
-			"read_element_id": 486,
+			"read_element_id": 487,
 			"title": "ARTICLE 290",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7680,7 +7689,7 @@
 			"tags": ["justice", "justice" ]
 		},
 		{
-			"read_element_id": 487,
+			"read_element_id": 488,
 			"title": "ARTICLE 290A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7689,7 +7698,7 @@
 			"tags": ["kerala", "tamilnadu", "territory" ]
 		},
 		{
-			"read_element_id": 488,
+			"read_element_id": 489,
 			"title": "ARTICLE 291",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7698,7 +7707,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 489,
+			"read_element_id": 490,
 			"title": "ARTICLE 292",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7707,7 +7716,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 490,
+			"read_element_id": 491,
 			"title": "ARTICLE 293",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7716,7 +7725,7 @@
 			"tags": ["legislature", "parliament" ]
 		},
 		{
-			"read_element_id": 491,
+			"read_element_id": 492,
 			"title": "ARTICLE 294",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7725,7 +7734,7 @@
 			"tags": ["parliament", "westbengal", "punjab" ]
 		},
 		{
-			"read_element_id": 492,
+			"read_element_id": 493,
 			"title": "ARTICLE 295",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7734,7 +7743,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 493,
+			"read_element_id": 494,
 			"title": "ARTICLE 296",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7743,7 +7752,7 @@
 			"tags": ["territory" ]
 		},
 		{
-			"read_element_id": 494,
+			"read_element_id": 495,
 			"title": "ARTICLE 297",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7752,7 +7761,7 @@
 			"tags": ["territory", "parliament" ]
 		},
 		{
-			"read_element_id": 495,
+			"read_element_id": 496,
 			"title": "ARTICLE 298",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7761,7 +7770,7 @@
 			"tags": ["legislature", "parliament" ]
 		},
 		{
-			"read_element_id": 496,
+			"read_element_id": 497,
 			"title": "ARTICLE 299",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7770,7 +7779,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 497,
+			"read_element_id": 498,
 			"title": "ARTICLE 300",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7779,7 +7788,7 @@
 			"tags": ["parliament", "legislature" ]
 		},
 		{
-			"read_element_id": 498,
+			"read_element_id": 499,
 			"title": "ARTICLE 300A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7788,7 +7797,7 @@
 			"tags": ["fundamentalright" ]
 		},
 		{
-			"read_element_id": 499,
+			"read_element_id": 500,
 			"title": "ARTICLE 301",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7797,7 +7806,7 @@
 			"tags": ["territory" ]
 		},
 		{
-			"read_element_id": 500,
+			"read_element_id": 501,
 			"title": "ARTICLE 302",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7806,7 +7815,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 501,
+			"read_element_id": 502,
 			"title": "ARTICLE 303",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7815,7 +7824,7 @@
 			"tags": ["discrimination", "legislature", "territory" ]
 		},
 		{
-			"read_element_id": 502,
+			"read_element_id": 503,
 			"title": "ARTICLE 304",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7824,7 +7833,7 @@
 			"tags": ["president", "tax", "legislature" ]
 		},
 		{
-			"read_element_id": 503,
+			"read_element_id": 504,
 			"title": "ARTICLE 305",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7833,7 +7842,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 504,
+			"read_element_id": 505,
 			"title": "ARTICLE 306",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7842,7 +7851,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 505,
+			"read_element_id": 506,
 			"title": "ARTICLE 307",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7851,7 +7860,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 506,
+			"read_element_id": 507,
 			"title": "ARTICLE 308",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7860,7 +7869,7 @@
 			"tags": ["jammuandkashmir" ]
 		},
 		{
-			"read_element_id": 507,
+			"read_element_id": 508,
 			"title": "ARTICLE 309",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7869,7 +7878,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 508,
+			"read_element_id": 509,
 			"title": "ARTICLE 310",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7878,7 +7887,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 509,
+			"read_element_id": 510,
 			"title": "ARTICLE 311",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7887,7 +7896,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 510,
+			"read_element_id": 511,
 			"title": "ARTICLE 312",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7896,7 +7905,7 @@
 			"tags": ["parliament", "judiciary", "election" ]
 		},
 		{
-			"read_element_id": 511,
+			"read_element_id": 512,
 			"title": "ARTICLE 312A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7905,7 +7914,7 @@
 			"tags": ["supremecourt", "highcourt", "justice", "election" ]
 		},
 		{
-			"read_element_id": 512,
+			"read_element_id": 513,
 			"title": "ARTICLE 313",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7914,7 +7923,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 513,
+			"read_element_id": 514,
 			"title": "ARTICLE 314",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7923,7 +7932,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 514,
+			"read_element_id": 515,
 			"title": "ARTICLE 315",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7932,7 +7941,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 515,
+			"read_element_id": 516,
 			"title": "ARTICLE 316",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7941,7 +7950,7 @@
 			"tags": ["resign", "president" ]
 		},
 		{
-			"read_element_id": 516,
+			"read_element_id": 517,
 			"title": "ARTICLE 317",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7950,7 +7959,7 @@
 			"tags": ["supremecourt", "president" ]
 		},
 		{
-			"read_element_id": 517,
+			"read_element_id": 518,
 			"title": "ARTICLE 318",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7959,7 +7968,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 518,
+			"read_element_id": 519,
 			"title": "ARTICLE 319",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7968,7 +7977,7 @@
 			"tags": ["parliament" ]
 		},
 		{
-			"read_element_id": 519,
+			"read_element_id": 520,
 			"title": "ARTICLE 320",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7977,7 +7986,7 @@
 			"tags": ["president", "legislature" ]
 		},
 		{
-			"read_element_id": 520,
+			"read_element_id": 521,
 			"title": "ARTICLE 321",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7986,7 +7995,7 @@
 			"tags": ["parliament", "legislature" ]
 		},
 		{
-			"read_element_id": 521,
+			"read_element_id": 522,
 			"title": "ARTICLE 322",
 			"subtitle": null,
 			"category": "PARTS",
@@ -7995,7 +8004,7 @@
 			"tags": ["moneybill" ]
 		},
 		{
-			"read_element_id": 522,
+			"read_element_id": 523,
 			"title": "ARTICLE 323",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8004,7 +8013,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 523,
+			"read_element_id": 524,
 			"title": "ARTICLE 323A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8013,7 +8022,7 @@
 			"tags": ["supremecourt", "president", "parliament" ]
 		},
 		{
-			"read_element_id": 524,
+			"read_element_id": 525,
 			"title": "ARTICLE 323B",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8022,7 +8031,7 @@
 			"tags": ["supremecourt", "president", "election", "tax", "legislature" ]
 		},
 		{
-			"read_element_id": 525,
+			"read_element_id": 526,
 			"title": "ARTICLE 324",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8031,7 +8040,7 @@
 			"tags": ["supremecourt", "president", "election", "legislature", "parliament" ]
 		},
 		{
-			"read_element_id": 526,
+			"read_element_id": 527,
 			"title": "ARTICLE 325",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8040,7 +8049,7 @@
 			"tags": ["election", "religion", "parliament", "legislature" ]
 		},
 		{
-			"read_element_id": 527,
+			"read_element_id": 528,
 			"title": "ARTICLE 326",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8049,7 +8058,7 @@
 			"tags": ["election", "legislature", "citizen" ]
 		},
 		{
-			"read_element_id": 528,
+			"read_element_id": 529,
 			"title": "ARTICLE 327",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8058,7 +8067,7 @@
 			"tags": ["election", "parliament", "legislature" ]
 		},
 		{
-			"read_element_id": 529,
+			"read_element_id": 530,
 			"title": "ARTICLE 328",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8067,7 +8076,7 @@
 			"tags": ["election", "legislature" ]
 		},
 		{
-			"read_element_id": 530,
+			"read_element_id": 531,
 			"title": "ARTICLE 329",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8076,7 +8085,7 @@
 			"tags": ["election", "parliament", "legislature" ]
 		},
 		{
-			"read_element_id": 531,
+			"read_element_id": 532,
 			"title": "ARTICLE 329A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8085,7 +8094,7 @@
 			"tags": ["repealed", "primeminister", "election", "parliament" ]
 		},
 		{
-			"read_element_id": 532,
+			"read_element_id": 533,
 			"title": "ARTICLE 330",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8094,7 +8103,7 @@
 			"tags": ["reservation", "scheduledtribes", "scheduledcastes", "assam", "territory" ]
 		},
 		{
-			"read_element_id": 533,
+			"read_element_id": 534,
 			"title": "ARTICLE 331",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8103,7 +8112,7 @@
 			"tags": ["president", "angloindian" ]
 		},
 		{
-			"read_element_id": 534,
+			"read_element_id": 535,
 			"title": "ARTICLE 332",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8112,7 +8121,7 @@
 			"tags": ["election", "scheduledcastes", "scheduledtribes", "legislature", "assam", "arunachalpradesh", "meghalaya", "mizoram", "nagaland" ]
 		},
 		{
-			"read_element_id": 535,
+			"read_element_id": 536,
 			"title": "ARTICLE 333",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8121,7 +8130,7 @@
 			"tags": ["legislature", "angloindian" ]
 		},
 		{
-			"read_element_id": 536,
+			"read_element_id": 537,
 			"title": "ARTICLE 334",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8130,7 +8139,7 @@
 			"tags": ["scheduledcastes", "scheduledtribes" ]
 		},
 		{
-			"read_element_id": 537,
+			"read_element_id": 538,
 			"title": "ARTICLE 335",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8139,7 +8148,7 @@
 			"tags": ["scheduledcastes", "scheduledtribes" ]
 		},
 		{
-			"read_element_id": 538,
+			"read_element_id": 539,
 			"title": "ARTICLE 336",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8148,7 +8157,7 @@
 			"tags": ["reservation", "angloindian" ]
 		},
 		{
-			"read_element_id": 539,
+			"read_element_id": 540,
 			"title": "ARTICLE 337",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8157,7 +8166,7 @@
 			"tags": ["education" ]
 		},
 		{
-			"read_element_id": 540,
+			"read_element_id": 541,
 			"title": "ARTICLE 338",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8166,7 +8175,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 541,
+			"read_element_id": 542,
 			"title": "ARTICLE 338A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8175,7 +8184,7 @@
 			"tags": ["president", "scheduledtribes" ]
 		},
 		{
-			"read_element_id": 542,
+			"read_element_id": 543,
 			"title": "ARTICLE 339",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8184,7 +8193,7 @@
 			"tags": ["president", "scheduledtribes" ]
 		},
 		{
-			"read_element_id": 543,
+			"read_element_id": 544,
 			"title": "ARTICLE 340",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8193,7 +8202,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 544,
+			"read_element_id": 545,
 			"title": "ARTICLE 341",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8202,7 +8211,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 545,
+			"read_element_id": 546,
 			"title": "ARTICLE 342",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8211,7 +8220,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 546,
+			"read_element_id": 547,
 			"title": "ARTICLE 343",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8220,7 +8229,7 @@
 			"tags": ["president", "language" ]
 		},
 		{
-			"read_element_id": 547,
+			"read_element_id": 548,
 			"title": "ARTICLE 344",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8229,7 +8238,7 @@
 			"tags": ["president", "parliament", "language" ]
 		},
 		{
-			"read_element_id": 548,
+			"read_element_id": 549,
 			"title": "ARTICLE 345",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8238,7 +8247,7 @@
 			"tags": ["language", "legislature" ]
 		},
 		{
-			"read_element_id": 549,
+			"read_element_id": 550,
 			"title": "ARTICLE 346",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8247,7 +8256,7 @@
 			"tags": ["language" ]
 		},
 		{
-			"read_element_id": 550,
+			"read_element_id": 551,
 			"title": "ARTICLE 347",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8256,7 +8265,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 551,
+			"read_element_id": 552,
 			"title": "ARTICLE 348",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8265,7 +8274,7 @@
 			"tags": ["supremecourt", "highcourt", "president" ]
 		},
 		{
-			"read_element_id": 552,
+			"read_element_id": 553,
 			"title": "ARTICLE 349",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8274,7 +8283,7 @@
 			"tags": ["president", "language" ]
 		},
 		{
-			"read_element_id": 553,
+			"read_element_id": 554,
 			"title": "ARTICLE 350",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8283,7 +8292,7 @@
 			"tags": ["emergency", "language" ]
 		},
 		{
-			"read_element_id": 554,
+			"read_element_id": 555,
 			"title": "ARTICLE 350A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8292,7 +8301,7 @@
 			"tags": ["president", "culture" ]
 		},
 		{
-			"read_element_id": 555,
+			"read_element_id": 556,
 			"title": "ARTICLE 350B",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8301,7 +8310,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 556,
+			"read_element_id": 557,
 			"title": "ARTICLE 351",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8310,7 +8319,7 @@
 			"tags": ["culture", "language" ]
 		},
 		{
-			"read_element_id": 557,
+			"read_element_id": 558,
 			"title": "ARTICLE 352",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8319,7 +8328,7 @@
 			"tags": ["primeminister", "president", "emergency" ]
 		},
 		{
-			"read_element_id": 558,
+			"read_element_id": 559,
 			"title": "ARTICLE 353",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8328,7 +8337,7 @@
 			"tags": ["emergency" ]
 		},
 		{
-			"read_element_id": 559,
+			"read_element_id": 560,
 			"title": "ARTICLE 354",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8337,7 +8346,7 @@
 			"tags": ["president", "emergency" ]
 		},
 		{
-			"read_element_id": 560,
+			"read_element_id": 561,
 			"title": "ARTICLE 355",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8346,7 +8355,7 @@
 			"tags": ["protection" ]
 		},
 		{
-			"read_element_id": 561,
+			"read_element_id": 562,
 			"title": "ARTICLE 356",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8355,7 +8364,7 @@
 			"tags": ["highcourt", "president", "election", "emergency" ]
 		},
 		{
-			"read_element_id": 562,
+			"read_element_id": 563,
 			"title": "ARTICLE 357",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8364,7 +8373,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 563,
+			"read_element_id": 564,
 			"title": "ARTICLE 358",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8373,7 +8382,7 @@
 			"tags": ["emergency" ]
 		},
 		{
-			"read_element_id": 564,
+			"read_element_id": 565,
 			"title": "ARTICLE 359",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8382,7 +8391,7 @@
 			"tags": ["president", "emergency" ]
 		},
 		{
-			"read_element_id": 565,
+			"read_element_id": 566,
 			"title": "ARTICLE 359A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8391,7 +8400,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 566,
+			"read_element_id": 567,
 			"title": "ARTICLE 360",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8400,7 +8409,7 @@
 			"tags": ["moneybill", "supremecourt", "highcourt", "president", "emergency" ]
 		},
 		{
-			"read_element_id": 567,
+			"read_element_id": 568,
 			"title": "ARTICLE 361",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8409,7 +8418,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 568,
+			"read_element_id": 569,
 			"title": "ARTICLE 361A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8418,7 +8427,7 @@
 			"tags": ["parliament", "legislature" ]
 		},
 		{
-			"read_element_id": 569,
+			"read_element_id": 570,
 			"title": "ARTICLE 361B",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8427,7 +8436,7 @@
 			"tags": ["election" ]
 		},
 		{
-			"read_element_id": 570,
+			"read_element_id": 571,
 			"title": "ARTICLE 362",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8436,7 +8445,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 571,
+			"read_element_id": 572,
 			"title": "ARTICLE 363",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8445,7 +8454,7 @@
 			"tags": ["supremecourt" ]
 		},
 		{
-			"read_element_id": 572,
+			"read_element_id": 573,
 			"title": "ARTICLE 363A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8454,7 +8463,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 573,
+			"read_element_id": 574,
 			"title": "ARTICLE 364",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8463,7 +8472,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 574,
+			"read_element_id": 575,
 			"title": "ARTICLE 365",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8472,7 +8481,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 575,
+			"read_element_id": 576,
 			"title": "ARTICLE 366",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8481,7 +8490,7 @@
 			"tags": ["highcourt", "president", "tax", "emergency" ]
 		},
 		{
-			"read_element_id": 576,
+			"read_element_id": 577,
 			"title": "ARTICLE 367",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8490,7 +8499,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 577,
+			"read_element_id": 578,
 			"title": "ARTICLE 368",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8499,7 +8508,7 @@
 			"tags": ["supremecourt", "president" ]
 		},
 		{
-			"read_element_id": 578,
+			"read_element_id": 579,
 			"title": "ARTICLE 369",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8508,7 +8517,7 @@
 			"tags": ["supremecourt" ]
 		},
 		{
-			"read_element_id": 579,
+			"read_element_id": 580,
 			"title": "ARTICLE 370",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8517,7 +8526,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 580,
+			"read_element_id": 581,
 			"title": "ARTICLE 371",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8526,7 +8535,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 581,
+			"read_element_id": 582,
 			"title": "ARTICLE 371A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8535,7 +8544,7 @@
 			"tags": ["peace", "justice", "president", "election" ]
 		},
 		{
-			"read_element_id": 582,
+			"read_element_id": 583,
 			"title": "ARTICLE 371B",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8544,7 +8553,7 @@
 			"tags": ["assam", "legislature" ]
 		},
 		{
-			"read_element_id": 583,
+			"read_element_id": 584,
 			"title": "ARTICLE 371C",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8553,7 +8562,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 584,
+			"read_element_id": 585,
 			"title": "ARTICLE 371D",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8562,7 +8571,7 @@
 			"tags": ["supremecourt", "highcourt", "president" ]
 		},
 		{
-			"read_element_id": 585,
+			"read_element_id": 586,
 			"title": "ARTICLE 371E",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8571,7 +8580,7 @@
 			"tags": ["andhrapradesh", "parliament" ]
 		},
 		{
-			"read_element_id": 586,
+			"read_element_id": 587,
 			"title": "ARTICLE 371F",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8580,7 +8589,7 @@
 			"tags": ["peace", "supremecourt", "highcourt", "president", "election", "parliament", "sikkim", "territory", "judiciary", "legislature" ]
 		},
 		{
-			"read_element_id": 587,
+			"read_element_id": 588,
 			"title": "ARTICLE 371G",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8589,7 +8598,7 @@
 			"tags": ["justice", "mizoram", "religion" ]
 		},
 		{
-			"read_element_id": 588,
+			"read_element_id": 589,
 			"title": "ARTICLE 371H",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8598,7 +8607,7 @@
 			"tags": ["president", "arunachalpradesh"  ]
 		},
 		{
-			"read_element_id": 589,
+			"read_element_id": 590,
 			"title": "ARTICLE 371I",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8607,7 +8616,7 @@
 			"tags": ["goa" ]
 		},
 		{
-			"read_element_id": 590,
+			"read_element_id": 591,
 			"title": "ARTICLE 371J",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8616,7 +8625,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 591,
+			"read_element_id": 592,
 			"title": "ARTICLE 372",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8625,7 +8634,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 592,
+			"read_element_id": 593,
 			"title": "ARTICLE 372A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8634,7 +8643,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 593,
+			"read_element_id": 594,
 			"title": "ARTICLE 373",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8643,7 +8652,7 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 594,
+			"read_element_id": 595,
 			"title": "ARTICLE 374",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8652,7 +8661,7 @@
 			"tags": ["supremecourt" ]
 		},
 		{
-			"read_element_id": 595,
+			"read_element_id": 596,
 			"title": "ARTICLE 375",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8661,7 +8670,7 @@
 			"tags": ["judiciary" ]
 		},
 		{
-			"read_element_id": 596,
+			"read_element_id": 597,
 			"title": "ARTICLE 376",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8670,7 +8679,7 @@
 			"tags": ["highcourt", "justice", "president" ]
 		},
 		{
-			"read_element_id": 597,
+			"read_element_id": 598,
 			"title": "ARTICLE 377",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8679,7 +8688,7 @@
 			"tags": []
 		},
 		{
-			"read_element_id": 598,
+			"read_element_id": 599,
 			"title": "ARTICLE 378",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8688,7 +8697,7 @@
 			"tags": []
 		},
 		{
-			"read_element_id": 599,
+			"read_element_id": 600,
 			"title": "ARTICLE 378A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8697,7 +8706,7 @@
 			"tags": ["andhrapradesh" ]
 		},
 		{
-			"read_element_id": 600,
+			"read_element_id": 601,
 			"title": "ARTICLE 379 to 391",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8706,7 +8715,7 @@
 			"tags": ["repealed" ]
 		},
 		{
-			"read_element_id": 601,
+			"read_element_id": 602,
 			"title": "ARTICLE 392",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8715,7 +8724,7 @@
 			"tags": ["president", "parliament" ]
 		},
 		{
-			"read_element_id": 602,
+			"read_element_id": 603,
 			"title": "ARTICLE 393",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8724,7 +8733,7 @@
 			"tags": []
 		},
 		{
-			"read_element_id": 603,
+			"read_element_id": 604,
 			"title": "ARTICLE 394",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8733,7 +8742,7 @@
 			"tags": []
 		},
 		{
-			"read_element_id": 604,
+			"read_element_id": 605,
 			"title": "ARTICLE 394A",
 			"subtitle": null,
 			"category": "PARTS",
@@ -8742,22 +8751,13 @@
 			"tags": ["president" ]
 		},
 		{
-			"read_element_id": 605,
+			"read_element_id": 606,
 			"title": "ARTICLE 395",
 			"subtitle": null,
 			"category": "PARTS",
 			"short_description": null,
 			"content": "<b>Repeals</b> <br><br> The Indian Independence Act, 1947, and the Government of India Act, 1935, together with all enactments amending or supplementing the latter Act, but not including the Abolition of Privy Council Jurisdiction Act, 1949, are hereby repealed.",
 			"tags": ["independence" ]
-		},
-		{
-			"read_element_id": 606,
-			"title": null,
-			"subtitle": null,
-			"category": null,
-			"short_description": null,
-			"content": null,
-			"tags": null
 		},
 		{
 			"read_element_id": 607,
@@ -8779,6 +8779,15 @@
 		},
 		{
 			"read_element_id": 609,
+			"title": null,
+			"subtitle": null,
+			"category": null,
+			"short_description": null,
+			"content": null,
+			"tags": null
+		},
+		{
+			"read_element_id": 610,
 			"title": null,
 			"subtitle": null,
 			"category": null,
@@ -8891,42 +8900,42 @@
 			"subtitle": "Articles 264 to 300A",
 			"short_description": "Finance, Property, Contracts and Suits",
 			"start_index": 459,
-			"end_index": 498
+			"end_index": 499
 		},
 		{
 			"title": "PART 13",
 			"subtitle": "Articles 301 to 307",
 			"short_description": "Trade, Commerce and Intercourse within The Territory Of India",
-			"start_index": 499,
-			"end_index": 505
+			"start_index": 500,
+			"end_index": 506
 		},
 		{
 			"title": "PART 14",
 			"subtitle": "Articles 308 to 323",
 			"short_description": "Services Under The Union And The Status",
-			"start_index": 506,
-			"end_index": 522
+			"start_index": 507,
+			"end_index": 523
 		},
 		{
 			"title": "PART 14A",
 			"subtitle": "Articles 323A to 323B",
 			"short_description": "Tribunals",
-			"start_index": 523,
-			"end_index": 524
+			"start_index": 524,
+			"end_index": 525
 		},
 		{
 			"title": "PART 15",
 			"subtitle": "Articles 324 to 329A",
 			"short_description": "Elections",
-			"start_index": 525,
-			"end_index": 531
+			"start_index": 526,
+			"end_index": 532
 		},
 		{
 			"title": "PART 16",
 			"subtitle": "Articles 330 to 342",
 			"short_description": "Special Provisions Relating To Certain Classes",
-			"start_index": 532,
-			"end_index": 545
+			"start_index": 533,
+			"end_index": 546
 		},
 		{
 			"title": "PART 17",
@@ -8939,36 +8948,36 @@
 			"title": "PART 18",
 			"subtitle": "Articles 352 to 360",
 			"short_description": "Emergency Provisions",
-			"start_index": 557,
-			"end_index": 566
+			"start_index": 558,
+			"end_index": 567
 		},
 		{
 			"title": "PART 19",
 			"subtitle": "Articles 361 to 367",
 			"short_description": "Miscellaneous",
-			"start_index": 567,
-			"end_index": 576
+			"start_index": 568,
+			"end_index": 577
 		},
 		{
 			"title": "PART 20",
 			"subtitle": "Article 368",
 			"short_description": "Amendment Of The Constitution",
-			"start_index": 577,
-			"end_index": 577
+			"start_index": 578,
+			"end_index": 578
 		},
 		{
 			"title": "PART 21",
 			"subtitle": "Articles 369 to 392",
 			"short_description": "Temporary, Transitional and Special Provisions",
-			"start_index": 578,
-			"end_index": 601
+			"start_index": 579,
+			"end_index": 602
 		},
 		{
 			"title": "PART 22",
 			"subtitle": "Articles 393 to 395",
 			"short_description": "Short Title, Commencement, Authoritative Text In Hindi And Repeals",
-			"start_index": 602,
-			"end_index": 605
+			"start_index": 603,
+			"end_index": 606
 		}
 	],
 	"tags": [
@@ -8978,7 +8987,7 @@
 			"search_term": "justice",
 			"category": "",
 			"read_element_ids": [
-				0, 2, 3, 6, 7, 13, 19, 25, 27, 40, 54, 55, 56, 65, 66, 85, 86, 87, 111, 164, 166, 175, 190, 254, 255, 257, 259, 260, 261, 263, 275, 278, 283, 296, 353, 354, 360, 361, 362, 363, 369, 394, 410, 444, 446, 480, 505, 575, 581, 590
+				0, 2, 3, 6, 7, 13, 19, 25, 27, 40, 54, 55, 56, 65, 66, 85, 86, 87, 111, 164, 166, 175, 190, 254, 255, 257, 259, 260, 261, 263, 275, 278, 283, 296, 353, 354, 360, 361, 362, 363, 369, 394, 410, 444, 446, 481, 506, 576, 582, 591
 			]
 		},
 		{
@@ -9050,7 +9059,7 @@
 			"search_term": "president",
 			"category": "",
 			"read_element_ids": [
-				2, 5, 6, 7, 9, 13, 15, 16, 17, 19, 22, 23, 24, 25, 26, 27, 34, 36, 37, 38, 39, 44, 47, 48, 49, 50, 51, 52, 54, 56, 60, 61, 64, 67, 70, 71, 75, 77, 78, 80, 81, 82, 85, 86, 88, 92, 101, 103, 109, 110, 111, 113, 123, 138, 153, 155, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 204, 205, 206, 207, 208, 209, 210, 212, 215, 216, 217, 219, 221, 222, 225, 228, 229, 231, 233, 238, 240, 241, 242, 243, 245, 247, 248, 251, 253, 254, 259, 260, 261, 263, 278, 279, 282, 283, 285, 287, 288, 292, 293, 295, 297, 301, 307, 327, 337, 338, 350, 353, 354, 359, 360, 361, 362, 370, 371, 379, 381, 382, 383, 384, 399, 415, 416, 427, 441, 442, 446, 452, 456, 459, 460, 464, 465, 469, 470, 471, 473, 478, 490, 496, 497, 501, 502, 503, 508, 509, 510, 511, 513, 516, 517, 518, 519, 527, 534, 535, 536, 537, 538, 538, 540, 541, 544, 545, 546, 548, 549, 551, 553, 555, 556, 558, 560, 561, 566, 567, 568, 569, 570, 571, 573, 574, 575, 576, 577, 578, 580, 582, 584, 585, 586, 587, 590
+				2, 5, 6, 7, 9, 13, 15, 16, 17, 19, 22, 23, 24, 25, 26, 27, 34, 36, 37, 38, 39, 44, 47, 48, 49, 50, 51, 52, 54, 56, 60, 61, 64, 67, 70, 71, 75, 77, 78, 80, 81, 82, 85, 86, 88, 92, 101, 103, 109, 110, 111, 113, 123, 138, 153, 155, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 204, 205, 206, 207, 208, 209, 210, 212, 215, 216, 217, 219, 221, 222, 225, 228, 229, 231, 233, 238, 240, 241, 242, 243, 245, 247, 248, 251, 253, 254, 259, 260, 261, 263, 278, 279, 282, 283, 285, 287, 288, 292, 293, 295, 297, 301, 307, 327, 337, 338, 350, 353, 354, 359, 360, 361, 362, 370, 371, 379, 381, 382, 383, 384, 399, 415, 416, 427, 441, 442, 446, 452, 456, 459, 460, 464, 465, 469, 470, 471, 473, 476, 479, 491, 497, 498, 502, 503, 504, 509, 510, 511, 512, 514, 517, 518, 519, 520, 528, 535, 536, 537, 538, 539, 541, 542, 545, 546, 547, 549, 550, 552, 554, 556, 557, 559, 561, 562, 567, 568, 569, 570, 571, 572, 574, 575, 576, 577, 578, 579, 581, 583, 585, 586, 587, 588, 591
 
 			]
 		},
@@ -9060,7 +9069,7 @@
 			"search_term": "election",
 			"category": "",
 			"read_element_ids": [
-				3, 6, 7, 10, 13, 19, 23, 25, 28, 31, 40, 43, 47, 48, 51, 54, 56, 64, 67, 68, 73, 76, 79, 80, 81, 82, 85, 86, 102, 103, 109, 111, 184, 185, 187, 188, 192, 196, 198, 201, 205, 211, 212, 214, 217, 233, 257, 301, 307, 308, 310, 313, 329, 381, 390, 391, 392, 393, 398, 402, 405, 407, 408, 409, 414, 420, 418, 419, 420, 424, 425, 505, 518, 519, 520, 521, 522, 523, 524, 525, 528, 555, 563, 575, 580
+				3, 6, 7, 10, 13, 19, 23, 25, 28, 31, 40, 43, 47, 48, 51, 54, 56, 64, 67, 68, 73, 76, 79, 80, 81, 82, 85, 86, 102, 103, 109, 111, 184, 185, 187, 188, 192, 196, 198, 201, 205, 211, 212, 214, 217, 233, 257, 301, 307, 308, 310, 313, 329, 381, 390, 391, 392, 393, 398, 402, 405, 407, 408, 409, 414, 420, 418, 419, 420, 424, 425, 476, 506, 519, 520, 521, 522, 523, 524, 525, 526, 529, 556, 564, 576, 581
 			]
 		},
 		{
@@ -9069,7 +9078,7 @@
 			"search_term": "tax",
 			"category": "",
 			"read_element_ids": [
-				6, 7, 9, 18, 22, 29, 34, 54, 58, 72, 85, 86, 92, 100, 104, 113, 148, 240, 247, 336, 344, 395, 396, 411, 412, 430, 433, 435, 454, 455, 458, 459, 460, 461, 462, 464, 466, 467, 469, 470, 475, 476, 477, 478, 479, 496, 518, 569
+				6, 7, 9, 18, 22, 29, 34, 54, 58, 72, 85, 86, 92, 100, 104, 113, 148, 240, 247, 336, 344, 395, 396, 411, 412, 430, 433, 435, 454, 455, 458, 459, 460, 461, 462, 464, 466, 467, 469, 470, 475, 476, 477, 478, 479, 480, 497, 519, 570
 			]
 		},
 		{
@@ -9078,7 +9087,7 @@
 			"search_term": "emergency",
 			"category": "",
 			"read_element_ids": [
-				6, 9, 16, 50, 51, 54, 56, 71, 75, 76, 79, 80, 213, 309, 437, 551, 552, 553, 555, 557, 558, 560, 569
+				6, 9, 16, 50, 51, 54, 56, 71, 75, 76, 79, 80, 213, 309, 437, 552, 553, 554, 556, 558, 559, 561, 570
 			]
 		},
 		{
@@ -9087,7 +9096,7 @@
 			"search_term": "culture",
 			"category": "",
 			"read_element_ids": [
-				6, 7, 11, 29, 54, 85, 150, 153, 177, 181, 550
+				6, 7, 11, 29, 54, 85, 150, 153, 177, 181, 551
 			]
 		},
 				{
@@ -9105,7 +9114,7 @@
 			"search_term": "discriminat",
 			"category": "",
 			"read_element_ids": [
-				13, 135, 136, 144, 151, 495
+				13, 135, 136, 144, 151, 496
 			]
 		},
 		{
@@ -9114,7 +9123,7 @@
 			"search_term": "unconstitutional",
 			"category": "",
 			"read_element_ids": [
-				44, 51, 578
+				44, 51, 579
 			]
 		},
 				{
@@ -9132,7 +9141,7 @@
 			"search_term": "religio",
 			"category": "",
 			"read_element_ids": [
-				7, 9, 25, 29, 54, 65, 135, 136, 144, 146, 147, 148, 149, 150, 151, 181, 520, 575, 581
+				7, 9, 25, 29, 54, 65, 135, 136, 144, 146, 147, 148, 149, 150, 151, 181, 521, 576, 582
 			]
 		},
 		{
@@ -9141,7 +9150,7 @@
 			"search_term": "rich",
 			"category": "",
 			"read_element_ids": [
-				54, 181, 550
+				54, 181, 551
 			]
 		},
 		{
@@ -9159,7 +9168,7 @@
 			"search_term": "governor",
 			"category": "",
 			"read_element_ids": [
-				2, 5, 6, 7, 13, 19, 25, 27, 35, 39, 48, 50, 54, 56, 58, 67, 76, 77, 81, 85, 86, 101, 110, 188, 196, 202, 242, 288, 290, 291, 292, 293, 294, 295, 296, 297, 298, 300, 301, 302, 303, 304, 305, 308, 311, 312, 313, 317, 321, 324, 325, 329, 336, 337, 338, 339, 340, 342, 344, 345, 350, 354, 356, 366, 369, 370, 371, 373, 374, 377, 379, 381, 382, 387, 396, 398, 399, 403, 404, 412, 415, 417, 418, 442, 447, 456, 473, 485, 490, 501, 502, 503, 508, 509, 510, 511, 513, 516, 519, 529, 534, 535, 538, 538, 545, 555, 561, 570, 573, 574, 575, 577, 580, 582, 584, 585
+				2, 5, 6, 7, 13, 19, 25, 27, 35, 39, 48, 50, 54, 56, 58, 67, 76, 77, 81, 85, 86, 101, 110, 188, 196, 202, 242, 288, 290, 291, 292, 293, 294, 295, 296, 297, 298, 300, 301, 302, 303, 304, 305, 308, 311, 312, 313, 317, 321, 324, 325, 329, 336, 337, 338, 339, 340, 342, 344, 345, 350, 354, 356, 366, 369, 370, 371, 373, 374, 377, 379, 381, 382, 387, 396, 398, 399, 403, 404, 412, 415, 417, 418, 442, 447, 456, 473, 486, 491, 502, 503, 504, 509, 510, 511, 512, 514, 517, 520, 530, 535, 536, 539, 546, 556, 562, 571, 574, 575, 576, 578, 581, 583, 585, 586
 			]
 		},
 		{
@@ -9177,7 +9186,7 @@
 			"search_term": "parliament",
 			"category": "",
 			"read_element_ids": [
-				3, 5, 6, 7, 10, 13, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 121, 123, 124, 130, 131, 132, 136, 143, 157, 159, 160, 161, 178, 183, 184, 185, 189, 191, 195, 196, 200, 201, 203, 205, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 257, 258, 267, 268, 270, 272, 273, 274, 276, 278, 282, 283, 285, 286, 288, 291, 295, 299, 306, 307, 308, 309, 310, 328, 330, 350, 358, 359, 370, 371, 379, 380, 381, 384, 385, 400, 416, 426, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 446, 450, 451, 456, 458, 459, 461, 464, 465, 466, 467, 469, 470, 471, 472, 473, 475, 476, 477, 478, 479, 483, 484, 488, 489, 491, 494, 495, 497, 499, 504, 505, 508, 513, 514, 516, 517, 518, 519, 520, 522, 523, 524, 525, 534, 535, 537, 538, 538, 540, 541, 545, 546, 549, 551, 552, 553, 555, 556, 558, 560, 561, 562, 567, 569, 570, 571, 572, 573, 575, 579, 580, 581, 587, 588
+				3, 5, 6, 7, 10, 13, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 121, 123, 124, 130, 131, 132, 136, 143, 157, 159, 160, 161, 178, 183, 184, 185, 189, 191, 195, 196, 200, 201, 203, 205, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 257, 258, 267, 268, 270, 272, 273, 274, 276, 278, 282, 283, 285, 286, 288, 291, 295, 299, 306, 307, 308, 309, 310, 328, 330, 350, 358, 359, 370, 371, 379, 380, 381, 384, 385, 400, 416, 426, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 446, 450, 451, 456, 458, 459, 461, 464, 465, 466, 467, 469, 470, 471, 472, 473, 475, 477, 478, 479, 480, 484, 485, 489, 490, 492, 495, 496, 498, 500, 505, 506, 509, 514, 515, 517, 518, 519, 520, 521, 523, 524, 525, 526, 535, 536, 538, 539, 541, 542, 546, 547, 550, 552, 553, 554, 556, 557, 559, 561, 562, 563, 568, 570, 571, 572, 573, 574, 576, 580, 581, 582, 588, 589
 			]
 		},
 		{
@@ -9186,7 +9195,7 @@
 			"search_term": "legisla",
 			"category": "",
 			"read_element_ids": [
-				2, 3, 5, 6, 7, 10, 13, 15, 16, 17, 19, 20, 22, 23, 25, 26, 28, 31, 34, 35, 37, 39, 40, 43, 44, 45, 47, 48, 49, 50, 51, 52, 54, 56, 57, 58, 59, 60, 61, 63, 64, 65, 67, 68, 69, 71, 72, 73, 74, 76, 77, 78, 79, 80, 81, 82, 84, 85, 86, 87, 88, 90, 91, 95, 96, 101, 102, 103, 109, 110, 113, 123, 124, 132, 133, 153, 154, 155, 161, 166, 170, 171, 184, 185, 189, 196, 203, 208, 210, 231, 248, 288, 291, 295, 299, 301, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 318, 319, 320, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 363, 369, 370, 371, 380, 381, 383, 384, 385, 388, 390, 391, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 405, 406, 407, 409, 410, 411, 412, 413, 414, 415, 417, 418, 419, 420, 416, 417, 418, 419, 420, 421, 422, 423, 425, 426, 427, 428, 430, 431, 432, 433, 435, 436, 437, 438, 439, 440, 441, 442, 446, 449, 456, 466, 472, 473, 478, 484, 489, 491, 495, 496, 497, 501, 505, 508, 513, 514, 516, 518, 519, 520, 521, 522, 523, 524, 528, 529, 530, 534, 535, 542, 545, 555, 556, 560, 562, 567, 569, 570, 571, 573, 574, 575, 576, 577, 578, 580, 581, 582, 583, 584, 585, 586
+				2, 3, 5, 6, 7, 10, 13, 15, 16, 17, 19, 20, 22, 23, 25, 26, 28, 31, 34, 35, 37, 39, 40, 43, 44, 45, 47, 48, 49, 50, 51, 52, 54, 56, 57, 58, 59, 60, 61, 63, 64, 65, 67, 68, 69, 71, 72, 73, 74, 76, 77, 78, 79, 80, 81, 82, 84, 85, 86, 87, 88, 90, 91, 95, 96, 101, 102, 103, 109, 110, 113, 123, 124, 132, 133, 153, 154, 155, 161, 166, 170, 171, 184, 185, 189, 196, 203, 208, 210, 231, 248, 288, 291, 295, 299, 301, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 318, 319, 320, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 363, 369, 370, 371, 380, 381, 383, 384, 385, 388, 390, 391, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 405, 406, 407, 409, 410, 411, 412, 413, 414, 415, 417, 418, 419, 420, 416, 417, 418, 419, 420, 421, 422, 423, 425, 426, 427, 428, 430, 431, 432, 433, 435, 436, 437, 438, 439, 440, 441, 442, 446, 449, 456, 466, 472, 473, 479, 485, 490, 492, 496, 497, 498, 502, 506, 509, 514, 515, 517, 519, 520, 521, 522, 523, 524, 525, 529, 530, 531, 535, 536, 543, 546, 556, 557, 561, 563, 568, 570, 571, 572, 574, 575, 576, 577, 578, 579, 581, 582, 583, 584, 585, 586, 587
 			]
 		},
 		{
@@ -9195,7 +9204,7 @@
 			"search_term": "citizen",
 			"category": "",
 			"read_element_ids": [
-				0, 6, 7, 13, 28, 47, 54, 56, 85, 86, 105, 125, 126, 127, 128, 129, 130, 131, 135, 136, 138, 139, 150, 165, 166, 173, 181, 188, 196, 214, 232, 254, 294, 310, 328, 354, 391, 407, 521, 590
+				0, 6, 7, 13, 28, 47, 54, 56, 85, 86, 105, 125, 126, 127, 128, 129, 130, 131, 135, 136, 138, 139, 150, 165, 166, 173, 181, 188, 196, 214, 232, 254, 294, 310, 328, 354, 391, 407, 522, 591
 			]
 		},
 		{
@@ -9204,7 +9213,7 @@
 			"search_term": "territor",
 			"category": "",
 			"read_element_ids": [
-				1, 2, 4, 5, 6, 7, 9, 13, 15, 19, 21, 22, 24, 25, 26, 27, 29, 30, 39, 42, 43, 47, 48, 49, 50, 52, 54, 56, 59, 61, 65, 67, 68, 71, 78, 81, 82, 85, 86, 92, 96, 102, 109, 112, 113, 121, 123, 125, 126, 127, 132, 133, 134, 136, 139, 150, 160, 161, 173, 184, 206, 210, 211, 212, 242, 254, 266, 267, 268, 271, 277, 278, 280, 307, 308, 354, 364, 366, 370, 371, 379, 380, 381, 382, 383, 384, 385, 387, 390, 399, 403, 405, 406, 415, 427, 428, 431, 432, 436, 437, 440, 449, 450, 457, 458, 460, 474, 476, 481, 484, 487, 488, 493, 494, 495, 496, 517, 520, 526, 528, 537, 538, 538, 551, 552, 557, 558, 560, 565, 569, 575, 580, 581, 585, 588, 589
+				1, 2, 4, 5, 6, 7, 9, 13, 15, 19, 21, 22, 24, 25, 26, 27, 29, 30, 39, 42, 43, 47, 48, 49, 50, 52, 54, 56, 59, 61, 65, 67, 68, 71, 78, 81, 82, 85, 86, 92, 96, 102, 109, 112, 113, 121, 123, 125, 126, 127, 132, 133, 134, 136, 139, 150, 160, 161, 173, 184, 206, 210, 211, 212, 242, 254, 266, 267, 268, 271, 277, 278, 280, 307, 308, 354, 364, 366, 370, 371, 379, 380, 381, 382, 383, 384, 385, 387, 390, 399, 403, 405, 406, 415, 427, 428, 431, 432, 436, 437, 440, 449, 450, 457, 458, 460, 474, 477, 482, 485, 488, 489, 494, 495, 496, 497, 518, 521, 527, 529, 538, 539, 552, 553, 558, 559, 561, 566, 570, 576, 581, 582, 586, 589, 590
 			]
 		},
 		{
@@ -9231,7 +9240,7 @@
 			"search_term": "repeal, rep.",
 			"category": "",
 			"read_element_ids": [
-				5, 6, 13, 19, 25, 36, 44, 48, 54, 75, 81, 85, 86, 109, 113, 122, 133, 152, 154, 156, 158, 161, 265, 281, 365, 368, 378, 381, 384, 386, 401, 419, 428, 439, 441, 445, 448, 462, 468, 478, 482, 498, 507, 513, 517, 525, 556, 559, 571, 575, 564, 580, 585, 586
+				5, 6, 13, 19, 25, 36, 44, 48, 54, 75, 81, 85, 86, 109, 113, 122, 133, 152, 154, 156, 158, 161, 265, 281, 365, 368, 378, 381, 384, 386, 401, 419, 428, 439, 441, 445, 448, 462, 468, 479, 483, 499, 508, 514, 518, 526, 557, 560, 572, 576, 565, 581, 586, 587
 			]
 		},
 		{
@@ -9240,7 +9249,7 @@
 			"search_term": "definition",
 			"category": "",
 			"read_element_ids": [
-				7, 21, 29, 58, 85, 86, 132, 162, 240, 289, 336, 387, 403, 569
+				7, 21, 29, 58, 85, 86, 132, 162, 240, 289, 336, 387, 403, 570
 			]
 		},
 		{
@@ -9285,7 +9294,7 @@
 			"search_term": "political part",
 			"category": "",
 			"read_element_ids": [
-				10, 47, 64, 76, 81, 103, 205, 301, 563
+				10, 47, 64, 76, 81, 103, 205, 301, 564
 			]
 		},
 		{
@@ -9303,7 +9312,7 @@
 			"search_term": "money Bill",
 			"category": "",
 			"read_element_ids": [
-				237, 238, 239, 240, 241, 333, 334, 335, 336, 337, 338, 560
+				237, 238, 239, 240, 241, 333, 334, 335, 336, 337, 338, 561
 			]
 		},
 		{
@@ -9312,7 +9321,7 @@
 			"search_term": "Prime Minister",
 			"category": "",
 			"read_element_ids": [
-				51, 54, 56, 111, 204, 205, 208, 255, 525, 551
+				51, 54, 56, 111, 204, 205, 208, 255, 526, 552
 			]
 		},
 		{
@@ -9321,7 +9330,7 @@
 			"search_term": "Supreme Court",
 			"category": "",
 			"read_element_ids": [
-				2, 3, 6, 7, 16, 19, 20, 21, 22, 27, 28, 32, 36, 37, 40, 41, 42, 44, 48, 50, 51, 54, 55, 56, 58, 66, 87, 88, 89, 93, 94, 111, 157, 190, 201, 206, 242, 251, 254, 255, 256, 257, 258, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 282, 283, 285, 348, 354, 355, 357, 364, 451, 505, 510, 517, 518, 519, 545, 560, 565, 571, 572, 578, 580, 588		
+				2, 3, 6, 7, 16, 19, 20, 21, 22, 27, 28, 32, 36, 37, 40, 41, 42, 44, 48, 50, 51, 54, 55, 56, 58, 66, 87, 88, 89, 93, 94, 111, 157, 190, 201, 206, 242, 251, 254, 255, 256, 257, 258, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 282, 283, 285, 348, 354, 355, 357, 364, 451, 506, 511, 518, 519, 520, 546, 561, 566, 572, 573, 579, 581, 589
 			]
 		},
 		{
@@ -9339,7 +9348,7 @@
 			"search_term": "high Court",
 			"category": "",
 			"read_element_ids": [
-				2, 3, 6, 7, 13, 19, 27, 28, 31, 32, 40, 41, 42, 44, 48, 51, 53, 54, 55, 56, 58, 66, 85, 87, 88, 111, 143, 242, 251, 254, 256, 257, 260, 261, 266, 267, 268, 269, 275, 296, 302, 337, 339, 348, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 366, 367, 369, 370, 371, 373, 374, 375, 385, 398, 505, 545, 555, 560, 569, 578, 580, 590
+				2, 3, 6, 7, 13, 19, 27, 28, 31, 32, 40, 41, 42, 44, 48, 51, 53, 54, 55, 56, 58, 66, 85, 87, 88, 111, 143, 242, 251, 254, 256, 257, 260, 261, 266, 267, 268, 269, 275, 296, 302, 337, 339, 348, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 366, 367, 369, 370, 371, 373, 374, 375, 385, 398, 506, 546, 556, 561, 570, 579, 581, 591
 			]
 		},
 		{
@@ -9357,7 +9366,7 @@
 			"search_term": "protect",
 			"category": "",
 			"read_element_ids": [
-				6, 7, 9, 12, 13, 29, 41, 46, 48, 51, 52, 54, 56, 59, 62, 77, 86, 88, 89, 93, 95, 101, 134, 139, 140, 141, 143, 150, 164, 165, 175, 177, 178, 181, 190, 296, 444, 507, 534, 535, 554, 561, 562, 580
+				6, 7, 9, 12, 13, 29, 41, 46, 48, 51, 52, 54, 56, 59, 62, 77, 86, 88, 89, 93, 95, 101, 134, 139, 140, 141, 143, 150, 164, 165, 175, 177, 178, 181, 190, 296, 444, 508, 535, 536, 555, 562, 563, 581
 			]
 		},
 		{
@@ -9366,7 +9375,7 @@
 			"search_term": "language",
 			"category": "",
 			"read_element_ids": [
-				6, 8, 33, 50, 54, 70, 83, 150, 151, 250, 347, 540, 541, 542, 543, 544, 545, 546, 547, 550
+				6, 8, 33, 50, 54, 70, 83, 150, 151, 250, 347, 541, 542, 543, 544, 545, 546, 547, 548, 551
 			]
 		},{
 			"title": "#education",
@@ -9374,7 +9383,7 @@
 			"search_term": "educat",
 			"category": "",
 			"read_element_ids": [
-				6, 7, 9, 11, 12, 13, 19, 37, 44, 54, 56, 85, 86, 88, 98, 105, 109, 110, 135, 142, 149, 150, 151, 168, 174, 175, 308, 423, 533, 537, 548, 574, 578, 584
+				6, 7, 9, 11, 12, 13, 19, 37, 44, 54, 56, 85, 86, 88, 98, 105, 109, 110, 135, 142, 149, 150, 151, 168, 174, 175, 308, 423, 534, 538, 549, 575, 579, 585
 			]
 		},
 		{
@@ -9383,7 +9392,7 @@
 			"search_term": "scheduled Castes",
 			"category": "",
 			"read_element_ids": [
-				9, 11, 13, 35, 43, 57, 69, 74, 77, 78, 84, 85, 86, 88, 89, 90, 91, 93, 94, 95, 96, 101, 105, 109, 111, 135, 136, 175, 255, 301, 381, 391, 400, 407, 418, 526, 528, 530, 531, 534, 538, 569
+				9, 11, 13, 35, 43, 57, 69, 74, 77, 78, 84, 85, 86, 88, 89, 90, 91, 93, 94, 95, 96, 101, 105, 109, 111, 135, 136, 175, 255, 301, 381, 391, 400, 407, 418, 527, 529, 531, 532, 535, 539, 570
 			]
 		},
 		{
@@ -9392,7 +9401,7 @@
 			"search_term": "scheduled Tribes",
 			"category": "",
 			"read_element_ids": [
-				5, 6, 9, 11, 13, 35, 39, 43, 52, 57, 63, 69, 74, 77, 78, 84, 85, 86, 88, 89, 90, 91, 93, 94, 95, 96, 101, 102, 105, 111, 135, 136, 175, 255, 391, 407, 418, 429, 465, 526, 528, 530, 531, 535, 536, 538, 569
+				5, 6, 9, 11, 13, 35, 39, 43, 52, 57, 63, 69, 74, 77, 78, 84, 85, 86, 88, 89, 90, 91, 93, 94, 95, 96, 101, 102, 105, 111, 135, 136, 175, 255, 391, 407, 418, 429, 465, 527, 529, 531, 532, 536, 537, 539, 570
 			]
 		},
 		{
@@ -9401,7 +9410,7 @@
 			"search_term": "reservation",
 			"category": "",
 			"read_element_ids": [
-				6, 7, 9, 28, 35, 43, 44, 57, 63, 69, 74, 84, 85, 86, 88, 89, 91, 93, 94, 95, 109, 110, 136, 391, 400, 407, 418, 526, 528, 530, 531, 532, 578, 584
+				6, 7, 9, 28, 35, 43, 44, 57, 63, 69, 74, 84, 85, 86, 88, 89, 91, 93, 94, 95, 109, 110, 136, 391, 400, 407, 418, 527, 529, 531, 532, 533, 579, 585
 			]
 		},
 		{
@@ -9410,7 +9419,7 @@
 			"search_term": "anglo-Indian",
 			"category": "",
 			"read_element_ids": [
-				35, 57, 74, 91, 527, 529, 530, 532, 533, 534, 569
+				35, 57, 74, 91, 528, 530, 531, 533, 534, 535, 570
 			]
 		},
 		{
@@ -9419,7 +9428,7 @@
 			"search_term": "revenue",
 			"category": "",
 			"read_element_ids": [
-				6, 7, 9, 13, 22, 29, 34, 46, 48, 51, 54, 56, 58, 78, 85, 86, 92, 103, 113, 153, 242, 339, 363, 404, 455, 463, 465, 470, 472, 474, 553, 563, 580, 589
+				6, 7, 9, 13, 22, 29, 34, 46, 48, 51, 54, 56, 58, 78, 85, 86, 92, 103, 113, 153, 242, 339, 363, 404, 455, 463, 465, 470, 472, 474, 554, 564, 581, 590
 			]
 		},
 		{
@@ -9428,7 +9437,7 @@
 			"search_term": "fund",
 			"category": "",
 			"read_element_ids": [
-				6, 7, 9, 13, 19, 22, 25, 34, 36, 52, 54, 55, 56, 58, 59, 78, 85, 86, 88, 90, 92, 110, 113, 133, 135, 149, 150, 163, 181, 240, 242, 243, 244, 245, 246, 247, 249, 283, 285, 336, 339, 340, 341, 342, 343, 344, 346, 369, 371, 395, 396, 411, 412, 455, 456, 457, 458, 459, 460, 461, 463, 464, 465, 470, 473, 480, 481, 483, 484, 513, 515, 556, 569, 574, 575, 584
+				6, 7, 9, 13, 19, 22, 25, 34, 36, 52, 54, 55, 56, 58, 59, 78, 85, 86, 88, 90, 92, 110, 113, 133, 135, 149, 150, 163, 181, 240, 242, 243, 244, 245, 246, 247, 249, 283, 285, 336, 339, 340, 341, 342, 343, 344, 346, 369, 371, 395, 396, 411, 412, 455, 456, 457, 458, 459, 460, 461, 463, 464, 465, 470, 473, 481, 482, 484, 485, 514, 516, 557, 570, 575, 576, 585
 			]
 		},
 		{
@@ -9437,7 +9446,7 @@
 			"search_term": "income",
 			"category": "",
 			"read_element_ids": [
-				7, 19, 56, 92, 164, 460, 464, 466, 479, 569
+				7, 19, 56, 92, 164, 460, 464, 466, 480, 570
 			]
 		},
 		{
@@ -9455,7 +9464,7 @@
 			"search_term": "power",
 			"category": "",
 			"read_element_ids": [
-				5, 6, 7, 10, 13, 16, 19, 20, 22, 24, 26, 27, 28, 30, 32, 34, 36, 39, 40, 44, 47, 48, 49, 50, 51, 54, 55, 56, 58, 62, 64, 70, 71, 75, 77, 81, 85, 86, 101, 111, 113, 123, 131, 154, 157, 159, 161, 167, 183, 195, 201, 202, 203, 221, 225, 230, 235, 243, 246, 252, 253, 257, 260, 261, 262, 268, 270, 272, 273, 274, 276, 278, 279, 282, 285, 286, 291, 298, 299, 317, 321, 326, 331, 334, 337, 340, 343, 349, 350, 352, 362, 363, 364, 366, 370, 380, 381, 383, 384, 385, 388, 394, 395, 396, 400, 410, 411, 416, 430, 432, 433, 434, 435, 436, 437, 438, 439, 440, 443, 444, 446, 447, 465, 466, 470, 483, 484, 489, 490, 491, 494, 495, 498, 499, 503, 505, 511, 514, 517, 518, 522, 523, 534, 535, 536, 551, 552, 555, 556, 557, 558, 561, 568, 569, 571, 572, 573, 577, 578, 580, 585, 586, 587
+				5, 6, 7, 10, 13, 16, 19, 20, 22, 24, 26, 27, 28, 30, 32, 34, 36, 39, 40, 44, 47, 48, 49, 50, 51, 54, 55, 56, 58, 62, 64, 70, 71, 75, 77, 81, 85, 86, 101, 111, 113, 123, 131, 154, 157, 159, 161, 167, 183, 195, 201, 202, 203, 221, 225, 230, 235, 243, 246, 252, 253, 257, 260, 261, 262, 268, 270, 272, 273, 274, 276, 278, 279, 282, 285, 286, 291, 298, 299, 317, 321, 326, 331, 334, 337, 340, 343, 349, 350, 352, 362, 363, 364, 366, 370, 380, 381, 383, 384, 385, 388, 394, 395, 396, 400, 410, 411, 416, 430, 432, 433, 434, 435, 436, 437, 438, 439, 440, 443, 444, 446, 447, 465, 466, 470, 484, 485, 490, 491, 492, 495, 496, 499, 500, 504, 506, 512, 515, 518, 519, 523, 524, 535, 536, 537, 552, 553, 556, 557, 558, 559, 562, 569, 570, 572, 573, 574, 578, 579, 581, 586, 587, 588
 			]
 		},
 		{
@@ -9464,7 +9473,7 @@
 			"search_term": "Andhra Pradesh",
 			"category": "state",
 			"read_element_ids": [
-				1, 4, 9, 19, 29, 44, 46, 78, 578, 579
+				1, 4, 9, 19, 29, 44, 46, 78, 579, 580
 			]
 		},
 		{
@@ -9473,7 +9482,7 @@
 			"search_term": "Arunachal Pradesh",
 			"category": "state",
 			"read_element_ids": [
-				1, 4, 39, 43, 49, 63, 67, 69, 95, 113, 347, 400, 528, 582
+				1, 4, 39, 43, 49, 63, 67, 69, 95, 113, 347, 400, 476, 529, 583
 			]
 		},
 		{
@@ -9482,7 +9491,7 @@
 			"search_term": "assam",
 			"category": "state",
 			"read_element_ids": [
-				1, 4, 5, 6, 8, 9, 19, 21, 25, 29, 34, 35, 43, 52, 59, 63, 102, 112, 113, 429, 430, 463, 465, 526, 528, 576
+				1, 4, 5, 6, 8, 9, 19, 21, 25, 29, 34, 35, 43, 52, 59, 63, 102, 112, 113, 429, 430, 463, 465, 527, 529, 577
 			]
 		},
 		{
@@ -9509,7 +9518,7 @@
 			"search_term": "Goa",
 			"category": "state",
 			"read_element_ids": [
-				1, 4, 9, 24, 26, 39, 52, 59, 68, 103, 347, 583
+				1, 4, 9, 24, 26, 39, 52, 59, 68, 103, 347, 584
 			]
 		},
 		{
@@ -9518,7 +9527,7 @@
 			"search_term": "Gujarat",
 			"category": "state",
 			"read_element_ids": [
-				1, 4, 8, 9, 19, 29, 46, 52, 78, 574
+				1, 4, 8, 9, 19, 29, 46, 52, 78, 575
 			]
 		},
 		{
@@ -9545,7 +9554,7 @@
 			"search_term": "Jammu and Kashmir",
 			"category": "state",
 			"read_element_ids": [
-				1, 4, 19, 43, 113, 289, 500, 573
+				1, 4, 19, 43, 113, 289, 476, 501, 574
 			]
 		},
 		{
@@ -9563,7 +9572,7 @@
 			"search_term": "Karnataka",
 			"category": "state",
 			"read_element_ids": [
-				1, 4, 9, 46, 52, 78, 90, 110, 305, 584
+				1, 4, 9, 46, 52, 78, 90, 110, 305, 585
 			]
 		},
 		{
@@ -9572,7 +9581,7 @@
 			"search_term": "Kerala",
 			"category": "state",
 			"read_element_ids": [
-				1, 4, 9, 19, 29, 41, 46, 52, 54, 78, 90, 153, 481
+				1, 4, 9, 19, 29, 41, 46, 52, 54, 78, 90, 153, 482
 			]
 		},
 		{
@@ -9590,7 +9599,7 @@
 			"search_term": "Maharashtra",
 			"category": "state",
 			"read_element_ids": [
-				1, 4, 9, 19, 29, 51, 52, 78, 305, 574
+				1, 4, 9, 19, 29, 51, 52, 78, 305, 575
 			]
 		},
 		{
@@ -9599,7 +9608,7 @@
 			"search_term": "Manipur",
 			"category": "state",
 			"read_element_ids": [
-				1, 4, 8, 9, 19, 26, 29, 39, 43, 83, 85, 113, 347, 400, 577
+				1, 4, 8, 9, 19, 26, 29, 39, 43, 83, 85, 113, 347, 400, 476, 578
 			]
 		},
 		{
@@ -9608,7 +9617,7 @@
 			"search_term": "Meghalaya",
 			"category": "state",
 			"read_element_ids": [
-				1, 4, 5, 6, 43, 61, 63, 69, 85, 112, 113, 347, 400, 429, 528
+				1, 4, 5, 6, 43, 61, 63, 69, 85, 112, 113, 347, 400, 429, 476, 529
 			]
 		},
 		{
@@ -9617,7 +9626,7 @@
 			"search_term": "Mizoram",
 			"category": "state",
 			"read_element_ids": [
-				1, 4, 5, 6, 39, 43, 49, 63, 65, 69, 85, 103, 113, 347, 400, 429, 528, 581
+				1, 4, 5, 6, 39, 43, 49, 63, 65, 69, 85, 103, 113, 347, 400, 429, 476, 529, 582
 			]
 		},
 		{
@@ -9626,7 +9635,7 @@
 			"search_term": "Nagaland",
 			"category": "state",
 			"read_element_ids": [
-				1, 4, 25, 35, 43, 63, 69, 85, 113, 400, 528, 575
+				1, 4, 25, 35, 43, 63, 69, 85, 113, 400, 529, 576
 			]
 		},
 		{
@@ -9644,7 +9653,7 @@
 			"search_term": "Punjab",
 			"category": "state",
 			"read_element_ids": [
-				1, 4, 8, 9, 19, 21, 27, 29, 46, 60, 71, 75, 76, 79, 80, 485, 555, 559
+				1, 4, 8, 9, 19, 21, 27, 29, 46, 60, 71, 75, 76, 79, 80, 486, 556, 560
 			]
 		},
 		{
@@ -9662,7 +9671,7 @@
 			"search_term": "Sikkim",
 			"category": "state",
 			"read_element_ids": [
-				1, 4, 47, 48, 56, 103, 113, 122, 580
+				1, 4, 47, 48, 56, 103, 113, 122, 476, 581
 			]
 		},
 		{
@@ -9671,7 +9680,7 @@
 			"search_term": "Tamil Nadu",
 			"category": "state",
 			"read_element_ids": [
-				1, 4, 9, 46, 52, 59, 78, 87, 88, 90, 153, 481
+				1, 4, 9, 46, 52, 59, 78, 87, 88, 90, 153, 482
 			]
 		},
 		{
@@ -9689,7 +9698,7 @@
 			"search_term": "Tripura",
 			"category": "state",
 			"read_element_ids": [
-				1, 4, 5, 6, 9, 19, 21, 26, 29, 43, 46, 51, 61, 84, 112, 113, 347, 429, 528
+				1, 4, 5, 6, 9, 19, 21, 26, 29, 43, 46, 51, 61, 84, 112, 113, 347, 429, 476, 529
 			]
 		},
 		{
@@ -9707,7 +9716,7 @@
 			"search_term": "Uttarakhand",
 			"category": "state",
 			"read_element_ids": [
-				9, 113
+				9, 113, 476
 			]
 		},
 		{
@@ -9716,7 +9725,7 @@
 			"search_term": "West Bengal",
 			"category": "state",
 			"read_element_ids": [
-				1, 4, 9, 16, 19, 21, 29, 46, 52, 59, 78, 85, 86, 90, 112, 400, 416, 463, 485
+				1, 4, 9, 16, 19, 21, 29, 46, 52, 59, 78, 85, 86, 90, 112, 400, 416, 463, 486
 			]
 		},
 		{
