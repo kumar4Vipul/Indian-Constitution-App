@@ -11,8 +11,8 @@ android {
         applicationId "com.appbusters.robinpc.constitutionofindia"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 23
-        versionName "10.1"
+        versionCode 24
+        versionName "10.2"
     }
     buildTypes {
         release {
