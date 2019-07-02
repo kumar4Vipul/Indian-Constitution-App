@@ -25,6 +25,7 @@ import com.appbusters.robinpc.constitutionofindia.R
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import es.dmoral.toasty.Toasty
+import java.lang.NumberFormatException
 
 
 class FeaturedFragment : BaseFragment() {
@@ -92,7 +93,7 @@ class FeaturedFragment : BaseFragment() {
     }
 
     private fun renderViews() {
-        accentColor = Color.parseColor(bookLink.accentColor)
+        fillAccentColor()
 
         bookTitleTv.text = bookLink.bookTitle
         bookAuthorTv.text = bookLink.authorName
@@ -103,6 +104,20 @@ class FeaturedFragment : BaseFragment() {
 
         loadCover()
         setBackground()
+    }
+
+    private fun fillAccentColor() {
+        try {
+            accentColor = Color.parseColor(bookLink.accentColor)
+        } catch (e: NumberFormatException) {
+            context?.let {
+                accentColor = ContextCompat.getColor(it, R.color.black)
+            } ?: run {
+                Color.parseColor(
+                        getString(R.string.color_black)
+                )
+            }
+        }
     }
 
     private fun setBackground() {

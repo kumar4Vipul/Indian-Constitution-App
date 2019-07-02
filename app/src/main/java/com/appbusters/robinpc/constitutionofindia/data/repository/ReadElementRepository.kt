@@ -15,8 +15,12 @@ class ReadElementRepository(private val elementsDao: ReadElementDao) {
         return elementsDao.getNumberOfElements()
     }
 
-    fun insertElements(vararg tags: ReadElement) {
-        InsertElementsTask(elementsDao).execute(*tags)
+    fun insertElements(vararg element: ReadElement) {
+        InsertElementsTask(elementsDao).execute(*element)
+    }
+
+    fun insertElement(element: ReadElement) {
+        InsertElementTask(elementsDao).execute(element)
     }
 
     fun getElementsInRange(startId: Int, endId: Int): LiveData<List<ReadElement>> {
@@ -74,6 +78,15 @@ class ReadElementRepository(private val elementsDao: ReadElementDao) {
 
         override fun doInBackground(vararg params: ReadElement): Void? {
             elementsDao.insertElements(*params)
+            return null
+        }
+    }
+
+    private class InsertElementTask internal constructor(private val elementsDao: ReadElementDao)
+        : AsyncTask<ReadElement, Void, Void>() {
+
+        override fun doInBackground(vararg params: ReadElement): Void? {
+            elementsDao.insertElement(params[0])
             return null
         }
     }

@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
 
 import com.appbusters.robinpc.constitutionofindia.R
-import com.appbusters.robinpc.constitutionofindia.utils.ZoomOutPageTransformer
 import com.appbusters.robinpc.constitutionofindia.data.model.Category
 import com.appbusters.robinpc.constitutionofindia.data.model.Tag
 import com.appbusters.robinpc.constitutionofindia.di.component.fragment.DaggerHomeFragmentComponent
@@ -95,72 +94,79 @@ class HomeFragment : BaseFragment(),
     }
 
     private fun setObservers() {
+        if(::viewModel.isInitialized)
+            viewModel.getAllTags().observe(this, Observer {
 
-        viewModel.getAllTags().observe(this, Observer {
+                if(!it.isNullOrEmpty()) {
+                    if(it.size == NUMBER_OF_TAGS) {
 
-            if(!it.isNullOrEmpty()) {
-                if(it.size == NUMBER_OF_TAGS) {
+                        tagsAdapter.submitList(viewModel.getSubmitTagList(it))
 
-                    tagsAdapter.submitList(viewModel.getSubmitTagList(it))
-
-                    setBookLinksObserver()
+                        setBookLinksObserver()
+                    }
                 }
-            }
-            else
-                viewModel.loadTagsFromJson()
-        })
+                else
+                    viewModel.loadTagsFromJson()
+            })
 
-        viewModel.categoriesListLiveData.observe(this, Observer {
-            it?.let {
-                categoriesAdapter.submitList(it)
-            }
-        })
+        if(::viewModel.isInitialized)
+            viewModel.categoriesListLiveData.observe(this, Observer {
+                it?.let {
+                    categoriesAdapter.submitList(it)
+                }
+            })
     }
 
     private fun setBookLinksObserver() {
-        viewModel.getAllBooks().observe(this, Observer {
-            if(it.isNullOrEmpty())
-                viewModel.loadBooksFromJson()
-            else {
-                if(it.size != NUMBER_OF_BOOKS)
+        if(::viewModel.isInitialized)
+            viewModel.getAllBooks().observe(this, Observer {
+                if(it.isNullOrEmpty())
                     viewModel.loadBooksFromJson()
                 else {
-                    setFeaturedPagerAdapter()
-                    onLoadCompleteListener.onLoadComplete()
-                    setPartsObserver()
+                    if(it.size != NUMBER_OF_BOOKS)
+                        viewModel.loadBooksFromJson()
+                    else {
+                        setFeaturedPagerAdapter()
+                        
+                        if(::onLoadCompleteListener.isInitialized)
+                            onLoadCompleteListener.onLoadComplete()
+
+                        setPartsObserver()
+                    }
                 }
-            }
-        })
+            })
     }
 
     private fun setPartsObserver() {
-
-        viewModel.getAllParts().observe(this, Observer {
-            if(it.isNullOrEmpty()) {
-                viewModel.loadPartsFromJson()
-            }
-            else {
-                if(it.size != NUMBER_OF_PARTS) viewModel.loadPartsFromJson()
-                else setElementsObserver()
-            }
-        })
+        if(::viewModel.isInitialized)
+            viewModel.getAllParts().observe(this, Observer {
+                if(it.isNullOrEmpty()) {
+                    viewModel.loadPartsFromJson()
+                }
+                else {
+                    if(it.size != NUMBER_OF_PARTS) viewModel.loadPartsFromJson()
+                    else setElementsObserver()
+                }
+            })
     }
 
     private fun setElementsObserver() {
-        viewModel.getAllElements().observe(this, Observer {
-            if(it.isNullOrEmpty())
-                viewModel.loadElementsFromJson()
-            else {
-                if(it.size != NUMBER_OF_ELEMENTS)
+        if(::viewModel.isInitialized)
+            viewModel.getAllElements().observe(this, Observer {
+                if(it.isNullOrEmpty())
                     viewModel.loadElementsFromJson()
-                else
-                    onSyncCompleteListener.onSyncCompleted()
-            }
-        })
+                else {
+                    if(it.size != NUMBER_OF_ELEMENTS)
+                        viewModel.loadElementsFromJson()
+                    else
+                        onSyncCompleteListener.onSyncCompleted()
+                }
+            })
     }
 
     private fun fetchData() {
-        viewModel.inflateCategoriesList()
+        if(::viewModel.isInitialized)
+            viewModel.inflateCategoriesList()
     }
 
     private fun setFeaturedPagerAdapter() {

@@ -77,5 +77,6 @@
     <string name="sharing">Sharing</string>
     <string name="rate_app_play_store">Rate App on Play Store</string>
     <string name="buy_on_amazon">BUY ON AMAZON</string>
+    <string name="color_black">#000000</string>
 
 </resources>

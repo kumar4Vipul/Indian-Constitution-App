@@ -18,10 +18,22 @@ class PartRepository(private val partDao: PartDao) {
         InsertPartsTask(partDao).execute(*parts)
     }
 
+    fun insertPart(part: Part) {
+        InsertPartTask(partDao).execute(part)
+    }
+
     private class InsertPartsTask internal constructor(private val partsDao: PartDao) : AsyncTask<Part, Void, Void>() {
 
         override fun doInBackground(vararg params: Part): Void? {
             partsDao.insertParts(*params)
+            return null
+        }
+    }
+
+    private class InsertPartTask internal constructor(private val partsDao: PartDao) : AsyncTask<Part, Void, Void>() {
+
+        override fun doInBackground(vararg params: Part): Void? {
+            partsDao.insertPart(params[0])
             return null
         }
     }

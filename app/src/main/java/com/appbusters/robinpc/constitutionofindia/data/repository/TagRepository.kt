@@ -22,10 +22,22 @@ class TagRepository(private val tagsDao: TagDao) {
         InsertTagsTask(tagsDao).execute(*tags)
     }
 
+    fun insertTag(tag: Tag) {
+        InsertTagTask(tagsDao).execute(tag)
+    }
+
     private class InsertTagsTask internal constructor(private val tagsDao: TagDao) : AsyncTask<Tag, Void, Void>() {
 
         override fun doInBackground(vararg params: Tag): Void? {
             tagsDao.insertTags(*params)
+            return null
+        }
+    }
+
+    private class InsertTagTask internal constructor(private val tagsDao: TagDao) : AsyncTask<Tag, Void, Void>() {
+
+        override fun doInBackground(vararg params: Tag): Void? {
+            tagsDao.insertTag(params[0])
             return null
         }
     }

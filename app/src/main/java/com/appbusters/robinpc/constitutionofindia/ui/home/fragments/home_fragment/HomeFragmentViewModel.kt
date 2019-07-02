@@ -22,6 +22,7 @@ import java.io.InputStream
 import java.nio.charset.Charset
 import javax.inject.Inject
 
+@Suppress("unused")
 class HomeFragmentViewModel @Inject constructor(
         appDatabase: AppDatabase,
         private val gson: Gson,
@@ -67,32 +68,40 @@ class HomeFragmentViewModel @Inject constructor(
         return allTagsLiveData
     }
 
-    fun getNumberOfTags(): LiveData<Int> {
-        return tagsCountLiveData
-    }
-
     fun getAllElements(): LiveData<List<ReadElement>> {
         return allElementsLiveData
-    }
-
-    fun getNumberOfElements(): LiveData<Int> {
-        return elementsCountLiveData
     }
 
     private fun insertTags(vararg tags: Tag) {
         tagRepository.insertTags(*tags)
     }
 
+    private fun insertTag(tag: Tag) {
+        tagRepository.insertTag(tag)
+    }
+
     private fun insertElements(vararg elements: ReadElement) {
         elementsRepository.insertElements(*elements)
+    }
+
+    private fun insertElement(element: ReadElement) {
+        elementsRepository.insertElement(element)
     }
 
     private fun insertBooks(vararg books: BookLink) {
         bookLinkRepository.insertBookLinks(*books)
     }
 
+    private fun insertBook(book: BookLink) {
+        bookLinkRepository.insertBookLink(book)
+    }
+
     private fun insertParts(vararg parts: Part) {
         partsRepository.insertParts(*parts)
+    }
+
+    private fun insertPart(part: Part) {
+        partsRepository.insertPart(part)
     }
 
     fun inflateCategoriesList() {
@@ -125,7 +134,7 @@ class HomeFragmentViewModel @Inject constructor(
         var part: Part
         for(partIndex: Int in 0 until parts.length()) {
             part = gson.fromJson(parts.getJSONObject(partIndex).toString(), Part::class.java)
-            insertParts(part)
+            insertPart(part)
         }
     }
 
@@ -140,7 +149,7 @@ class HomeFragmentViewModel @Inject constructor(
         var  tagItem: Tag
         for(tagNumber: Int in 0 until tags.length()) {
             tagItem = gson.fromJson(tags.getJSONObject(tagNumber).toString(), Tag::class.java)
-            insertTags(tagItem)
+            insertTag(tagItem)
         }
     }
 
@@ -175,7 +184,7 @@ class HomeFragmentViewModel @Inject constructor(
         var  book: BookLink
         for(bookNumber: Int in 0 until books.length()) {
             book = gson.fromJson(books.getJSONObject(bookNumber).toString(), BookLink::class.java)
-            insertBooks(book)
+            insertBook(book)
         }
     }
 
@@ -190,7 +199,7 @@ class HomeFragmentViewModel @Inject constructor(
         var  elementItem: ReadElement
         for(elementNumber: Int in 0 until elements.length()) {
             elementItem = gson.fromJson(elements.getJSONObject(elementNumber).toString(), ReadElement::class.java)
-            insertElements(elementItem)
+            insertElement(elementItem)
         }
     }
 
