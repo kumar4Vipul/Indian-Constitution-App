@@ -1,14 +1,10 @@
 package com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment
 
-import android.app.Activity
-import android.content.Intent
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
 
 import com.appbusters.robinpc.constitutionofindia.R
 import com.appbusters.robinpc.constitutionofindia.data.model.Category
@@ -17,7 +13,6 @@ import com.appbusters.robinpc.constitutionofindia.di.component.fragment.DaggerHo
 import com.appbusters.robinpc.constitutionofindia.di.module.fragment.HomeFragmentModule
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseFragment
 import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.adapter.CategoriesListAdapter
-import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.adapter.FeaturedPagerAdapter
 import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.adapter.TagListAdapter
 import com.appbusters.robinpc.constitutionofindia.ui.intermediate.MiddleActivity
 import com.appbusters.robinpc.constitutionofindia.ui.listing.category_listing.CategoryListingActivity
@@ -28,8 +23,6 @@ import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATE
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_PARTS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_PREAMBLE
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.CATEGORY_SCHEDULES
-import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.COUNT_DAYS
-import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.NUMBER_OF_BOOKS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.NUMBER_OF_ELEMENTS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.NUMBER_OF_PARTS
 import com.appbusters.robinpc.constitutionofindia.utils.Constants.Companion.NUMBER_OF_TAGS
@@ -47,10 +40,13 @@ class HomeFragment : BaseFragment(),
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
     @Inject
-    lateinit var categoriesAdapter: CategoriesListAdapter
+    lateinit var gridLayoutManager: GridLayoutManager
 
     @Inject
-    lateinit var featuredPagerAdapter: FeaturedPagerAdapter
+    lateinit var staggeredGridLayoutManager: StaggeredGridLayoutManager
+
+    @Inject
+    lateinit var categoriesAdapter: CategoriesListAdapter
 
     @Inject
     lateinit var tagsAdapter: TagListAdapter
@@ -59,13 +55,9 @@ class HomeFragment : BaseFragment(),
     private lateinit var onSyncCompleteListener: OnSyncCompleteListener
     private lateinit var onLoadCompleteListener: OnLoadCompleteListener
 
-    override fun getLayoutResId(): Int {
-        return R.layout.fragment_home
-    }
-
     companion object {
-        const val CATEGORY_SPAN_COUNT = 2
         const val TAG_SPAN_COUNT = 4
+        const val CATEGORY_SPAN_COUNT = 2
 
         fun newInstance() = HomeFragment()
     }
@@ -73,42 +65,17 @@ class HomeFragment : BaseFragment(),
     override fun setup() {
         setComponent()
         setObservers()
-        setCategoriesAdapter()
+        setCategoriesRecycler()
         setTagsAdapter()
         fetchData()
-        setClickListeners()
-    }
-
-    private fun setComponent() {
-        activity?.let {
-            DaggerHomeFragmentComponent.builder()
-                    .constitutionAppComponent(ConstitutionApp.get(it).constitutionAppComponent())
-                    .homeFragmentModule(HomeFragmentModule(childFragmentManager, it.baseContext))
-                    .build().injectHomeFragment(this)
-        }
-
-        viewModel = ViewModelProviders.of(this, viewModelFactory).get(HomeFragmentViewModel::class.java)
-    }
-
-    private fun setClickListeners() {
     }
 
     private fun setObservers() {
-        if(::viewModel.isInitialized)
-            viewModel.getAllTags().observe(this, Observer {
+        setCategoriesListObserver()
+        setTagsObserver()
+    }
 
-                if(!it.isNullOrEmpty()) {
-                    if(it.size == NUMBER_OF_TAGS) {
-
-                        tagsAdapter.submitList(viewModel.getSubmitTagList(it))
-
-                        setBookLinksObserver()
-                    }
-                }
-                else
-                    viewModel.loadTagsFromJson()
-            })
-
+    private fun setCategoriesListObserver() {
         if(::viewModel.isInitialized)
             viewModel.categoriesListLiveData.observe(this, Observer {
                 it?.let {
@@ -117,23 +84,23 @@ class HomeFragment : BaseFragment(),
             })
     }
 
-    private fun setBookLinksObserver() {
+    private fun setTagsObserver() {
         if(::viewModel.isInitialized)
-            viewModel.getAllBooks().observe(this, Observer {
-                if(it.isNullOrEmpty())
-                    viewModel.loadBooksFromJson()
-                else {
-                    if(it.size != NUMBER_OF_BOOKS)
-                        viewModel.loadBooksFromJson()
-                    else {
-                        setFeaturedPagerAdapter()
-                        
+            viewModel.getAllTags().observe(this, Observer {
+
+                if(!it.isNullOrEmpty()) {
+                    if(it.size == NUMBER_OF_TAGS) {
+
+                        tagsAdapter.submitList(viewModel.getSubmitTagList(it))
+
                         if(::onLoadCompleteListener.isInitialized)
                             onLoadCompleteListener.onLoadComplete()
 
                         setPartsObserver()
                     }
                 }
+                else
+                    viewModel.loadTagsFromJson()
             })
     }
 
@@ -169,53 +136,87 @@ class HomeFragment : BaseFragment(),
             viewModel.inflateCategoriesList()
     }
 
-    private fun setFeaturedPagerAdapter() {
-        featuredViewPager.adapter = featuredPagerAdapter
-        featuredViewPager.currentItem = COUNT_DAYS
-        dotPagerIndicator.setViewPager(featuredViewPager)
-    }
-
-    private fun setCategoriesAdapter() {
-        categoriesAdapter.setCategoryClickListener(this)
+    private fun setCategoriesRecycler() {
         categoriesRecycler.adapter = categoriesAdapter
-        categoriesRecycler.layoutManager = GridLayoutManager(context, CATEGORY_SPAN_COUNT, RecyclerView.VERTICAL, false)
+        categoriesRecycler.layoutManager = gridLayoutManager
     }
 
     private fun setTagsAdapter() {
-
         tagsRecycler.adapter = tagsAdapter
-        tagsAdapter.setTagClickListener(this)
-        tagsRecycler.layoutManager = StaggeredGridLayoutManager(TAG_SPAN_COUNT, RecyclerView.HORIZONTAL)
+        tagsRecycler.layoutManager = staggeredGridLayoutManager
     }
 
     override fun onCategoryClicked(category: Category) {
-        context?.let {
+        val categoryName = category.name
+        var start: Int = PREAMBLE_INDEX
+        var end: Int = PREAMBLE_INDEX
 
-            var intent: Intent? = null
-
-            when(category.name) {
-                CATEGORY_PARTS ->
-                    intent = MiddleActivity.newIntent(it, category.name)
-                CATEGORY_PREAMBLE ->
-                    intent = CategoryListingActivity.newIntent(it, category.name, category.name, PREAMBLE_INDEX, PREAMBLE_INDEX)
-                CATEGORY_SCHEDULES ->
-                    intent = CategoryListingActivity.newIntent(it, category.name, category.name, SCHEDULES_START_INDEX, SCHEDULES_END_INDEX)
-                CATEGORY_AMENDMENTS ->
-                    intent = CategoryListingActivity.newIntent(it, category.name, category.name, AMENDMENTS_START_INDEX, AMENDMENTS_END_INDEX)
+        when(categoryName) {
+            CATEGORY_PARTS -> {
+                openMiddleActivity(categoryName)
+                return
             }
-            
-            //TODO: apply condition for if data is not yet synced
-            startActivity(intent)
-            (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.no_animation)
+            CATEGORY_PREAMBLE -> {
+                start = PREAMBLE_INDEX
+                end = PREAMBLE_INDEX
+            }
+            CATEGORY_SCHEDULES -> {
+                start = SCHEDULES_START_INDEX
+                end = SCHEDULES_END_INDEX
+            }
+            CATEGORY_AMENDMENTS -> {
+                start = AMENDMENTS_START_INDEX
+                end = AMENDMENTS_END_INDEX
+            }
+        }
+
+        openCategoryListActivity(categoryName, start, end)
+    }
+
+    private fun openMiddleActivity(categoryName: String) {
+        context?.let {
+            startActivity(MiddleActivity.newIntent(it, categoryName))
+            animateActivityTransition(R.anim.slide_in_right, R.anim.no_animation)
+        }
+    }
+
+    private fun openCategoryListActivity(categoryName: String, start: Int, end: Int) {
+        context?.let {
+            startActivity(
+                    CategoryListingActivity.newIntent(it, categoryName, categoryName, start, end)
+            )
+            animateActivityTransition(R.anim.slide_in_right, R.anim.no_animation)
         }
     }
 
     override fun onTagClicked(tag: Tag) {
         context?.let {
-            //TODO: apply condition for if data is not yet synced
             startActivity(TagChildrenActivity.newIntent(it, tag))
-            (it as Activity).overridePendingTransition(R.anim.slide_in_right, R.anim.no_animation)
+            animateActivityTransition(R.anim.slide_in_right, R.anim.no_animation)
         }
+    }
+
+    private fun setComponent() {
+        activity?.let {
+            val component = DaggerHomeFragmentComponent.builder()
+                    .constitutionAppComponent(getAppComponent(it))
+                    .homeFragmentModule(getModule())
+                    .build()
+
+            component.injectHomeFragment(this)
+        }
+
+        viewModel = ViewModelProviders.of(this, viewModelFactory)
+                .get(HomeFragmentViewModel::class.java)
+    }
+
+    private fun getModule(): HomeFragmentModule {
+        return HomeFragmentModule(
+                this,
+                this,
+                CATEGORY_SPAN_COUNT,
+                TAG_SPAN_COUNT
+        )
     }
 
     fun setOnLoadCompleteListener(onLoadCompleteListener: OnLoadCompleteListener) {
@@ -232,5 +233,9 @@ class HomeFragment : BaseFragment(),
 
     interface OnSyncCompleteListener {
         fun onSyncCompleted()
+    }
+
+    override fun getLayoutResId(): Int {
+        return R.layout.fragment_home
     }
 }

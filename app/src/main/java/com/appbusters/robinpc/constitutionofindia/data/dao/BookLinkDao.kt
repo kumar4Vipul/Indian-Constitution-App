@@ -16,10 +16,10 @@ interface BookLinkDao {
     @Query("SELECT * FROM book_links WHERE id = :id")
     fun getBookById(id: Int): LiveData<BookLink>
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertBookLinks(vararg bookLinks: BookLink)
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertBookLink(bookLink: BookLink)
 
 }

@@ -1,26 +1,22 @@
 package com.appbusters.robinpc.constitutionofindia.ui.home
 
 import android.view.View
-import android.widget.ImageView
-import android.widget.Toast
-import androidx.core.content.ContextCompat
 import androidx.viewpager.widget.ViewPager
-import com.appbusters.robinpc.constitutionofindia.ConstitutionApp
 import com.appbusters.robinpc.constitutionofindia.R
 import com.appbusters.robinpc.constitutionofindia.di.component.activity.DaggerHomeActivityComponent
 import com.appbusters.robinpc.constitutionofindia.di.module.activity.HomeActivityModule
 import com.appbusters.robinpc.constitutionofindia.ui.base.BaseActivity
 import com.appbusters.robinpc.constitutionofindia.ui.home.adapter.HomeFragmentAdapter
-import es.dmoral.toasty.Toasty
 import kotlinx.android.synthetic.main.activity_home.*
 import java.util.*
 import javax.inject.Inject
 
-class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener,
-        HomeFragmentAdapter.OnLoadCompleteListener, HomeFragmentAdapter.OnSyncCompleteListener {
+class HomeActivity : BaseActivity(),
+        ViewPager.OnPageChangeListener,
+        HomeFragmentAdapter.OnLoadCompleteListener,
+        HomeFragmentAdapter.OnSyncCompleteListener {
 
     private var wasLoadingShowed = false
-    private var wasSyncCompleted = false
 
     @Inject
     lateinit var homePagerAdapter: HomeFragmentAdapter
@@ -28,72 +24,21 @@ class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener,
     companion object {
         const val HOME_PAGE = 0
         const val BOOKMARKS_PAGE = 1
-    }
-
-    override fun getLayoutResId(): Int {
-        return R.layout.activity_home
+        var wasSyncCompleted = false
     }
 
     override fun setup() {
-        setStatusBarColor(R.color.home_status_bar)
         setComponent()
         setViewPager()
         setClickListeners()
-        setOtherListeners()
-        showNotification()
-    }
-
-    private fun setComponent() {
-        DaggerHomeActivityComponent.builder()
-                .constitutionAppComponent(ConstitutionApp.get(this).constitutionAppComponent())
-                .homeActivityModule(HomeActivityModule(supportFragmentManager))
-                .build().injectHomeActivity(this)
-    }
-
-    private fun setViewPager() {
-        homePagerAdapter.setLoadCompleteListener(this)
-        homePagerAdapter.setOnSyncCompleteListener(this)
-        homeFragmentsPager.adapter = homePagerAdapter
-    }
-
-    private fun setClickListeners() {
-        homeButton.setOnClickListener {
-            highlightNavigation(it as ImageView)
-            homeFragmentsPager.currentItem = HOME_PAGE
-        }
-        bookmarksButton.setOnClickListener {
-            highlightNavigation(it as ImageView)
-            homeFragmentsPager.currentItem = BOOKMARKS_PAGE
-        }
-    }
-
-    private fun setOtherListeners() {
-        homeFragmentsPager.addOnPageChangeListener(this)
-    }
-
-    private fun highlightNavigation(view: ImageView) {
-        when(view) {
-            homeButton -> {
-                homeButton.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_home_filled))
-                bookmarksButton.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_bookmark))
-            }
-            bookmarksButton -> {
-                homeButton.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_home))
-                bookmarksButton.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_bookmark_filled))
-            }
-        }
-    }
-
-    override fun onPageScrollStateChanged(state: Int) {
-    }
-
-    override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
+        setPageChangeListener()
+        setStatusBarColor(R.color.home_status_bar)
     }
 
     override fun onPageSelected(position: Int) {
         when(position) {
-            HOME_PAGE -> highlightNavigation(homeButton)
-            BOOKMARKS_PAGE -> highlightNavigation(bookmarksButton)
+            HOME_PAGE -> setPageIcon(homeButton)
+            BOOKMARKS_PAGE -> setPageIcon(bookmarksButton)
         }
     }
 
@@ -115,7 +60,7 @@ class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener,
 
     override fun onSyncComplete() {
         if(!wasSyncCompleted)
-            Toasty.success(this, getString(R.string.data_sync_success), Toast.LENGTH_SHORT, true).show();
+            showSuccessToasty(getString(R.string.data_sync_success), WITH_ICON)
 
         wasSyncCompleted = true
     }
@@ -132,86 +77,71 @@ class HomeActivity : BaseActivity(), ViewPager.OnPageChangeListener,
     }
 
     override fun onBackPressed() {
-        if(homeFragmentsPager.currentItem == BOOKMARKS_PAGE) {
-            homeFragmentsPager.currentItem = HOME_PAGE
-        }
+        if(homeFragmentsPager.currentItem == BOOKMARKS_PAGE)
+            setPage(HOME_PAGE)
+
         else super.onBackPressed()
     }
 
-//    private var CHANNEL_ID = "IC"
-//    private var CHANNEL_NAME = "BOOK CHANNEL"
-//    private var CHANNEL_DESCRIPTION = "Showing daily book recommendations for law students."
-//    private var NOTIFICATION_ID = 1
-//
-//    private var bookTitle = "Autobiography of Malcolm X"
-//    private var contentText = "Today's book recommendation - "
-//    private var coverLink = "https://images-na.ssl-images-amazon.com/images/I/81kQBRCqt-L.jpg"
-//    private var bookLink = "https://www.amazon.in/gp/product/0345350685/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=robillo-21&creative=24630&linkCode=as2&creativeASIN=0345350685&linkId=7800799743968d0f13ce9071d3e05761"
-//    private var bookDescription = "In the searing pages of this classic autobiography, originally published in 1964, Malcolm X, the Muslim leader, firebrand, and anti-integrationist, tells the extraordinary story of his life and the growth of the Black Muslim movement."
-
-    private fun showNotification() {
-
-//        val workManager = WorkManager.getInstance()
-//        val bookRequests =
-//                PeriodicWorkRequest.Builder(BookNotificationWorker::class.java, 15, TimeUnit.MINUTES).build()
-//
-//        workManager.getWorkInfoByIdLiveData(bookRequests.id).observe(this, androidx.lifecycle.Observer {
-//            it?.let {
-//                Log.e("tag", "work info status ${it.state}")
-//            }
-//        })
-//
-//        workManager.enqueue(bookRequests)
-
-//        val intent = Intent(this, HomeActivity::class.java).apply {
-//            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-//        }
-//
-//        val pendingIntent: PendingIntent = PendingIntent.getActivity(this, 0, intent, 0)
-//        val affiliateIntent = PendingIntent.getActivity(this, 1, getAffiliateIntent(), 0)
-//
-//        val builder = NotificationCompat.Builder(this, CHANNEL_ID)
-//                .setSmallIcon(R.mipmap.ic_launcher_round)
-//                .setColor(Color.parseColor("#CE372E"))
-//                .setContentTitle(bookTitle)
-//                .setContentText(contentText.plus(bookDescription))
-//                .setContentIntent(pendingIntent)
-//                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-//                .addAction(R.drawable.ic_baseline_search_24px, getString(R.string.view_book), pendingIntent)
-//                .addAction(R.drawable.ic_cart, getString(R.string.buy_on_amazon), affiliateIntent)
-//
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-//            val importance = NotificationManager.IMPORTANCE_DEFAULT
-//            val channel = NotificationChannel(CHANNEL_ID, CHANNEL_NAME, importance).apply {
-//                description = CHANNEL_DESCRIPTION
-//            }
-//            // Register the channel with the system
-//            val notificationManager: NotificationManager =
-//                    getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-//            notificationManager.createNotificationChannel(channel)
-//        }
-//
-//        Glide.with(this)
-//                .asBitmap()
-//                .load(coverLink)
-//                .centerCrop()
-//                .into(object : CustomTarget<Bitmap>(){
-//                    override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
-//                        //TODO: attach bitmap
-//                        builder.setStyle(NotificationCompat.BigPictureStyle().bigPicture(resource))
-//
-//                        with(NotificationManagerCompat.from(this@HomeActivity)) {
-//                            notify(NOTIFICATION_ID, builder.build())
-//                        }
-//                    }
-//                    override fun onLoadCleared(placeholder: Drawable?) {}
-//                })
+    private fun setClickListeners() {
+        homeButton.setOnClickListener {
+            setPageIcon(it)
+            setPage(HOME_PAGE)
+        }
+        bookmarksButton.setOnClickListener {
+            setPageIcon(it)
+            setPage(BOOKMARKS_PAGE)
+        }
     }
 
-//    private fun getAffiliateIntent(): Intent {
-//        val affiliateUrl = bookLink
-//        val intent = Intent(Intent.ACTION_VIEW)
-//        intent.data = Uri.parse(affiliateUrl)
-//        return intent
-//    }
+    private fun setPageIcon(view: View) {
+        when(view) {
+            homeButton -> {
+                homeButton.setImageDrawable(getDrawableForId(R.drawable.ic_home_filled))
+                bookmarksButton.setImageDrawable(getDrawableForId(R.drawable.ic_bookmark))
+            }
+            bookmarksButton -> {
+                homeButton.setImageDrawable(getDrawableForId(R.drawable.ic_home))
+                bookmarksButton.setImageDrawable(getDrawableForId(R.drawable.ic_bookmark_filled))
+            }
+        }
+    }
+
+    private fun setPage(pageNumber: Int) {
+        homeFragmentsPager.currentItem = pageNumber
+    }
+
+    private fun setPageChangeListener() {
+        homeFragmentsPager.addOnPageChangeListener(this)
+    }
+
+    override fun getLayoutResId(): Int {
+        return R.layout.activity_home
+    }
+
+    private fun setViewPager() {
+        homeFragmentsPager.adapter = homePagerAdapter
+    }
+
+    private fun setComponent() {
+        val component = DaggerHomeActivityComponent.builder()
+                .constitutionAppComponent(getAppComponent())
+                .homeActivityModule(getModule())
+                .build()
+
+        component.injectHomeActivity(this)
+    }
+
+    private fun getModule(): HomeActivityModule {
+        return HomeActivityModule(
+                supportFragmentManager,
+                this,
+                this
+        )
+    }
+
+    override fun onPageScrollStateChanged(state: Int) {}
+
+    override fun onPageScrolled(position: Int, offset: Float, offsetPixels: Int) {}
+
 }

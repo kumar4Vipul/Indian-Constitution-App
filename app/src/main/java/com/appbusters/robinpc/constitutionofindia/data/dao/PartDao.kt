@@ -13,9 +13,9 @@ interface PartDao {
     @Query("SELECT * FROM part")
     fun getAllParts(): LiveData<List<Part>>
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertParts(vararg parts: Part)
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertPart(part: Part)
 }

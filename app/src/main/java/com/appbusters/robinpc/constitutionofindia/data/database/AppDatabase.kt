@@ -13,7 +13,7 @@ import com.appbusters.robinpc.constitutionofindia.data.model.Part
 import com.appbusters.robinpc.constitutionofindia.data.model.ReadElement
 import com.appbusters.robinpc.constitutionofindia.data.model.Tag
 
-@Database(entities = [ReadElement::class, Tag::class, Part::class, BookLink::class], version = 1, exportSchema = false)
+@Database(entities = [ReadElement::class, Tag::class, Part::class, BookLink::class], version = 2, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract class AppDatabase: RoomDatabase() {
 

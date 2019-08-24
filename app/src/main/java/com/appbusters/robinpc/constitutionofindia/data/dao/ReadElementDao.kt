@@ -34,10 +34,10 @@ interface ReadElementDao {
     @Query("UPDATE read_element SET is_saved = 0 WHERE id = :elementId")
     fun markElementAsUnsaved(elementId: Int)
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertElements(vararg readElements: ReadElement)
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertElement(readElement: ReadElement)
 
     @Delete

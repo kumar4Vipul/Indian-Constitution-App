@@ -1,36 +1,60 @@
 package com.appbusters.robinpc.constitutionofindia.di.module.fragment
 
 import android.content.Context
-import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.appbusters.robinpc.constitutionofindia.data.model.Category
 import com.appbusters.robinpc.constitutionofindia.data.model.Tag
 import com.appbusters.robinpc.constitutionofindia.di.scope.PerFragmentScope
 import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.adapter.CategoriesListAdapter
-import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.adapter.FeaturedPagerAdapter
 import com.appbusters.robinpc.constitutionofindia.ui.home.fragments.home_fragment.adapter.TagListAdapter
 import dagger.Module
 import dagger.Provides
 
 @Module
-class HomeFragmentModule(private val fragmentManager: FragmentManager, private val context: Context) {
+class HomeFragmentModule(
+        private val categoryClickListener: CategoriesListAdapter.CategoryClickListener,
+        private val tagClickListener: TagListAdapter.OnTagClickListener,
+        private val categorySpanCount: Int,
+        private val tagSpanCount: Int
+) {
 
     @Provides
     @PerFragmentScope
-    fun fragmentPagerAdapter(): FeaturedPagerAdapter {
-        return FeaturedPagerAdapter(fragmentManager)
+    fun gridLayoutManager(context: Context): GridLayoutManager {
+        return GridLayoutManager(
+                context,
+                categorySpanCount,
+                RecyclerView.VERTICAL,
+                false
+        )
+    }
+
+    @Provides
+    @PerFragmentScope
+    fun staggeredGridLayoutManager(context: Context): StaggeredGridLayoutManager {
+        return StaggeredGridLayoutManager(
+                tagSpanCount,
+                RecyclerView.HORIZONTAL
+        )
     }
 
     @Provides
     @PerFragmentScope
     fun categoriesListAdapter(comparator: DiffUtil.ItemCallback<Category>): CategoriesListAdapter {
-        return CategoriesListAdapter(comparator)
+        val adapter = CategoriesListAdapter(comparator)
+        adapter.setCategoryClickListener(categoryClickListener)
+        return adapter
     }
 
     @Provides
     @PerFragmentScope
     fun tagsListAdapter(comparator: DiffUtil.ItemCallback<Tag>): TagListAdapter {
-        return TagListAdapter(comparator)
+        val adapter = TagListAdapter(comparator)
+        adapter.setTagClickListener(tagClickListener)
+        return adapter
     }
 
     @Provides
@@ -42,6 +66,7 @@ class HomeFragmentModule(private val fragmentManager: FragmentManager, private v
             }
 
             override fun areContentsTheSame(oldItem: Tag, newItem: Tag): Boolean {
+                @Suppress("ReplaceCallWithBinaryOperator")
                 return oldItem.equals(newItem)
             }
         }

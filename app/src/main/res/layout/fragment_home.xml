@@ -49,52 +49,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/featured_home"
-                android:layout_marginTop="30dp"
-                android:paddingStart="10dp"
-                android:paddingEnd="20dp"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:background="@drawable/bg_left_side_heading"
-                android:textSize="18sp"
-                android:textColor="@color/white"
-                app:layout_constraintTop_toBottomOf="@id/underlineHomeHeaderIv"
-                app:layout_constraintStart_toStartOf="parent"
-                fontPath="fonts/read_english_semi_bold.ttf"
-                tools:ignore="MissingPrefix"
-                android:id="@+id/featuredTitleTv"/>
-
-            <androidx.viewpager.widget.ViewPager
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                tools:layout_height="150dp"
-                android:layout_marginTop="15dp"
-                app:layout_constraintTop_toBottomOf="@id/featuredTitleTv"
-                android:id="@+id/featuredViewPager">
-
-            </androidx.viewpager.widget.ViewPager>
-
-            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                app:selectedDotColor="@color/selected_dot_color"
-                app:layout_constraintTop_toBottomOf="@id/featuredViewPager"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:dotsColor="@color/dots_color"
-                app:dotsCornerRadius="8dp"
-                app:dotsSize="7dp"
-                app:dotsSpacing="4dp"
-                app:dotsWidthFactor="2.5"
-                app:progressMode="false"
-                android:id="@+id/dotPagerIndicator">
-
-            </com.tbuonomo.viewpagerdotsindicator.DotsIndicator>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/categories_home"
                 android:layout_marginTop="30dp"
                 android:paddingStart="10dp"
@@ -104,7 +58,7 @@
                 android:background="@drawable/bg_left_side_heading"
                 android:textSize="18sp"
                 android:textColor="@color/white"
-                app:layout_constraintTop_toBottomOf="@id/dotPagerIndicator"
+                app:layout_constraintTop_toBottomOf="@id/underlineHomeHeaderIv"
                 app:layout_constraintStart_toStartOf="parent"
                 fontPath="fonts/read_english_semi_bold.ttf"
                 tools:ignore="MissingPrefix"

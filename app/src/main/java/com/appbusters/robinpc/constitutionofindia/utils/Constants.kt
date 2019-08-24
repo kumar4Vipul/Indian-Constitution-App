@@ -11,13 +11,6 @@ class Constants {
         const val CHARSET_UTF_8 = "UTF-8"
         const val MAIN_DB_PATH = "main_db.json"
 
-        const val SUNDAY = 0
-        const val MONDAY = 1
-        const val TUESDAY = 2
-        const val WEDNESDAY = 3
-        const val THURSDAY = 4
-        const val FRIDAY = 5
-        const val SATURDAY = 6
         const val COUNT_DAYS = 7
 
         const val FEATURED_PREAMBLE_INDEX = 0
@@ -54,7 +47,6 @@ class Constants {
 
         const val NUMBER_OF_TAGS = 89
         const val NUMBER_OF_ELEMENTS = 610
-        const val NUMBER_OF_BOOKS = 366
         const val NUMBER_OF_PARTS = 26
 
         const val SAVED_STATUS = 1

@@ -34,8 +34,7 @@
     <color name="saved_by_you_end">#0474D8</color>
     <color name="dots_color">#AAAAAA</color>
     <color name="selected_dot_color">#808080</color>
-    
-    <!-- categories adapter <- home screen -->
+
     <color name="amendment_color">#E2544D</color>
     <color name="schedules_color">#6E95E8</color>
     <color name="parts_color">#4AB0E3</color>
